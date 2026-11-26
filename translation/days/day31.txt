@@ -1,0 +1,17 @@
+# day31 (translation/days/README.md)
+# --- E3101: G02 -- the last breakfast
+E3101.0	Onkel	Vielleicht weil ich gestern im Wohnzimmer eingeschlafen bin, aber mir tun irgendwie die Glieder weh...
+E3101.1	Moe	Du klingst wie ein alter Mann.
+E3101.2	Onkel	He, wenn du das dauernd sagst, wird es noch wahr.
+E3101.3	Tante	Geht es dir gut?
+E3101.4	Onkel	Na ja, einigermassen.
+E3101.5	Moe	Pass gut auf dich auf.
+E3101.6	Onkel	Mhm, danke.
+E3101.7	Onkel	Also dann, itadakimaasu!
+E3101.8	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+
+# --- E3102: G02 -- after breakfast
+E3102.0	Onkel	Gochisosama deshita.
+E3102.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E3102.2	(voice only)
+E3102.3	Tante	Boku-kuuun, dein Papa ist da!

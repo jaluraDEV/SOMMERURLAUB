@@ -1,0 +1,47 @@
+# day08 (translation/days/README.md)
+# --- E0811: H26 -- the workshop
+E0811.0	Onkel	Ich habe die alte Axt im Schuppen verstaut, // aber sie ist gefaehrlich, Boku-kun, also fass sie nicht an.
+E0811.1	Onkel	Ohje, mein Muskelkater.
+
+# --- E0821: G03 -- kitchen
+E0821.0	Tante	Warst du heute schon in Onee-chans Zimmer? // Onee-chan hat gesagt, ab heute ist Boku-kun freigegeben.
+
+# --- E0814: H13 -- behind the workshop, the chopping block
+E0814.0	Onkel	Puh... diese Axt hat wohl bald ausgedient. // Ich bringe sie in den Schuppen und nehme eine neue.
+E0814.1	Onkel	Puh... noch ein kleines bisschen. Ich halte durch!
+
+# --- E0820: H08 -- the yard
+E0820.0	Tante	Mhm... // das so... // und das so... // Alles klar! Der Plan fuers heutige Abendessen steht!
+E0820.1	Tante	Uebrigens, ab heute... hm-hm... schau mal oben im Maedchenzimmer vorbei.
+
+# --- E0812: G01 -- living room
+E0812.0	Onkel	Uebrigens, bald muss doch das Feuerwerksfest sein... // Nanu? Welcher Tag war das noch gleich?
+E0812.1	Onkel	Vom deinem Zimmer aus hat man den besten Blick auf das Feuerwerksfest am Fuss des Berges, Boku-kun.
+
+# --- E0831: G15 -- the sisters' room
+E0831.0	Moe	Ich liebe die Aussicht vom Suedfenster dieses Zimmers. // Der Sonnenuntergang sieht aus, als wuerden zwischen den Wolken lila Blumen // von einer Suedseeinsel aufbluehen. Das ist so schoen.
+
+# --- E0832: G17 -- the veranda; H06 -- the garden
+E0832.0	Moe	Hm-hm, ich bin ein kleines bisschen besser geworden, oder?
+E0832.1	Boku	Meinst du?
+E0832.2	Moe	Ach, so etwas sagst du also... // Du koenntest ruhig ein bisschen Ruecksicht nehmen. // Du bist schliesslich ein Kostgaenger. Lebensklugheit nennt man so etwas...
+E0832.3	Boku	Aber es ist ein Instrument, das einen sanften Klang macht.
+E0832.4	Moe	Ja, stimmt, oder? // Wenn man so von der Dunkelheit der Nacht umhuellt Klarinette spielt...
+E0832.5	Moe	Die Schallwellen werden leise vom Wald aufgesogen, // und die Baumwipfel und Blumen... // und die schlaftrunkenen Tanuki-Babys und der Erdwespen-kun auf Brautschau... // ich habe das Gefuehl, sie werden alle miteinander gluecklich.
+E0832.6	Boku	Das klingt irgendwie so, Onee-chan, // als waerst du die Mama von allen geworden.
+E0832.7	Moe	Warum wohl?
+E0832.8	Boku	Warum ist das wohl so?
+E0832.9	Moe	Ach, stimmt ja, heute ist das Feuerwerksfest von Sagi-no-sato. // Von deinem Zimmer aus kann man es wahrscheinlich sehen.
+# NOTE E0832.7-.8: Moes schlichtes "Warum wohl?" gegen Bokus Quiz-Tic (Glossar § 3).
+
+# --- E0840: H10 -- garden corner where Shirabe watches ants
+E0840.0	Boku	Dreikaesehoch, spielst du immer allein?
+E0840.1	Shirabe	Dieser Name ist verboooten!
+E0840.2	Boku	Hast du... keine Freunde?
+E0840.3	Shirabe	So etwas kann doch gar nicht sein! // Shirabe kann naemlich mit hundert Freunden auf dem Fuji Reisbaellchen essen...
+E0840.4	Shirabe	Wo liegt noch gleich der Fuji?
+# NOTE E0840.3: Aus dem Kinderlied "Ichinensei ni nattara" (mit hundert Freunden auf dem Fuji Reisbaellchen essen).
+
+# --- E0841: G06 -- TV room
+E0841.0	Shirabe	Kin-chan hat bestimmt viele Freunde...
+E0841.1	Shirabe	Ob das Feuerwerk wohl schon angefangen haaat?

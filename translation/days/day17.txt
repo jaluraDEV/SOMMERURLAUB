@@ -1,0 +1,55 @@
+# day17 (translation/days/README.md)
+
+# --- E1701: G02 -- breakfast (the Bath Lady is back)
+E1701.0	Shirabe	Die Badedame soll heute Morgen bei uns gewesen sein. // Dieses Jahr ist sie aber spaet gekommen, nicht?
+E1701.1	Tante	Stimmt, sonst bringt sie doch immer Mitbringsel vom Sendai-Tanabata mit.
+E1701.2	Moe	Wo sie wohl ihr Zelt aufgeschlagen hat? // Letztes Jahr war es beim Grossen Ginkgo.
+E1701.3	Tante	Dieses Jahr scheint sie bis zum Drachengott-Teich hineinzugehen.
+E1701.4	Boku	Eine Frage.
+E1701.5	Tante	Ja?
+E1701.6	Boku	Wer ist das?
+E1701.7	Onkel	Wolfs... maedchen. // Sie ist eine huebsche Studentin, die sich jeden Sommer hier in den Bergen vergraben hat, // und deshalb kommt sie zu uns, um sich das Bad auszuleihen.
+E1701.8	Tante	Sie schleppt Unmengen Buecher mit und lebt im Zelt. // Wenn man beim Jizo-sama links geht und durch den Wald laeuft, gibt es da doch einen grossen Teich, oder?
+E1701.9	Onkel	Dieses Jahr scheint sie ihr Zelt dort aufgeschlagen zu haben, // also geh doch auch mal hinsehen, Boku-kun.
+E1701.10	Onkel	Also dann, itadakimaasu!
+E1701.11	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+# NOTE E1701.7: Im Japanischen Silbe fuer Silbe buchstabiert; im Deutschen langsam abgesetzt (Stilbibel § 7).
+
+# --- E1720: H09 -- the garden corner
+E1720.0	Boku	Was fuer ein Mensch ist das Wolfsmaedchen?
+E1720.1	Tante	Hmmm, sie laesst sich gar nicht mit einem Wort beschreiben.
+E1720.2	Boku	Warum?
+E1720.3	Tante	Weisst du... // sie ist eine bildhuebsche junge Frau, die wie ein wohlerzogener junger Mann wirkt.
+E1720.4	Boku	...eine Tunte?
+E1720.5	Tante	Wenn ich noch etwas juenger waere, wuerde ich auch gern noch alles Moegliche ausprobieren...
+# NOTE E1720.4: okama, gemaess Stilbibel § 12 uebersetzt.
+
+# --- E1712: G01 -- living room
+E1712.0	Onkel	Vielleicht macht Onkel auch mal einen Spaziergang bis zum Zelt vom Wolfsmaedchen.
+E1712.1	Onkel	Morgen gehe ich mal zum Friseur.
+
+# --- E1710: H26 -- the workshop
+E1710.0	Onkel	Dieses Jahr soll das Wolfsmaedchen in der Naehe vom Drachengott-Teich, links beim Jizo-sama, // ihr Zelt aufgeschlagen haben, also besuch sie doch mal.
+E1710.1	Boku	He, im Wald steht so eine seltsame Maschine.
+E1710.2	Onkel	...Eine seltsame Maschine? // Was fuer eine Maschine ist das denn?
+E1710.3	Boku	Sie macht "Blitz!" und leuchtet auf.
+E1710.4	Onkel	Das ist in der Tat eine seltsame Maschine.
+
+# --- E1705: G06 -- TV room
+E1705.0	Boku	Was koennte das wohl sein?
+E1705.1	Moe	Ich mache einen Topflappen.
+E1705.2	Shirabe	Das nennt man Patchin-Werk.
+E1705.3	Moe	Hm-hm, so ungefaehr.
+E1705.4	Shirabe	Das ist kein Flickwerk, das ist Patchin-Werk.
+# NOTE E1705.2: Patchin-Werk, Shirabes Wort fuer "Patchwork" (Glossar § 3).
+
+# --- E1730: G15 -- the sisters' room
+E1730.0	Moe	Ach, also wirklich, warum kommt denn ueberhaupt nichts?
+E1730.1	Boku	Was denn?
+E1730.2	Moe	......
+E1730.3	Moe	Wenn bis morgen keine Antwort kommt, nehme ich meinen Mut zusammen und rufe an...
+
+# --- E1740: H09 -- garden corner where Shirabe watches ants
+E1740.0	Shirabe	Sag mal, gibt es bei euch auch einen Tante-Emma-Laden?
+E1740.1	Boku	Klar gibt es den, aber wieso?
+E1740.2	Shirabe	Hier... ist es so tief auf dem Land, dass es keinen Tante-Emma-Laden gibt. // Dabei bin ich doch so trendbewusst.

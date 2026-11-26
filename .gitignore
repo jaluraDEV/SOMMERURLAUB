@@ -1,0 +1,63 @@
+# The session driver file for Jay's Claude harness — machine-local, never content.
+TODO.md
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+# Everything the import step produces from YOUR disc: the raw image, the files pulled
+# off it, and the Japanese script decoded from them. All of it is Sony's copyrighted
+# content. This repo is public and ships none of it — a contributor regenerates it
+# from their own dump (TECHNICAL § "The import step"). Never commit from here, and never
+# copy text out of it into a tracked file beyond a short quoted example.
+# (No trailing slash: a worktree links these to the main checkout, and a link is not a
+# directory to git.)
+/disc
+# Third-party reference material kept locally for context (the GameFAQs walkthrough,
+# cloned upstream repos). Copyrighted by its authors; TECHNICAL § "Reference material"
+# says where to get each piece.
+/reference
+# Scratch: dumps, contact sheets, emulator traces, Ghidra projects (a Ghidra database
+# embeds the executable, so it is disc content too). What is learned from scratch goes
+# in research/; the scratch itself is disposable.
+/work/
+# Build outputs: patched files, the patched image, and the emitted patch. The patch is
+# released through GitHub Releases, not tracked.
+/build/
+# Cut releases (REL-04, `./make.sh release`): the patches, the .cue, the notes and the zip
+# that `./make.sh publish-release` posts to GitHub Releases, the patched disc, and in v0/
+# the original dump. Kept, never tracked.
+/release/
+# The harness's per-agent worktrees live inside the main checkout; `./make.sh release`
+# refuses an untracked file, and these are not the project's.
+/.claude/worktrees/
+# Python
+__pycache__/
+*.pyc
+/.venv/
+
+# pytest and ruff caches
+.pytest_cache/
+.ruff_cache/
+
+# Original-ROMs, Disc-Images & extrahierte Assets (Copyright / DMCA-Schutz)
+/rom/
+*.bin
+*.img
+*.iso
+*.chd
+*.mdf
+*.pbp
+*.ecm
+*.xa
+*.str
+*.vag
+*.tim
+*.ghidra
+*.gpr
+*.rep
+.env
+
+# jPSXdec writes debug<NN>.log, index.log and save.log into whatever directory it is
+# launched from. `boku movies` runs it in a temporary directory, but research/movies.md
+# section 4 documents running it by hand, and those logs carry local paths.
+debug*.log
+index.log
+save.log

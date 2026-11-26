@@ -1,0 +1,78 @@
+# day18 (translation/days/README.md)
+# --- E1821: G03 -- kitchen
+E1821.0	Tante	Hoffentlich kommt eine gute Nachricht...
+E1821.1	Boku	Wovon redest du?
+E1821.2	Tante	Hm-hm... von einer Maedchenliebe.
+E1821.3	Tante	Irgendwie werde ich selbst ganz wehmuetig.
+E1821.4	Boku	Moe-neechan sieht irgendwie niedergeschlagen aus.
+E1821.5	Tante	Hm-hm, ach so, so ist es also gekommen... // Aber jedes Maedchen hat mal solche Zeiten.
+E1821.6	Boku	Du auch, Tante?
+E1821.7	Tante	Ja, natuerlich.
+E1821.8	Boku	Frauen sind ganz schoen deluxe, oder?
+E1821.9	Tante	...Meinst du nicht delikat?
+E1821.10	Boku	...Das.
+E1821.11	Tante	Lass Onee-chan heute lieber in Ruhe, ja?
+# NOTE E1821.8-.9: deluxe statt delikat, zwei Lehnwoerter (Stilbibel § 8 Typ 2); an Tag 22 (E2203) vertauscht wiederholt.
+
+# --- E1802: G02 -- after breakfast (the letter comes)
+E1802.0	Onkel	Gochisosama deshita.
+E1802.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E1802.2	(unlabelled)	Pooost!
+E1802.3	Tante	Jaaa!
+E1802.4	Moe	Oh, oh, oh!
+E1802.5	Moe	Ich hole sie!
+E1802.6	Tante	Ein wichtiger, wichtiger Brief...
+
+# --- E1820: H06 -- garden off the veranda (the same talk as E1821)
+E1820.0	Tante	Hoffentlich kommt eine gute Nachricht...
+E1820.1	Boku	Wovon redest du?
+E1820.2	Tante	Hm-hm... von einer Maedchenliebe.
+E1820.3	Tante	Irgendwie werde ich selbst ganz wehmuetig.
+E1820.4	Boku	Moe-neechan sieht irgendwie niedergeschlagen aus.
+E1820.5	Tante	Hm-hm, ach so, so ist es also gekommen... // Aber jedes Maedchen hat mal solche Zeiten.
+E1820.6	Boku	Du auch, Tante?
+E1820.7	Tante	Ja, natuerlich.
+E1820.8	Boku	Frauen sind ganz schoen deluxe, oder?
+E1820.9	Tante	...Meinst du nicht delikat?
+E1820.10	Boku	...Das.
+E1820.11	Tante	Lass Onee-chan heute lieber in Ruhe, ja?
+
+# --- E1812: G01 -- living room
+E1812.0	Onkel	Was ich heute beim Friseur gehoert habe: // Unten im Tal spricht es sich herum, dass unsere Wassermelonen ziemlich gut schmecken sollen.
+E1812.1	Onkel	Besonders unter den Kindern sollen sie beliebt sein. // Dabei sind die fuer den Eigenbedarf, also duerften sie doch nirgends verkauft werden...
+
+# --- E1803: G02 -- dinner
+E1803.0	Moe	...Seufz... ich habe keinen Appetit.
+E1803.1	Boku	Was ist los?
+E1803.2	Shirabe	Duuummkopf.
+E1803.3	Onkel	Also dann, itadakimasu!
+E1803.4	Shirabe, Moe, Boku, Tante	Itadakimasu!
+
+# --- E1830: G16 -- Moe's bed
+E1830.0	Boku	Onee-chan, was ist los?
+E1830.1	Moe	......
+E1830.2	Boku	Tut dir irgendwo etwas weh?
+E1830.3	Moe	Tut mir leid, ich bin gerade...
+E1830.4	Boku	Was ist los?
+E1830.5	Moe	...Ugh.
+E1830.6	Moe	Lass mich allein...
+
+# --- E1831: G16 -- Moe's bed
+E1831.0	Moe	Ich habe zu gar nichts mehr Lust... // Ob ich einfach so weiter nichts esse und sterbe...
+E1831.1	Moe	Wie dumm ich bin.
+
+# --- E1840: H09 -- garden corner where Shirabe watches ants
+E1840.0	Shirabe	Heute habe ich irgendwie das Gefuehl, es wird Blut regnen. Ein Blut-Ame.
+E1840.1	Boku	Ein Blut-Ame? Blut-Bonbon?
+E1840.2	Shirabe	Ja, ich habe ein ganz ungutes Gefuehl.
+E1840.3	Shirabe	Irgendjemandem wird ein riesengrosses Unglueck widerfahren!
+# NOTE E1840.0-.1: ame bedeutet sowohl Regen als auch Bonbon, ein Homophon (Stilbibel § 8 Typ 3): woertlich uebersetzt, mit dem japanischen Wort sichtbar.
+
+# --- E1841: G06 -- TV room
+E1841.0	Shirabe	Du verstehst ein Maedchenherz ja ueberhaupt nicht.
+E1841.1	Boku	...Ich bin ein Kind.
+E1841.2	Shirabe	Du bist der klassische Typ, der mit Frauen Probleme bekommt.
+
+# --- E1804: G02 -- after dinner
+E1804.0	Onkel	Gochisosama deshita.
+E1804.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.

@@ -1,0 +1,106 @@
+# day21 (translation/days/README.md)
+# --- E2160: D07 -- Saori's camp
+E2160.0	Boku	Wenn du dauernd so viele Buecher liest, werden deine Augen dann nicht schlecht?
+E2160.1	Saori	Besser, als wenn der Kopf schlecht wird!
+
+# --- E2101: G02 -- breakfast
+E2101.0	Shirabe	Sag mal...
+E2101.1	Tante	Hm? Was ist denn?
+E2101.2	Shirabe	Du hast gestern dauernd daran gedacht, dass die Badedame im Bad ist, stimmts... // ...Ferkel!
+E2101.3	Boku	Hae? Nein, habe ich nicht.
+E2101.4	Tante	Shirabe-chan, wie kommst du denn darauf?
+E2101.5	Shirabe	Weibliche Intuition!
+E2101.6	Tante	Ach du meine Guete!
+E2101.7	Onkel	Also dann, itadakimaasu!
+E2101.8	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+
+# --- E2120: H11 -- outside the workshop
+E2120.0	Tante	Tante hat naemlich 20/5, weisst du.
+E2120.1	Boku	Was denn?
+E2120.2	Tante	Sehkraft, auf beiden Augen...
+E2120.3	Tante	Huch? Ob das wohl Zugvoegel sind...
+# NOTE E2120.0: Im Original steht 4.0 auf der Dezimalskala (1.0 = normal); 20/5 entspricht derselben
+#   unmoeglich scharfen Sehkraft fuer deutsche Leser (Stilbibel § 11).
+
+# --- E2112: G01 -- living room
+E2112.0	Onkel	Kaoru, Bier... ach, lass gut sein, ich will doch keins.
+E2112.1	Onkel	Irgendwie bekomme ich in letzter Zeit nicht genug Schlaf...
+
+# --- E2105: G13 -- Boku's room, after the bath
+E2105.0	Moe	Alles in Ordnung? // Das fuehlte sich irgendwie an wie eine Folge namens "Moe-neechans grosser Patzer"... // Dreht sich dein Kopf noch?
+E2105.1	Boku	...Mhm.
+E2105.2	Moe	Papa hat mit mir geschimpft. Er meinte, ich waere gerade kopflos.
+E2105.3	Boku	...Onee-chan, gehst du wirklich nicht auf die Oberschule?
+E2105.4	Moe	Mhm, nein.
+E2105.5	Boku	......
+E2105.6	Moe	Sag mal, interessieren sich Jungs in deinem Alter auch fuer nackte Maedchen?
+E2105.7	Boku	......
+E2105.8	Moe	Hmm, wohl eher nicht... // Ach, ich hatte frueher auch mal einen suessen kleinen Bruder...
+E2105.9	Boku	Hae?
+E2105.10	Moe	Hm, nein, nichts.
+
+# --- E2109: G15 -- the sisters' room
+E2109.0	Moe	Es tut mir zwar leid fuer dich, Boku-kun, aber durch den Schreck im Bad... // hat sich der Nebel in meinem Herzen ein bisschen gelichtet, und mir ist leichter ums Herz.
+E2109.1	Boku	......
+E2109.2	Moe	Aber auf Lernen und Jugend und so... // auf das ganze muehsame Zeug habe ich trotzdem ueberhaupt keine Lust...
+E2109.3	Moe	Ach, ich habe wirklich auf gaaar nichts Lust.
+
+# --- E2113: G01 -- living room
+E2113.0	Onkel	Boku-kun, geht es dir gut?
+E2113.1	Boku	Ja, mir fehlt nichts.
+E2113.2	Onkel	So ist es gut, da bin ich beruhigt.
+E2113.3	Onkel	Maedchen vertragen langes Baden schliesslich besser.
+
+# --- E2122: G01 -- living room
+E2122.0	Boku	Tante, klopft dein Herz manchmal auch so wild?
+E2122.1	Tante	Hm-hm... // Hmm, mal sehen. Selbst heute noch manchmal...
+E2122.2	Boku	Wann denn?
+E2122.3	Tante	Ahaha... das ist ein Geheimnis.
+
+# --- E2130: G16 -- Moe's bed
+E2130.0	Moe	In meinem frueheren Leben war ich wahrscheinlich eine Nacktschnecke. // Oder vielleicht ein Regenwurm oder so... // Oh! Eine Qualle, die still auf den Wellen treibt... // das waere auch ganz schoen hoffnungslos... wuerde gut zu mir passen...
+E2130.1	Moe	Was fehlt mir denn bloss im Moment?
+E2130.2	Boku	...Naehrstoffe.
+
+# --- E2140: H09 -- garden corner where Shirabe watches ants
+E2140.0	Shirabe	Ferkel!
+E2140.1	Boku	Baeaeah! Deine Mama hat einen Bauchnabel nach aussen!
+E2140.2	Shirabe	Ah! Das petze ich Mama!
+E2140.3	Boku	Ah! Nicht doch! Tante waere bestimmt unheimlich, wenn sie wuetend wird...
+E2140.4	Shirabe	Hehe, wenn unsere Mama wuetend wird, // wird sogar Papa in der Abstellkammer eingesperrt.
+# NOTE E2140.1: Bekannter Schulhof-Spottspruch; mit "deine Mama" meint er seine eigene Tante.
+
+# --- E2141: G06 -- TV room
+E2141.0	Shirabe	Du bist so erbaermlich.
+E2141.1	Boku	Tut mir leid.
+E2141.2	Shirabe	Hast du Nasenbluten gekriegt?
+# NOTE E2141.2: Im Original hanaji-buu, das ueberzeichnete Nasenbluten eines Jungen, der etwas gesehen hat,
+#   was er nicht sehen sollte.
+
+# --- E2104: G02 -- after dinner
+E2104.0	Onkel	Gochisosama deshita.
+E2104.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E2104.2	Moe	Du...
+E2104.3	Boku	Was ist, Moe-neechan?
+E2104.4	Moe	Gehen wir zusammen baden.
+E2104.5	Boku	...Hae? Warum?
+E2104.6	Moe	Gehen wir zusammen rein... ich schrubbe dir auch den Ruecken.
+E2104.7	(voice only)
+
+# --- E2106: G07 -- foot of the stairs ("what your heart is for")
+E2106.0	Tante	Boku-kun, mit Moe zusammen zu baden hat dein Herz ganz schoen klopfen lassen, was?
+E2106.1	Boku	......
+E2106.2	Tante	Hm-hm... du bist reifer, als du aussiehst.
+E2106.3	Boku	Aber weisst du, Tante, // als ich ein schoenes Abendrot gesehen habe, das hinter den Bergen unterging, // oder als ich einen Schmetterling mit einem seltsamen Muster gefangen habe... // da hat mein Herz auch ein bisschen geklopft... // Tief in meiner Brust hat es sich ganz eng zusammengezogen...
+E2106.4	Boku	...Bin ich krank?
+E2106.5	Tante	Ahaha... Boku-kun, das ist...
+E2106.6	Tante	...Menschen sind furchtbar ungeschickte Wesen, // deshalb vergessen sie manchmal, wo in ihrem Koerper ihr Herz ueberhaupt steckt... // Und wenn du dann eine schoene Abendsonne siehst, die hinter den fernen Bergen versinkt, // oder einen Schmetterling in ganz seltsamen Farben faengst, // dann zittert und bebt dein Herz ganz leise...
+E2106.7	Tante	und sagt dir: "Ich bin genau hier, in dir!"
+E2106.8	Boku	Dann ist es etwas sehr, sehr Wichtiges.
+E2106.9	Tante	Hm-hm-hm... wenn du es verlierst, stirbst du vielleicht sogar.
+
+# --- E2108: G05 -- the bath; G14 -- Boku's room
+E2108.0	Moe	Du...
+E2108.1	Boku	Was?
+E2108.2	Moe	Onee-chan... hat Liebeskummer.
+E2108.3	Moe	Huch!

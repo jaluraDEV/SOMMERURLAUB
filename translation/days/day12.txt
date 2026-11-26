@@ -1,0 +1,63 @@
+# day12 (translation/days/README.md)
+# --- E1202: G02 -- dining room; G09 -- the front entrance (the monk arrives)
+E1202.0	Tante	Der Moench ist da.
+E1202.1	Onkel	Vielen Dank, dass Sie jedes Jahr extra bis tief in die Berge herauskommen.
+E1202.2	Moench	Nein, nein, schliesslich verdiene ich damit mein taeglich Brot.
+
+# --- E1220: H08 -- the yard
+E1220.0	Boku	He, wann ist der Onii-chan von hier gestorben?
+E1220.1	Tante	......Vor drei Jahren.
+E1220.2	Boku	Hmmm.
+E1220.3	Tante	Boku-kun, du hattest damals die Mashin, deshalb konntest du nicht zur Beerdigung kommen.
+E1220.4	Boku	Eine Maschine?
+E1220.5	Tante	...Nicht ganz.
+E1220.6	Tante	Mashin bedeutet Masern.
+# NOTE E1220.3-.6: mashin, das formelle Wort fuer Masern, das Boku als Lehnwort "Maschine" versteht (Stilbibel § 8 Typ 3).
+
+# --- E1210: H26 -- the workshop
+E1210.0	Onkel	Ein ziemlich lustiger Moench, nicht wahr?
+E1210.1	Boku	Ja.
+E1210.2	Onkel	Man sieht es ihm vielleicht nicht an, aber der Moench ist schon fast sechzig.
+
+# --- E1212: G01 -- living room
+E1212.0	Onkel	Ken-bo sieht so gluecklich aus wie immer... // Dieses Jahr ist die Bergaffen-Bande ja gar nicht gekommen.
+E1212.1	Boku	Hier kommen Affen her?
+E1212.2	Onkel	Natuerlich, wir sind hier tief in den Bergen. // Die Affen ziehen in einem Rhythmus von zwei, drei Jahren durch die Taeler hier. // Aber den groesseren Schaden auf den Feldern richten immer die Wildschweine an.
+E1212.3	Onkel	Mir ist vorhin aufgefallen... bekommt Ken-bo etwa eine Glatze?
+E1212.4	Onkel	Wir haben Ken-bo schon, seit wir in Tokio gewohnt haben. // Deshalb wird er langsam ein alter Herr. // Zu alten Leuten muss man freundlich sein.
+
+# --- E1203: G10, G11 -- the altar room (the memorial)
+E1203.0	Moench	Also dann...
+E1203.1	(voice only)
+E1203.2	(voice only)
+E1203.3	(voice only)
+E1203.4	(voice only)
+E1203.5	Moench	Hauruck. So, das waere es dann wohl...
+E1203.6	Onkel	Vielen herzlichen Dank.
+E1203.7	Moench	Ja, ja.
+E1203.8	Moench	Nanu, ein neues Gesicht... // Boku-chan, how-oldo are-you? // Gahahahaha... Wie alt bist du denn?
+E1203.9	Boku	...Neun.
+E1203.10	Moench	So, so, ein ziemlich klug aussehender junger Herr. // Da muss ich daran denken, wie ich in demselben Alter war.
+E1203.11	Moench	Wo habt ihr ihn denn entfuehrt?
+# NOTE E1203.8: Das Englisch des Moenchs steht im Original in Katakana und er uebersetzt sich selbst (Stilbibel § 16).
+
+# --- E1230: G15 -- the sisters' room
+E1230.0	Moe	Der Moench vorhin war lustig, oder? // Jedes Jahr legt er noch ein bisschen zu.
+E1230.1	Moe	Wenn ich doch auch so ein froehliches Wesen haette...
+
+# --- E1232: G17 -- the veranda
+E1232.0	Boku	Warum spielst du heute keine Floete?
+E1232.1	Moe	Tja...... solche Tage gibt es eben. // Heute ist mir danach, still zu sein und in die Stimmen der Insekten und das Rauschen des Windes einzutauchen...
+
+# --- E1240: H04 -- garden corner where Shirabe watches ants
+E1240.0	Shirabe	Warum gibt es bei der Schulspeisung nie Reis?
+E1240.1	Boku	Hae? Gibt es doch, ein- oder zweimal im Monat. // An Curry-Tagen gibt es Reis!
+E1240.2	Shirabe	Reis bei der Schulspeisung? So etwas gab es bei uns noch nie.
+
+# --- E1241: G06 -- TV room
+E1241.0	Shirabe	Wenn man Pulver in die Milch ruehrt, muss man vorher ein klein wenig trinken, // sonst laeuft sie beim Umruehren ueber, nicht wahr?
+E1241.1	Boku	Ja, und seit es diese Pyramidenpackungen gibt, ist es noch schlimmer. // Wenn man das Pulver reintut, muss man oben mit der Schere aufschneiden.
+E1241.2	Shirabe	Die Milch an unserer Schule kommt noch in Flaschen...
+
+# --- E1204: G06 -- TV room
+E1204.0	Tante	Der Moench ist nach Hause gegangen. "Danke schoen", hat er gesagt. // Gut gemacht, Boku-kun. Jetzt kannst du spielen gehen.

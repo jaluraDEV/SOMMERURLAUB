@@ -1,0 +1,10 @@
+# Verbindliche Wort- und Strukturfestlegungen fuer den Deutsch-Patch (`translation/locked.tsv`).
+# Die urspruenglichen englischen Wort-Locks sind in `work/english-reference/locked.tsv` gesichert.
+# Format: translation/README.md § locked.tsv. Lizenz: CC BY-SA 4.0.
+#
+# id <TAB> match <TAB> words <TAB> whose and where from
+id	match	words	source
+# --- Strukturelle Festlegungen (sprachunabhaengig)
+E2515.0	phrase	 / 	Deutsche Stilbibel § 10 (Tanka-Versumbruch)
+E2515.4	phrase	 / 	Deutsche Stilbibel § 10 (Tanka-Versumbruch)
+E2712.0	phrase	 / 	Deutsche Stilbibel § 10 (Tanka-Versumbruch)

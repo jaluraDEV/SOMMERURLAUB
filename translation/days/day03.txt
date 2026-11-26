@@ -1,0 +1,125 @@
+# Day 3 - August 3. The fishing rod, the corn harvest, and Firefly Creek forbidden after dark
+# (PLAN TRN-04). Every event whose id is E03xx (day = id / 100), in the order the game plays
+# them. No day-independent event is handed over to by a day-3 event: E0301 chains to the map
+# (G02), E0303 to MOVIE 20; E0307 (the rod in the shed) is day-independent by condition but
+# carries a day-3 id and is here. E0190 (the 18:00 call) and E0001 fire on day 3 as on every
+# day and are in day01.txt. Format: translation/days/README.md. Policies: style-guide.md,
+# glossary.md, bible.md § 4 (day 3).
+#
+# Morning: E0301 (breakfast, the pond and the rod), E0302 (appointed field helper). Then, until
+# 16:00: the rod in the shed (E0307), the corn field A09 - E0306 (forced on arrival), E0391 /
+# E0392 (the uncle and aunt while picking), E0371-E0383 (the thirteen ears; no text), E0384
+# (the basket, once every ear is in) - and Shirabe in the garden (E0340), the television
+# (E0305). Afternoon: E0312 (the uncle, 16:00-18:00). Evening: E0303 (dinner; the night
+# rule), E0304, then E0313 (the uncle), E0332 (Moe on the veranda), E0341 (Shirabe and the TV).
+
+# --- E0301: G02 -- breakfast
+E0301.0	Onkel	Boku-kun, warst du schon am Teich? // Dort gibt es viele grosse Fische.
+E0301.1	Boku	Whoa! Gaanz viele? Toll, toll!
+E0301.2	Onkel	Wenn du eine Angelrute benutzen willst, sie liegt im...
+E0301.3	Onkel	...Schuppen rechts vor der Kuechentuer, nimm sie dir ruhig mit.
+E0301.4	Boku	Ja, verstanden. Danke, Onkel.
+E0301.5	Onkel	Also dann, Itadakimaasu!
+E0301.6	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+
+# --- E0302: G02 -- after breakfast
+E0302.0	Onkel	Gochisosama deshita.
+E0302.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E0302.2	Tante	He, Boku-kun, magst du Mais?
+E0302.3	Boku	Ja, das liebe ich! Schmeckt naemlich lecker!
+E0302.4	Tante	Also dann...
+E0302.5	Onkel	Boku-kun, hiermit ernenne ich dich zum Feldhelfer-Kapitaen!
+E0302.6	(voice only)
+E0302.7	Onkel	Es ist zwar nur fuer heute, aber... // auf dem Weg in den Wald liegt unser Maisfeld. // Komm am Vormittag dorthin und hilf bei der Ernte! Ich zaehle auf dich.
+
+# --- E0307: H18 -- the shed
+E0307.0	(unlabelled)	Angelrute erhalten.
+
+# --- E0306: A09 -- the corn field
+E0306.0	Tante	Was fuer ein herrliches Wetter! Hallo, Boku-kun.
+E0306.1	Boku	Ja. Hallo, Onkel, Tante.
+E0306.2	Onkel	Ach ja... wie hoch der Himmel heute steht...
+E0306.3	Onkel	Danke, dass du wie versprochen gekommen bist, Boku-kun.
+E0306.4	Tante	Hm-hm-hm. Also dann, Boku-kun! // Leg alle Maiskolben vom Feld der Reihe nach in diesen Korb. // Auf geht es an die Arbeit!
+E0306.5	(voice only)
+
+# --- E0371-E0383: the thirteen ears of corn (A09, examine). No text.
+# --- E0391: A09 -- the corn field
+E0391.0	Onkel	Los, Boku-kun, gib dein Bestes.
+E0391.1	Onkel	Den Rest raeumen wir schon auf. // Geh ruhig spielen, Kind!
+# --- E0392: A09 -- the corn field
+E0392.0	Tante	Puh... Aber was fuer ein schoenes Wetter! Da freut man sich richtig!
+E0392.1	Tante	Morgen zum Mittagessen koche ich euch einen grossen Topf voll, // darauf kannst du dich schon freuen.
+
+# --- E0384: A09 -- the corn field
+E0384.0	Onkel	Damit waeren wir wohl so gut wie fertig, Boku-kun. // Na dann, danke fuer deine Muehe.
+E0384.1	Tante	Ich bin dabei richtig schoen ins Schwitzen gekommen.
+
+# --- E0340: H04 -- garden corner where Shirabe watches ants
+E0340.0	Shirabe	Jungs sind so ungehobelt. Ich verabscheue sie zutiefst.
+E0340.1	Boku	...Was heisst "ungehobelt"?
+E0340.2	Shirabe	Genau das nicht zu wissen, nennt man ungehobelt.
+E0340.3	Boku	Was machst du hier jeden Tag?
+E0340.4	Shirabe	Das kann dir doch egal sein!
+E0340.5	Boku	Schaust du auf den Boden?
+E0340.6	Shirabe	Hae? Waruuuum sollte Shirabe denn auf die Erde starren?
+E0340.7	Boku	Hier sind doch nur Ameisen.
+E0340.8	Shirabe	...Sag mal, hast du schon mal eine Ameisenkoenigin gesehen?
+E0340.9	Boku	Hae?
+E0340.10	Shirabe	Vergiss es, vergiss es. Was ich gerade gesagt habe, ist nashinko.
+E0340.11	Shirabe	Ich habe doch gesagt, lass mich in Ruhe!
+# NOTE E0340.0-.2: gasatsu - ein Erwachsenenwort, das Boku nicht kennt, und Shirabes
+#   zirkulaere Erklaerung (Stilbibel § 8 Typ 1, Glossar § 9 #2).
+# NOTE E0340.10: nashinko ist ihre Wortschoepfung (Stilbibel § 7: bleibt als Klangwort).
+
+# --- E0305: G06 -- TV room (the high-school baseball broadcast)
+E0305.0	(voice only)	Die nationale Oberschul-Baseballmeisterschaft im Sommer. // Das erste Spiel heute: Asosan Minami aus Kumamoto // gegen die Chigi-Landwirtschaftsschule aus Miyagi. // Anfang des zweiten Innings, Asosan Minami am Schlag. // Chigi fuehrt mit 2 zu 1, und ihr Ass Hoshigaki wirft! // Oh, ein grosser Curveball... knapp vorbei. // Drei Balls in Folge fuer Satsuma, den Left Fielder auf Position sechs. Eine brenzlige Lage fuer Chigi!
+E0305.1	(voice only)	Die nationale Oberschul-Baseballmeisterschaft im Sommer. // Das zweite Spiel heute: die Hiroshima-Seefahrtsschule aus Hiroshima // gegen die Niigata-Inekari-Landwirtschaftsschule aus Niigata. // Ende des dritten Innings, Niigata Inekari am Schlag. // Auf dem Mound steht der Erstklaessler Otafuku von Hiroshima Seefahrt. // Seine Ellenbogenverletzung hatte Sorgen bereitet, aber beim Werfen merkt man davon nichts, // und Hiroshima Seefahrt fuehrt klar mit 3 zu 0 gegen Niigata Inekari.
+E0305.2	(voice only)	Die nationale Oberschul-Baseballmeisterschaft im Sommer. // Das dritte Spiel heute: Nemuro Ryuhyo aus Nord-Hokkaido // gegen die Pharmazie-Oberschule Toyama aus Toyama. // Wir sind am Ende des siebten Innings, Toyama Pharmazie am Schlag. // Nemuro Ryuhyos Ass Hanasaki musste im ersten Inning nach Toyamas Schlagserie viele Punkte abgeben, // doch ab dem zweiten Inning scheint er Toyamas Schlagmaenner im Griff zu haben. // Dennoch steht es 8 zu 2, und Toyamas deutliche Fuehrung haelt.
+E0305.3	(voice only)	Die nationale Oberschul-Baseballmeisterschaft im Sommer. // Das vierte Spiel heute: Nagoya Daimyo Technik aus Aichi // gegen Okinawa Kaisen aus Okinawa. // Weil sich das dritte Spiel hinzog, begann die Partie etwa eine Stunde spaeter. // Okinawa Kaisens Werfer Gushiken. Der erste Wurf... geschlagen! // Doch Tokugawa von Daimyo Technik scheint den Ball hoch in die Luft gesetzt zu haben. // Oh! Er fliegt weiter als gedacht... er fliegt und fliegt... er ist drueben! Ein Homerun gleich beim allerersten Wurf!
+E0305.4	(voice only)	Die nationale Oberschul-Baseballmeisterschaft im Sommer: die heutigen Ergebnisse. // Erstes Spiel: Asosan Minami aus Kumamoto // gegen die Chigi-Landwirtschaftsschule aus Miyagi. // Im zweiten Inning nutzte Asosan Minami eine Schwaeche von Chigis Ass Hoshigaki aus, // erzielte eine Flut von Punkten und gewann souveraen mit 7 zu 2. // Zweites Spiel: Hiroshima Seefahrt // gegen Niigata Inekari Landwirtschaft. // Bei Hiroshima Seefahrts Erstklaessler Otafuku brach die befuerchtete Ellenbogenverletzung wieder auf, // was die Siegesgoettin am Ende wohl auf die Seite von Niigata Inekari zog. // Beide Teams punkteten abwechselnd, und nach einem engen Spiel gewann Niigata Inekari mit 4 zu 3. // Drittes Spiel: Nemuro Ryuhyo aus Nord-Hokkaido // gegen Toyama Pharmazie. // Im ersten Inning geriet Nemuro Ryuhyo durch Toyamas Offensive mit acht Punkten in Rueckstand, // holte jedoch im dritten und achten Inning auf, und in der Verlaengerung, Anfang des elften Innings, schlug ihr Ass Hanasaki... // ...selbst ein Triple, und Nemuro drehte das Spiel noch zum 9-zu-8-Sieg. // Viertes Spiel: Nagoya Daimyo Technik aus Aichi // gegen Okinawa Kaisen aus Okinawa. // Tokugawa von Daimyo Technik entschied die Partie mit einem Homerun gleich beim ersten Wurf des ersten Innings: // Nagoya Daimyo Technik gewann mit 1 zu 0. // Das war Yoshimoto von NHN Osaka, live aus dem Koshien-Stadion.
+
+# --- E0312: G01 -- living room
+E0312.0	Onkel	Onkels Feld ist nur fuer das, was wir selbst essen... // daher bauen wir auch nur so viel an, wie dafuer noetig ist. // Bei allem gilt: Je entspannter, desto besser.
+E0312.1	Onkel	Danke fuer deine fleissige Hilfe heute auf dem Feld. // Onkels Feld ist klein, // vielleicht hat es fuer deine Hilfe gerade die richtige Groesse, Boku-kun.
+
+# --- E0303: G02 -- dinner
+E0303.0	Onkel	Boku-kun! // Ganz hinten in Onkels Garten, drueben beim Tierstall, // fuehrt ein Weg den Yukino-Fluss hinauf zum Gluehwuermchenbach... // An diesem Bach schluepfen jede Menge Gluehwuermchen...
+E0303.1	Boku	Whoa, Gluehwuermchen! Die habe ich noch nie gesehen. Toll, toll... // Die sind bestimmt super schoen, oder? Ich will sie sehen, ich will sie sehen!
+E0303.2	Shirabe	Nanu? Du bist ja ueberraschend romantisch.
+E0303.3	Onkel	Aber der Weg ist nachts gefaehrlich, also darfst du nach Sonnenuntergang auf keinen Fall dorthin gehen. // Das ist nun mal die Regel bei Onkel zu Hause.
+E0303.4	Boku	Oooch! Wie schade.
+E0303.5	Tante	Du haettest die Gluehwuermchen doch geheim halten koennen...
+E0303.6	Onkel	Hahaha... Stimmt auch wieder.
+E0303.7	Onkel	Also dann, Itadakimasu!
+E0303.8	Shirabe, Moe, Boku, Tante	Itadakimasu!
+
+# --- E0304: G02 -- after dinner
+E0304.0	Onkel	Gochisosama deshita.
+E0304.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+
+# --- E0313: G01 -- living room
+E0313.0	Onkel	Uebrigens, hast du dir die Angelrute schon geholt?
+E0313.1	[SEL]	Ja | Nein
+E0313.2	Onkel	Oh, dann bin ich auf einen grossen Fang gespannt.
+E0313.3	Onkel	Hoer zu, die Angelrute liegt im Schuppen neben der Kueche.
+
+# --- E0332: G17 -- the veranda
+E0332.0	Boku	Wie heisst das da?
+E0332.1	Moe	Eine Klarinette... // Ich habe angefangen, bei einer Freundin Klarinette zu lernen. // Auf dem Schulfest im Herbst spielen wir zu zweit.
+E0332.2	Boku	Hmm. Du bist aber noch schlecht.
+E0332.3	Moe	Aber bis Ende der Sommerferien werde ich gut!
+E0332.4	Moe	Bestimmt, vielleicht, ganz sicher...
+E0332.5	Boku	He, leih mir die Klarinette auch mal.
+E0332.6	Moe	Auf keinen Fall! Da setzt man doch den Mund an.
+E0332.7	Moe	In der Nachtbrise auf einem Instrument zu spielen fuehlt sich so schoen an...
+
+# --- E0341: G06 -- TV room
+E0341.0	Shirabe	Ich habe doch gerade erst gegessen und habe schon wieder Hunger. // Ach, ich haette so gern den Harusame-Salat von der Schulspeisung...
+E0341.1	Boku	Was ist das?
+E0341.2	Shirabe	...Hae? Kennst du das nicht?
+E0341.3	Boku	Hae?
+E0341.4	Shirabe	Eine Schulspeisung ohne Harusame-Salat? Wo du herkommst, ist man hundert Jahre hinter der Zeit zurueck.
+E0341.5	Shirabe	Du weisst schon...
+E0341.6	Boku	Was denn?
+E0341.7	Shirabe	...Schon gut.

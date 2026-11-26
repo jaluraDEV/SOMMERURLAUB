@@ -1,0 +1,201 @@
+# Day 7 - August 7. Kites offered at breakfast; Moe's pressed flowers in the forest (PLAN TRN-04).
+# Every event whose id is E07xx (day = id / 100), in the order the game plays them. Format:
+# translation/days/README.md. Policies: style-guide.md (all rulings settled 2026-09-20),
+# glossary.md, bible.md § 4 (day 7).
+# No day-independent event is handed over to: E0701 reloads
+# the dining room (MAP G02), E0733 and E0780 hand over to each other across B03/B02, E0710 hands
+# over to its own kite close-ups (I36-I43) and back to the workshop. The kite book itself is
+# E0022 (shared.txt); the kite-flying menu at the hill (E4026) is day-independent and not here.
+#
+# Morning: E0701 (breakfast, forced if the hill was reached on day 6). Free time: E0720 (the
+# washing line, before 14:00), E0740 (Shirabe and the ants), E0710 (the workshop - the wheel
+# chat, and from here on the whole kite thread), the forest - E0733, E0780, the five flower
+# spots E0781-E0785 and E0787 (no text), E0786 - and the secret base: E0750 and the boys' sumo
+# tips E0751/E0761/E0771 (the first of three rotating sets; the later sets E0752/E0753,
+# E0762/E0763, E0772/E0773 share this file's ids and are translated here). Afternoon: E0712 (the
+# living room from 16:00). Evening: E0705 (dinner), E0704 (the photograph, by its condition a
+# dinner from day 8), E0741 (the television room).
+
+# --- E0701: G02 -- breakfast
+E0701.0	Boku	Gestern bin ich bis ganz oben auf den Huegel geklettert. // Die Aussicht war richtig schoen.
+E0701.1	Moe	Eine schoene Aussicht... dann meinst du wohl den Huegel dort drueben?
+E0701.2	Onkel	Ja, genau der.
+E0701.3	Onkel	Als diese Kinder noch viel, viel kleiner waren, // sind wir alle auf den Huegel gestiegen und haben Drachen steigen lassen. // ...Stimmt ja, im Buecherregal im Wohnzimmer steht ein Drachenbuch, das wir damals gekauft haben... // Soll Onkel dir einen Drachen bauen?
+E0701.4	Boku	Juhu! Danke, Onkel!
+E0701.5	Onkel	Dann schau ins Buch und such dir den Drachen aus, den du haben moechtest! // Und komm am Tag, wenn Onkel in der Werkstatt ist, vorbei und sag mir, welchen du gewaehlt hast.
+E0701.6	Boku	Ja, mache ich.
+E0701.7	Onkel	Also dann, Itadakimaasu!
+E0701.8	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+
+# --- E0720: H06 -- garden off the veranda, the washing line
+E0720.0	Boku	Tante, du haengst fast jeden Tag draussen die Waesche auf, // wieso ist deine Haut dann so hell?
+E0720.1	Tante	Hmm, warum wohl? // Vielleicht, weil ich viel Obst mit Vitamin C esse. // Und manchmal wasche ich mir das Gesicht mit Nachtigallen-Kot, damit die Haut heller wird.
+E0720.2	Boku	Nachtigallen-Kot? // So etwas gibt es wirklich auf der Welt... // Kacka?
+E0720.3	Tante	So ist es.
+E0720.4	Boku	Nachtigallen-Kot... so etwas gibt es also wirklich?
+E0720.5	Tante	Ja, das kennt doch jede Frau.
+# NOTE E0720.1: uguisu no fun, traditionelles Gesichtspflegemittel (Glossar § 4a, § 9 #5).
+
+# --- E0740: H09 -- garden corner where Shirabe watches ants
+E0740.0	Shirabe	Was fuer eine Krone eine Ameisenkoenigin wohl traegt?
+E0740.1	Boku	Kennst du Nachtigallen-Kot?
+E0740.2	Shirabe	Natuerlich weiss ich das. // Das ist doch jemand, der immer an einem dran klebt, nicht wahr? // Shirabe weiss schliesslich alles.
+E0740.3	Shirabe	Was fuer ein Kleid eine Ameisenkoenigin wohl traegt?
+# NOTE E0740.2: Shirabe verwechselt es mit der Redensart kingyo no fun ("Goldfisch-Kot", ein Anhaengsel).
+#   Woertlich uebersetzt; der Witz liegt darin, dass sie sich irrt (Glossar § 9 #5).
+
+# --- E0710: H26 -- the workshop (kites); I36-I43 -- the kites, close-up
+E0710.0	Boku	Sag mal, Onkel.
+E0710.1	Onkel	Hm...... Was ist denn?
+E0710.2	Boku	Wird der Toepferscheibe nicht schwindlig?
+E0710.3	Onkel	Ahahaha... Na ja, Onkel hat sich selbst noch nie darauf gedreht, wer weiss?
+E0710.4	Boku	Kann man die Drehung der Toepferscheibe nutzen, um eine grosse Libelle zu fangen?
+E0710.5	Onkel	Das geht niiicht!
+E0710.6	Onkel	Der Erste, der auf die Idee kam, eine Scheibe zu drehen, um Reisschalen zu machen... // war ein wunderbarer Mensch mit einem wahrhaft beweglichen Geist, oder?
+E0710.7	Boku	Hae? Dann hast nicht du sie erfunden, Onkel?
+E0710.8	Onkel	Glueckwunsch, Boku-kun! // Ich konnte deinen Drachen hoch, hoch oben sogar von diesem Garten aus sehen. // Zur Belohnung baue ich dir den naechsten Drachen, also geh und such dir einen aus.
+E0710.9	Onkel	Wenn ich dir einen Drachen bauen soll, such dir im Drachen-Lexikon im Wohnzimmer aus, welchen du moechtest.
+E0710.10	Onkel	Du hast alle hoch, hoch steigen lassen, bis hin zum letzten schwierigen Drachen. // Boku-kun, du scheinst beim Drachensteigen inzwischen um einiges geschickter zu sein als Onkel. // Irgendwie wird Onkel bei dir schon ganz zuversichtlich.
+E0710.11	Onkel	Du haettest wohl gern, dass ich dir einen Drachen baue, aber tut mir leid. // Selbst wenn ich jetzt anfange, wird er nicht mehr fertig, solange du hier bist.
+E0710.12	Onkel	Gib dein Bestes und lass Onkels Drachen hoch aufsteigen.
+E0710.13	Onkel	Onkels Drachen muesste doch noch etwas hoeher steigen... // Wenn du ihn so hoch steigen laesst, dass man ihn von hier sieht, baue ich dir den naechsten.
+E0710.14	Onkel	Ist Drachensteigen schwer? Lass ihn jedenfalls noch viel, viel hoeher steigen. // Dann sieht man ihn bestimmt auch vom Werkstattfenster aus.
+E0710.15	Onkel	Der Drachen, den ich dir neulich gegeben habe, ist der letzte, also gib dein Bestes und lass ihn hoch steigen.
+E0710.16	Onkel	Oh? Mal sehen, mal sehen... Du willst also den Mittelspann-Rechteckdrachen? // Gut, gut... Dann gib mir etwa zwei Tage Zeit.
+E0710.17	Onkel	Oh? Mal sehen, mal sehen... Du willst also den Nina-Drachen? // Gut, gut... Dann gib mir etwa zwei Tage Zeit.
+E0710.18	Onkel	Oh? Mal sehen, mal sehen... Du willst also den Zikadendrachen? // Gut, gut... Dann gib mir etwa zwei Tage Zeit.
+E0710.19	Onkel	Oh? Mal sehen, mal sehen... Du willst also den Vogeldrachen? // Gut, gut... Dann gib mir etwa zwei Tage Zeit.
+E0710.20	Onkel	Oh? Mal sehen, mal sehen... Du willst also den Karpfendrachen? // Gut, gut... Dann gib mir etwa zwei Tage Zeit.
+E0710.21	Onkel	Oh? Mal sehen, mal sehen... Du willst also den Flugzeugdrachen? // Gut, gut... Dann gib mir etwa zwei Tage Zeit.
+E0710.22	Onkel	Oh? Mal sehen, mal sehen... Du willst also die Drachenkette? // Gut, gut... Dann gib mir etwa zwei Tage Zeit.
+E0710.23	Onkel	Oh? Mal sehen, mal sehen... Du willst also den Boku-Drachen? // Gut, gut... Dann gib mir etwa zwei Tage Zeit.
+E0710.24	Onkel	Du haettest wohl gern, dass ich dir einen Drachen baue, aber tut mir leid. // Selbst wenn ich jetzt anfange, wird er nicht mehr fertig, solange du hier bist.
+E0710.25	Onkel	Der Drachen ist noch nicht feeertig. // Bitte warte noch ein kleines bisschen.
+E0710.26	Onkel	Boku-kun, der Drachen ist fertig.
+E0710.27	Onkel	Boku-kun, das ist der letzte Drachen. Endlich ist er fertig!
+E0710.28	Boku	Danke, Onkel.
+E0710.29	Onkel	Dein Ziel ist es erst einmal, // diesen Drachen hoch, hoch in den Himmel steigen zu lassen, so hoch, dass man ihn vom Garten dieses Hauses aus sieht.
+E0710.30	Boku	Ja! Verlass dich auf mich, Onkel! // Ich gebe mein Bestes.
+E0710.31	(unlabelled)	Rechteckdrachen erhalten.
+E0710.32	(unlabelled)	Nina-Drachen erhalten.
+E0710.33	(unlabelled)	Zikadendrachen erhalten.
+E0710.34	(unlabelled)	Vogeldrachen erhalten.
+E0710.35	(unlabelled)	Karpfendrachen erhalten.
+E0710.36	(unlabelled)	Flugzeugdrachen erhalten.
+E0710.37	(unlabelled)	Drachenkette erhalten.
+E0710.38	(unlabelled)	Boku-Drachen erhalten.
+
+# --- E0733: B03 -- forest path with the yellow flowers
+E0733.0	Boku	Huch, Onee-chan... was machst du hier?
+E0733.1	Moe	Oh, das hier? Na ja... // Ich wollte mich bei dem Menschen bedanken, der mir Klarinette beibringt... // darum habe ich Blumen fuer Pressblumen gepflueckt.
+E0733.2	Boku	Hmm, Onee-chan, du wirkst wie eine erwachsene Frau.
+E0733.3	Moe	Hae? Hm-hm-hm... danke, Boku-kun. // Aber weisst du, dieses Pressblumen-Machen ist etwas ganz Besonderes.
+E0733.4	Boku	Echt?! Warum?
+E0733.5	Moe	Hahaha, das nennt man ein Ge-heim-nis. // ...Aber hier ist ja schon eeeewig schoenes Wetter, oder?
+
+# --- E0780: B02; B03 -- forest path with the yellow flowers
+E0780.0	Moe	Ich mag an solchen Tagen mit blauem Himmel... // die kuehle Brise, die ab und zu aus dem Schatten der Baeume weht... // Der Wind traegt den satten Duft des Waldes... // Wenn ich koennte, wuerde ich fuer immer hier im Gruen dieses tiefen Waldes bleiben... // und ganz ruhig leben, ohne an irgendetwas zu deeenken... // Und ehe ich mich versehe... waere ich eine alte Frau geworden. // ...Das waere schoen.
+E0780.1	Moe	He, Boku-kun, hilf mir, Blumen zum Pressen zu suchen. // Ich kann so schlecht... etwas aussuchen.
+E0780.2	Moe	Diese gelben Trollblumen hier... // wenn du eine huebsche findest, bring sie mir.
+E0780.3	Boku	Ja, verstanden, Onee-chan.
+
+# --- E0781-E0785: the five flower spots on B03, examined (each once; the flower is carried one at
+#     a time). E0787: the map's own auto event. No text on the disc for any of them.
+
+# --- E0786: B03 -- forest path with the yellow flowers
+E0786.0	Moe	Eine gelbe Trollblume.
+E0786.1	Moe	Jaaa, danke.
+E0786.2	Moe	Mhm, Boku-kun... ich glaube, das reicht von der Menge her. // Danke fuers Helfen. // Und weil wir ueber alles moegliche reden konnten, hat es heute richtig Spass gemacht.
+E0786.3	Boku	Ja, mir hat es auch Spass gemacht. // ...Onee-chan?
+E0786.4	Moe	Hm? Was ist denn?
+E0786.5	Boku	Werde... eine niedliche alte Oma, ja?
+E0786.6	Moe	...Gyahahahaha. // Ich gebe mir Muehe. Bis dann.
+
+# --- E0750: A18 -- the secret base (bug sumo)
+E0750.0	Fat	Oh, da kommt ein leichtes Opfer fuers Kaefer-Sumo.
+E0750.1	Guts	Setz dich erst mal an den Tisch dort! // Die Regeln verstehst du beim Spielen von ganz allein.
+
+
+# --- E0751: A18 -- the secret base (Guts's bug-sumo tips, days 1-14)
+E0751.0	Guts	Beim Kaefer-Sumo... // verlierst du erstens, wenn dein Kaefer aus dem Ring faellt oder keine Energie mehr hat und umkippt. // Und ein Kaefer, der verloren hat, ist fuer den Rest des Tages gesperrt, kapiert? // Na ja, einen Verlierer-Kaefer geben sowieso alle sofort in den Kaefer-Tausch. // Wenn also ein Kaefer auftaucht, den du willst, gewinne einfach und lass ihn zum Tausch stellen.
+E0751.1	Guts	Neben dem Ring liegt Kreide, oder? // Schreib damit auf, wie stark der Kaefer sein soll, den wir schicken sollen. // Du bist noch ein Anfaenger, Boku-chan, also schicken wir genau den Kaefer, den du dir wuenschst. // Uebrigens nennen wir bei jeder Kaeferart den groessten und staerksten den King.
+E0751.2	Guts	Aber einen King kannst du nur fuer ein Match am Tag herausfordern. // Denn egal, wie gross und stark ein Kaefer ist, // wenn man es immer wieder versucht, verliert er irgendwann ganz bestimmt, oder?
+
+# --- E0752: A18 -- the secret base (Guts's tips, days 16-22)
+E0752.0	Guts	Klopfe deinem Kaefer vor dem Kampf auf dem Ring mal auf den Ruecken. // Dann wird der Kaefer wuetend und wird staerker. // Aber wenn du zu oft klopfst, verliert er zu viel Energie und es geht nach hinten los.
+E0752.1	Guts	Beim Kaefer-Sumo... // verlierst du erstens, wenn dein Kaefer aus dem Ring faellt oder keine Energie mehr hat und umkippt. // Und ein Kaefer, der verloren hat, ist fuer den Rest des Tages gesperrt, kapiert? // Na ja, einen Verlierer-Kaefer geben sowieso alle sofort in den Kaefer-Tausch. // Wenn also ein Kaefer auftaucht, den du willst, gewinne einfach und lass ihn zum Tausch stellen.
+E0752.2	Guts	Neben dem Ring liegt Kreide, oder? // Schreib damit auf, wie stark der Kaefer sein soll, den wir schicken sollen. // Du bist noch ein Anfaenger, Boku-chan, also schicken wir genau den Kaefer, den du dir wuenschst. // Uebrigens nennen wir bei jeder Kaeferart den groessten und staerksten den King.
+E0752.3	Guts	Aber einen King kannst du nur fuer ein Match am Tag herausfordern. // Denn egal, wie gross und stark ein Kaefer ist, // wenn man es immer wieder versucht, verliert er irgendwann ganz bestimmt, oder?
+
+# --- E0753: A18 -- the secret base (Guts's tips, from day 23)
+E0753.0	Guts	Wenn unsere starken Kaefer der Reihe nach gegen deine verlieren, Boku-chan, // machen wir Ernst und suchen noch staerkere!
+E0753.1	Guts	Klopfe deinem Kaefer vor dem Kampf auf dem Ring mal auf den Ruecken. // Dann wird der Kaefer wuetend und wird staerker. // Aber wenn du zu oft klopfst, verliert er zu viel Energie und es geht nach hinten los.
+E0753.2	Guts	Beim Kaefer-Sumo... // verlierst du erstens, wenn dein Kaefer aus dem Ring faellt oder keine Energie mehr hat und umkippt. // Und ein Kaefer, der verloren hat, ist fuer den Rest des Tages gesperrt, kapiert? // Na ja, einen Verlierer-Kaefer geben sowieso alle sofort in den Kaefer-Tausch. // Wenn also ein Kaefer auftaucht, den du willst, gewinne einfach und lass ihn zum Tausch stellen.
+E0753.3	Guts	Neben dem Ring liegt Kreide, oder? // Schreib damit auf, wie stark der Kaefer sein soll, den wir schicken sollen. // Du bist noch ein Anfaenger, Boku-chan, also schicken wir genau den Kaefer, den du dir wuenschst. // Uebrigens nennen wir bei jeder Kaeferart den groessten und staerksten den King.
+E0753.4	Guts	Aber einen King kannst du nur fuer ein Match am Tag herausfordern. // Denn egal, wie gross und stark ein Kaefer ist, // wenn man es immer wieder versucht, verliert er irgendwann ganz bestimmt, oder?
+
+
+# --- E0761: A18 -- the secret base (Fat's tips, days 1-14)
+E0761.0	Fat	Gahaha, Kaefer sind der Wahnsinn! // Kaum ist der Kampf vorbei, ist ihre Energie gleich wieder voll.
+E0761.1	Fat	Sieh dir meine Wenigkeit an, dann weisst du es: Auch bei Kaefern ist der Groessere natuerlich staerker.
+E0761.2	Fat	Aber am staerksten ist wohl doch Nashornkaefer-chan.
+
+# --- E0762: A18 -- the secret base (Fat's tips, days 16-22)
+E0762.0	Fat	Beim Kaefer-Sumo ist es genau wie beim Menschen-Sumo: Je oefter du gewinnst, desto staerker wirst du.
+E0762.1	Fat	Gahaha, Kaefer sind der Wahnsinn! // Kaum ist der Kampf vorbei, ist ihre Energie gleich wieder voll.
+E0762.2	Fat	Sieh dir meine Wenigkeit an, dann weisst du es: Auch bei Kaefern ist der Groessere natuerlich staerker.
+E0762.3	Fat	Aber am staerksten ist wohl doch Nashornkaefer-chan.
+
+# --- E0763: A18 -- the secret base (Fat's tips, from day 23)
+E0763.0	Fat	Je nach Art ziehen manche direkt am Rand des Rings eine grosse Wende-Technik durch!
+E0763.1	Fat	Beim Kaefer-Sumo ist es genau wie beim Menschen-Sumo: Je oefter du gewinnst, desto staerker wirst du.
+E0763.2	Fat	Gahaha, Kaefer sind der Wahnsinn! // Kaum ist der Kampf vorbei, ist ihre Energie gleich wieder voll.
+E0763.3	Fat	Sieh dir meine Wenigkeit an, dann weisst du es: Auch bei Kaefern ist der Groessere natuerlich staerker.
+E0763.4	Fat	Aber am staerksten ist wohl doch Nashornkaefer-chan.
+
+
+# --- E0771: A18 -- the secret base (Specs's tips, days 1-14)
+E0771.0	Brille	Jede Kaeferart hat ihre eigenen Merkmale, wie besonders robust zu sein und langsam Energie zu verlieren. // Bei Menschen waere das wie der Unterschied zwischen mir und Fat.
+E0771.1	Brille	Wenn man sie gegen viele verschiedene Gegner kaempfen laesst, // erkennt man, wie ihre Techniken zusammenpassen, und das ist spannend.
+E0771.2	Brille	Selbst bei derselben Art kaempfen Maennchen und Weibchen verschieden. // Hehe, weisst du, das ist irgendwie wie der Unterschied zwischen Jungen und Maedchen, und das ist spannend.
+
+# --- E0772: A18 -- the secret base (Specs's tips, days 16-22)
+E0772.0	Brille	Hast du deinem Kaefer vor dem Kampf auf den Ruecken geklopft? // Wenn man oft klopft, aendert sich seine Wut, und wuetend setzt er seine Techniken wohl leichter ein.
+E0772.1	Brille	Jede Kaeferart hat ihre eigenen Merkmale, wie besonders robust zu sein und langsam Energie zu verlieren. // Bei Menschen waere das wie der Unterschied zwischen mir und Fat.
+E0772.2	Brille	Wenn man sie gegen viele verschiedene Gegner kaempfen laesst, // erkennt man, wie ihre Techniken zusammenpassen, und das ist spannend.
+E0772.3	Brille	Selbst bei derselben Art kaempfen Maennchen und Weibchen verschieden. // Hehe, weisst du, das ist irgendwie wie der Unterschied zwischen Jungen und Maedchen, und das ist spannend.
+
+# --- E0773: A18 -- the secret base (Specs's tips, from day 23)
+E0773.0	Brille	Kennst du den Riesen-Hirschkaefer? // Man bekommt ihn nur selten, aber er besitzt die Staerke, die dazu passt.
+E0773.1	Brille	Hast du deinem Kaefer vor dem Kampf auf den Ruecken geklopft? // Wenn man oft klopft, aendert sich seine Wut, und wuetend setzt er seine Techniken wohl leichter ein.
+E0773.2	Brille	Jede Kaeferart hat ihre eigenen Merkmale, wie besonders robust zu sein und langsam Energie zu verlieren. // Bei Menschen waere das wie der Unterschied zwischen mir und Fat.
+E0773.3	Brille	Wenn man sie gegen viele verschiedene Gegner kaempfen laesst, // erkennt man, wie ihre Techniken zusammenpassen, und das ist spannend.
+E0773.4	Brille	Selbst bei derselben Art kaempfen Maennchen und Weibchen verschieden. // Hehe, weisst du, das ist irgendwie wie der Unterschied zwischen Jungen und Maedchen, und das ist spannend.
+
+# --- E0712: G01 -- living room
+E0712.0	Onkel	Boku-kun, hast du dich langsam an dieses Haus gewoehnt?
+E0712.1	[SEL]	Ja | Nein
+E0712.2	Onkel	Ach so... // Dieses Haus war einst ein Bauernhaus bei Kanazawa, gebaut mitten in der Meiji-Zeit, heisst es. // Der Vorbesitzer vor Onkel hat es gekauft und hierher umgesiedelt.
+E0712.3	Boku	Was ist "um-ge-sie-delt"?
+E0712.4	Onkel	Das bedeutet, samt dem ganzen Gebaeude umzuziehen. // Fast wie ein Einsiedlerkrebs, nicht wahr?
+E0712.5	Onkel	Mhm, heute weht eine angenehme Brise herein.
+# NOTE E0712.3: ichiku (Umsetzung eines Gebaeudes); Boku wiederholt ein unbekanntes Wort (Glossar § 9 #4).
+
+# --- E0705: G02 -- after dinner
+E0705.0	Onkel	Gochisosama deshita.
+E0705.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E0705.2	Onkel	Ich habe es heute im B-Co-op-Laden in Sagi-no-sato gehoert... // offenbar steigt hier ein Kind in den alten Brunnen hinab und spielt darin.
+E0705.3	Tante	Ach herrje, das ist ja gefaehrlich.
+E0705.4	Onkel	Es wurde kein Kind als vermisst gemeldet, also gab es wohl keinen Unfall, aber...
+E0705.5	Tante	Boku-kun, mach das den Nachbarskindern nicht nach // und spiel keine zu gefaehrlichen Spiele.
+
+# --- E0704: G02 -- after dinner (the photo from day 4)
+E0704.0	Onkel	Gochisosama deshita.
+E0704.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E0704.2	Tante	Hier, Boku-kun, fuer dich.
+E0704.3	Boku	Oh, das Foto ist fertig. Danke, Tante.
+
+# --- E0741: G06 -- TV room
+E0741.0	Shirabe	Was fuer ein furchtbar grosser Fisch.
+E0741.1	Boku	...Ach, das ist ja der Fernseher.
+E0741.2	Shirabe	In Zukunft moechte ich in einem Haus wohnen, in dem man so einen in der Badewanne halten kann.

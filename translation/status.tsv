@@ -1,0 +1,43 @@
+# PLAN TRN-04's table: each unit's state. Format and states: translation/README.md § status.tsv.
+# Licence: CC BY-SA 4.0.
+unit	state	date	note
+day01	reviewed	2026-11-26	Stufe 6.2 (Batch 6b): Alle 86 Eintraege in day01.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day02	reviewed	2026-11-26	Stufe 6.2 (Batch 6b): Alle 61 Eintraege in day02.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day03	reviewed	2026-11-26	Stufe 6.2 (Batch 6b): Alle 78 Eintraege in day03.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day04	reviewed	2026-11-26	Stufe 6.2 (Batch 6b): Alle 125 Eintraege in day04.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day05	reviewed	2026-11-26	Stufe 6.2 (Batch 6b): Alle 75 Eintraege in day05.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day06	reviewed	2026-11-26	Stufe 6.3 (Batch 6c): Alle 101 Eintraege in day06.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day07	reviewed	2026-11-26	Stufe 6.3 (Batch 6c): Alle 132 Eintraege in day07.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day08	reviewed	2026-11-26	Stufe 6.3 (Batch 6c): Alle 27 Eintraege in day08.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day09	reviewed	2026-11-26	Stufe 6.3 (Batch 6c): Alle 26 Eintraege in day09.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day10	reviewed	2026-11-26	Stufe 6.3 (Batch 6c): Alle 24 Eintraege in day10.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day11	reviewed	2026-11-26	Stufe 6.3 (Batch 6c): Alle 48 Eintraege in day11.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day12	reviewed	2026-11-26	Stufe 6.3 (Batch 6c): Alle 41 Eintraege in day12.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day13	reviewed	2026-11-26	Stufe 6.4 (Batch 6d): Alle 37 Eintraege in day13.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day14	reviewed	2026-11-26	Stufe 6.4 (Batch 6d): Alle 86 Eintraege in day14.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day15	reviewed	2026-11-26	Stufe 6.4 (Batch 6d): Alle 35 Eintraege in day15.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day16	reviewed	2026-11-26	Stufe 6.4 (Batch 6d): Alle 45 Eintraege in day16.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day17	reviewed	2026-11-26	Stufe 6.4 (Batch 6d): Alle 37 Eintraege in day17.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day18	reviewed	2026-11-26	Stufe 6.4 (Batch 6d): Alle 56 Eintraege in day18.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day19	reviewed	2026-11-26	Stufe 6.4 (Batch 6d): Alle 64 Eintraege in day19.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day20	reviewed	2026-11-26	Stufe 6.5 (Batch 6e): Alle 63 Eintraege in day20.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day21	reviewed	2026-11-26	Stufe 6.5 (Batch 6e): Alle 73 Eintraege in day21.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day22	reviewed	2026-11-26	Stufe 6.5 (Batch 6e): Alle 73 Eintraege in day22.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day23	reviewed	2026-11-26	Stufe 6.5 (Batch 6e): Alle 54 Eintraege in day23.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day24	reviewed	2026-11-26	Stufe 6.5 (Batch 6e): Alle 65 Eintraege in day24.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day25	reviewed	2026-11-26	Stufe 6.5 (Batch 6e): Alle 91 Eintraege in day25.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day26	reviewed	2026-11-26	Stufe 6.6 (Batch 6f): Alle 76 Eintraege in day26.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day27	reviewed	2026-11-26	Stufe 6.6 (Batch 6f): Alle 74 Eintraege in day27.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day28	reviewed	2026-11-26	Stufe 6.6 (Batch 6f): Alle 58 Eintraege in day28.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day29	reviewed	2026-11-26	Stufe 6.6 (Batch 6f): Alle 92 Eintraege in day29.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day30	reviewed	2026-11-26	Stufe 6.6 (Batch 6f): Alle 135 Eintraege in day30.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+day31	reviewed	2026-11-26	Stufe 6.6 (Batch 6f): Alle 13 Eintraege in day31.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+shared	reviewed	2026-11-26	Stufe 6.1 (Batch 6a): Alle 750 Eintraege in shared.txt ins Deutsche uebersetzt (Dual-Source gegen JP-Packet, ae/oe/ue/ss, boku lint 0 Fehler).
+arrays	reviewed	2026-11-26	Stufe 4: Alle 314 Eintraege in arrays.txt ins Deutsche uebersetzt (ae/oe/ue/ss, Dual-Source-Pruefung, Sumo-Moves synchron zu textures/sumo.txt).
+clips	reviewed	2026-11-26	Stufe 7: Alle 46 Eintraege in clips.txt (XCH.00-XCH.45, inkl. 5 Epiloge <= 17 cps & schmalere Sumo-Box) ins Deutsche uebersetzt.
+movies	reviewed	2026-11-26	Stufe 7: Alle 43 Eintraege in movies.txt (M27, M28, M60, M120->E1008.0, M260, Titelsong) ins Deutsche uebersetzt (<= 318 px, 0 Lint-Fehler).
+screens	reviewed	2026-11-26	Stufe 5: Alle Eintraege in ui.txt, buttons.txt, signs.txt, records.txt (ae/oe/ue/ss, textures check gruen).
+sumo	reviewed	2026-11-26	Stufe 5: Alle 42 Eintraege in sumo.txt inkl. 15 deutschen Glossen (synchron zu arrays.txt).
+kite	reviewed	2026-11-26	Stufe 5: Drachen-HUD (Wind, Fahrt, Hoehe) in kite.txt.
+diary	reviewed	2026-11-26	Stufe 5: Alle 93 Bildertagebuch-Eintraege (NIKKI_001..100) in diary.txt ins Deutsche uebersetzt.
+books	reviewed	2026-11-26	Stufe 5: Alle 69 Eintraege in books.txt (9 Insekten- & 8 Drachen-Doppelseiten) ins Deutsche uebersetzt.

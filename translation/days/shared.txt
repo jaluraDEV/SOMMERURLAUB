@@ -1,0 +1,1169 @@
+# Shared -- die tagesunabhaengigen Ereignisse (Stufe 6.1, Batch 6a).
+# Format: translation/days/README.md; Regeln: style-guide.md, glossary.md, bible.md.
+
+# --- E0022: G01 -- Wohnzimmer (Buecherregal)
+E0022.0	[SEL]	Was willst du lesen? | Seltsame Insekten-Enzyklopaedie | Das froehliche Drachen-Lexikon
+
+# --- E0221: G03 -- Kueche (das Abendessen-Ratespiel; eine Frage pro Tag)
+E0221.0	Tante	Boku-kun! Was glaubst du, gibt es heute zum Abendessen?
+E0221.1	Tante	Na dann freu dich schon mal auf heute Abend.
+E0221.2	[SEL]	Curry-Reis | Haehnchen-Katsu | Lachs Muellerin Art
+E0221.3	[SEL]	Hayashi-Reis | Hamburger Steak | Wuerfelsteak
+E0221.4	[SEL]	Gebratenes Fleisch mit Gemuese | Karaage | Tonkatsu
+E0221.5	[SEL]	Hiyashi Chuka | Schwein und Kohl in Austernsosse | Fruehlingsrollen und Happosai
+E0221.6	[SEL]	Salzgegrillter Sanma | Sashimi und Tempura | Frittierte Sardinen
+E0221.7	[SEL]	Frittierte Garnelen | Nikujaga | Kohlrouladen
+E0221.8	[SEL]	Omurice | Frittierter Lachs | Haehnchen-Saute
+E0221.9	[SEL]	Katsudon | Bastardmakrele nach Nanban-Art | Curry-Reis
+E0221.10	[SEL]	Menchi-Katsu | Bratreis und Schwein suess-sauer | Hamburger Steak
+E0221.11	[SEL]	Spaghetti | Miso-mariniertes Grill-Schwein | Omurice
+E0221.12	[SEL]	Seebarsch Muellerin Art | Sanma Kabayaki | Frittierte Sardinen
+E0221.13	[SEL]	Kohlrouladen | Tonkatsu | Korokke
+E0221.14	[SEL]	Sashimi und Tempura | Fruehlingsrollen und Happosai | Gefuellte frittierte Lotuswurzel
+E0221.15	[SEL]	Gyoza | Oyakodon | Hamburger Steak
+E0221.16	[SEL]	Bratreis und Schwein suess-sauer | Curry-Reis | Korokke
+E0221.17	[SEL]	Spaghetti | Hiyamugi | Oyakodon mit Lachs und Lachsrogen
+E0221.18	[SEL]	Katsu-Curry | Inari-zushi | Omurice
+E0221.19	[SEL]	Kohlrouladen | Huehnchen in Tomatensosse | Gefuellte gruene Paprika
+E0221.20	[SEL]	Ingwer-Schwein | Bratreis und Schwein suess-sauer | Seebarsch Muellerin Art
+E0221.21	[SEL]	Tonkatsu | Fruehlingsrollen und Happosai | Karaage
+E0221.22	[SEL]	Frittierte Garnelen | Bastardmakrelen-Tataki | Hamburger Steak
+E0221.23	[SEL]	Jingisukan | Sushi | Wuerfelsteak
+E0221.24	[SEL]	Sashimi und Tempura | Gegrillter Hokke | Gefuellte frittierte Lotuswurzel
+E0221.25	[SEL]	Haehnchen-Saute | Katsudon | Fruehlingsrollen und Happosai
+E0221.26	[SEL]	Trockencurry | Huehnchen in Tomatensosse | Omurice
+E0221.27	[SEL]	Spaghetti | Curry-Reis | Gratin
+E0221.28	[SEL]	Bastardmakrele nach Nanban-Art | Gebratener Reis und Happosai | Nikujaga
+E0221.29	[SEL]	Kohlrouladen | Gefuellte gruene Paprika | Hayashi-Reis
+E0221.30	[SEL]	Curry-Reis | Ingwer-Schwein | Korokke
+E0221.31	[SEL]	Karaage | Seebarsch Muellerin Art | Jingisukan
+# NOTE E0221.2-.31: Gerichte gemaess glossary.md § 5; jedes Menue ist die Frage eines Tages.
+
+# --- E4029: G03 -- Kueche; I21 -- der Kuehlschrank
+E4029.0	(voice only)
+E4029.1	[SEL]	Was willst du trinken? | Nora-Milch | Gerstentee
+E4029.2	(voice only)
+E4029.3	(voice only)
+E4029.4	(voice only)
+
+# --- E8051: G03 -- Kueche
+E8051.0	(unlabelled)	Von rechts nach links: Mehl, Zucker, Salz.
+
+# --- E0835: G12 -- Flur oben; I18 -- Nahaufnahme
+E0835.0	(voice only)
+E0835.1	(unlabelled)	Abgeschlossen.
+
+# --- E8014: G15 -- Zimmer der Schwestern
+E8014.0	(unlabelled)	Hier steht ein roter Schulranzen, ueber und ueber mit Aufklebern beklebt.
+
+# --- E4014: G17 -- die Veranda
+E4014.0	(voice only)
+
+# --- E4041: H06 -- Ken-bos Hundehuette
+E4041.0	(voice only)
+E4041.1	(voice only)
+
+# --- E1006: H06 -- Ken-bos Hundehuette (ein Bueschel Fell fuer die Fliege)
+E1006.0	Boku	Tut mir leid...
+E1006.1	(voice only)
+E1006.2	Boku	Hopp!
+E1006.3	(voice only)
+
+# --- E0003: H26 -- die Werkstatt
+E0003.0	Boku	......
+E0003.1	Onkel	Ah, da ist es gefaehrlich, also fass das nicht an. // Das Regal ist schlecht gebaut, es wackelt ein bisschen. // Ich habe es schon zigmal repariert, aber warum nur faellt es immer wieder um?
+E0003.2	Onkel	Das ist wohl irgendwann mitten in der Nacht umgefallen... // Dabei sollte es eigentlich stabiler sein...
+
+# --- E8054: H13 -- hinter der Werkstatt
+E8054.0	(unlabelled)	Erdfarbene Teller und Schalen nehmen ein Sonnenbad und sehen aus, als wuerde es ihnen gefallen.
+
+# --- E4054: H24 -- Wasser beim Haus
+E4054.0	Boku	Kalt...
+
+# --- E0004: A01 -- der Teich unter der Autobahn
+E0004.0	Boku	Kalt...
+
+# --- E4017: A11 -- der Orakel-Jizo
+E4017.0	(voice only)
+
+# --- E4019: B15 -- Wasser; der Libellenschwarm
+E4019.0	Boku	Kalt...
+
+# --- E4020: D03 -- Wasser am Drachengott-Teich
+E4020.0	Boku	Kalt...
+
+# --- E4022: A13 -- das Wespennest; G17 -- die Veranda
+E4022.0	Boku	Oje, oje......
+E4022.1	Boku	Aaaah!
+E4022.2	Tante	Endlich bist du aufgewacht. // Bei Wespennestern musst du gut aufpassen. // Es waere schlimm, wenn du an einer wichtigen Stelle gestochen wirst.
+E4022.3	Tante	Ich dachte schon, du waerst gestorben, // aber so wie du aussiehst, bist du noch lange nicht am Ende!
+E4022.4	Tante	Schade... Waehrend du ohnmaechtig warst, Boku-kun, // wollten wir alle zusammen etwas richtig Leckeres essen.
+
+# --- E4023: C04 -- Ende der Baumstammbruecke; G17 -- die Veranda
+E4023.0	Boku	Oje, oje......
+E4023.1	Boku	Aaaah!
+E4023.2	Tante	Endlich bist du aufgewacht. // Bei Wespennestern musst du gut aufpassen. // Es waere schlimm, wenn du an einer wichtigen Stelle gestochen wirst.
+E4023.3	Tante	Ich dachte schon, du waerst gestorben, // aber so wie du aussiehst, bist du noch lange nicht am Ende!
+E4023.4	Tante	Schade... Waehrend du ohnmaechtig warst, Boku-kun, // wollten wir alle zusammen etwas richtig Leckeres essen.
+
+# --- E4024: D10; G17 -- die Veranda
+E4024.0	Boku	Oje, oje......
+E4024.1	Boku	Aaaah!
+E4024.2	Tante	Endlich bist du aufgewacht. // Bei Wespennestern musst du gut aufpassen. // Es waere schlimm, wenn du an einer wichtigen Stelle gestochen wirst.
+E4024.3	Tante	Ich dachte schon, du waerst gestorben, // aber so wie du aussiehst, bist du noch lange nicht am Ende!
+E4024.4	Tante	Schade... Waehrend du ohnmaechtig warst, Boku-kun, // wollten wir alle zusammen etwas richtig Leckeres essen.
+# NOTE E4022-E4024: gleiche Sprachaufnahme an drei Orten (Wespennest, Baumstammbruecke, Sturz bei D10).
+
+# --- E8056: A11 -- der Orakel-Jizo
+E8056.0	(unlabelled)	Auf den Opfergaben wimmelt es von pechschwarzen kleinen Ameisen!
+
+# --- E8063: die Kaeferbaeume
+E8063.0	(unlabelled)	Ein riesiger, rissiger Gata-pon-Baum.
+
+# --- E4026: B10 -- der Huegel
+E4026.0	[SEL]	Drachen steigen lassen? | Ja | Nein
+
+# --- E4027: G14 -- Bokus Zimmer
+E4027.0	[SEL]	Was willst du ansehen? | Insektenfang-Set | Bildertagebuch
+
+# --- E4033: B12 -- ein Kaeferbaum; I26 -- Nahaufnahme
+E4033.0	Boku	Ob hier wohl etwas ist?
+E4033.1	Boku	Hier ist gar nichts.
+E4033.2	[SEL]	Zuckerwasser auftragen | Gegen den Baum treten
+E4033.3	Boku	Super!
+
+# --- E4034: B07 -- ein Kaeferbaum; I27 -- Nahaufnahme
+E4034.0	Boku	Ob hier wohl etwas ist?
+E4034.1	Boku	Hier ist gar nichts.
+E4034.2	[SEL]	Zuckerwasser auftragen | Gegen den Baum treten
+E4034.3	Boku	Super!
+
+# --- E4035: C11 -- die Grosse Eiche; I28 -- Nahaufnahme
+E4035.0	Boku	Ob hier wohl etwas ist?
+E4035.1	Boku	Hier ist gar nichts.
+E4035.2	[SEL]	Zuckerwasser auftragen | Gegen den Baum treten
+E4035.3	Boku	Super!
+
+# --- E4036: D14 -- ein Kaeferbaum; I29 -- Nahaufnahme
+E4036.0	Boku	Ob hier wohl etwas ist?
+E4036.1	Boku	Hier ist gar nichts.
+E4036.2	[SEL]	Zuckerwasser auftragen | Gegen den Baum treten
+E4036.3	Boku	Super!
+
+# --- E4038: A13 -- das Wespennest
+E4038.0	Boku	......
+
+# --- E4039: A13 -- das Wespennest
+E4039.0	Boku	......
+
+# --- E4042: H06 -- Ken-bos Hundehuette
+E4042.0	(voice only)
+E4042.1	(voice only)
+E4042.2	(voice only)
+E4042.3	(voice only)
+
+# --- E4046: G14 -- Bokus Zimmer
+E4046.0	(voice only)
+
+# --- E4047: A15 -- die Nektarblumen
+E4047.0	(voice only)
+
+# --- E4052: G06 -- Fernsehzimmer
+E4052.0	(voice only)
+E4052.1	(voice only)
+E4052.2	(voice only)	Heute hat in einem Kindergarten in Toyohashi, Praefektur Aichi, // die dort gehaltene Ziege den gesamten grossen Vorrat an gehortetem Toilettenpapier aufgefressen.
+E4052.3	(voice only)	Seit Anfang des Jahres sind Vinyl-Drachen explosionsartig beliebt geworden, // wodurch landesweit Unfaelle mit Drachenschnueren in Stromleitungen stark zugenommen haben.
+E4052.4	(voice only)	Heute wurde im Bezirk Koto in Tokio Japans allererster Convenience-Store eroeffnet.
+E4052.5	(voice only)	Was bringt das Schicksal?
+E4052.6	(voice only)
+E4052.7	(voice only)
+
+# --- E5047: H09 -- Gartenecke
+E5047.0	(voice only)
+
+# --- E5048: H09 -- Gartenecke
+E5048.0	(voice only)
+
+# --- E5049: H09 -- Gartenecke
+E5049.0	(voice only)
+
+# --- E5050: H10 -- Gartenecke
+E5050.0	(voice only)
+
+# --- E6000: D07 -- Saoris Lager (nach dem Foto)
+E6000.0	Boku	Glueckwunsch, komische Frau.
+E6000.1	Saori	......
+E6000.2	Boku	Freust du dich gar nicht?
+E6000.3	Saori	Irgendwie... na ja.
+E6000.4	Boku	Warum ist das wohl so?
+E6000.5	Saori	Es geht einfach nicht.
+E6000.6	Boku	Aber jetzt bist du auf einen Schlag beruehmt, grosse Schwester!
+E6000.7	Saori	Haha... Dummchen. Kennst du den Nipponibis? // Da finde ich endlich einen Lebensraum der Woelfe, und darf es keinem verraten.
+E6000.8	Boku	...Hae?
+E6000.9	Saori	Aber warum kommt er ausgerechnet zu Zuckerwasser? // Es gibt zwar Berichte, dass sie Salz moegen...
+E6000.10	Saori	Hast du etwa bei der Kamera was angestellt?
+E6000.11	Boku	......
+
+# --- E6002: D07 -- Saoris Lager
+E6002.0	Boku	He, war da nicht ein seltsames Foto dabei?
+E6002.1	Saori	Wie weit der Himmel ist...
+
+# --- E6003: D07 -- Saoris Lager
+E6003.0	Saori	Im Zelt liegen lauter interessante Sachen, schau sie dir ruhig an...
+
+# --- E6004: D07 -- Saoris Lager (nach der Schlange)
+E6004.0	Boku	Hallo.
+E6004.1	Saori	Ich habe von Shirabe-chan gehoert... du bist einer Schlange begegnet...
+E6004.2	Boku	......
+E6004.3	Saori	Die Wolken nehmen langsam ihre Herbstformen an...
+E6004.4	Boku	Huch? Und was ist mit der Schlange...
+E6004.5	Saori	Irgendwie eine traurige, einsame Wolke...
+E6004.6	Boku	...Sag mal, Wolfsmaedchen...
+E6004.7	Saori	Hattest du Angst?
+E6004.8	Boku	Hae?
+E6004.9	Saori	Du hast die Schlange gesehen und bist weggerannt, stimmts?
+E6004.10	Boku	......
+E6004.11	[SEL]	Bin weggerannt | War halb so wild
+E6004.12	Saori	Ahaha...
+E6004.13	Boku	Hast du ein Problem damit? Das verletzt mich irgendwie...
+E6004.14	Saori	...Hehe, tut mir leid. // Aber weisst du, jemand, der ein bisschen Angst hat...
+E6004.15	Saori	Schmatz!
+E6004.16	Saori	...hat seinen Reiz.
+E6004.17	Boku	Dann lach mich nicht aus.
+E6004.18	Boku	Hicks!
+E6004.19	Saori	Gerade die Leute, die vor der Natur gar keine Ehrfurcht haben, // bauen solche Neubausiedlungen ohne jede menschliche Waerme, als waeren sie mit Spuelmittel gewaschen... // Alles eine Frage des Gleichgewichts...
+E6004.20	Boku	Geht es jetzt um fremde Laender?
+E6004.21	Boku	Hicks!
+E6004.22	Saori	Nein.
+E6004.23	Saori	Um genau hier.
+E6004.24	Boku	...Brueste?
+E6004.25	Boku	Hicks!
+E6004.26	Saori	...Nicht ganz. // Verstehe... Ich habe einem Grundschueler einen Kuss gegeben, also muss ich ihn wohl heiraten.
+E6004.27	Boku	......
+E6004.28	Saori	Und deshalb bin ich irgendwie eine traurige, einsame Wolke...
+E6004.29	Saori	Buh!
+E6004.30	Boku	Wah, hast du mich erschreckt!
+E6004.31	Saori	Hehe, na wie war das!
+E6004.32	Boku	Huch? Es hat wirklich geklappt.
+E6004.33	Saori	Ohh, tatsaechlich.
+E6004.34	Boku	...Ja.
+E6004.35	Saori	Das war bestimmt eine winzig kleine Schlange, oder?
+E6004.36	Boku	Das stimmt gar nicht...
+E6004.37	Saori	So ungefaehr 5 Zentimeter lang.
+E6004.38	Boku	Das waere ein Regenwurm.
+E6004.39	Saori	Dann war es ein Regenwurm.
+E6004.40	Boku	Ach, Wolfsmaedchen...
+
+# --- E6005: D07 -- Saoris Lager
+E6005.0	Saori	Hier, Boku-kun, deine Fotos sind fertig.
+E6005.1	Saori	Hier, Boku-kun, deine Fotos sind fertig.
+E6005.2	Erzaehler	In diesem Augenblick dachte ich nach: // Gab es nicht irgendeinen Weg, // jenes seltsame Gespenst zu Saoris Apparat zu locken?
+E6005.3	Erzaehler	Ja... ich wusste, // was jenes seltsame Gespenst am liebsten frass...
+
+# --- E8000: G02 -- Esszimmer
+E8000.0	(unlabelled)	Ein Hochsommer-Ofen, kuehl beim Anfassen.
+
+# --- E8001: G02 -- Esszimmer
+E8001.0	(unlabelled)	Hier haengen ein Kalender, Schulmitteilungen, der Speiseplan der Schulspeisung und so weiter.
+
+# --- E8002: G02 -- Esszimmer
+E8002.0	(unlabelled)	Eine Waschmaschine... und Waschpulver, das nach Blumen duftet.
+
+# --- E8003: G03 -- Kueche
+E8003.0	(unlabelled)	Da steht ein Korb mit Kartoffeln und kleinen Zwiebeln.
+
+# --- E8004: G03 -- Kueche
+E8004.0	(unlabelled)	Ein Schrank mit Riffelglas... die Reis- und Suppenschalen von allen stehen ordentlich aufgereiht.
+
+# --- E8005: G04 -- Waschraum
+E8005.0	(unlabelled)	Ein blitzblanker Spiegel... Gruendliche Kontrolle auf Karies!
+
+# --- E8006: G07 -- Fuss der Treppe
+E8006.0	(unlabelled)	Eine huebsche Topfpflanze steht zur Zierde da.
+
+# --- E8007: G08 -- Flur
+E8007.0	(unlabelled)	In einer grossen Vase sind trockene Zweige arrangiert.
+
+# --- E8009: G08 -- Flur
+E8009.0	(unlabelled)	Eine weisse Baseballkappe. Wem die wohl gehoert?
+
+# --- E8010: G11 -- Zimmer neben dem Altarzimmer
+E8010.0	(unlabelled)	Von Tantes Schminktisch steigt ein seltsamer Geruch nach Gesichtspuder auf.
+
+# --- E8011: G11 -- der Hausaltar
+E8011.0	(unlabelled)	Auf dem Hausaltar sind ein wenig Reis und Suessigkeiten geopfert.
+
+# --- E8012: G13 -- Bokus Zimmer
+E8012.0	(unlabelled)	Zusammen mit ein paar Comics liegen hier Schulbuecher fuer die dritte Klasse.
+
+# --- E8013: G14 -- Bokus Zimmer
+E8013.0	(unlabelled)	Ein zerknuellter Klassenarbeit-Zettel. Darauf steht "Sorano Shirabe".
+
+# --- E8015: H17 -- der Holzschuppen
+E8015.0	(unlabelled)	Neben dem Schuppen sind Buendel aus gespaltenem Feuerholz aufgestapelt.
+
+# --- E8016: H18 -- der Schuppen
+E8016.0	(unlabelled)	Aus den Faessern stroemt der saeuerliche Geruch von eingelegtem Gemuese.
+
+# --- E8017: H19 -- vor der Werkstatt
+E8017.0	(unlabelled)	Ein riesiger Eimer. Ob Onkel den fuer seine Arbeit braucht?
+
+# --- E8018: H19 -- der Tonraum
+E8018.0	(unlabelled)	Hier wird wohl der Ton geknetet.
+
+# --- E8019: H25 -- der Schuppen
+E8019.0	(unlabelled)	Hier steht eine Gasflasche mit der Aufschrift "Fujiyama-Brennstoffe".
+
+# --- E8020: H26 -- die Werkstatt
+E8020.0	(unlabelled)	Ein grosser Eimer mit der Aufschrift "Geheime Glasur...".
+
+# --- E8021: A17 -- das Geheimversteck
+E8021.0	(unlabelled)	Hier liegen zwei verschimmelte Broetchen aus der Schulspeisung.
+
+# --- E8022: A17 -- das Geheimversteck
+E8022.0	(unlabelled)	Eine Spinnenmann-Rider-Karte gefunden! Aber sie hat sich vollgesogen und zerfaellt schon.
+
+# --- E8023: A17 -- das Geheimversteck
+E8023.0	(unlabelled)	Hier liegt nur eine einzelne Sandale.
+
+# --- E8024: A17 -- das Geheimversteck
+E8024.0	(unlabelled)	Einen zerknuellten Testbogen gefunden.
+
+# --- E8025: A17 -- das Geheimversteck
+E8025.0	(unlabelled)	Hier liegt ein Hammer ohne Kopf.
+
+# --- E8027: H02 -- vor dem Haus
+E8027.0	(voice only)
+E8027.1	(unlabelled)	Abgeschlossen.
+
+# --- E8050: G02 -- Esszimmer
+E8050.0	(unlabelled)	Hier steht ein weisser Gaskocher, blitzblank poliert.
+
+# --- E8052: G06 -- Fernsehzimmer
+E8052.0	(unlabelled)	Ein weit geoeffnetes Maul, das "Grunz" macht.
+# NOTE E8052.0: Gemeint ist wohl der schweinefoermige Mueckenspiralen-Halter; unbenannt gelassen wie im Original.
+
+# --- E8053: H05 -- das Prunkwindengeruest
+E8053.0	(unlabelled)	Der himmelblaue Schlauch am Wasserhahn glitzert in der Sonne.
+
+# --- E8055: H15 -- der Hangofen
+E8055.0	(unlabelled)	Irgendwie sieht er aus wie ein Wal, der an Land geklettert ist.
+E8055.1	(unlabelled)	Hangofen-san ist knallrot und wuetend.
+
+# --- E8057: A07 -- der Geraeteschuppen
+E8057.0	(unlabelled)	Hier liegen Hacken, Spaten und Duenger. Zu welchem Haus dieser Schuppen wohl gehoert?
+
+# --- E8058: A07 -- die kleinen Graeber
+E8058.0	(unlabelled)	Lauter kleine Graeber. Sie sehen ein bisschen aus wie Schachfiguren.
+
+# --- E8059: C14 -- der Strand
+E8059.0	(unlabelled)	Ein grosses Loch im Wellblechdach. Eine alte, klapprige Strandhuette.
+
+# --- E8060: C14 -- der Strand
+E8060.0	(unlabelled)	Da steht: "Taka... ...der... ...von... ...wird... ...en."
+# NOTE E8060.0: Verwittertes Schild mit Luecken (glossary.md § 9 #22).
+
+# --- E8061: C14 -- das gestrandete Boot
+E8061.0	(unlabelled)	Auf dem Bootsboden ein vertrockneter Seestern und eine Bananenschale... und obendrein eine tote Katze!
+
+# --- E8062: B06 -- der alte Brunnen
+E8062.0	(unlabelled)	Ein alter Brunnen, innen stockdunkel... Unheimlich und ein bisschen muffig.
+
+# --- E8064: D07 -- Saoris Lager
+E8064.0	(unlabelled)	Ein grosser Stapel Buecher, in den der Geruch von Lagerfeuerrauch eingezogen ist.
+
+# --- E8065: D07 -- Saoris Lager
+E8065.0	(unlabelled)	Am Boden des Topfes noch ein kleiner Rest Kaffee gefunden.
+
+# --- E8066: H15 -- der Hangofen
+E8066.0	(unlabelled)	Hangofen-san ist knallrot und wuetend.
+
+# --- E0006: G02 -- Fruehstueck
+E0006.0	Onkel	Also dann, itadakimaasu!
+E0006.1	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+
+# --- E0007: G02 -- Fruehstueck
+E0007.0	Onkel	Gochisosama deshita.
+E0007.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+
+# --- E0009: G02 -- Abendessen
+E0009.0	Onkel	Also dann, itadakimasu!
+E0009.1	Shirabe, Moe, Boku, Tante	Itadakimasu!
+
+# --- E4028: G01 -- Wohnzimmer (Antwort auf das Abendessen-Quiz)
+E4028.0	Tante	Richtig, Boku-kun! Geschafft!
+E4028.1	(voice only)
+E4028.2	Tante	Volltreffer! Herzlichen Glueckwunsch!
+E4028.3	(voice only)
+E4028.4	Tante	Schade, das war daneben.
+E4028.5	Tante	Tataaa, leider daneben! // Uebrigens sind im Kuehlschrank auch die Zutaten fuers Fruehstueck, also pass ein bisschen auf.
+E4028.6	Tante	Leider daneben. // Bald sind die Sommerferien vorbei, also streng dich an, Boku-kun!
+E4028.7	Tante	Das Abendessen heute war... // Hamburger Steak, geschmortes Gemuese und frittierte Flussgarnelen nach Tante-Art.
+E4028.8	Tante	Das Abendessen heute war... // Tonkatsu, Eier-Tofu, in Sake gedaempfte Muscheln und frisch gepflueckte Saubohnen.
+E4028.9	Tante	Das Abendessen heute war... // Fruehlingsrollen, Happosai, Suppe und Tofu-Salat. Ich habe mal alles chinesisch gehalten.
+E4028.10	Tante	Das Abendessen heute war... // Sashimi, geschmorte Hijiki-Algen und Tempura. Ganz klassisch japanisch zusammengestellt.
+E4028.11	Tante	Das Abendessen heute war... // Seebarsch Muellerin Art, Bang-Bang-Chicken, Kinchaku, kalter Tofu -- aaalles Tantes Favoriten.
+E4028.12	Tante	Das Abendessen heute war... // Omurice, Kaese en Papillote, gebratener dicker Tofu mit Gruengemuese und so weiter. Einfach mal kombiniert.
+E4028.13	Tante	Das Abendessen heute war... // Bratreis, chinesische Suppe, Schwein suess-sauer, Shumai und so weiter, ganz nach Shirabes Geschmack.
+E4028.14	Tante	Das Abendessen heute war... // Kohlrouladen, gegrillte Aubergine und noch ein offenes Omelett dazu, genau nach Moes Geschmack.
+E4028.15	Tante	Das Abendessen heute war... // Curry-Reis, marinierte Bastardmakrele, Salat, Edamame und so weiter. Ich habe mir richtig Muehe gegeben.
+E4028.16	Tante	Das Abendessen heute war... // Spaghetti, gekuehlte Aubergine, gegrillter Tofu, Suppe und Salat. Mit Gewalt auf italienisch getrimmt.
+E4028.17	Tante	Das Abendessen heute war... // Ich habe extra das feinste Nigiri, das Turm-Set von Osho Sushi in Sagi-no-sato, liefern lassen.
+# NOTE E4028.17: Shogi-Witz (Osho = Koenig, Hisha = Turm -> Turm-Set).
+
+# --- E0020: G04, G05 -- das Bad
+E0020.0	[SEL]	Ein Bad nehmen? | Ja | Nein
+E0020.1	(voice only)
+
+# --- E0002: H16 -- der Pfad zum Yukino-Fluss, nachts
+E0002.0	Onkel	He, Boku-kun... Boku-kun, also...
+E0002.1	Onkel	Um diese Uhrzeit ist hier kein Zutritt mehr. // Wenn es dunkel wird und du deine Fuesse nicht siehst, plumpst du glatt in den Yukino-Fluss. // Das ist nun mal die Regel bei Onkel zu Hause. // ...Verstanden?
+E0002.2	[SEL]	Ja | Nein | Kannst du es noch mal sagen?
+E0002.3	Onkel	Braaav! Ein verstaendiger Junge. Gut gemacht!
+
+# --- E0010: G02 -- Abendessen
+E0010.0	Onkel	Gochisosama deshita.
+E0010.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+
+# --- E0023: G14 -- Bokus Zimmer
+E0023.0	Onkel	Boku-kun, schreiben wir ins Bildertagebuch und sagen gute Nacht.
+E0023.1	Boku	Ja. Gute Nacht, Onkel.
+
+# --- E8026: G09 -- der Vordereingang
+E8026.0	(voice only)
+E8026.1	(unlabelled)	Abgeschlossen.
+
+# --- E8028: H04 -- Gartenecke
+E8028.0	(voice only)
+E8028.1	(unlabelled)	Abgeschlossen.
+
+# --- E8029: H11 -- vor der Werkstatt
+E8029.0	(voice only)
+E8029.1	(unlabelled)	Abgeschlossen.
+
+# --- E0807: A16 -- die eingestuerzte Bruecke, der Baum zum Faellen
+E0807.0	Boku	Hauruck!
+E0807.1	Boku	Hauruck! Hoppla!
+E0807.2	Boku	Dann wohl morgen wieder.
+E0807.3	Boku	Hauruck!
+E0807.4	(voice only)
+E0807.5	Boku	Super!
+
+# --- E0830: G15 -- Zimmer der Schwestern
+E0830.0	Moe	Hm-hm, Boku-kun ist also endlich eingedrungen...
+E0830.1	Boku	Moe-neechan... // darf ich... jederzeit zum Spielen hierher kommen?
+E0830.2	Moe	Ja, klar. // Aber sei leise, wenn ich lerne.
+E0830.3	Boku	Ohh, Onee-chan, du lernst also gern.
+E0830.4	Moe	Ahaha... Ich mag nur die Faecher, die ich mag.
+E0830.5	Boku	Was magst du denn?
+E0830.6	Moe	Japanisch und Kunst, und Musik mag ich auch.
+E0830.7	Boku	Und was magst du nicht?
+E0830.8	Moe	...Englisch! // ...Der Lehrer ist der Konrektor, aber irgendwie werde ich mit ihm nicht warm. // Er ist so uebereifrig, dass wir am Ende der Stunde alle fix und fertig sind.
+E0830.9	Boku	Hmm, dann gibt er sich zu viel Muehe.
+
+# --- E0833: G15 -- Zimmer der Schwestern; I08 -- Nahaufnahme
+E0833.0	(unlabelled)	Hier liegen jede Menge misslungene Briefentwuerfe.
+
+# --- E0808: H25 -- der Schuppen; I09 -- Nahaufnahme
+E0808.0	(unlabelled)	Axt erhalten.
+
+# --- E0851: A18 -- das Geheimversteck
+E0851.0	Guts	Boku-chan, was guckst du am liebsten im Fernsehen?
+E0851.1	Boku	Ich mag die, die sich verwandeln, aber nicht groesser werden.
+E0851.2	Guts	Hmm, das passt genau zu dir, Boku-chan.
+
+# --- E0852: A18 -- das Geheimversteck
+E0852.0	Fat	Diese langen Wassereis-Dinger im Plastikschlauch, wie nennt man die? // Siehst du? Die haben gar keinen Namen, oder...
+
+# --- E0853: A18 -- das Geheimversteck
+E0853.0	Brille	Im Bilderbuch Miffy... // warum ist ihr Mund ein X?
+
+# --- E4001: G12 -- Flur oben
+E4001.0	Erzaehler	Das war das erste Mal, dass ich das Zimmer der Schwestern betrat...
+
+# --- E0906: A01 -- der Teich unter der Autobahn
+E0906.0	Boku	Huch, was ist das denn?
+E0906.1	Boku	Whoa! Was zur Hoelle ist das?
+
+# --- E0923: B07 -- ein Kaeferbaum (das zweite Foto der Tante)
+E0923.0	Boku	Huch? Das ist ja Tante.
+E0923.1	Tante	Hm-hm, hallo, Boku-kun!
+E0923.2	Boku	Tante, hast du Fotos gemacht?
+E0923.3	Tante	Ja, ich habe dich beim Drachensteigen fotografiert.
+E0923.4	Boku	Ach, weiter nichts.
+E0923.5	Tante	Na dann, ein Erinnerungsfoto.
+E0923.6	Tante	Was mag Onkel am liebsten?
+E0923.7	Boku	Hae?
+E0923.8	(voice only)
+E0923.9	Tante	Na gut, ich gehe schon mal voraus nach Hause.
+
+# --- E0950: A18 -- das Geheimversteck
+E0950.0	Fat	Fuer Coca-Cola-Jojos verkaufen sie im Spielzeugladen gar keine Ersatzschnuere, oder?
+E0950.1	Guts	Aber in unserem Dorf gibt es doch gar keinen Spielzeugladen.
+
+# --- E0904: G02 -- nach dem Abendessen (der Herr des Teichs)
+E0904.0	Onkel	Gochisosama deshita.
+E0904.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E0904.2	Boku	Ach ja, ein riesig, riesig, riesiggrosser Fisch // ist mit einem lauten Platsch aus dem Teich gesprungen.
+E0904.3	Onkel	Das war bestimmt der Herr des Teichs, der dir Hallo sagen wollte, Boku-kun.
+E0904.4	Boku	Sag mal, Onkel... // kann sogar ich so einen grossen Fisch fangen?
+E0904.5	Onkel	Hmm, dafuer muesstest du eine richtig grosse Tenkara-Fliege binden.
+E0904.6	Boku	Was soll ich da machen?
+E0904.7	Onkel	Mal sehen... // dann geh doch in die Berge und such etwas, das als Material fuer eine Fliege taugt. // Dann macht dir Onkel eine handgemachte Riesen-Fliege.
+E0904.8	Boku	Was fuer ein Material ist denn gut?
+E0904.9	Onkel	Hmm... zum Beispiel unser Hund... // so etwas wie Ken-bos Fell, oder eine etwas festere Vogelfeder...
+E0904.10	Boku	Ach, das ist ja einfach.
+E0904.11	Onkel	So? Na dann viel Glueck...
+
+# --- E1008: B10 -- der Huegel (der Satellit)
+E1008.0	Erzaehler	...ein Satellit, der lautlos dahinflog, als wuerde er gleiten.
+E1008.1	Erzaehler	Ich blickte unverwandt auf seinen kalten, metallischen Glanz, ohne auch nur einmal zu blinzeln...
+# NOTE E1008.0: Setzt den Satz aus Movie M120 fort (translation/movies.txt).
+
+# --- E1050: A17 -- Weg zum Geheimversteck
+E1050.0	Fat	Jedenfalls soll das ein ungeheuer grosser Yamame sein, wie ein richtiges Monster...
+E1050.1	Guts	Hmpf, das ist doch bestimmt gelogen.
+E1050.2	Brille	Das hat jemand getraeumt. Ganz bestimmt!
+
+# --- E1005: H05 -- das Prunkwindengeruest; I01 -- Nahaufnahme
+E1005.0	Boku	Oh, Tante! Sie bluehen! Sie bluehen!
+E1005.1	Tante	Nanu, das hast du geschafft, Boku-kun!
+E1005.2	Tante	Was fuer huebsche hellviolette Blueten! // Boku-kun, brav, brav!
+E1005.3	Tante	Dann mache ich spaeter noch ein Foto davon.
+
+# --- E1010: H26 -- die Werkstatt
+E1010.0	Boku	Onkel, ich habe Material fuer die Fliege gefunden.
+E1010.1	Onkel	Zeig mal her.
+E1010.2	Onkel	Huch? Das ist doch... was war das noch gleich? // Na ja, egal. Es ist zwar etwas zu weich, aber ich gebe mir Muehe. // In etwa zwei Tagen duerfte sie fertig sein, // also komm sie dann bitte wieder abholen.
+
+# --- E1007: G15 -- Zimmer der Schwestern; I20 -- Nahaufnahme
+E1007.0	Erzaehler	Es war ein ueberaus huebsches Pressblumen-Bild, noch halb unfertig, aus zierlichen gelben Blumen.
+
+# --- E1051: A18 -- das Geheimversteck
+E1051.0	Guts	Ich habe gehoert, in der Stadt gibt es so etwas wie Schwimmkurse? // Schwimmen lernt man doch einfach von selbst im naechsten Fluss...
+
+# --- E1052: A18 -- das Geheimversteck
+E1052.0	Fat	He, was isst Moe-san normalerweise?
+E1052.1	Boku	...Ganz normales Zeug, Reis und so.
+E1052.2	Fat	Und sonst?
+E1052.3	Boku	Was denn sonst?
+E1052.4	Fat	He, du willst meiner Wenigkeit doch nichts verheimlichen, oder?
+E1052.5	Boku	Ich verheimliche gaaar nichts.
+
+# --- E1053: A18 -- das Geheimversteck
+E1053.0	Brille	Das eigentliche Raetsel ist die afrikanische Schildkroete bei Doktor Dolittle. // Wie viele Zehntausende Jahre ist die alt?
+
+# --- E1150: A18 -- das Geheimversteck
+E1150.0	Brille	Warum liest hier eigentlich niemand Buecher?
+E1150.1	Fat	Geh-heh-heh, wenn ich noch schlauer werde als jetzt, // kann ich doch den Laden von meinem alten Herrn nicht mehr uebernehmen.
+
+# --- E1205: C11 -- die Grosse Eiche; I22 -- Nahaufnahme
+E1205.0	Erzaehler	Wie alt sie wohl sein mochte... // Diese gewaltige Sawtooth-Eiche ragte zwischen mir und dem blauen Himmel empor, // und ihre Krone wiegte sich still und wohlig im Sonnenlicht...
+E1205.1	Erzaehler	In jenem Augenblick... // wurde ich, winzig klein wie ich war, von dem Wunsch erfasst, das grosse Herz dieser grossen Eiche zu verstehen...
+E1205.2	Erzaehler	und ich stellte mich ein kleines Stueck auf die Zehenspitzen...
+
+# --- E1214: H26 -- die Werkstatt
+E1214.0	Onkel	Boku-kun, die riesige Fliege ist fertig.
+E1214.1	Boku	Wow, vielen Dank, Onkel!
+
+# --- E1251: A18 -- das Geheimversteck
+E1251.0	Guts	Boku-chan, welche Position spielst du beim Baseball?
+E1251.1	Boku	...Ersatzbank.
+
+# --- E1252: A18 -- das Geheimversteck
+E1252.0	Fat	Waren Modellflugzeuge bei euch auch so angesagt?
+E1252.1	Boku	Ja! Aber ich bin... // ungeschickt beim Biegen der Bambusstreifen und Schneiden der Alurohre...
+
+# --- E1253: A18 -- das Geheimversteck
+E1253.0	Brille	Wenn ich gross bin, werde ich ein wichtiger Mann und baue in diesem Dorf eine grosse Bibliothek.
+
+# --- E1305: H05 -- das Prunkwindengeruest; I03 -- Nahaufnahme
+E1305.0	Erzaehler	Die Prunkwinden waren verwelkt...
+
+# --- E1306: C05 -- auf dem Sonnenblumenweg (das Heulen)
+E1306.0	(voice only)
+E1306.1	(voice only)
+
+# --- E1451: A18 -- das Geheimversteck
+E1451.0	Guts	Meine allererste Erinnerung ist echt seltsam. // Ich glaube, das war im Fernsehen oder so... // irgendein tollpatschiger Typ in einem riesigen Helm, // der mit einer Fahne in einer pechschwarzen Wueste stand.
+E1451.1	Brille	War das nicht... // Kommandant Armstrong von Apollo?
+
+# --- E1452: A18 -- das Geheimversteck
+E1452.0	Fat	Wie viele Alben mit Rider-Karten hast du?
+E1452.1	Boku	Sieben!
+E1452.2	Fat	Boah, wie denn das?
+E1452.3	Boku	Bei uns zu Hause... hat mein Papa sie gesammelt.
+
+# --- E1453: A18 -- das Geheimversteck
+E1453.0	Brille	Gestern habe ich zum ersten Mal in meinem Leben eine Schlange angefasst.
+E1453.1	Boku	Hae? Sch-Schlangen...
+E1453.2	Brille	Gacchan und Fat fassen sie einfach so an, nur ich allein... hatte zu viel Angst davor.
+
+# --- E1506: C15 -- der Strand, rechtes Ende (der Ohrknochen)
+E1506.0	Boku	Was koennte das wohl sein?
+
+# --- E4058: A13 -- das Wespennest; G17 -- die Veranda (Tag 15, Haus leer)
+E4058.0	Boku	Oje, oje......
+E4058.1	(voice only)
+E4058.2	Boku	Aaaah!
+
+# --- E4059: C04 -- Ende der Baumstammbruecke; G17 -- die Veranda (Tag 15)
+E4059.0	Boku	Oje, oje......
+E4059.1	(voice only)
+E4059.2	Boku	Aaaah!
+
+# --- E4060: D10; G17 -- die Veranda (Tag 15)
+E4060.0	Boku	Oje, oje......
+E4060.1	(voice only)
+E4060.2	Boku	Aaaah!
+
+# --- E1504: G02 -- nach dem Abendessen (der Wal-Ohrknochen)
+E1504.0	Onkel	Gochisosama deshita.
+E1504.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E1504.2	Boku	Ach ja, ich habe am Meer etwas Seltsames gefunden.
+E1504.3	Tante	Etwas Seltsames? Nanu, was hast du denn da aufgelesen?
+E1504.4	Shirabe	Erzaehl, erzaehl!
+E1504.5	Boku	Es ist ein Stein, geformt wie eine Gewitterwolke, wie ich noch nie einen gesehen habe, // und er ist mir ploetzlich vor die Fuesse gerollt.
+E1504.6	Onkel	Ahh, vielleicht ist es das... vielleicht ist es das.
+E1504.7	Shirabe	Erzaehl, erzaehl!
+E1504.8	Onkel	Ja! Als Onkel noch kleiner war als du jetzt, // hat ihm sein Opa eine Geschichte erzaehlt... // Ganz selten findet man an den Felsen am Ufer // einen seltsam geformten Stein, wie ein grosser kahlkoepfiger Krake.
+E1504.9	Boku	Ja, ja, genau so einer!
+E1504.10	Onkel	Und das, weisst du...
+E1504.11	Onkel	ist tatsaechlich der Ohrknochen eines Wals!
+E1504.12	Boku	Hae? Von einem Wal!
+E1504.13	Onkel	Ganz genau. // Bei Saeugetieren im Meer wie Walen und Delfinen // sinkt nach dem Tod der Koerper auf den Meeresgrund, // aber die Ohrknochen sind nicht mit den anderen Knochen verwachsen, // deshalb loesen sie sich zuerst und werden ans Ufer gespuelt, heisst es.
+E1504.14	Boku	Aber kann man so etwas denn finden?
+E1504.15	Onkel	Na ja, die Chancen stehen wohl nicht besonders hoch, // aber wenn man am Ufer entlanggeht und gruendlich sucht, // kann man mit Glueck zwei oder drei an einem einzigen Tag finden, sagt man. // Vielleicht bekommen die Wale, die bei ihrer Entwicklung vom Land ins Meer zurueckgekehrt sind, // wieder Sehnsucht nach diesem Land und kehren zurueck.
+E1504.16	Boku	Hmm, ach so.
+
+# --- E1605: H10 -- Gartenecke (Nora)
+E1605.0	(voice only)
+E1605.1	(voice only)
+E1605.2	(voice only)
+
+# --- E1606: C08 -- das Sonnenblumenfeld (das dritte Foto der Tante)
+E1606.0	Tante	Schon wieder ueber den Weg gelaufen, Boku-kun! // Na gut, dann mache ich hier ein Foto von dir!
+E1606.1	Tante	Sooo, jetzt gehts los. Was ist Onkels allerliebstes Essen?
+E1606.2	(voice only)
+E1606.3	Tante	Tante macht hier noch einen kleinen Spaziergang, bevor sie heimgeht.
+
+# --- E1650: A18 -- das Geheimversteck
+E1650.0	Guts	Morgen setzen wir unsere geheime Geheimwaffe ein!
+E1650.1	Fat	Nicht dein Ernst! Gacchan, das ist irgendwie gemein.
+E1650.2	Guts	Heh... im Wettkampf ist alles erlaubt!
+E1650.3	Brille	Leute... es geht nicht ums Gewinnen oder Verlieren. Ihr braucht mehr Groesse im Herzen...
+E1650.4	Guts, Fat	Niemaaals!
+
+# --- E1651: A18 -- das Geheimversteck
+E1651.0	Guts	Hm-hm-hm, beim naechsten Mal zeige ich es denen so richtig.
+
+# --- E1652: A18 -- das Geheimversteck
+E1652.0	Fat	Auf dem Rider-Snack steht "ein Schwesterprodukt von Kappa Ebisen", // aber das schmeckt doch ganz anders, oder?
+
+# --- E1653: A18 -- das Geheimversteck
+E1653.0	Brille	Sind die Namen von Fernsehsendungen nicht seltsam? Ich meine... // was bedeutet zum Beispiel das "Romper" in Romper Room?
+
+# --- E1604: G02 -- nach dem Abendessen (das Foto)
+E1604.0	Onkel	Gochisosama deshita.
+E1604.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E1604.2	Tante	Hier, Boku-kun, das ist fuer dich.
+E1604.3	Boku	Oh, das Foto ist fertig. Danke, Tante!
+
+# --- E1707: D11 -- Wegweiser am Berg Teppen
+E1707.0	Erzaehler	Auf dem Schild... // "Zu Ihrer Sicherheit beginnen Sie den Aufstieg bitte bis 11 Uhr." // ...stand dort geschrieben.
+
+# --- E1761: B13 -- Saoris Kamerafalle
+E1761.0	(voice only)
+E1761.1	Erzaehler	Urploetzlich war da eine hoechst eigenartige Apparatur aufgetaucht...
+
+# --- E1762: B13 -- Saoris Kamerafalle
+E1762.0	Boku	Was koennte das wohl sein?
+
+# --- E1763: B13 -- Saoris Kamerafalle
+E1763.0	Erzaehler	Dort hing ein totes Huhn.
+
+# --- E1706: D06 -- der Luftschutzbunker (das Buch)
+E1706.0	Erzaehler	Das Buch war in seltsamen Zeichen geschrieben, die ich ueberhaupt nicht lesen konnte.
+E1706.1	Boku	Irgendwie komisch... Ubli-bubli-bon...
+E1706.2	Erzaehler	Nach wie vor war das Buch in hoffnungslos unleserlichen, wunderlichen Zeichen geschrieben.
+E1706.3	Boku	Ja, das ist eindeutig Ubli-bubli-bon...
+E1706.4	Erzaehler	Uebrigens hat dieses Wort keinerlei Bedeutung.
+
+# --- E1750: A18 -- das Geheimversteck (die Geheimwaffe)
+E1750.0	Guts	Hm-hm-hm-hm, endlich tritt meine Geheimwaffe auf den Plan! // Wenn du gegen sie kaempfen willst, waehle ein King-Match beim Kaefer-Sumo!
+
+# --- E1751: A18 -- das Geheimversteck
+E1751.0	Guts	Boku-chan, jetzt erkenne ich dich als echten Kumpel an.
+
+# --- E1754: A18 -- das Geheimversteck; A07 -- Eingang des Geheimpfads; E02 -- dessen anderes Ende
+E1754.0	Guts	Unmoeglich! Wie konnte ich verlieren?!
+E1754.1	Fat	Schummeln zahlt sich eben doch nicht aus...
+E1754.2	Brille	Aber Gacchan, Boku-kun ist wirklich stark geworden!
+E1754.3	Guts	Ja, stimmt...
+E1754.4	Guts	Komm mal kurz mit. Ich zeige dir was Gutes.
+E1754.5	Guts	Boku-chan, hier ist was Gutes. Drueck mal hier die ○-Taste!
+E1754.6	Boku	Hae? Was passiert dann?
+E1754.7	Guts	Heh... willkommen auf dem Geheimpfad, den ausser uns niemand kennt!
+E1754.8	Boku	Geheim?
+E1754.9	Fat	Genau! Hier durch bist du im Nu am Drachengott-Teich oder am Berg Teppen.
+E1754.10	Guts	Na los, drueck schon die Taste.
+E1754.11	Boku	Huch, wo sind wir hier bloss...
+
+# --- E1805: H05 -- das Prunkwindengeruest; I03 -- Nahaufnahme
+E1805.0	Boku	Tanteee, Tanteee! // Die Prunkwinden sehen aus, als waeren sie verwelkt.
+E1805.1	Tante	Ach, tatsaechlich... Ihre Zeit war wohl einfach um. // Jetzt bekommen wir bestimmt viele, viele gesunde Prunkwinden-Samen. // Boku-kun... danke fuer deine Muehe.
+
+# --- E1861: B13 -- Saoris Kamerafalle (die erste Begegnung)
+E1861.0	Frau	He. Gute Arbeit.
+E1861.1	Boku	Wer sind Sie?
+E1861.2	Frau	Nenn erst mal deinen eigenen Namen, Junge Nummer eins.
+E1861.3	Boku	Ich bin Boku.
+E1861.4	Frau	Wie bitte? Du bist du? Dann bist du ab heute eben Boku-kun.
+E1861.5	Boku	Sag ich doch, das stimmt ja auch.
+E1861.6	Frau	Komischer Knirps.
+E1861.7	Boku	Das koennen Sie gerade sagen.
+E1861.8	Frau	Dieses Geraet hier hat naemlich einen Sensor...
+E1861.9	Boku	Ich habe doch noch gar nichts gefragt!
+E1861.10	Frau	Wolltest du aber gleich, oder?
+E1861.11	Boku	Dann eben nicht.
+E1861.12	Frau	Gleich klatschts.
+E1861.13	Boku	Hoeren Sie auf.
+E1861.14	Frau	Dieser Sensor erkennt alles, was hier vorbeikommt, // dann blitzt es und der Ausloeser klickt.
+E1861.15	(voice only)
+E1861.16	Boku	Was fotografieren Sie denn?
+E1861.17	Frau	Woelfe.
+E1861.18	Boku	Hae?
+E1861.19	Frau	Den Japanischen Wolf... Na ja, weisst du wahrscheinlich sowieso nicht.
+E1861.20	Boku	Sind Sie das Wolfsmaedchen?
+E1861.21	Frau	Hae?
+E1861.22	Boku	Und die Badedame haben sie auch gesagt...
+E1861.23	Frau	Gahaha... Wer zur Hoelle bist du?
+E1861.24	Boku	Ein Mensch.
+E1861.25	Frau	Ahh, so altkluge Knirps-Witze bringen mich irgendwie aus dem Konzept.
+E1861.26	Frau	Ich bin Saori. Ich studiere an einer Uni in Sendai. Mein Fach ist Naturwissenschaft...
+E1861.27	Boku	Ich bin Boku! Ich gehe in der Stadt in die Grundschule, in die Klasse von Nakajima-sensei!
+E1861.28	Saori	Was soll das denn sein?
+E1861.29	Saori	Und hier ist ein Mikrofon, das nimmt sofort auf, sobald es ein Geraeusch hoert.
+E1861.30	(voice only)	He. Gute Arbeit.
+E1861.31	(voice only)	Wer sind Sie?
+E1861.32	(voice only)	Nenn erst mal deinen eigenen Namen, Junge Nummer eins.
+E1861.33	Saori	So ungefaehr.
+E1861.34	Saori	Komm morgen zu meinem Zelt. // Ich habe haufenweise interessante Buecher.
+# NOTE E1861.3-.5: "Boku wa Boku" bedeutet sowohl "Ich bin Boku" als auch "Ich bin ich" (glossary.md § 9 #19).
+# NOTE E1861.30-.32: Der Rekorder spielt den ersten Wortwechsel (.0-.2) exakt wortgleich wieder ab.
+
+# --- E1850: A18 -- das Geheimversteck
+E1850.0	Brille	He, der Jo-Jo-Champion soll bis in die Nachbarstadt gekommen sein!
+E1850.1	Fat	Champion? Ach, du meinst meine Wenigkeit.
+
+# --- E1909: B13 -- Saoris Kamerafalle
+E1909.0	(voice only)
+
+# --- E1960: D07 -- Saoris Lager
+E1960.0	Saori	Was willst du?
+E1960.1	Boku	Du hast doch gesagt, ich soll zu deinem Zelt kommen.
+E1960.2	Saori	Im Zelt gibt es allerhand Buecher und interessante Sachen, also schau dich ruhig um.
+E1960.3	Saori	Aber schau nicht in den Rucksack. // Das sind die Sachen einer Dame.
+E1960.4	Boku	Wer ist die Dame?
+E1960.5	Boku	Was fuer Geschichten stehen in den Buechern im Zelt?
+E1960.6	Saori	Aehm, hochtrabende, schwierige, beunruhigende Buecher ueber Naturwissenschaft... // Ideologiebuecher voller Liebe, Frieden und Leben auf dem Mars... // und Buecher ueber meinen geliebten Wolf-kun und so weiter...
+E1960.7	Boku	Da war ein Bild mit huebschen Blumen. Wer hat das gemalt?
+E1960.8	Saori	Ich selbst.
+E1960.9	Saori	Boku-kun! Gefaellt es dir hier?
+E1960.10	Boku	Ja.
+E1960.11	Saori	Dann komm wieder.
+
+# --- E1961: D07 -- Saoris Lager; I25 -- im Zelt
+E1961.0	Erzaehler	Im Zelt gab es eine Unmenge an Buechern und Fotos, // sowie Bilder von zierlichen Blumen, Graesern und Baeumen...
+
+# --- E1962: D07 -- Saoris Lager
+E1962.0	Boku	Was fuer Geschichten stehen in den Buechern im Zelt?
+E1962.1	Saori	Aehm, hochtrabende, schwierige, beunruhigende Buecher ueber Naturwissenschaft... // Ideologiebuecher voller Liebe, Frieden und Leben auf dem Mars... // und Buecher ueber meinen geliebten Wolf-kun und so weiter...
+E1962.2	Boku	Da war ein Bild mit huebschen Blumen. Wer hat das gemalt?
+E1962.3	Saori	Ich selbst.
+E1962.4	Saori	Boku-kun! Gefaellt es dir hier?
+E1962.5	Boku	Ja.
+E1962.6	Saori	Dann komm wieder.
+
+# --- E1970: B13 -- Saoris Kamerafalle
+E1970.0	(voice only)
+E1970.1	(voice only)
+E1970.2	(voice only)
+E1970.3	(voice only)
+E1970.4	(voice only)
+
+# --- E1907: A18 -- das Geheimversteck
+E1907.0	(unlabelled)	Boellerbuendel erhalten!
+
+# --- E1908: H04, H09 -- die Ameisennester
+E1908.0	(unlabelled)	Boeller gezuendet.
+E1908.1	(voice only)
+
+# --- E1951: A18 -- das Geheimversteck
+E1951.0	Guts	Letzten Monat in der Schule... // hat der Lehrer nur die Maedchen zusammengerufen und irgendwas gemacht. // Solange haben die Jungs Voelkerball gespielt.
+
+# --- E1952: A18 -- das Geheimversteck
+E1952.0	Fat	Bei dem Eis mit dem Gewinn-Stempel im Deckel... // da habe ich mal dreimal hintereinander gewonnen.
+
+# --- E1953: A18 -- das Geheimversteck
+E1953.0	Brille	Die Chroniken von Narnia... welche Geschichte hast du zuerst gelesen?
+
+# --- E2005: A12 -- der Reifenhaufen
+E2005.0	Boku	Ich habe das Zuckerwasser hingestellt.
+E2005.1	Boku	Magst du suesse Sachen?
+E2005.2	(voice only)
+
+# --- E2003: G02 -- Abendessen
+E2003.0	Onkel	Boku-kun, warst du schon beim Wolfsmaedchen?
+E2003.1	Boku	Ja, ich war da. Sie hat mir ein Foto geschenkt.
+E2003.2	Shirabe	Ein Foto wovon?
+E2003.3	Boku	Hae? Von mir.
+E2003.4	Shirabe	Also wirklich... ihr beide seid ja ganz schoen dicke miteinander, oder?
+E2003.5	Onkel	Also dann, itadakimasu!
+E2003.6	Shirabe, Moe, Boku, Tante	Itadakimasu!
+
+# --- E2050: A18 -- das Geheimversteck
+E2050.0	Brille	Die junge Frau, die am Drachengott-Teich zeltet, ist ein recht interessanter Mensch. // Ich will spaeter auch so ein lyrischer Erwachsener werden...
+E2050.1	Fat	Was ist das? Kann man "lyrisch" essen?
+
+# --- E2107: B15 -- Wasser; der Libellenschwarm
+E2107.0	Erzaehler	"Der Herbst ist schon da. Eile heim in dein eigenes Haus..." // Der Schwarm der Libellen schien mir genau das zu sagen...
+
+# --- E2161: B13 -- Saoris Kamerafalle (das Zuckerwasser)
+E2161.0	Boku	Ob das seltsame Gespenst damit herkommt...
+
+# --- E6001: D07 -- Saoris Lager (das Heulen, das sie rettete)
+E6001.0	Boku	Ich bin da.
+E6001.1	Saori	......
+E6001.2	Boku	Was liest du da?
+E6001.3	Saori	...Ein Buch ueber den Wald.
+E6001.4	Boku	Ist es spannend?
+E6001.5	Saori	......
+E6001.6	Boku	Ab heute ist schon ein kleines bisschen Herbst.
+E6001.7	Saori	Hae?
+E6001.8	Saori	Wie kommst du darauf?
+E6001.9	Boku	Libellen... es fliegen ganz viele Libellen herum.
+E6001.10	Saori	Nanu, seit wann sind es denn so viele...
+E6001.11	Saori	Als ich klein war, habe ich in der Stadt am Fuss dieses Berges gewohnt. // Damals flogen auch so viele Libellen herum, genau wie heute...
+E6001.12	Saori	Als ich noch kleiner war als du jetzt, Boku-kun... // bin ich mit meiner Familie hier zum Wandern hergekommen... // An jenem Tag habe ich mich unbemerkt verlaufen... // Es wurde Abend, und mir wurde mulmig... // Ich sass auf einem grossen Stein am Flussufer und weinte... // Und da ertonte jene Stimme...
+E6001.13	Boku	Was fuer eine Stimme?
+E6001.14	(voice only)
+E6001.15	Saori	Ich bekam Angst und rannte im Abendrot halsueberkopf den Bergpfad hinunter... // und ehe ich mich versah, fanden mich Maenner vom Jugendverein, die mich am Berg gesucht hatten.
+E6001.16	Boku	Dann hat dich diese Stimme also gerettet?
+E6001.17	Saori	Ja, irgendwie sehe ich das inzwischen so.
+E6001.18	Boku	Was hat denn da geheult?
+E6001.19	Saori	Ein Japanischer Wolf... // die Stimme eines Japanischen Wolfs, der doch laengst ausgestorben sein sollte...
+
+# --- E2206: A10 -- der grosse Baum hinter dem Maisfeld (die Schlange)
+E2206.0	Boku	Aaah, eine Schlange!
+E2206.1	Boku	Nein, nein, ich will nicht!
+E2206.2	Onkel	Was ist los? Boku-kun, alles in Ordnung?
+E2206.3	Onkel	Jetzt bist du sicher.
+E2206.4	Boku	......
+E2206.5	Onkel	Hattest du Angst?
+E2206.6	Boku	Stimmt gar nicht.
+E2206.7	Onkel	Hahaha, ein Junge darf wegen so einer Kleinigkeit keine Angst haben.
+
+# --- E2207: A10 -- der grosse Baum (die abgestreifte Haut)
+E2207.0	Erzaehler	Was dort lag, war eine abgestreifte Schlangenhaut, so ausgetrocknet, dass es fast schon traurig wirkte.
+E2207.1	(unlabelled)	Schlangenhaut erhalten.
+
+# --- E2261: B13 -- Saoris Kamerafalle
+E2261.0	Erzaehler	Das Zuckerwasser war verschwunden.
+
+# --- E6100: D07 -- Saoris Lager (nach dem Foto)
+E6100.0	Boku	Glueckwunsch, komische Frau.
+E6100.1	Saori	......
+E6100.2	Boku	Freust du dich gar nicht?
+E6100.3	Saori	Irgendwie... na ja.
+E6100.4	Boku	Warum ist das wohl so?
+E6100.5	Saori	Es geht einfach nicht.
+E6100.6	Boku	Aber jetzt bist du auf einen Schlag beruehmt, grosse Schwester!
+E6100.7	Saori	Haha... Dummchen. Kennst du den Nipponibis? // Da finde ich endlich einen Lebensraum der Woelfe, und darf es keinem verraten.
+E6100.8	Boku	...Hae?
+E6100.9	Saori	Aber warum kommt er ausgerechnet zu Zuckerwasser? // Es gibt zwar Berichte, dass sie Salz moegen...
+E6100.10	Saori	Hast du etwa bei der Kamera was angestellt?
+
+# --- E6101: D07 -- Saoris Lager (das Heulen, das sie rettete)
+E6101.0	Boku	Ich bin da.
+E6101.1	Saori	......
+E6101.2	Boku	Was liest du da?
+E6101.3	Saori	...Ein Buch ueber den Wald.
+E6101.4	Boku	Ist es spannend?
+E6101.5	Saori	......
+E6101.6	Boku	Ab heute ist schon ein kleines bisschen Herbst.
+E6101.7	Saori	Hae?
+E6101.8	Saori	Wie kommst du darauf?
+E6101.9	Boku	Libellen... es fliegen ganz viele Libellen herum.
+E6101.10	Saori	Nanu, seit wann sind es denn so viele...
+E6101.11	Saori	Als ich klein war, habe ich in der Stadt am Fuss dieses Berges gewohnt. // Damals flogen auch so viele Libellen herum, genau wie heute...
+E6101.12	Saori	Als ich noch kleiner war als du jetzt, Boku-kun... // bin ich mit meiner Familie hier zum Wandern hergekommen... // An jenem Tag habe ich mich unbemerkt verlaufen... // Es wurde Abend, und mir wurde mulmig... // Ich sass auf einem grossen Stein am Flussufer und weinte... // Und da ertonte jene Stimme...
+E6101.13	Boku	Was fuer eine Stimme?
+E6101.14	(voice only)
+E6101.15	Saori	Ich bekam Angst und rannte im Abendrot halsueberkopf den Bergpfad hinunter... // und ehe ich mich versah, fanden mich Maenner vom Jugendverein, die mich am Berg gesucht hatten.
+E6101.16	Boku	Dann hat dich diese Stimme also gerettet?
+E6101.17	Saori	Ja, irgendwie sehe ich das inzwischen so.
+E6101.18	Boku	Was hat denn da geheult?
+E6101.19	Saori	Ein Japanischer Wolf... // die Stimme eines Japanischen Wolfs, der doch laengst ausgestorben sein sollte...
+
+# --- E6102: D07 -- Saoris Lager
+E6102.0	Boku	He, war da nicht ein seltsames Foto dabei?
+E6102.1	Saori	Wie weit der Himmel ist...
+
+# --- E6103: D07 -- Saoris Lager
+E6103.0	Saori	Im Zelt liegen lauter interessante Sachen, schau sie dir ruhig an...
+
+# --- E6104: D07 -- Saoris Lager (nach der Schlange)
+E6104.0	Boku	Hallo.
+E6104.1	Saori	Ich habe von Shirabe-chan gehoert... du bist einer Schlange begegnet...
+E6104.2	Boku	......
+E6104.3	Saori	Die Wolken nehmen langsam ihre Herbstformen an...
+E6104.4	Boku	Huch? Und was ist mit der Schlange...
+E6104.5	Saori	Irgendwie eine traurige, einsame Wolke...
+E6104.6	Boku	...Sag mal, Wolfsmaedchen...
+E6104.7	Saori	Hattest du Angst?
+E6104.8	Boku	Hae?
+E6104.9	Saori	Du hast die Schlange gesehen und bist weggerannt, stimmts?
+E6104.10	Boku	......
+E6104.11	[SEL]	Bin weggerannt | War halb so wild
+E6104.12	Saori	Ahaha...
+E6104.13	Boku	Hast du ein Problem damit? Das verletzt mich irgendwie...
+E6104.14	Saori	...Hehe, tut mir leid. // Aber weisst du, jemand, der ein bisschen Angst hat...
+E6104.15	Saori	Schmatz!
+E6104.16	Saori	...hat seinen Reiz.
+E6104.17	Boku	Dann lach mich nicht aus.
+E6104.18	Boku	Hicks!
+E6104.19	Saori	Gerade die Leute, die vor der Natur gar keine Ehrfurcht haben, // bauen solche Neubausiedlungen ohne jede menschliche Waerme, als waeren sie mit Spuelmittel gewaschen... // Alles eine Frage des Gleichgewichts...
+E6104.20	Boku	Geht es jetzt um fremde Laender?
+E6104.21	Boku	Hicks!
+E6104.22	Saori	Nein.
+E6104.23	Saori	Um genau hier.
+E6104.24	Boku	...Brueste?
+E6104.25	Boku	Hicks!
+E6104.26	Saori	...Nicht ganz. // Verstehe... Ich habe einem Grundschueler einen Kuss gegeben, also muss ich ihn wohl heiraten.
+E6104.27	Boku	......
+E6104.28	Saori	Und deshalb bin ich irgendwie eine traurige, einsame Wolke...
+E6104.29	Saori	Buh!
+E6104.30	Boku	Wah, hast du mich erschreckt!
+E6104.31	Saori	Hehe, na wie war das!
+E6104.32	Boku	Huch? Es hat wirklich geklappt.
+E6104.33	Saori	Ohh, tatsaechlich.
+E6104.34	Boku	...Ja.
+E6104.35	Saori	Das war bestimmt eine winzig kleine Schlange, oder?
+E6104.36	Boku	Das stimmt gar nicht...
+E6104.37	Saori	So ungefaehr 5 Zentimeter lang.
+E6104.38	Boku	Das waere ein Regenwurm.
+E6104.39	Saori	Dann war es ein Regenwurm.
+E6104.40	Boku	Ach, Wolfsmaedchen...
+
+# --- E6105: D07 -- Saoris Lager
+E6105.0	Saori	Hier, Boku-kun, deine Fotos sind fertig.
+E6105.1	Saori	Hier, Boku-kun, deine Fotos sind fertig.
+E6105.2	Erzaehler	In diesem Augenblick dachte ich nach: // Gab es nicht irgendeinen Weg, // jenes seltsame Gespenst zu Saoris Apparat zu locken?
+E6105.3	Erzaehler	Ja... ich wusste, // was jenes seltsame Gespenst am liebsten frass...
+
+# --- E2251: A18 -- das Geheimversteck
+E2251.0	Guts	Kennst du Die Abenteuer von Gamba? Norois Augen sind einfach zu unheimlich...
+
+# --- E2252: A18 -- das Geheimversteck
+E2252.0	Fat	Hast du schon mal mit Moe-san geredet?
+E2252.1	Boku	Ja.
+E2252.2	Fat	Wah! Ach du meine Guete!
+E2252.3	Boku	Wir wohnen doch im selben Haus, ist doch klar.
+
+# --- E2253: A18 -- das Geheimversteck
+E2253.0	Brille	Warum beschweren sich Trickfilm-Helden nie ueber ihre Frisuren? // Nein, also ich finde, sie sollten mehr fuer ihre Rechte einstehen.
+
+# --- E2306: G17 -- die Veranda; I34 -- Nahaufnahme (das Wolfsfoto)
+E2306.0	Onkel	Wir sind gerade mit dem Fruehstueck fertig.
+E2306.1	Saori	Ich moechte euch etwas zeigen... // Heee, Boku-kun, komm mal kurz raus!
+E2306.2	Onkel	Hm? Was ist denn?
+E2306.3	Onkel	Du hast es endlich geschafft.
+E2306.4	Saori	Ja. Danke.
+E2306.5	Saori	Oh, guten Morgen, komischer Knirps.
+E2306.6	Boku	Guten Morgen, komische Frau.
+E2306.7	Saori	Deh-heh-heh. Was glaubst du, ist das?
+E2306.8	Boku	Ein Japanischer Wolf! Du hast es geschafft!
+E2306.9	Saori	Es gab sie also doch. Hier auf diesem Berg, die ganze Zeit...
+E2306.10	Boku	...Irgendwie, warum auch immer... huuuch?
+
+# --- E2302: G02 -- nach dem Fruehstueck (Saori an der Tuer)
+E2302.0	Onkel	Gochisosama deshita.
+E2302.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E2302.2	Onkel	Oh, guten Morgen.
+E2302.3	Saori	Guten Mor-Morgen! Ist Boku-kun schon wach?
+
+# --- E2303: G02 -- Abendessen (Moe liest den Brief von 1942 vor)
+E2303.0	Boku	Onee-chan, was ist los?
+E2303.1	Moe	So was wie "Das Leben steckt voller Ueberraschungen"... oder wie ein Schlag...
+E2303.2	Shirabe	Ergibt keinen Sinn.
+E2303.3	Moe	...
+E2303.4	(unlabelled)	Jedenfalls lese ich ihn jetzt vor.
+E2303.5	Shirabe	Was ist das?
+E2303.6	Moe	Shirabe, sei leise! // Ich lese jetzt...
+E2303.7	Moe	Fruehling, das Stroemen des grossen Flusses, der Duft der bluehenden Blumen... // Nun befinden sich Amerika, das Land der Traeume aus den Abenteuerromanen von Mark Twain, und // das Land meiner Geburt... diese meine geliebte Heimat Japan im Krieg. // Tom Sawyer. Huckleberry Finn. // Den Wind und das Sonnenlicht, die ueber die Felder und Huegel wehen, auf denen sie spielten... // ich wuenschte, ich koennte sie eines Tages auf meiner eigenen Haut spueren... // Bis heute habe ich ihre Sprache im Geheimen und mit ganzem Herzen gelernt, doch... // auch damit scheint es nun bald zu Ende zu gehen. // Auch mein englisches Woerterbuch musste ich hier verstecken. // Sollte dieser Krieg enden und ich noch am Leben sein, // dann moechte ich diese unschuldige Entschlossenheit, rein wie Quellwasser... // und dieses Hochgefuehl, wie der Suedwind, der den Fruehling verkuendet... // an mein kuenftiges Selbst weitergeben.    Fruehling, Showa 17...
+E2303.8	Onkel	Steht da ein Name?
+E2303.9	Moe	Nein, keiner.
+E2303.10	Onkel	Verstehe...
+E2303.11	Tante	Dieser Mensch... hoffentlich lebt er noch.
+# NOTE E2303.3-.4: Eine Aeusserung ueber zwei Meldungen (style-guide.md § 9).
+# NOTE E2303.7: Foermlicher Schuelerbrief der Kriegszeit; "Fruehling, Showa 17" ohne Jahreszahl-Glosse.
+
+# --- E2305: D06 -- der Luftschutzbunker (das Buch)
+E2305.0	(voice only)	Da faellt mir ein: An unserer Schule, dieser Konrektor, der sich immer so uebernimmt... // es heisst, er habe waehrend des Krieges in den Huegeln hinter dem Dorf einen eigenen Schatz versteckt.
+E2305.1	Erzaehler	Vielleicht war dies fuer jemanden etwas Kostbares... // Mit diesem Gedanken beschloss ich, das Buch mit nach Hause zu nehmen.
+
+# --- E2304: G02 -- nach dem Abendessen (das Foto)
+E2304.0	Onkel	Gochisosama deshita.
+E2304.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E2304.2	Tante	Hier, Boku-kun, das ist fuer dich.
+E2304.3	Boku	Oh, das Foto ist fertig. Danke, Tante!
+
+# --- E2405: E08 -- der Geheimpfad, ein Loch in der Hoehle; I12 -- Nahaufnahme
+E2405.0	Erzaehler	Dieses Loch schien irgendwohin zu fuehren... // so dachte ich zumindest.
+
+# --- E2401: G02 -- Fruehstueck ("Ich gehe doch auf die Oberschule")
+E2401.0	Moe	Aehm...
+E2401.1	Onkel	Was ist denn?
+E2401.2	Moe	Papa, Mama... es tut mir leid... wollte ich sagen.
+E2401.3	Tante	Was ist los?
+E2401.4	Moe	Ich glaube, ich gehe wohl doch ordentlich auf die Oberschule...
+E2401.5	Onkel	Verstehe. Das ist gut.
+E2401.6	Tante	Hm, gut gemacht! Gib dein Bestes, Moe! Mama feuert dich an.
+E2401.7	Moe	Aber...
+E2401.8	Onkel	Was ist denn, Moe?
+E2401.9	Moe	...Nichts.
+E2401.10	Onkel	Du meinst, dass du fuer die Oberschule // von zu Hause ausziehen und allein wohnen musst?
+E2401.11	Moe	Ja... es ist schon ein bisschen einsam, nicht wahr?
+E2401.12	Shirabe	Shirabe wird ein Idol-Star!
+E2401.13	Moe	Ach ja? Das ist ja grossartig.
+E2401.14	Shirabe	Und ich lass ihn brumm-brumm machen.
+E2401.15	Boku	Was denn?
+E2401.16	Shirabe	Meinen Benz!
+E2401.17	Onkel	Also dann, itadakimaasu!
+E2401.18	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+
+# --- E2451: A18 -- das Geheimversteck
+E2451.0	Guts	Letztes Jahr habe ich aus dem Naturkunde-Raum in der Schule ein Mineralien-Exemplar stibitzt... // Na ja, es ist nur Eisenerz, aber ein echter Schatz, schwer in der Hand und glitzernd...
+
+# --- E2452: A18 -- das Geheimversteck
+E2452.0	Fat	Menko-Karten? Was ist das? // Hier bei uns nennen wir sie Patchi. // Die kleinen Kerben daran sind zum Zusammenbinden mit Gummibaendern, weisst du. // Was? Das weiss doch jeder...?
+# NOTE E2452.0: Patchi, lokaler Name fuer Menko-Karten (style-guide.md § 5).
+
+# --- E2453: A18 -- das Geheimversteck
+E2453.0	Brille	Bei den Satomi Hakkenden kann ich alle Juwelen aufzaehlen, // aber bei der Reihenfolge bin ich mir nie sicher...
+
+# --- E2505: D16 -- der Gipfel des Berges Teppen
+E2505.0	Boku	Wooow...
+E2505.1	Erzaehler	Ganz oben auf dem Berg Teppen hatte ich aus irgendeinem Grund diese Aussicht muehsam erkaempft... // sorgfaeltig, sorgfaeltig, behutsam, behutsam... // nahm ich mir vor, sie von einem Ende zum anderen genau in mich aufzunehmen...
+E2505.2	Erzaehler	Jenseits, wo mein Blick ueber die Wipfel des naeheren Waldes strich... // lagen zuerst das Haus meines Onkels und der Kakibaum in seinem Garten, // zart flimmernd im Sommerlicht... // und weiter hinten, wo der Gebirgskamm etwas sanfter wurde, // sah ich die roten Ziegeldaecher der Haeuser von Sagi-no-sato...
+E2505.3	Erzaehler	Und westlich des Huegels, wie von den Armen des umliegenden Waldes umfangen, // verlief schnurgerade eine einzige Autobahn... // und in der Ferne, wohin jene Strasse wies, glitzerte voller Leben das Augustmeer...
+# NOTE E2505.1: Wortspiel mit "teppen" = Gipfel (glossary.md § 2).
+
+# --- E2506: D16 -- der Steinmann auf dem Gipfel
+E2506.0	Erzaehler	Er war von Bergsteigern errichtet worden, Stein fuer Stein sorgfaeltig aufeinandergesetzt.
+
+# --- E2504: G02 -- Abendessen ("Ich bin froh, dass ich hergekommen bin")
+E2504.0	Boku	He, heute bin ich // bis ganz auf den Gipfel von dem Berg mit den zwei Antennen gestiegen.
+E2504.1	Onkel	Hae? Du warst ganz oben auf dem Berg Teppen... Die Aussicht von dort ist die beste, oder?
+E2504.2	Boku	Ja.
+E2504.3	Tante	Wir sind auch gleich nach unserem Umzug hierher dort hinaufgestiegen. // Als ich den Blick von jenem Gipfel sah... // ach... da dachte ich aus tiefstem Herzen, wie froh ich bin, dass wir hergezogen sind.
+E2504.4	Boku	Ich...
+E2504.5	Tante	Hm? Was ist denn?
+E2504.6	Erzaehler	Ich wollte noch nicht nach Hause zurueck... // Aus irgendeinem Grund brachte ich diese paar Worte einfach nicht heraus.
+E2504.7	Boku	...Ich bin auch froh, dass ich hergekommen bin.
+E2504.8	Tante	Hm-hm-hm...... danke. // Es freut mich, dass es dir hier gefaellt, Boku-kun.
+E2504.9	Shirabe	Irgendwann bist du ganz eines von unseren Kindern geworden.
+E2504.10	Boku	Bin ich dann auch Shirabes Onii-chan?
+E2504.11	Shirabe	Niemals!
+E2504.12	Tante	Na los, sagen wir schnell gochisosama.
+E2504.13	Onkel	Gochisosama deshita.
+E2504.14	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+# NOTE E2504.10: "Onii-chan" als Eigenname des verstorbenen Sohnes (style-guide.md § 2).
+
+# --- E2605: A05 -- unter der Autobahn (der Sonnenregen)
+E2605.0	Erzaehler	Auf einmal fuehlte sich die Luft kalt an, und ich blieb stehen, wo ich war...
+
+# --- E2651: A18 -- das Geheimversteck
+E2651.0	Guts	He, hast du die Beilage in der Kagaku von diesem Monat gesehen?
+E2651.1	Boku	Hae? Was, was denn?
+E2651.2	Guts	Waaas! Du weisst es nicht? Ein Mondauto!
+
+# --- E2652: A18 -- das Geheimversteck
+E2652.0	Fat	Bei Flummis gibt es doch die Sorte mit vielen bunten Farben durcheinander, oder? // Die erkenne ich nicht an! // Warum? Dafuer brauche ich keinen Grund!
+
+# --- E2653: A18 -- das Geheimversteck
+E2653.0	Brille	Guri und Gura, die beiden Maeuse, die beste Freunde sind... // war die blaue Guri?
+
+# --- E4064: H13 -- hinter der Werkstatt, Tag 27 (Antwort auf das Abendessen-Quiz)
+E4064.0	Tante	Richtig, Boku-kun! Geschafft!
+E4064.1	(voice only)
+E4064.2	Tante	Volltreffer! Herzlichen Glueckwunsch!
+E4064.3	(voice only)
+E4064.4	Tante	Schade, das war daneben.
+E4064.5	Tante	Tataaa, leider daneben! // Uebrigens sind im Kuehlschrank auch die Zutaten fuers Fruehstueck, also pass ein bisschen auf.
+E4064.6	Tante	Leider daneben. // Bald sind die Sommerferien vorbei, also streng dich an, Boku-kun!
+E4064.7	Tante	Das Abendessen heute war... // Hamburger Steak, geschmortes Gemuese und frittierte Flussgarnelen nach Tante-Art.
+E4064.8	Tante	Das Abendessen heute war... // Tonkatsu, Eier-Tofu, in Sake gedaempfte Muscheln und frisch gepflueckte Saubohnen.
+E4064.9	Tante	Das Abendessen heute war... // Fruehlingsrollen, Happosai, Suppe und Tofu-Salat. Ich habe mal alles chinesisch gehalten.
+E4064.10	Tante	Das Abendessen heute war... // Sashimi, geschmorte Hijiki-Algen und Tempura. Ganz klassisch japanisch zusammengestellt.
+E4064.11	Tante	Das Abendessen heute war... // Seebarsch Muellerin Art, Bang-Bang-Chicken, Kinchaku, kalter Tofu -- aaalles Tantes Favoriten.
+E4064.12	Tante	Das Abendessen heute war... // Omurice, Kaese en Papillote, gebratener dicker Tofu mit Gruengemuese und so weiter. Einfach mal kombiniert.
+E4064.13	Tante	Das Abendessen heute war... // Bratreis, chinesische Suppe, Schwein suess-sauer, Shumai und so weiter, ganz nach Shirabes Geschmack.
+E4064.14	Tante	Das Abendessen heute war... // Kohlrouladen, gegrillte Aubergine und noch ein offenes Omelett dazu, genau nach Moes Geschmack.
+E4064.15	Tante	Das Abendessen heute war... // Curry-Reis, marinierte Bastardmakrele, Salat, Edamame und so weiter. Ich habe mir richtig Muehe gegeben.
+E4064.16	Tante	Das Abendessen heute war... // Spaghetti, gekuehlte Aubergine, gegrillter Tofu, Suppe und Salat. Mit Gewalt auf italienisch getrimmt.
+E4064.17	Tante	Das Abendessen heute war... // Ich habe extra das feinste Nigiri, das Turm-Set von Osho Sushi in Sagi-no-sato, liefern lassen.
+
+# --- E3171: H02 -- vor dem Haus (Vater kommt an)
+E3171.0	Vater	Na, na, Sie haben sich alle so gut um ihn gekuemmert... // He, du, jetzt bedank dich aber ordentlich...
+E3171.1	Erzaehler	Mein Vater, den ich zum ersten Mal seit einem Monat wieder sah, strahlte aus irgendeinem Grund vor Tatendrang, // als waere er ein ganz anderer Mensch geworden.
+
+# --- E3172: H01 -- vor dem Haus
+E3172.0	Erzaehler	Mein Vater, den ich zum ersten Mal seit einem Monat wieder sah, strahlte aus irgendeinem Grund vor Tatendrang, // als waere er ein ganz anderer Mensch geworden.
+
+# --- E3173: I31 -- Nahaufnahme
+E3173.0	Onkel	Sie sehen irgendwie blendend aus... // oder besser gesagt, w-was ist denn mit Ihnen passiert?
+
+# --- E3174: H02 -- vor dem Haus
+E3174.0	Vater	Tja, wie soll ich sagen, unser zweites Kind ist geboren, wissen Sie, // da habe ich den grossen Entschluss gefasst, mich mal so richtig ins Zeug zu legen.
+E3174.1	Tante	Onii-chan! Wobei genau willst du dich denn ins Zeug legen?
+E3174.2	Vater	Hmm, wobei wohl... gahahahaha!
+E3174.3	(voice only)
+E3174.4	Tante	Irgendwie bin ich so froh, dich so gluecklich zu sehen, Onii-chan!
+E3174.5	Vater	Meinst du... aber du siehst auch gluecklich aus, Kaoru.
+E3174.6	Tante	Ja!
+# NOTE E3174.1, .4: Die Tante nennt ihren aelteren Bruder, Bokus Vater, "Onii-chan" (style-guide.md § 2).
+
+# --- E3175: I31 -- Nahaufnahme
+E3175.0	(voice only)
+
+# --- E3176: H02 -- vor dem Haus
+E3176.0	Tante	Irgendwie bin ich so froh, dich so gluecklich zu sehen, Onii-chan!
+E3176.1	Vater	Meinst du... aber du siehst auch gluecklich aus, Kaoru.
+E3176.2	Tante	Ja!
+
+# --- E3177: I31 -- Nahaufnahme
+E3177.0	Moe	Wah! Mama! Gemein!
+E3177.1	Onkel	Was ist denn los?
+E3177.2	Moe	Im Moment zumindest, vorerst... // soll derjenige, den ich liebe, Papa sein...
+E3177.3	Onkel	Vorerst also... hmm... // hier erreicht der Kummer eines Vaters mit Toechtern seinen Hoehepunkt, mit allem Drum und Dran...
+E3177.4	Tante	Nanu? // Wenn du Papa als deinen Schatz willst, vergiss nicht, dass direkt hier eine maechtige Rivalin steht!
+E3177.5	Moe	Ach so? Na, ich gebe auch nicht nach!
+
+# --- E3178: H03 -- vor dem Haus
+E3178.0	(voice only)
+
+# --- E3179: H02 -- vor dem Haus ("Nimm mich in den Arm")
+E3179.0	(voice only)
+E3179.1	Vater	Also dann, es wird langsam Zeit...
+E3179.2	Boku	Sag mal, Tante...
+E3179.3	Tante	Hm? Was ist denn?
+E3179.4	Boku	Eine letzte Bitte...
+E3179.5	Tante	Hae? Was koennte das sein?
+E3179.6	Boku	Nimm mich in den Arm.
+E3179.7	Boku	......
+
+# --- E3180: H01 -- vor dem Haus (die letzte Regel)
+E3180.0	Tante	Na, na, nicht doch... Jungs duerfen nicht weinen. // Das ist... nun mal die Regel bei Tante zu Hause.
+# NOTE E3180.0: Der Hausregel-Rahmen, vierte und letzte Verwendung (glossary.md § 3).

@@ -1,0 +1,155 @@
+# Day 1 - August 1. Boku arrives at the Sorano house in Tsukiyono (PLAN TRN-03 pilot).
+# Every event whose id is E01xx (day = id / 100), in the order the game plays them, plus
+# E0001, the day-independent narration the day-1 flow hands over to (E0184 hands Boku to G13,
+# the door side of his room; E0186 ends in G14, the futon side, where E0001 fires - G13, then
+# G14). Format: translation/days/README.md. Policies: style-guide.md
+# (all rulings settled 2026-09-20), glossary.md, bible.md § 4 (day 1).
+#
+# Afternoon: E0171-E0186 (the relay of introductions, forced), then a free hour in the house
+# and garden - E0112, E0114, E0121, E0140, E0001 - until E0190 calls dinner. Evening: E0103,
+# E0104, then E0107 (the desk), E0113, E0122, E0141.
+
+# --- E0171: H02 -- front of the house, gate
+E0171.0	Vater	Waehrend der Sommerferien wird mein Sohn in Ihrer Obhut sein.
+E0171.1	Vater	Er ist zum ersten Mal so weit draussen auf dem Land, wo noch so viel Natur erhalten ist, // daher wirkt er wohl etwas ueberrascht, aber bitte kuemmern Sie sich gut um ihn.
+E0171.2	Vater	Also dann, stell dich vor.
+E0171.3	Boku	Hallo, ich bin Boku.
+# NOTE E0171.1: satoyama mit "so weit draussen auf dem Land" uebersetzt (Glossar § 7).
+
+# --- E0173: H01 -- front of the house, gate
+E0173.0	Boku	Weil Mamas Bauch gross geworden ist, // bleibe ich ab heute einen Monat lang bei euch, bis die Sommerferien vorbei sind.
+
+# --- E0174: H03 -- front of the house, gate
+E0174.0	Boku	Weil Mamas Bauch gross geworden ist, // bleibe ich ab heute einen Monat lang bei euch, bis die Sommerferien vorbei sind.
+E0174.1	Onkel	Freut mich, dich kennenzulernen, Boku-kun. Das war eine lange Reise. Hast du gut gemacht.
+
+# --- E0172: close-up (I32), no text.
+
+# --- E0175: I31 -- introductions close-up
+E0175.0	Onkel	Dieses Haus heisst Sorano, und ich bin dein Onkel Yusaku. // Sieh diesen Ort ab heute als dein eigenes Zuhause an und spiel hier nach Herzenslust.
+# --- E0176: H02 -- front of the house, gate
+E0176.0	Onkel	Also dann, Onee-chan zuerst.
+
+# --- E0177: I31 -- introductions close-up
+E0177.0	Moe	Ich heisse Moe. // Ich bin die aelteste Tochter in diesem Haus. Freut mich, dich kennenzulernen.
+E0177.1	Shirabe	Ich bin Shirabe. Es wird "Gedicht" geschrieben und "Shirabe" ausgesprochen.
+E0177.2	Shirabe	Unser Papa ist cool, oder? // Er ist Ke-ra-mi-ker. Er macht Teller und Reisschalen.
+# NOTE E0177.2: Im Japanischen steht togeika (Keramiker) in Katakana: Shirabe plappert ein
+#   Erwachsenenwort nach (Stilbibel § 8 Typ 1), deshalb silbenweise abgesetzt.
+
+
+# --- E0179: I31 -- introductions close-up
+E0179.0	Shirabe	Ich bin Shirabe. Es wird "Gedicht" geschrieben und "Shirabe" ausgesprochen.
+E0179.1	Shirabe	Unser Papa ist cool, oder? // Er ist Ke-ra-mi-ker. Er macht Teller und Reisschalen.
+
+# --- E0180: H01 -- front of the house, gate
+E0180.0	Erzaehler	Dort stand, wenn man so will, mein eher unscheinbarer Vater...
+
+
+# --- E0181: H03 -- front of the house, gate
+E0181.0	Tante	Erinnerst du dich noch an Tante? // Ich habe dir frueher sogar mal die Windeln gewechselt, weisst du.
+
+# --- E0182: I31 -- introductions close-up
+E0182.0	Tante	Ich bin die juengere Schwester deines Papas, Tante Kaoru. Wir verstehen uns schon gut, oder?
+
+# --- E0183: G13 -- Boku's room
+E0183.0	Tante	Dieses Zimmer kannst du ganz nach Lust und Laune benutzen.
+
+# --- E0184: G14 -- Boku's room
+E0184.0	Tante	Ich habe deinen Futon heute so lange in die Sonne gelegt, bis er aufgegeben hat, // darum ist er ganz weich und flauschig, perfekt zum Schlafen. // Du wirst tief und fest schlafen, eingehuellt in den Duft der Sonne.
+E0184.1	Boku	Ja. Danke, Tante.
+E0184.2	(voice only)
+E0184.3	Boku	Tante ist echt eine tolle Person. // Das ist ja wie... eine Futon-Explosion!
+
+# --- E0185: G13 -- Boku's room
+E0185.0	Tante	Also dann, bis zum Abendessen... // ist noch ungefaehr eine Stunde Zeit, wuerde ich sagen. // Geh ein bisschen im Haus oder im Garten spazieren. // Aber heute ist es schon spaet, also darfst du nicht in die Berge gehen. // Das ist nun mal die Regel bei Tante zu Hause.
+
+# --- E0186: no text.
+
+# --- E0112: G01 -- living room
+E0112.0	Onkel	Boku-kun, wohnst du zum ersten Mal in einem Haus mit Veranda?
+E0112.1	[SEL]	Ja | Nein
+E0112.2	Onkel	Egal wo man in diesem Haus ist, es weht immer eine kuehle, angenehme Brise herein... // Fuer alle Faelle haben wir zwar einen Ventilator, aber benutzt haben wir ihn kaum je.
+E0112.3	Boku	Ach so.
+E0112.4	Onkel	Mhm. Frueher waren die Haeuser alle so. // Wenn der Boden ringsherum ueberall mit Beton zugegossen ist, // geht so etwas wohl nicht mehr...
+E0112.5	Onkel	Die hohen Decken sind schoen, nicht wahr?
+
+# --- E0114: G07 -- foot of the stairs / hall
+E0114.0	Onkel	Boku-kun... // was hast du dir fuer dein Sommer-Forschungsprojekt vorgenommen?
+E0114.1	Onkel	In diesem Haus gibt es ein Insektenfang-Set.
+E0114.2	Boku	Hae?! Im Ernst?!
+E0114.3	Onkel	Mhm. Onkel schenkt es dir.
+E0114.4	Boku	Juhu! Klasse!
+E0114.5	Onkel	Es ist aber ein Erbstueck von Onkels Kind. // Ist das in Ordnung?
+E0114.6	Boku	Ja, klar! Zeig her, zeig her!
+E0114.7	Onkel	Dann bringe ich es dir nach dem Abendessen. // ...Warte voller Vorfreude darauf!
+E0114.8	Boku	Ja. Danke, Onkel.
+E0114.9	Erzaehler	Ich war so froh, dass mein Herz klopfte wie nach einem Wettlauf...
+
+# --- E0121: G03 -- kitchen
+E0121.0	Tante	Tante macht gleich fruehmorgens nach dem Aufstehen die Waesche, // also leg schmutzige Sachen bitte schon am Abend heraus.
+E0121.1	Boku	Ich habe nur ein Hemd und so mitgebracht.
+E0121.2	Tante	Ach herrje.
+E0121.3	Boku	Papa hat naemlich meine Tasche gepackt...
+E0121.4	Tante	Ach so... // Na ja, du bist ein Junge, da macht das wohl nichts.
+E0121.5	Tante	Ob dir Onii-chans alte Sachen wohl passen?
+E0121.6	Boku	Hae? Onii-chan?
+E0121.7	Tante	...Hm-hm. Das muessen wir bei Gelegenheit mal ausprobieren.
+
+# --- E0140: H09 -- garden corner where Shirabe watches ants
+E0140.0	Boku	H-hallo.
+E0140.1	Shirabe	...Tag.
+E0140.2	Boku	Was machst du da?
+E0140.3	Shirabe	...Ich spiele.
+E0140.4	Boku	Wie war noch gleich... dein Name?
+E0140.5	Shirabe	Verrate ich nicht!
+E0140.6	Boku	Hae?
+E0140.7	Shirabe	Oh... war nur Spass... // Es wird "Gedicht" geschrieben und "Shirabe" ausgesprochen.
+E0140.8	Shirabe	Ich ersuche Euch untertaenigst um Euer wertes Wohlwollen.
+E0140.9	Boku	Auch ich ersuche Euch untertaenigst um Euer wertes Wohlwollen.
+E0140.10	Boku	Bist du irgendwie... sauer auf mich?
+E0140.11	Shirabe	......
+# NOTE E0140.8-.9: Shirabes altertuemlich-gestelztes yoroshiku (-masuru); Boku uebernimmt
+#   ihren Wortlaut exakt (Stilbibel § 4), sodass beide Zeilen zusammenpassen.
+
+# --- E0001: G14 -- Boku's room; I16 -- the view from the window
+E0001.0	Erzaehler	In der Ferne sah ich das Dorf Sagi-no-sato am Fuss des Berges...
+
+# --- E0190: A19
+E0190.0	Onkel	So! Die Spielzeit fuer heute ist vorbei! // Das Abendessen ist schon feeeertig!
+
+# --- E0103: G02 -- dining room
+E0103.0	Onkel	Also dann, Itadakimasu!
+E0103.1	Shirabe, Moe, Tante	Itadakimasu!
+E0103.2	Boku	...kimasu.
+# --- E0104: G02 -- dining room
+E0104.0	Onkel	Mm! Das war lecker. // Gochisosama deshita.
+E0104.1	Shirabe, Moe, Tante	Gochisosama deshita.
+E0104.2	Boku	...deshita.
+E0104.3	Onkel	Boku-kun, oben auf dem Schreibtisch liegt etwas Schoenes.
+E0104.4	Boku	Etwas Schoenes oben auf dem Schreibtisch?
+E0104.5	Onkel	Genau. Geh und schau nach.
+
+# --- E0107: G14 -- Boku's room; I19 -- the desk
+E0107.0	Boku	Nanu...?
+E0107.1	Erzaehler	Es war eine Plastikmodell-Schachtel mit zwei Doppeldeckern // vor einem trueben, traurigen Abendrot.
+E0107.2	Erzaehler	Und in der Schachtel befand sich, genau wie mein Onkel es versprochen hatte, ein Insektenfang-Set.
+
+# --- E0113: G01 -- living room
+E0113.0	Onkel	Geh schnell hoch in dein Zimmer // und schau dir das Geschenk auf dem Schreibtisch an.
+E0113.1	Onkel	Gefaellt dir das Insektenfang-Set? // Ich glaube, das war alles, was dazugehoerte... // Die Schachtel scheint verschwunden zu sein... // Uebrigens, das Plastikmodell da hat Kaoru frueher mal gebaut.
+E0113.2	Boku	Tante, du baust Modelle, obwohl du ein Maedchen bist?
+E0113.3	Tante	Nanu, ist das denn komisch? // Tante bastelt alles moegliche gern.
+E0113.4	Boku	Sag mal, wo ist das fertige Modell?
+E0113.5	Onkel	Das steht am Fenster von Onkels Werkstatt. // Komm es dir morgen ruhig anschauen, Boku-kun.
+E0113.6	Onkel	Kaoru, bringst du mir ein Bier...?
+E0113.7	Tante	Jeder macht seine Sachen selbst.
+
+# --- E0122: G01 -- living room
+E0122.0	Tante	Wenn du Durst hast, stehen Gerstentee und Milch im Kuehlschrank, bedien dich ruhig. // Beides ist hausgemacht, deshalb ist es im gleichen Gefaess. // Und in der Milch sind manchmal weisse Kluempchen, // aber die entstehen beim Abkochen im Topf, also mach dir darueber keine Sorgen.
+
+# --- E0141: G06 -- TV room
+E0141.0	Boku	...Was schaust du gern im Fernsehen?
+E0141.1	Shirabe	Hae? Aehm...
+E0141.2	Shirabe	So Sachen, die Maedchen moegen...
+E0141.3	Shirabe	Sketche im Fernsehen sind manchmal grausam und lustig, nicht wahr...

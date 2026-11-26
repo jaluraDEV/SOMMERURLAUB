@@ -1,0 +1,1096 @@
+"""`REL-04`: cutting a release from a clean commit, and posting it with `gh`.
+
+Synthetic images and throwaway git repositories throughout; the notes are rendered from
+copies of the real `README.md`, notes template and `translation/status.tsv`, so a heading
+DOC work renames is caught here rather than at release time. `gh` is never the real one:
+a stub on PATH records what it was asked to do.
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import random
+import shutil
+import stat
+import subprocess
+import sys
+import zipfile
+from pathlib import Path
+
+import pytest
+
+from boku import REPO_ROOT
+from boku.build import CUE_NAME, CUE_TEXT, IMAGE_NAME, cue_text
+from boku.build import MANIFEST_NAME as BUILD_MANIFEST
+from boku.chd import ChdError, extract_cd
+from boku.coverage import (
+    BUILD_ID_NAME,
+    REFUSED_FIELD,
+    RESULT_SHA1_FIELD,
+    SOURCE_SHA1_FIELD,
+    WRITTEN_FIELD,
+)
+from boku.disc import RAW_SECTOR_SIZE
+from boku.importer import sha1_of
+from boku.packets import markdown_sections
+from boku.patchfile import (
+    _CONVERT,
+    _CONVERT_PPF,
+    MANIFEST_NAME,
+    apply_patch,
+    hashes_of,
+    patch_stem,
+)
+from boku.release import (
+    BASE_DIR,
+    BASE_NAME,
+    BUILD_ARGS_NAME,
+    MAIN,
+    NOTES_PATH,
+    NOTES_TEMPLATE,
+    PPF,
+    PPF_NOTES_TEMPLATE,
+    QUOTED_SECTIONS,
+    RELEASE_FORMAT,
+    RELEASE_MANIFEST,
+    STATUS_PATH,
+    VERSIONS_HEADING,
+    ReleaseRefused,
+    assemble_release,
+    github_repo,
+    main_publish,
+    main_release,
+    main_release_row,
+    publish_command,
+    readme_section,
+    require_clean_tree,
+    revision,
+    version_row,
+    with_version_row,
+    write_base_discs,
+)
+from tests.test_mode_one import needs_chdman
+from tests.test_patchfile import IMAGE_SIZE, needs_xdelta3
+
+TRACKED_INPUTS = ("README.md", NOTES_TEMPLATE, PPF_NOTES_TEMPLATE, STATUS_PATH)
+#: The bare repository standing in for GitHub, beside `repo` in the test's tmp_path.
+REMOTE_NAME = "github.git"
+
+
+def git(repo: Path, *arguments: str) -> str:
+    return subprocess.run(
+        ["git", "-C", str(repo), *arguments], capture_output=True, text=True, check=True
+    ).stdout.strip()
+
+
+def commit_more(repo: Path) -> None:
+    (repo / "later.txt").write_text("x", encoding="utf-8")
+    git(repo, "add", "later.txt")
+    git(repo, "commit", "-q", "-m", "later")
+
+
+def stub_on_path(tmp_path: Path, monkeypatch, name: str, log: Path) -> None:
+    """A `name` first on PATH that appends its arguments, one per line, to `log`."""
+    bin_dir = tmp_path / "stub-bin"
+    bin_dir.mkdir(exist_ok=True)
+    if os.name == "nt":
+        stub_sh = bin_dir / name
+        stub_sh.write_text(
+            f'#!/bin/sh\nfor a in "$@"; do printf "%s\\n" "$a"; done >> "{log.as_posix()}"\n',
+            encoding="utf-8",
+        )
+        stub_sh.chmod(stub_sh.stat().st_mode | stat.S_IXUSR)
+        helper = bin_dir / f"{name}_stub.py"
+        helper.write_text(
+            "import pathlib, sys\n"
+            f"log = pathlib.Path({str(log)!r})\n"
+            'with log.open("a", encoding="utf-8", newline="\\n") as f:\n'
+            "    for a in sys.argv[1:]:\n"
+            '        f.write(a + "\\n")\n',
+            encoding="utf-8",
+        )
+        stub_cmd = bin_dir / f"{name}.cmd"
+        stub_cmd.write_text(f'@echo off\n"{sys.executable}" "{helper}" %*\n', encoding="utf-8")
+    else:
+        stub = bin_dir / name
+        stub.write_text(
+            f'#!/bin/sh\nfor a in "$@"; do printf "%s\\n" "$a"; done >> "{log}"\n',
+            encoding="utf-8",
+        )
+        stub.chmod(stub.stat().st_mode | stat.S_IXUSR)
+    monkeypatch.setenv("PATH", f"{bin_dir}{os.pathsep}{os.environ['PATH']}")
+
+
+def _make_sh_cmd(*args: str) -> list[str]:
+    if os.name != "nt":
+        return [str(REPO_ROOT / "make.sh"), *args]
+    for var in ("ProgramFiles", "ProgramFiles(x86)"):
+        base = os.environ.get(var)
+        if base:
+            candidate = Path(base) / "Git" / "bin" / "bash.exe"
+            if candidate.is_file():
+                return [str(candidate), str(REPO_ROOT / "make.sh"), *args]
+    found = shutil.which("bash")
+    if found and not found.lower().endswith(r"\system32\bash.exe"):
+        return [found, str(REPO_ROOT / "make.sh"), *args]
+    pytest.skip("bash is not available")
+
+
+@pytest.fixture
+def repo(tmp_path) -> Path:
+    """A committed repository holding the real notes inputs, and a .gitignore like ours.
+
+    A throwaway fixture: signing and the machine's hook path are switched off in *its*
+    local config, since a test commit is not a commit of anyone's work.
+    """
+    root = tmp_path / "repo"
+    root.mkdir()
+    git(root, "init", "-q", "-b", "master")
+    for key, value in (
+        ("user.name", "Test"),
+        ("user.email", "test@example.invalid"),
+        ("commit.gpgsign", "false"),
+        ("tag.gpgsign", "false"),
+        ("core.autocrlf", "false"),
+        ("core.hooksPath", str(tmp_path / "no-hooks")),
+    ):
+        git(root, "config", key, value)
+    for relative in TRACKED_INPUTS:
+        target = root / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(REPO_ROOT / relative, target)
+    shutil.copyfile(REPO_ROOT / ".gitignore", root / ".gitignore")
+    git(root, "add", ".")
+    git(root, "commit", "-q", "-m", "fixture")
+    return root
+
+
+@pytest.fixture
+def images(tmp_path) -> tuple[Path, Path]:
+    """A base and a built image of equal length, differing in two places."""
+    original = random.Random(11).randbytes(IMAGE_SIZE)
+    modified = bytearray(original)
+    for offset, length in ((0x1200, 4), (0x9800, 300)):
+        modified[offset : offset + length] = bytes(
+            b ^ 0xFF for b in original[offset : offset + length]
+        )
+    base = tmp_path / "base.img"
+    built = tmp_path / "built.img"
+    base.write_bytes(original)
+    built.write_bytes(bytes(modified))
+    return base, built
+
+
+def make_build(repo: Path, base: Path, built: Path, *, dirty: bool = False, args: str = "") -> Path:
+    """A days build directory as `./make.sh build-days` leaves it, of `repo`'s HEAD."""
+    build = repo / "build" / "days"
+    build.mkdir(parents=True)
+    shutil.copyfile(built, build / IMAGE_NAME)
+    (build / CUE_NAME).write_text(CUE_TEXT, encoding="utf-8")
+    (build / BUILD_MANIFEST).write_text(
+        json.dumps(
+            {
+                SOURCE_SHA1_FIELD: hashes_of(base).sha1,
+                RESULT_SHA1_FIELD: hashes_of(built).sha1,
+                WRITTEN_FIELD: ["E0001.0", "E0001.1", "E0002.0"],
+                REFUSED_FIELD: {"E0003.0": ["over the band"]},
+            }
+        ),
+        encoding="utf-8",
+    )
+    head = git(repo, "rev-parse", "--short=8", "HEAD")
+    (build / BUILD_ID_NAME).write_text(
+        f"20260925T1200Z-{head}{'-dirty' if dirty else ''}\n", encoding="utf-8"
+    )
+    (build / BUILD_ARGS_NAME).write_text(f"{args}\n", encoding="utf-8")
+    return build
+
+
+def assemble(
+    repo: Path, base: Path, build: Path, base_sha1: str | None = None, *, ppf: bool = True
+) -> Path:
+    if shutil.which("chdman") is None:  # a release packs its disc
+        pytest.skip("chdman is not on PATH (brew install rom-tools)")
+    return assemble_release(
+        repo=repo,
+        base=base,
+        build_dir=build,
+        out_root=repo / "release",
+        base_sha1=base_sha1 or hashes_of(base).sha1,
+        ppf=ppf,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Version and tree
+
+
+def test_a_tagged_commit_releases_as_its_tag(repo):
+    git(repo, "tag", "v0.2.0")
+    made = revision(repo)
+    assert (made.version, made.tag) == ("0.2.0", "v0.2.0")
+    assert made.commit == git(repo, "rev-parse", "HEAD")
+
+
+def test_an_untagged_commit_is_a_snapshot_named_by_describe(repo):
+    git(repo, "tag", "v0.2.0")
+    commit_more(repo)
+    made = revision(repo)
+    assert made.tag is None
+    assert made.version == f"0.2.0-1-g{git(repo, 'rev-parse', '--short=8', 'HEAD')}"
+
+
+def test_a_repository_with_no_version_tag_is_a_snapshot_of_its_commit(repo):
+    git(repo, "tag", "first-draft")  # the repo's own non-version tags are not versions
+    made = revision(repo)
+    assert made.tag is None
+    assert made.version == f"0-g{git(repo, 'rev-parse', '--short=8', 'HEAD')}"
+
+
+def test_two_version_tags_on_one_commit_are_refused(repo):
+    git(repo, "tag", "v0.2.0")
+    git(repo, "tag", "v0.3.0")
+    with pytest.raises(ReleaseRefused, match=r"v0\.2\.0, v0\.3\.0"):
+        revision(repo)
+
+
+def test_a_version_too_long_for_the_ppf_fingerprint_is_refused(repo):
+    """The version rides in the PPF's 50-byte description; a tag that overflows it would
+    only fail after the whole image had been built."""
+    git(repo, "tag", "v1.0.0-release-candidate-one")
+    with pytest.raises(ReleaseRefused, match="PPF"):
+        revision(repo)
+
+
+def test_a_clean_tree_passes(repo):
+    require_clean_tree(repo)
+
+
+def test_a_modified_tracked_file_is_refused(repo):
+    (repo / "README.md").write_text("edited\n", encoding="utf-8")
+    with pytest.raises(ReleaseRefused, match=r"README\.md"):
+        require_clean_tree(repo)
+
+
+def test_an_untracked_file_is_refused(repo):
+    """`git describe --dirty`, which stamps the build id, does not see untracked files --
+    and an untracked day file is read by the build all the same."""
+    (repo / "translation" / "day99.txt").write_text("E9999.0\tHello\n", encoding="utf-8")
+    with pytest.raises(ReleaseRefused, match=r"day99\.txt"):
+        require_clean_tree(repo)
+
+
+def test_ignored_outputs_do_not_make_the_tree_dirty(repo):
+    for ignored in ("build/days/image.img", "release/v0/RELEASE.json", "work/x"):
+        (repo / ignored).parent.mkdir(parents=True, exist_ok=True)
+        (repo / ignored).write_text("x", encoding="utf-8")
+    require_clean_tree(repo)
+
+
+# ---------------------------------------------------------------------------
+# README sections
+
+
+def test_the_notes_quote_the_readme_sections_they_name():
+    """The real README, so a renamed heading fails here and not on release day."""
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+    for heading in QUOTED_SECTIONS.values():
+        body = readme_section(readme, heading)
+        assert body.strip()
+
+
+def test_relative_links_become_paths_and_web_links_survive():
+    readme = (
+        "## Credit\n\nSee [the survey](research/p.md), [research/q.md](research/q.md) and "
+        "[pleonex](https://github.com/pleonex/x).\n\n## Next\n\nnot this\n"
+    )
+    body = readme_section(readme, "Credit")
+    assert "the survey (`research/p.md`)" in body
+    assert "`research/q.md`" in body and "[research/q.md]" not in body
+    assert "[pleonex](https://github.com/pleonex/x)" in body
+    assert "not this" not in body
+
+
+def test_a_missing_readme_section_is_refused():
+    with pytest.raises(ReleaseRefused, match="Related work"):
+        readme_section("## Something else\n", "Related work")
+
+
+# ---------------------------------------------------------------------------
+# Assembling
+
+
+def unzip(bundle: Path) -> tuple[str, dict[str, bytes]]:
+    """A zip's one top-level folder, and its members by file name."""
+    with zipfile.ZipFile(bundle) as archive:
+        (folder,) = {str(Path(name).parent) for name in archive.namelist()}
+        return folder, {Path(name).name: archive.read(name) for name in archive.namelist()}
+
+
+def contract(directory: Path) -> dict:
+    return json.loads((directory / MANIFEST_NAME).read_text(encoding="utf-8"))
+
+
+@needs_xdelta3
+def test_the_main_download_holds_the_xdelta_the_cue_and_the_notes(repo, images):
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    out = assemble(repo, base, make_build(repo, base, built))
+
+    assert out == (repo / "release" / "v0.2.0").resolve()
+    main = out / MAIN.directory
+    patch = contract(main)
+    stem = patch_stem("0.2.0")
+    assert [entry["file"] for entry in patch["patches"]] == [f"{stem}.xdelta"]
+    assert patch["original"]["name"] == BASE_NAME
+    assert patch["original"]["sha1"] == hashes_of(base).sha1
+    assert patch["result"]["sha1"] == hashes_of(built).sha1
+
+    cue = (main / f"{stem}.cue").read_text(encoding="utf-8")
+    assert cue == cue_text(patch["result"]["name"])
+
+    notes = (out / NOTES_PATH).read_text(encoding="utf-8")
+    for side in ("original", "result"):
+        for key in ("crc32", "md5", "sha1"):
+            assert patch[side][key] in notes
+        assert f"{patch[side]['size']:,}" in notes
+    readme = (repo / "README.md").read_text(encoding="utf-8")
+    for heading in QUOTED_SECTIONS.values():
+        first_line = readme_section(readme, heading).strip().splitlines()[0]
+        assert first_line in notes
+    assert git(repo, "rev-parse", "HEAD") in notes
+
+
+@needs_xdelta3
+def test_the_ppf_is_not_in_the_main_download_and_its_contract_does_not_describe_it(repo, images):
+    """Jay, 2026-09-25: the PPF is a different download, so that it can be withdrawn."""
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    out = assemble(repo, base, make_build(repo, base, built))
+    manifest = json.loads((out / RELEASE_MANIFEST).read_text(encoding="utf-8"))
+    _, main = unzip(out / manifest["assets"][0]["file"])
+    assert not [name for name in main if name.endswith(".ppf")]
+    for name in (MANIFEST_NAME, "README.txt"):
+        assert b"ppf" not in main[name].lower(), f"{name} describes a PPF it does not carry"
+
+
+@needs_xdelta3
+def test_the_ppf_download_stands_alone(repo, images, tmp_path):
+    """Its own PATCH.json, README and cue: extracted by itself, `boku apply-patch` checks
+    it against full SHA-1s (not the PPF's 8-digit fingerprint) and gives the build."""
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    out = assemble(repo, base, make_build(repo, base, built))
+    manifest = json.loads((out / RELEASE_MANIFEST).read_text(encoding="utf-8"))
+    assert [asset["file"] for asset in manifest["assets"]] == [
+        MAIN.asset("0.2.0"),
+        PPF.asset("0.2.0"),
+    ]
+    folder, members = unzip(out / manifest["assets"][1]["file"])
+    stem = patch_stem("0.2.0")
+    assert set(members) == {f"{stem}.ppf", MANIFEST_NAME, "README.txt", f"{stem}.cue"}
+    # Extracted side by side, the two downloads must not overwrite each other's PATCH.json.
+    assert folder != unzip(out / manifest["assets"][0]["file"])[0]
+    assert b"DuckStation" in members["README.txt"]
+    alone = tmp_path / "alone"
+    alone.mkdir()
+    for name, data in members.items():
+        (alone / name).write_bytes(data)
+    # The contract must name the file itself: apply_patch honours a PATCH.json only for a
+    # patch it lists, and otherwise falls back to the 8-digit fingerprint.
+    assert [entry["file"] for entry in contract(alone)["patches"]] == [f"{stem}.ppf"]
+    readme = members["README.txt"].decode()
+    assert _CONVERT_PPF in readme and _CONVERT not in readme  # a .chd works for DuckStation
+    result = apply_patch(base, alone / f"{stem}.ppf", tmp_path / "patched.img")
+    assert result.sha1 == hashes_of(built).sha1
+
+
+@needs_xdelta3
+def test_every_download_is_its_directory_under_its_real_names(repo, images):
+    """GitHub renames an uploaded asset whose name has spaces or brackets, and PATCH.json,
+    README.txt and the .cue name the files -- so they travel inside archives."""
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    out = assemble(repo, base, make_build(repo, base, built))
+    manifest = json.loads((out / RELEASE_MANIFEST).read_text(encoding="utf-8"))
+    for asset, directory in zip(manifest["assets"], (MAIN.directory, PPF.directory), strict=True):
+        assert all(c.isalnum() or c in "-._" for c in asset["file"])
+        assert asset["sha1"] == hashes_of(out / asset["file"]).sha1
+        _, members = unzip(out / asset["file"])
+        assert members == {p.name: p.read_bytes() for p in (out / directory).iterdir()}
+        assert not any(name.endswith((".img", ".bin", ".iso", ".chd")) for name in members)
+
+
+@needs_xdelta3
+def test_no_ppf_releases_the_main_download_alone_and_never_builds_a_ppf(repo, images, monkeypatch):
+    """The mode that ships without the PPF cannot be stopped by the PPF writer."""
+
+    def refuse(*args, **kwargs):
+        raise AssertionError("make_ppf ran for a --no-ppf release")
+
+    monkeypatch.setattr("boku.patchfile.make_ppf", refuse)
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    out = assemble(repo, base, make_build(repo, base, built), ppf=False)
+    manifest = json.loads((out / RELEASE_MANIFEST).read_text(encoding="utf-8"))
+    assert [asset["file"] for asset in manifest["assets"]] == [MAIN.asset("0.2.0")]
+    assert not (out / PPF.directory).exists()
+    assert ".ppf" not in (out / NOTES_PATH).read_text(encoding="utf-8")
+
+
+@needs_xdelta3
+def test_the_notes_say_which_patched_sha1_is_this_version(repo, images):
+    """Not only in the result's hash table: in a sentence naming the version, pointing at
+    README's table of every version."""
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    out = assemble(repo, base, make_build(repo, base, built))
+    result_sha1 = contract(out / MAIN.directory)["result"]["sha1"]
+    notes = (out / NOTES_PATH).read_text(encoding="utf-8")
+    # Not the hash table: its File row already holds both, through the file's name.
+    prose = [p for p in notes.split("\n\n") if not p.lstrip().startswith("|")]
+    said = [p for p in prose if result_sha1 in p and "v0.2.0" in p]
+    assert said, "no paragraph ties the patched image's SHA-1 to the version"
+    assert VERSIONS_HEADING in said[0]
+
+
+@needs_xdelta3
+def test_the_notes_offer_the_ppf_when_it_ships(repo, images):
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    notes = (assemble(repo, base, make_build(repo, base, built)) / NOTES_PATH).read_text(
+        encoding="utf-8"
+    )
+    assert PPF.asset("0.2.0") in notes
+    assert f"{patch_stem('0.2.0')}.ppf" in notes
+
+
+@needs_xdelta3
+def test_the_same_commit_gives_the_same_release_bytes(repo, images):
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    build = make_build(repo, base, built)
+
+    def contents(out: Path) -> dict[str, bytes]:
+        return {str(p.relative_to(out)): p.read_bytes() for p in out.rglob("*") if p.is_file()}
+
+    before = contents(assemble(repo, base, build))
+    assert contents(assemble(repo, base, build)) == before
+
+
+@needs_xdelta3
+def test_a_snapshot_is_built_under_its_describe_name(repo, images):
+    base, built = images
+    out = assemble(repo, base, make_build(repo, base, built))
+    manifest = json.loads((out / RELEASE_MANIFEST).read_text(encoding="utf-8"))
+    assert manifest["tag"] is None
+    assert out.name == f"v{manifest['version']}"
+
+
+def test_a_build_of_another_commit_is_refused(repo, images):
+    base, built = images
+    build = make_build(repo, base, built)
+    commit_more(repo)
+    with pytest.raises(ReleaseRefused, match="is of"):
+        assemble(repo, base, build)
+
+
+def test_a_build_made_from_edits_is_refused(repo, images):
+    base, built = images
+    with pytest.raises(ReleaseRefused, match="uncommitted"):
+        assemble(repo, base, make_build(repo, base, built, dirty=True))
+
+
+def test_an_image_changed_since_its_build_is_refused(repo, images):
+    base, built = images
+    build = make_build(repo, base, built)
+    with (build / "image.img").open("r+b") as image:
+        image.write(b"\0\0\0\0")
+    with pytest.raises(ReleaseRefused, match="changed since"):
+        assemble(repo, base, build)
+
+
+def test_a_base_that_is_not_the_redump_dump_is_refused(repo, images):
+    base, built = images
+    with pytest.raises(ReleaseRefused, match="Redump"):
+        assemble(repo, base, make_build(repo, base, built), base_sha1="0" * 40)
+
+
+def test_a_dirty_tree_builds_nothing(repo, images):
+    base, built = images
+    build = make_build(repo, base, built)
+    (repo / "README.md").write_text("edited\n", encoding="utf-8")
+    with pytest.raises(ReleaseRefused, match=r"README\.md"):
+        assemble(repo, base, build)
+    assert not (repo / "release").exists()
+
+
+@needs_xdelta3
+def test_a_patch_that_does_not_reproduce_the_build_is_not_released(repo, images, monkeypatch):
+    """The last gate applies every patch through `boku apply-patch`'s own path. Here the
+    PPF writer is made to emit a patch for a different target, with a manifest that agrees
+    with it -- the round trip through `apply_patch` passes, and only the comparison with
+    the built image can catch it."""
+    import boku.patchfile as patchfile
+
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    build = make_build(repo, base, built)
+    other = built.parent / "other.img"
+    data = bytearray(built.read_bytes())
+    data[0x2000] ^= 0xFF
+    other.write_bytes(bytes(data))
+    real = patchfile.build_patches
+
+    def wrong_target(original, modified, out_dir, **kwargs):
+        return real(original, other, out_dir, **kwargs)
+
+    monkeypatch.setattr("boku.release.build_patches", wrong_target)
+    with pytest.raises(ReleaseRefused, match="does not reproduce"):
+        assemble(repo, base, build)
+    assert not (repo / "release" / "v0.2.0").exists()
+
+
+@needs_xdelta3
+def test_a_ppf_that_does_not_reproduce_the_build_is_not_released(repo, images, monkeypatch):
+    """The xdelta is right and the PPF alone is wrong: the check must run on the PPF's own
+    download too, not only on the main one."""
+    import boku.patchfile as patchfile
+
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    build = make_build(repo, base, built)
+    real = patchfile.build_patches
+
+    def broken_ppf(original, modified, out_dir, **kwargs):
+        made = real(original, modified, out_dir, **kwargs)
+        data = bytearray(made.ppf_path.read_bytes())
+        data[-1] ^= 0xFF  # the last byte of the last record's data
+        made.ppf_path.write_bytes(bytes(data))
+        return made
+
+    monkeypatch.setattr("boku.release.build_patches", broken_ppf)
+    with pytest.raises(ReleaseRefused, match=r"\.ppf does not"):
+        assemble(repo, base, build)
+    assert not (repo / "release" / "v0.2.0").exists()
+
+
+# ---------------------------------------------------------------------------
+# The discs beside a release, to check by hand
+
+BASE_CHD = f"{Path(BASE_NAME).stem}.chd"
+
+
+@pytest.fixture
+def discs(tmp_path) -> tuple[Path, Path]:
+    """`images`, but whole raw sectors, which is all chdman packs."""
+    original = random.Random(13).randbytes(RAW_SECTOR_SIZE * 24)
+    modified = bytearray(original)
+    modified[0x9800 : 0x9800 + 300] = bytes(b ^ 0xFF for b in original[0x9800 : 0x9800 + 300])
+    base, built = tmp_path / "disc-base.img", tmp_path / "disc-built.img"
+    base.write_bytes(original)
+    built.write_bytes(bytes(modified))
+    return base, built
+
+
+def unpacked_sha1(chd: Path, tmp_path: Path) -> str:
+    """The SHA-1 of the raw image `chdman extractcd` gives back from `chd`."""
+    return sha1_of(extract_cd(chd, tmp_path / f"unpacked-{chd.stem}.img"))
+
+
+def pack_uncompressed(image: Path, chd: Path) -> Path:
+    """`image` as a .chd that `create_cd`, which compresses, would never write."""
+    cue = image.with_suffix(".cue")
+    cue.write_text(cue_text(image.name), encoding="utf-8")
+    subprocess.run(
+        ["chdman", "createcd", "-f", "-i", str(cue), "-o", str(chd), "-c", "none"],
+        check=True,
+        capture_output=True,
+    )
+    return chd
+
+
+@needs_xdelta3
+def test_a_release_holds_the_patched_disc_as_image_cue_and_chd(repo, discs, tmp_path):
+    base, built = discs
+    git(repo, "tag", "v0.2.0")
+    out = assemble(repo, base, make_build(repo, base, built))
+
+    patch = contract(out / MAIN.directory)
+    image = out / patch["result"]["name"]
+    stem = image.stem
+    assert sha1_of(image) == sha1_of(built)
+    assert (out / f"{stem}.cue").read_text(encoding="utf-8") == (
+        out / MAIN.directory / f"{stem}.cue"
+    ).read_text(encoding="utf-8")
+    assert unpacked_sha1(out / f"{stem}.chd", tmp_path) == sha1_of(built)
+
+
+@needs_xdelta3
+def test_a_disc_that_does_not_pack_leaves_no_release(repo, discs, monkeypatch):
+    """The disc is staged with the downloads: a release without it is never published."""
+    base, built = discs
+    git(repo, "tag", "v0.2.0")
+
+    def fails(cue, chd):
+        raise ChdError("chdman is not on PATH")
+
+    monkeypatch.setattr("boku.release.create_cd", fails)
+    with pytest.raises(ReleaseRefused, match="chdman"):
+        assemble(repo, base, make_build(repo, base, built))
+    assert not (repo / "release" / "v0.2.0").exists()
+
+
+@needs_chdman
+def test_v0_holds_the_dump_its_cue_and_a_chd_packed_from_it(discs, tmp_path):
+    base, _ = discs
+    v0 = write_base_discs(base, tmp_path / "release", None, base_sha1=sha1_of(base))
+
+    assert v0 == (tmp_path / "release" / BASE_DIR).resolve()
+    assert sha1_of(v0 / BASE_NAME) == sha1_of(base)
+    assert (v0 / f"{Path(BASE_NAME).stem}.cue").read_text(encoding="utf-8") == cue_text(BASE_NAME)
+    assert unpacked_sha1(v0 / BASE_CHD, tmp_path) == sha1_of(base)
+
+
+@needs_chdman
+def test_a_given_chd_of_the_dump_replaces_a_packed_one_byte_for_byte(discs, tmp_path):
+    """Jay, 2026-09-30: v0 holds "a copy of the original" .chd. The one given here is one
+    chdman's defaults would not write, so a re-pack could not pass for the copy."""
+    base, _ = discs
+    sha1 = sha1_of(base)
+    root = tmp_path / "release"
+    packed = write_base_discs(base, root, None, base_sha1=sha1) / BASE_CHD
+    given = pack_uncompressed(base, tmp_path / "given.chd")
+    assert given.read_bytes() != packed.read_bytes(), "the test cannot tell a copy from a pack"
+
+    v0 = write_base_discs(base, root, given, base_sha1=sha1)
+    assert v0 is not None
+    assert (v0 / BASE_CHD).read_bytes() == given.read_bytes()
+    assert sha1_of(v0 / BASE_NAME) == sha1
+    assert write_base_discs(base, root, given, base_sha1=sha1) is None, "rewritten again"
+
+
+def test_a_base_that_is_not_the_dump_writes_no_v0(discs, tmp_path):
+    base, _ = discs
+    with pytest.raises(ReleaseRefused, match="not the Redump dump"):
+        write_base_discs(base, tmp_path / "release", None, base_sha1="0" * 40)
+    assert not (tmp_path / "release" / BASE_DIR).exists()
+
+
+@needs_chdman
+def test_a_given_chd_of_another_disc_is_refused(discs, tmp_path):
+    base, built = discs
+    wrong = pack_uncompressed(built, tmp_path / "wrong.chd")
+    with pytest.raises(ReleaseRefused, match=r"wrong\.chd"):
+        write_base_discs(base, tmp_path / "release", wrong, base_sha1=sha1_of(base))
+    assert not (tmp_path / "release" / BASE_DIR).exists()
+
+
+def test_an_existing_v0_is_kept(discs, tmp_path):
+    """The dump never changes, so v0 is written once: a later release copies nothing."""
+    base, _ = discs
+    v0 = tmp_path / "release" / BASE_DIR
+    v0.mkdir(parents=True)
+    (v0 / "mine.txt").write_text("x", encoding="utf-8")
+    assert write_base_discs(base, tmp_path / "release", None, base_sha1=sha1_of(base)) is None
+    assert sorted(p.name for p in v0.iterdir()) == ["mine.txt"]
+
+
+def test_a_v0_tag_is_refused_since_v0_is_the_dump(repo, images):
+    base, built = images
+    git(repo, "tag", BASE_DIR)
+    with pytest.raises(ReleaseRefused, match=BASE_DIR):
+        assemble(repo, base, make_build(repo, base, built))
+
+
+@needs_chdman
+@needs_xdelta3
+def test_the_release_verb_writes_both_versions_discs(repo, discs):
+    """`boku release` itself, not just its parts."""
+    base, built = discs
+    git(repo, "tag", "v0.2.0")
+    build = make_build(repo, base, built)
+    root = repo / "release"
+    assert main_release(repo, base, build, root, preflight=False, base_sha1=sha1_of(base)) == 0
+
+    assert (root / "v0.2.0" / f"{patch_stem('0.2.0')}.chd").is_file()
+    assert sha1_of(root / BASE_DIR / BASE_NAME) == sha1_of(base)
+
+
+# ---------------------------------------------------------------------------
+# Publishing
+
+
+@pytest.fixture
+def gh_stub(tmp_path, monkeypatch) -> Path:
+    """A `gh` on PATH that records its arguments, one per line."""
+    log = tmp_path / "gh-called.txt"
+    stub_on_path(tmp_path, monkeypatch, "gh", log)
+    return log
+
+
+@pytest.fixture
+def github_remote(tmp_path) -> Path:
+    """A bare repository standing in for GitHub, where `publish-release` looks up the tag."""
+    remote = tmp_path / REMOTE_NAME
+    git(tmp_path, "init", "-q", "--bare", "-b", "master", str(remote))
+    return remote
+
+
+@pytest.fixture
+def cut_release(repo, images, github_remote) -> Path:
+    """A release of tag v0.2.0, the tag pushed (annotated, so the lookup must peel it), that
+    README.md does not list yet."""
+    if needs_xdelta3.args[0]:  # a mark on a fixture does nothing
+        pytest.skip(needs_xdelta3.kwargs["reason"])
+    base, built = images
+    git(repo, "tag", "-a", "-m", "v0.2.0", "v0.2.0")
+    git(repo, "push", "-q", str(github_remote), "v0.2.0")
+    return assemble(repo, base, make_build(repo, base, built))
+
+
+def commit_readme(repo: Path, *, push: bool = True) -> None:
+    """Commit README.md on master and, unless `push` is false, push master to the stand-in
+    GitHub, whose default branch it is."""
+    git(repo, "commit", "-q", "-m", "README: a version's row", "README.md")
+    if push:
+        git(repo, "push", "-q", str(repo.parent / REMOTE_NAME), "master")
+
+
+@pytest.fixture
+def tagged_release(cut_release, repo) -> Path:
+    """`cut_release` with its row in README.md, committed after the tag and pushed: ready to
+    post."""
+    assert main_release_row(cut_release, repo) == 0
+    commit_readme(repo)
+    return cut_release
+
+
+def publish(release: Path, repo: Path, **kwargs) -> int:
+    options = {
+        "yes": False,
+        "draft": False,
+        "prerelease": False,
+        "github": "owner/boku-ps1",
+        "remote": str(repo.parent / REMOTE_NAME),
+    }
+    options.update(kwargs)
+    return main_publish(release, git_repo=repo, **options)
+
+
+def test_without_yes_nothing_is_posted(tagged_release, repo, gh_stub, capsys):
+    assert publish(tagged_release, repo) == 0
+    assert not gh_stub.exists()
+    said = capsys.readouterr().out
+    assert "gh release create v0.2.0" in said
+    assert "nothing was changed on GitHub" in said
+
+
+def test_with_yes_gh_is_given_the_tag_the_bundle_and_the_notes(tagged_release, repo, gh_stub):
+    assert publish(tagged_release, repo, yes=True, draft=True) == 0
+    called = gh_stub.read_text(encoding="utf-8").splitlines()
+    manifest = json.loads((tagged_release / RELEASE_MANIFEST).read_text(encoding="utf-8"))
+    expected = publish_command(
+        tagged_release, manifest, "owner/boku-ps1", draft=True, prerelease=False
+    )
+    assert called == expected[1:]
+    assert called[:3] == ["release", "create", "v0.2.0"]
+    for asset in manifest["assets"]:
+        assert str(tagged_release / asset["file"]) in called
+    assert len(manifest["assets"]) == 2
+    assert "--verify-tag" in called and "--draft" in called
+    assert called[called.index("--notes-file") + 1] == str(tagged_release / NOTES_PATH)
+    assert called[called.index("--repo") + 1] == "owner/boku-ps1"
+
+
+def test_only_the_bundles_are_uploaded_whatever_else_is_in_the_directory(
+    tagged_release, repo, gh_stub
+):
+    (tagged_release / "stray.img").write_bytes(b"\0" * 2352)
+    assert publish(tagged_release, repo, yes=True) == 0
+    called = gh_stub.read_text(encoding="utf-8").splitlines()
+    assert not any("stray.img" in argument for argument in called)
+    assert not any(argument.endswith((".ppf", ".xdelta")) for argument in called)
+
+
+@needs_xdelta3
+def test_a_snapshot_is_not_published(repo, images, gh_stub):
+    base, built = images
+    out = assemble(repo, base, make_build(repo, base, built))
+    assert publish(out, repo, yes=True) == 1
+    assert not gh_stub.exists()
+
+
+@pytest.mark.parametrize("which", [0, 1])
+def test_a_bundle_changed_after_the_build_is_not_published(tagged_release, repo, gh_stub, which):
+    manifest = json.loads((tagged_release / RELEASE_MANIFEST).read_text(encoding="utf-8"))
+    with (tagged_release / manifest["assets"][which]["file"]).open("ab") as bundle:
+        bundle.write(b"!")
+    assert publish(tagged_release, repo, yes=True) == 1
+    assert not gh_stub.exists()
+
+
+def test_a_tag_moved_since_the_build_is_not_published(tagged_release, repo, gh_stub):
+    commit_more(repo)
+    git(repo, "tag", "-f", "v0.2.0")
+    assert publish(tagged_release, repo, yes=True) == 1
+    assert not gh_stub.exists()
+
+
+@pytest.mark.parametrize(
+    ("url", "expected"),
+    [
+        ("git@github.com:jay/boku-ps1.git", "jay/boku-ps1"),
+        ("https://github.com/jay/boku-ps1.git", "jay/boku-ps1"),
+        ("https://github.com/jay/boku-ps1", "jay/boku-ps1"),
+        ("ssh://git@github.com/jay/boku-ps1.git", "jay/boku-ps1"),
+        ("https://gitlab.com/jay/boku-ps1.git", None),
+    ],
+)
+def test_the_github_repository_comes_from_origin(repo, url, expected):
+    git(repo, "remote", "add", "origin", url)
+    assert github_repo(repo) == expected
+
+
+def test_no_origin_and_no_repo_is_refused(tagged_release, repo, gh_stub, capsys):
+    assert publish(tagged_release, repo, yes=True, github=None) == 1
+    assert "--repo" in capsys.readouterr().out
+    assert not gh_stub.exists()
+
+
+def test_a_build_given_arguments_is_refused(repo, images):
+    """build-days passes its arguments to `boku build`; `--no-renderer-patch` or another
+    translation directory makes an image of HEAD that is not the release."""
+    base, built = images
+    with pytest.raises(ReleaseRefused, match="--no-renderer-patch"):
+        assemble(repo, base, make_build(repo, base, built, args="--no-renderer-patch"))
+
+
+def test_a_build_that_did_not_record_its_arguments_is_refused(repo, images):
+    base, built = images
+    build = make_build(repo, base, built)
+    (build / BUILD_ARGS_NAME).unlink()
+    with pytest.raises(ReleaseRefused, match=BUILD_ARGS_NAME):
+        assemble(repo, base, build)
+
+
+def test_a_tag_on_github_naming_another_commit_is_not_published(
+    tagged_release, repo, github_remote, gh_stub, capsys
+):
+    """The local tag is right; GitHub's is not. `gh --verify-tag` only asks whether a tag of
+    that name exists there, so it would attach this patch to the other commit's source."""
+    commit_more(repo)
+    git(repo, "push", "-q", "-f", str(github_remote), "HEAD:refs/tags/v0.2.0")
+    assert publish(tagged_release, repo, yes=True) == 1
+    assert "names" in capsys.readouterr().out
+    assert not gh_stub.exists()
+
+
+@needs_xdelta3
+def test_a_tag_not_yet_pushed_is_a_warning_in_a_dry_run_and_a_refusal_with_yes(
+    repo, images, github_remote, gh_stub, capsys
+):
+    base, built = images
+    git(repo, "tag", "v0.2.0")
+    release = assemble(repo, base, make_build(repo, base, built))
+    assert publish(release, repo) == 0
+    assert "not on owner/boku-ps1 yet" in capsys.readouterr().out
+    assert publish(release, repo, yes=True) == 1
+    assert "git push origin v0.2.0" in capsys.readouterr().out
+    assert not gh_stub.exists()
+
+
+def test_a_release_manifest_missing_a_field_is_refused_not_a_traceback(
+    tagged_release, repo, gh_stub, capsys
+):
+    path = tagged_release / RELEASE_MANIFEST
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    del manifest["commit"]
+    path.write_text(json.dumps(manifest), encoding="utf-8")
+    assert publish(tagged_release, repo, yes=True) == 1
+    assert "commit" in capsys.readouterr().out
+    assert not gh_stub.exists()
+
+
+def test_release_preflight_through_make_sh_builds_nothing(tmp_path, monkeypatch):
+    """`./make.sh release --preflight` is the cheap check; it must not run build-days first.
+    `uv` is stubbed, so every command make.sh would run is recorded instead of run."""
+    log = tmp_path / "uv-called.txt"
+    stub_on_path(tmp_path, monkeypatch, "uv", log)
+    done = subprocess.run(
+        _make_sh_cmd("release", "--preflight"),
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert done.returncode == 0, done.stderr
+    assert log.read_text(encoding="utf-8").splitlines() == ["run", "boku", "release", "--preflight"]
+
+
+def test_the_build_args_file_is_the_one_make_sh_writes():
+    script = (REPO_ROOT / "make.sh").read_text(encoding="utf-8")
+    assert BUILD_ARGS_NAME in script, f"make.sh no longer writes {BUILD_ARGS_NAME}"
+
+
+@needs_xdelta3
+def test_withdrawing_the_ppf_deletes_its_asset_and_replaces_the_notes(
+    repo, images, github_remote, gh_stub
+):
+    """The tag cut again with --no-ppf; the stub records both gh calls, one argument a line."""
+    base, built = images
+    git(repo, "tag", "-a", "-m", "v0.2.0", "v0.2.0")
+    git(repo, "push", "-q", str(github_remote), "v0.2.0")
+    out = assemble(repo, base, make_build(repo, base, built), ppf=False)
+    assert publish(out, repo, yes=True, withdraw_ppf=True) == 0
+    called = gh_stub.read_text(encoding="utf-8").splitlines()
+    edit = called.index("edit")
+    assert called[:4] == ["release", "delete-asset", "v0.2.0", PPF.asset("0.2.0")]
+    assert "--yes" in called[:edit]
+    assert called[edit - 1 : edit + 2] == ["release", "edit", "v0.2.0"]
+    assert called[called.index("--notes-file") + 1] == str(out / NOTES_PATH)
+    assert "create" not in called
+
+
+def test_withdrawing_from_a_release_that_still_carries_the_ppf_is_refused(
+    tagged_release, repo, gh_stub, capsys
+):
+    assert publish(tagged_release, repo, yes=True, withdraw_ppf=True) == 1
+    assert "--no-ppf" in capsys.readouterr().out
+    assert not gh_stub.exists()
+
+
+def test_a_release_of_the_one_zip_layout_is_refused_as_an_older_format(
+    tagged_release, repo, gh_stub, capsys
+):
+    path = tagged_release / RELEASE_MANIFEST
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    # 1 is the one-zip layout of the first release machinery, its notes not at NOTES_PATH.
+    path.write_text(json.dumps({**manifest, "format": 1}), encoding="utf-8")
+    assert publish(tagged_release, repo, yes=True) == 1
+    assert f"format-{RELEASE_FORMAT}" in capsys.readouterr().out
+    assert not gh_stub.exists()
+
+
+# ---------------------------------------------------------------------------
+# README's table of versions
+
+
+def version_lines(readme: str, version: str) -> list[str]:
+    """The rows of README's `VERSIONS_HEADING` table whose first cell is `version`."""
+    (body,) = [lines for title, lines in markdown_sections(readme, 2) if title == VERSIONS_HEADING]
+    return [line for line in body if line.startswith("|") and line.split("|")[1].strip() == version]
+
+
+def test_the_readme_holds_the_table_release_row_writes():
+    """The real README: release-row must find its table, or the first release cannot post."""
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+    patch = {"original": {"sha1": "a" * 40}, "result": {"sha1": "b" * 40}}
+    assert version_lines(with_version_row(readme, version_row("9.9.9", patch)), "v9.9.9")
+
+
+def test_release_row_writes_both_sha1s_from_the_posted_zip(cut_release, repo):
+    patch = contract(cut_release / MAIN.directory)
+    assert main_release_row(cut_release, repo) == 0
+    readme = (repo / "README.md").read_text(encoding="utf-8")
+    (row,) = version_lines(readme, "v0.2.0")
+    cells = [cell.strip(" `") for cell in row.split("|")[1:-1]]
+    assert cells == ["v0.2.0", patch["original"]["sha1"], patch["result"]["sha1"]]
+    assert main_release_row(cut_release, repo) == 0
+    assert (repo / "README.md").read_text(encoding="utf-8") == readme, "a second run is not a no-op"
+
+
+def test_release_row_reads_the_zip_not_the_directory_beside_it(cut_release, repo):
+    """The zip is what is posted and what RELEASE.json's SHA-1 pins; the loose copy is not."""
+    path = cut_release / MAIN.directory / MANIFEST_NAME
+    posted = json.loads(path.read_text(encoding="utf-8"))
+    edited = {**posted, "result": {**posted["result"], "sha1": "0" * 40}}
+    path.write_text(json.dumps(edited), encoding="utf-8")
+    assert main_release_row(cut_release, repo) == 0
+    (row,) = version_lines((repo / "README.md").read_text(encoding="utf-8"), "v0.2.0")
+    assert posted["result"]["sha1"] in row and "0" * 40 not in row
+
+
+def test_release_row_replaces_a_row_that_disagrees_in_place(cut_release, repo):
+    assert main_release_row(cut_release, repo) == 0
+    readme_path = repo / "README.md"
+    right = readme_path.read_text(encoding="utf-8")
+    (row,) = version_lines(right, "v0.2.0")
+    older = "| v0.1.0 | `" + "1" * 40 + "` | `" + "2" * 40 + "` |"
+    readme_path.write_text(right.replace(row, f"{older}\n| v0.2.0 | `x` | `y` |"), encoding="utf-8")
+    assert main_release_row(cut_release, repo) == 0
+    assert readme_path.read_text(encoding="utf-8") == right.replace(row, f"{older}\n{row}")
+
+
+@needs_xdelta3
+def test_release_row_refuses_a_snapshot(repo, images, capsys):
+    base, built = images
+    out = assemble(repo, base, make_build(repo, base, built))
+    before = (repo / "README.md").read_text(encoding="utf-8")
+    assert main_release_row(out, repo) == 1
+    assert "snapshot" in capsys.readouterr().out
+    assert (repo / "README.md").read_text(encoding="utf-8") == before
+
+
+def test_a_release_readme_does_not_list_is_not_posted(cut_release, repo, gh_stub, capsys):
+    assert publish(cut_release, repo) == 0
+    assert "release-row" in capsys.readouterr().out, "the dry run does not warn"
+    assert publish(cut_release, repo, yes=True) == 1
+    assert "release-row" in capsys.readouterr().out
+    assert not gh_stub.exists()
+
+
+def test_a_row_written_but_not_committed_does_not_count(cut_release, repo, gh_stub):
+    """GitHub shows the pushed README; the working copy is nobody's but ours."""
+    assert main_release_row(cut_release, repo) == 0
+    assert publish(cut_release, repo, yes=True) == 1
+    assert not gh_stub.exists()
+
+
+def test_a_row_committed_but_not_pushed_does_not_count(cut_release, repo, gh_stub, capsys):
+    assert main_release_row(cut_release, repo) == 0
+    commit_readme(repo, push=False)
+    assert publish(cut_release, repo, yes=True) == 1
+    assert "push" in capsys.readouterr().out
+    assert not gh_stub.exists()
+
+
+def test_a_release_is_posted_from_the_tag_s_own_checkout(tagged_release, repo, gh_stub):
+    """A rebuild is cut from the tag, whose README cannot hold the row committed after it;
+    publishing from there must read the row where GitHub shows it, not at HEAD."""
+    git(repo, "checkout", "-q", "v0.2.0")
+    assert publish(tagged_release, repo, yes=True) == 0
+    assert gh_stub.exists()
+
+
+def test_a_committed_row_that_disagrees_is_not_posted(cut_release, repo, gh_stub, capsys):
+    assert main_release_row(cut_release, repo) == 0
+    readme_path = repo / "README.md"
+    (row,) = version_lines(readme_path.read_text(encoding="utf-8"), "v0.2.0")
+    result_sha1 = contract(cut_release / MAIN.directory)["result"]["sha1"]
+    wrong = row.replace(result_sha1, "0" * 40)
+    readme_path.write_text(
+        readme_path.read_text(encoding="utf-8").replace(row, wrong), encoding="utf-8"
+    )
+    commit_readme(repo)
+    assert publish(cut_release, repo, yes=True) == 1
+    assert result_sha1 in capsys.readouterr().out, "the refusal does not say what is right"
+    assert not gh_stub.exists()
+
+
+def test_release_row_through_make_sh_runs_boku_release_row(tmp_path, monkeypatch):
+    log = tmp_path / "uv-called.txt"
+    stub_on_path(tmp_path, monkeypatch, "uv", log)
+    done = subprocess.run(
+        _make_sh_cmd("release-row", "release/v0.2.0"),
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert done.returncode == 0, done.stderr
+    assert log.read_text(encoding="utf-8").splitlines() == [
+        "run",
+        "boku",
+        "release-row",
+        "release/v0.2.0",
+    ]

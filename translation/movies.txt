@@ -1,0 +1,60 @@
+# Die Film-Untertitel (FMVs): movie <TAB> first frame <TAB> last frame <TAB> Deutsch [<TAB> options].
+# Format & Regeln: translation/README.md § "movies.txt". Lizenz: CC BY-SA 4.0.
+#
+# Der Erzaehler ist der erwachsene Boku (Stilbibel § 6): literarisches Praeteritum,
+# Vergleiche zusammenhaengend, genau ein Paar 『 』 pro Satz ueber seine Cues hinweg.
+
+# --- M27, das Intro. 0-60 s Musik; Vater am Autoradio; Monolog ab 70 s.
+M27	619	660	Der machts wohl nicht mehr lange.
+M27	1050	1104	『Es war ein sehr, sehr heisser Sommertag.』
+M27	1105	1213	『Jene Hitze war, als haette sich alles | Leben auf Erden verheddert und verstrickt,
+M27	1214	1288	und als wuerde irgendwo ein Gott, | der ratlos nichts mehr zu lenken vermochte,
+M27	1289	1324	alles in der Hitze einschmelzen
+M27	1325	1402	und mit kindlicher Unschuld seine Traeume | von der naechsten Welt skizzieren...
+M27	1403	1460	...es war jene seltsame, schwindelerregende Hitze.』
+M27	1461	1592	『Jener Tag war der erste August | in dem Jahr, als mein kleiner Bruder geboren wurde,
+M27	1593	1625	und ich war gerade neun geworden,
+M27	1626	1670	und von jenem Tag bis | zum Ende der Sommerferien
+M27	1671	1738	sollte ich, um meine hochschwangere | Mutter zu entlasten,
+M27	1739	1816	in der Obhut meines Onkels bleiben, | der in einem Landstaedtchen in Nord-Kanto lebte.』
+M27	2080	2151	『In diesem Moment tuermten sich | die Gewitterwolken in der starken Augustsonne auf,
+M27	2152	2217	glitzerten weiss, und irgendwie machte mich der Anblick froh,
+M27	2218	2292	und ich lehnte mich ein Stueck aus dem Autofenster, | nicht so weit, meinen Vater zu erschrecken.』
+M27	2436	2510	Was fuer Erinnerungen mir dieser Sommer | wohl bescheren wird, frage ich mich...	caption
+M27	2545	2631	『Als ich mich wieder in den Autositz sinken liess | und tief Luft holte, nur ein kleines bisschen,
+M27	2632	2735	hatte ich ein seltsames Gefuehl, als wuerden | Lichtfunken mitten in meinem Kopf aufblitzen.』
+
+# --- M28, das Ende: Musik bis 64 s, ein Satz, dann Titelsong und Credits.
+M28	961	1043	『Ich werde niemals, niemals vergessen, | was in jenem Sommer geschah.』
+
+# --- M60, das Feuerwerk aus Bokus Fenster (E0805, Tag 8).
+M60	133	218	『Damals dachte ich, dass ich diesen Anblick | von diesem Fenster vielleicht schon einmal sah...
+M60	219	300	...was irgendwie ein recht seltsamer | Gedanke war.』
+
+# --- M120, der Satellit (E1008, Tag 10). Setzt sich nahtlos in E1008.0 (shared.txt) fort.
+M120	21	90	『Durch einen Himmel, so blau und klar, | dass mir beim Hinaufsehen fast schwindlig wurde,
+M120	91	152	eingehuellt in unbeirrtes Pflichtgefuehl | und tiefe Einsamkeit, war es...』
+
+# --- M260, der Sonnenblumentraum (Tag 29).
+M260	79	150	『Es war irgendwie ein sehr, sehr trauriger Traum.』
+M260	166	234	『Der Klang des kalten Winterwinds im Traum | erschien mir aus irgendeinem Grund
+M260	235	285	genau wie das einsame Heulen | jenes Japanischen Wolfs...』
+M260	294	347	『Es war ein sehr, sehr trauriger Traum.』
+
+# --- Titelsong (ungeschmueckt und ungereimt, Stilbibel § 10).
+M27	3034	3258	Alle Blumen, die ueber diese | weite Wiese bluehen,	panel
+M27	3259	3393	schenke ich dir, jede einzelne,	panel
+M27	3394	3570	gebunden zu einem Strauss mit rotem Band.	panel
+M27	3604	3708	Alle Sterne, die ueber diesen | weiten Nachthimmel bluehen,	panel
+M27	3717	3783	jeden einzelnen,	panel
+M27	3799	4030	schenke ich dir, in Glas gefasst, | das wie ein Regenbogen glaenzt.	panel
+M28	1044	1158	Auch die Blumen, die ueber diese | weite Wiese bluehen,	panel
+M28	1159	1284	schenke ich dir, jede einzelne,	panel
+M28	1285	1445	gebunden zu einem Strauss mit rotem Band.	panel
+M28	1525	1629	Auch die Sterne, die ueber diesen | weiten Nachthimmel bluehen,	panel
+M28	1630	1752	schenke ich dir, jeden einzelnen,	panel
+M28	1753	1925	in Glas gefasst, | das wie ein Regenbogen glaenzt.	panel
+M28	2299	2388	Alles auf dieser ganzen weiten Welt,	panel
+M28	2389	2513	schenke ich dir, jedes einzelne,	panel
+M28	2514	2680	darum schreib mir einen Brief.	panel
+M28	2703	2800	Schreib mir einen Brief.	panel

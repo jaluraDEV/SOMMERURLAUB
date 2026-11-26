@@ -1,0 +1,758 @@
+"""The build's own refusals, the ones that do not need a disc.
+
+`tests/test_trial.py` exercises the image writer against the real dump; what is left here
+is the part of `boku.build` that decides *before* it ever opens an image — and one thing
+that used to be decided nowhere at all.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+from dataclasses import dataclass
+from pathlib import Path
+from types import SimpleNamespace
+
+import pytest
+
+from boku import REPO_ROOT
+from boku.archive import (
+    ARCHIVE_NAME,
+    EXE_LOAD_BIAS,
+    EXE_NAME,
+    OVERLAY_LOAD_ADDRESS,
+    overlay_read_end,
+)
+from boku.array_relocate import DEAD_REGIONS, PC_HOST_DATA, Region
+from boku.arrays import SELECT_LINES_ADDR
+from boku.boxes import box_for
+from boku.build import (
+    BuildRefused,
+    BuildResult,
+    EditSet,
+    LineResult,
+    answer_pair_patches,
+    build,
+    check_no_sector_clash,
+    check_resident,
+    lay_out,
+    load_edit_set,
+)
+from boku.glyphs import END_WORD, NEWLINE_WORD, PAGE_WORD, GlyphTable, words_to_bytes
+from boku.layout import (
+    ANSWER_PAIR,
+    DIALOGUE_BAND,
+    LABEL_MARKS,
+    SELECT_ROW,
+    SPEAKER_LABELS,
+    BoxSpec,
+    CellMapEncoder,
+    LaidOut,
+    LayoutError,
+    Marks,
+    StockEncoder,
+    label_allowance,
+    lay_out_message,
+    measure,
+    original_marks,
+    speaker_label,
+)
+from boku.lint import fit_page
+from boku.reinsert import MAP_WORK_AREA_END, ByteEdit
+from boku.relocate import MOVIE_BLOCK_RESERVE, SectorEdit
+from boku.translation import SampleScenes, TranslationEntry
+
+
+def test_a_translation_file_the_loader_could_not_read_stops_the_build(tmp_path):
+    """The harm: a row typed with spaces instead of a tab is a line silently left Japanese.
+
+    The loader has always collected these; nothing read them, so a malformed scene file
+    produced a green build and no mention of the lines it had dropped.
+    """
+    scene = tmp_path / "scene.txt"
+    scene.write_text("E0404.0 Onkel Gochisosama deshita.\n", encoding="utf-8")
+    source = SampleScenes.from_paths([scene])
+    assert source.problems, "the fixture is not malformed; this test would prove nothing"
+    with pytest.raises(BuildRefused, match="reading the translation"):
+        build(source=Path("no-such-image.img"), out_dir=tmp_path / "out", translation=source)
+    assert not (tmp_path / "out").exists()
+
+
+def test_the_same_translation_is_reported_rather_than_refused_when_skipping_is_asked_for(
+    tmp_path,
+):
+    """`--skip-unfitted` carries on, but the problem still has to reach the report."""
+    scene = tmp_path / "scene.txt"
+    scene.write_text("E1.0\tA\tone\nE1.0\tA\ttwo\n", encoding="utf-8")
+    source = SampleScenes.from_paths([scene])
+    with pytest.raises(BuildRefused) as raised:
+        build(
+            source=Path("no-such-image.img"),
+            out_dir=tmp_path / "out",
+            translation=source,
+            skip_unfitted=True,
+            dry_run=True,
+        )
+    # It gets past the translation check and fails on the missing import instead, which is
+    # what says the loader's problems no longer abort a skipping build.
+    assert "no-such-image.img" in str(raised.value) or "disc" in str(raised.value)
+
+
+# --- the renderer edit set, as `boku build --vwf` reads it --------------------------------------
+
+
+def write_edit_set(path: Path, edits, **extra) -> Path:
+    """An `edits.json` in the shape `tools/vwf/build_prototype.py --edits-only` writes."""
+    path.write_text(
+        json.dumps(
+            {"format": 1, "cells": {"A": {"id": 292, "advance": 9}}, "edits": edits, **extra}
+        ),
+        encoding="utf-8",
+    )
+    return path
+
+
+def test_an_edit_set_becomes_byte_edits_that_carry_what_they_expect_to_find(tmp_path):
+    """The whole point of the file: the patch arrives as `ByteEdit`s and is verified.
+
+    A renderer patch read from a file has no special standing — it goes through the same
+    `verify_edits` gate a reinserted line does, so a stale edit set over a different dump
+    is a refusal and not a corrupted executable.
+    """
+    path = write_edit_set(
+        tmp_path / "edits.json",
+        [
+            {"file": "BOKU.BIN", "offset": 16, "old": "0000", "new": "0102", "reason": "sheet"},
+            {
+                "file": "SCPS_100.88",
+                "offset": 4,
+                "old": "deadbeef",
+                "new": "00000000",
+                "reason": "word",
+            },
+        ],
+    )
+    edit_set = load_edit_set(path)
+    assert isinstance(edit_set, EditSet)
+    assert [(e.file, e.offset, e.old, e.new) for e in edit_set.edits] == [
+        ("BOKU.BIN", 16, b"\x00\x00", b"\x01\x02"),
+        ("SCPS_100.88", 4, b"\xde\xad\xbe\xef", bytes(4)),
+    ], "the edits are not sorted by (file, offset), which is the order the build applies"
+    # The same file carries the font those bytes install, ready to measure English with.
+    assert edit_set.encoder.cells == {"A": (292, 9)}
+
+
+@pytest.mark.parametrize(
+    ("edits", "extra", "message"),
+    [
+        (
+            [{"file": "SCPS_100.88", "offset": 0, "old": "00", "new": "01"}],
+            {"format": 2},
+            "format 1",
+        ),
+        ([], {}, "no `edits`"),
+        ([{"file": "OTHER.BIN", "offset": 0, "old": "00", "new": "01"}], {}, "may only write"),
+        ([{"file": "SCPS_100.88", "offset": 0, "old": "0000", "new": "01"}], {}, "never changes"),
+        ([{"file": "SCPS_100.88", "offset": 0, "old": "zz", "new": "01"}], {}, "non-hexadecimal"),
+        ([{"file": "SCPS_100.88", "offset": -1, "old": "00", "new": "01"}], {}, "negative"),
+        ([{"file": "SCPS_100.88", "offset": 0}], {}, r"not a \(file, offset, old, new\)"),
+        (
+            [
+                {"file": "SCPS_100.88", "offset": 0, "old": "0000", "new": "0101"},
+                {"file": "SCPS_100.88", "offset": 1, "old": "00", "new": "02"},
+            ],
+            {},
+            "one of them would be lost",
+        ),
+    ],
+)
+def test_an_edit_set_this_build_could_not_apply_safely_is_refused(tmp_path, edits, extra, message):
+    """Each row is a way a hand-edited or stale file could quietly corrupt an image."""
+    path = write_edit_set(tmp_path / "edits.json", edits, **extra)
+    with pytest.raises(Exception, match=message):
+        load_edit_set(path)
+
+
+def test_an_edit_sets_sectors_are_whole_sector_writes_over_filler_in_the_movie_reserve(tmp_path):
+    """`FMV-04`'s cue block belongs to no file, so the edit set carries it by LBA: into the
+    run the relocation allocator never hands out, expecting the zero filler that is there
+    on the retail disc (`boku.build.verify_sectors` reads it back before any write)."""
+    data = bytes(range(256)) * 16
+    path = write_edit_set(
+        tmp_path / "edits.json",
+        EXE_EDIT,
+        sectors=[{"lba": MOVIE_BLOCK_RESERVE.start, "new": data.hex(), "reason": "the block"}],
+    )
+    (sector,) = load_edit_set(path).sectors
+    assert sector == SectorEdit(MOVIE_BLOCK_RESERVE.start, bytes(len(data)), data, "the block")
+    assert load_edit_set(write_edit_set(tmp_path / "old.json", EXE_EDIT)).sectors == ()
+
+
+SECTOR = 2048
+EXE_EDIT = [{"file": "SCPS_100.88", "offset": 0, "old": "00", "new": "01"}]
+
+
+@pytest.mark.parametrize(
+    ("sectors", "message"),
+    [
+        ([{"lba": MOVIE_BLOCK_RESERVE.start - 1, "new": "01" * SECTOR}], "movie block's reserve"),
+        ([{"lba": MOVIE_BLOCK_RESERVE.end - 1, "new": "01" * 2 * SECTOR}], "movie block's reserve"),
+        ([{"lba": MOVIE_BLOCK_RESERVE.start + 1, "new": "01" * SECTOR}], "read from LBA"),
+        ([{"lba": MOVIE_BLOCK_RESERVE.start, "new": "01" * (SECTOR + 1)}], "whole number"),
+        ([{"lba": MOVIE_BLOCK_RESERVE.start, "new": ""}], "whole number"),
+        ([{"lba": MOVIE_BLOCK_RESERVE.start}], r"not an \(lba, new\)"),
+        ([{"lba": "x", "new": "01" * SECTOR}], "invalid literal"),
+        (
+            [
+                {"lba": MOVIE_BLOCK_RESERVE.start, "new": "01" * 2 * SECTOR},
+                {"lba": MOVIE_BLOCK_RESERVE.start, "new": "02" * SECTOR},
+            ],
+            "one of them would be lost",
+        ),
+    ],
+)
+def test_sectors_an_edit_set_could_not_write_safely_are_refused(tmp_path, sectors, message):
+    """The reserve's two edges are the narrowest misses: a sector just below it is the
+    arena a relocated member may be given, and one just past it is `BOKU.BIN`'s first. A
+    write one sector into the reserve is inside it and still wrong: the executable reads
+    the block from the reserve's first sector, so every movie would play without it."""
+    path = write_edit_set(tmp_path / "edits.json", EXE_EDIT, sectors=sectors)
+    with pytest.raises(BuildRefused, match=message):
+        load_edit_set(path)
+
+
+def test_an_edit_set_that_is_not_json_names_the_file(tmp_path):
+    path = tmp_path / "edits.json"
+    path.write_text("{not json", encoding="utf-8")
+    with pytest.raises(BuildRefused, match=r"edits\.json"):
+        load_edit_set(path)
+
+
+# --- the speaker label's pixels ------------------------------------------------------------------
+
+CELLS = CellMapEncoder(
+    # Narrow enough that a label really costs a word, which is what makes the test bite.
+    {
+        c: (100 + i, 6)
+        for i, c in enumerate("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ.")
+    },
+    name="test cell map",
+)
+
+LABELLED = "Onkel"
+PAGE = "the cicadas are loud enough to drown the radio out here on the veranda today"
+
+
+def one_page_original(pages: int = 1) -> bytes:
+    """Words for a `pages`-page unvoiced message: no `0x8002`, so the page count is free."""
+    words = [200, END_WORD] if pages == 1 else [200, PAGE_WORD, 0, 200, END_WORD]
+    return words_to_bytes(words)
+
+
+def test_the_label_narrows_line_1_of_page_1_exactly_as_the_lint_charges_it():
+    """The build draws `<speaker>「` as text on line 1; the lint reserves its pixels there.
+
+    Derived from `boku.lint.fit_page`, the other implementation of the rule, rather than
+    from a transcribed expectation: if the two ever disagree a line the lint passes would
+    be inserted over the label, or one it fails would be refused by nobody.
+    """
+    reserve = label_allowance(CELLS, LABELLED, LABEL_MARKS)
+    assert reserve > 0, "the fixture reserves nothing; this test would prove nothing"
+    laid = lay_out_message(
+        "E1.0", (PAGE,), one_page_original(), CELLS, DIALOGUE_BAND, opening=LABELLED + LABEL_MARKS
+    )
+    broken, widths = fit_page(CELLS, PAGE, DIALOGUE_BAND, reserve)
+    assert [line.removeprefix(LABELLED + LABEL_MARKS) for line in laid.pages[0]] == broken
+    assert list(laid.widths[0]) == widths
+
+
+def test_the_label_changes_the_break_at_all_which_is_what_makes_the_gate_above_bite():
+    """The narrowest red: without the label the same page breaks somewhere else."""
+    with_label = lay_out_message(
+        "E1.0", (PAGE,), one_page_original(), CELLS, DIALOGUE_BAND, opening=LABELLED + LABEL_MARKS
+    )
+    without = lay_out_message("E1.0", (PAGE,), one_page_original(), CELLS, DIALOGUE_BAND)
+    assert with_label.pages != without.pages
+
+
+def test_the_label_is_charged_to_page_1_only():
+    """Page 2 opens under no label, so it gets the whole box."""
+    laid = lay_out_message(
+        "E1.0",
+        (PAGE, PAGE),
+        one_page_original(pages=2),
+        CELLS,
+        DIALOGUE_BAND,
+        opening=LABELLED + LABEL_MARKS,
+    )
+    plain = lay_out_message("E1.0", (PAGE,), one_page_original(), CELLS, DIALOGUE_BAND)
+    assert list(laid.pages[1]) == list(plain.pages[0])
+    assert laid.pages[0] != laid.pages[1]
+
+
+def words_bytes(*words: int) -> bytes:
+    """`boku.glyphs.words_to_bytes`, spelled variadically for readability in a fixture."""
+    return words_to_bytes(words)
+
+
+def test_the_marks_are_read_off_the_japanese_message_and_the_label_is_where_they_were():
+    """`「` after the first cell means a label; at the first cell an examine line; `『` is
+    narration; the closing mark is the last cell before the end, when there is one."""
+    table = GlyphTable.load()
+    open_, close, narr_open, narr_close = (
+        table.from_character[c] for c in ("「", "」", "『", "』")
+    )
+    assert original_marks(words_bytes(5, 6, open_, 7, close, END_WORD), table) == Marks(
+        "「", "」", True
+    )
+    assert original_marks(words_bytes(open_, 5, 6, close, END_WORD), table) == Marks(
+        "「", "」", False
+    )
+    assert original_marks(words_bytes(narr_open, 5, narr_close, END_WORD), table) == Marks(
+        "『", "』", False
+    )
+    # A split utterance: the opening half has no closing mark, the closing half no opening.
+    assert original_marks(words_bytes(5, open_, 6, 7, END_WORD), table) == Marks("「", "", True)
+    assert original_marks(words_bytes(6, 7, close, END_WORD), table) == Marks("", "」", False)
+    # The mark on line 2 is quoted speech inside the body, not this line's speaker.
+    assert original_marks(words_bytes(5, NEWLINE_WORD, 6, open_, END_WORD), table) == Marks(
+        "", "", False
+    )
+    assert original_marks(words_bytes(5, 6, END_WORD), table) == Marks("", "", False)
+
+
+class NoArchive:
+    """Only what `lay_out` reads of an `Archive` before it reaches a message: the three
+    select tables, which a message never asks about."""
+
+    def exe_bytes(self, address: int, size: int) -> bytes:
+        return bytes(size)
+
+
+@dataclass(frozen=True)
+class OneSite:
+    """Only what `lay_out` reads of a `Walk`: one message site, and its original words."""
+
+    original: bytes
+    kind: str = "MSG"
+    line_id: str = "E1.0"
+
+    @property
+    def by_line(self) -> dict[str, list[OneSite]]:
+        return {self.line_id: [self]}
+
+    @property
+    def site(self) -> OneSite:
+        return self
+
+    def raw(self, archive: object, site: object) -> bytes:
+        return self.original
+
+    @property
+    def size(self) -> int:
+        return len(self.original)
+
+
+@dataclass(frozen=True)
+class OneArraySite(OneSite):
+    """An array site: `lay_out` also reads its byte size."""
+
+    @property
+    def size(self) -> int:
+        return len(self.original)
+
+
+def test_a_code_file_menu_is_laid_out_as_its_rows_each_ending_the_line():
+    """`[SEL]` on an ARR-S site: every row ends with 0x8001 as the original's do, in the
+    original's bytes. It was refused as "not interchangeable" and left Japanese."""
+    table = GlyphTable.load()
+    cell = table.from_character["「"]
+    original = words_to_bytes([cell, cell, NEWLINE_WORD, cell, NEWLINE_WORD, cell, NEWLINE_WORD])
+    walk = OneArraySite(original, kind="ARR-S", line_id="exe@1")
+    entry = TranslationEntry(line_id="exe@1", speaker="[SEL]", options=("Go", "Y", "N"))
+    (result,) = lay_out(
+        NoArchive(), walk, [entry], StockEncoder.load(), BoxSpec(width=999, lines=3)
+    )
+    assert result.problems == ()
+    words = result.laid_out.words
+    assert [word for word in words if word & 0x8000] == [NEWLINE_WORD] * 3
+    assert 2 * len(words) <= len(original)
+
+
+def test_a_code_file_menu_row_wider_than_the_box_is_refused_as_the_lint_refuses_it():
+    """The build measured bytes only and wrote a row the lint called over-wide. A code-file
+    menu is a select, so its row is the select row (`SELECT_ROW` / the edit set's), not the
+    dialogue band it was first measured against."""
+    table = GlyphTable.load()
+    cell = table.from_character["「"]
+    original = words_to_bytes([cell, cell, cell, NEWLINE_WORD])
+    walk = OneArraySite(original, kind="ARR-S", line_id="exe@1")
+    entry = TranslationEntry(line_id="exe@1", speaker="[SEL]", options=("Go",))
+    encoder = StockEncoder.load()
+    row = BoxSpec(width=measure(encoder, "Go") - 1, lines=1)
+    (result,) = lay_out(NoArchive(), walk, [entry], encoder, DIALOGUE_BAND, select_row=row)
+    assert any("cannot wrap" in problem for problem in result.problems)
+
+
+def test_the_two_answers_row_rewrites_the_drawer_s_split_and_count():
+    """`title@7A78.0` written `Yes | No`: its five cells, and two instruction words in
+    `TITLE.OVL` (`ANSWER_PAIR`), each an edit expecting the retail word (`stock_*`)."""
+    stock_split, stock_count = ANSWER_PAIR.stock_split, ANSWER_PAIR.stock_count
+
+    class TitleArchive(NoArchive):
+        def overlay_offset(self, name, ram):
+            assert name == ANSWER_PAIR.member
+            return 0x1000 + ram - OVERLAY_LOAD_ADDRESS
+
+    cells = {c: (300 + i, 6) for i, c in enumerate("YesNo")}
+    encoder = CellMapEncoder(cells)
+    walk = OneArraySite(words_to_bytes([256] * 5), kind="ARR-R", line_id=ANSWER_PAIR.line_id)
+    entry = TranslationEntry(line_id=ANSWER_PAIR.line_id, speaker="", pages=("Yes | No",))
+    (result,) = lay_out(TitleArchive(), walk, [entry], encoder, DIALOGUE_BAND)
+    assert result.problems == ()
+    assert result.laid_out.words == (300, 301, 302, 303, 304)
+    patches = {
+        edit.offset: (edit.old, edit.new) for edit in answer_pair_patches(TitleArchive(), [result])
+    }
+    assert patches == {
+        0x1000 + ANSWER_PAIR.split_ram - OVERLAY_LOAD_ADDRESS: (
+            stock_split.to_bytes(4, "little"),
+            (0x24020002).to_bytes(4, "little"),
+        ),
+        0x1000 + ANSWER_PAIR.count_ram - OVERLAY_LOAD_ADDRESS: (
+            stock_count.to_bytes(4, "little"),
+            (0x28420005).to_bytes(4, "little"),
+        ),
+    }
+    assert answer_pair_patches(TitleArchive(), []) == [], "no row, no code edit"
+    words = LaidOut(ANSWER_PAIR.line_id, (256,) * 5, (), (), ())
+    given = LineResult(ANSWER_PAIR.line_id, words, ())
+    assert answer_pair_patches(TitleArchive(), [given]) == [], (
+        "words given already encoded (the round trip) are the stock row: the stock split holds"
+    )
+    refused = LineResult(ANSWER_PAIR.line_id, result.laid_out, ("the plan refused it",))
+    assert answer_pair_patches(TitleArchive(), [refused]) == [], (
+        "a row the plan refused keeps its Japanese, so its split must stay the stock one"
+    )
+
+
+def test_a_row_the_plan_refuses_carries_no_answer_pair_patch(monkeypatch):
+    """The answer pair's words are carried into the plan (they may sit in an overlay the
+    plan grows), so a plan that then refuses the row must be run again without them: the
+    Japanese row keeps the stock split."""
+    from boku import build as module
+    from boku.array_relocate import ArrayPlan
+
+    row = LineResult(ANSWER_PAIR.line_id, LaidOut(ANSWER_PAIR.line_id, (1, 0x8000), (), (), ()), ())
+    sentinel = ByteEdit(ARCHIVE_NAME, 0, b"\0", b"\1", "the answers' drawer word")
+    carried: list[list[ByteEdit]] = []
+
+    def plan_what_fits(archive, walk, words, *rest):
+        carried.append(list(rest[3]))
+        refuse = len(carried) == 1
+        return SimpleNamespace(carried=()), ({ANSWER_PAIR.line_id: ("no room",)} if refuse else {})
+
+    monkeypatch.setattr(module, "read_code_labels", lambda archive: [])
+    monkeypatch.setattr(module, "code_label_patches", lambda archive, lines: [])
+    monkeypatch.setattr(
+        module,
+        "answer_pair_patches",
+        lambda archive, lines: [sentinel] if any(line.written for line in lines) else [],
+    )
+    monkeypatch.setattr(
+        module,
+        "move_arrays",
+        lambda *a: (ArrayPlan((), (), frozenset(), 0), {}),
+    )
+    monkeypatch.setattr(module, "_plan_what_fits", plan_what_fits)
+    words = {ANSWER_PAIR.line_id: (1, 0x8000)}
+    _, _, carry, refused = module._place_and_plan(
+        None,
+        None,
+        [row],
+        words,
+        [],
+        (),
+        None,
+        skip_unfitted=True,
+        in_place=False,
+        work_area_end=0,
+    )
+    assert sentinel in carried[0] and sentinel not in carried[-1]
+    assert sentinel not in carry
+    assert ANSWER_PAIR.line_id in refused and ANSWER_PAIR.line_id not in words
+
+
+def dressed(original: bytes, speaker: str, label: bool = True):
+    """`lay_out`'s MSG branch over one synthetic original, and what it did to the English."""
+    walk = OneSite(original)
+    entry = TranslationEntry(line_id=walk.line_id, speaker=speaker, pages=("hello there",))
+    results = lay_out(
+        NoArchive(),
+        walk,
+        [entry],
+        StockEncoder.load(),
+        BoxSpec(width=9999, lines=4),
+        label=label,
+    )
+    assert len(results) == 1
+    return results[0]
+
+
+def test_an_array_item_is_laid_out_in_its_surface_s_measured_box():
+    """The item-menu row (`exe@80046214.*`, `research/data/text-boxes.tsv`): a word that
+    fits its bytes and not the list panel is refused by the build as it is by the lint."""
+    encoder = StockEncoder.load()
+    box = box_for("exe@80046214.0").spec
+    word = "M" * (box.width // box.pitch + 1)  # the stock sheet steps the menu's own pitch
+    walk = OneSite(words_bytes(*[5] * (len(word) + 1), NEWLINE_WORD), "ARR-E", "exe@80046214.0")
+    wide = lay_out(
+        NoArchive(),
+        walk,
+        [TranslationEntry(walk.line_id, "", (word,))],
+        encoder,
+        BoxSpec(width=9999, lines=4),
+    )[0]
+    assert [p for p in wide.problems if " px and " in p], wide.problems
+    fits = lay_out(
+        NoArchive(),
+        walk,
+        [TranslationEntry(walk.line_id, "", (word[1:],))],
+        encoder,
+        BoxSpec(width=9999, lines=4),
+    )[0]
+    assert fits.problems == ()
+
+
+def test_the_select_row_is_the_one_the_installed_renderer_draws():
+    """`build_prototype.py --sel-x/--pen-x` move the row; the edit set records the row it
+    assembled (`layout.select_width`), and that is what a select is measured against --
+    not `SELECT_ROW`'s default, which only describes a default build."""
+    assert EditSet((), {}).select_row == SELECT_ROW, "an edit set that says nothing is stock"
+    narrow = EditSet((), {"layout": {"select_width": SELECT_ROW.width - 40}}).select_row
+    assert narrow.width == SELECT_ROW.width - 40
+    with pytest.raises(LayoutError):
+        _ = EditSet((), {"layout": {"select_width": "wide"}}).select_row
+
+    encoder = StockEncoder.load()
+    option = "M" * ((narrow.width // encoder.advance("M")) + 1)  # past narrow, inside stock
+    assert narrow.width < measure(encoder, option) <= SELECT_ROW.width
+    walk = OneSite(words_bytes(5, NEWLINE_WORD, 6, NEWLINE_WORD), "SEL1.1", "E1.0")
+    entry = TranslationEntry(walk.line_id, "[SEL]", options=(option, "No"))
+
+    class TwoLineSelects(NoArchive):
+        """`g_select_lines[0]` = 2 and no prompt line: select 1.1 is a plain yes/no."""
+
+        def exe_bytes(self, address: int, size: int) -> bytes:
+            return bytes([2 if address == SELECT_LINES_ADDR else 0]) + bytes(size - 1)
+
+    def laid(row):
+        return lay_out(TwoLineSelects(), walk, [entry], encoder, DIALOGUE_BAND, select_row=row)[0]
+
+    assert laid(SELECT_ROW).problems == ()
+    assert [p for p in laid(narrow).problems if "cannot wrap" in p]
+
+
+def marked(*marks: str) -> dict[str, int]:
+    table = GlyphTable.load()
+    return {mark: table.from_character[mark] for mark in marks}
+
+
+@pytest.mark.parametrize(
+    ("shape", "speaker", "prefix", "suffix", "problem"),
+    [
+        ("labelled", "Onkel", "Onkel「", "」", False),
+        ("labelled", "(unlabelled)", "「", "」", False),
+        ("labelled", "Onkle", "Onkle「", "」", True),
+        ("bare", "Onkel", "「", "」", False),
+        ("narration", "Onkel", "『", "』", False),
+        ("unclosed", "Onkel", "Onkel「", "hello there", False),
+        ("mismatched", "Onkel", "Onkel「", "hello there", True),
+    ],
+)
+def test_a_message_is_dressed_the_way_its_own_japanese_was(shape, speaker, prefix, suffix, problem):
+    """The build's MSG branch, over every shape of marks the script actually draws.
+
+    The speaker field is a *field*: it is drawn only where the Japanese drew a label
+    (`original_marks`), and what it draws is `speaker_label`'s answer -- so a bare `「`
+    line gains no name however the row is filled in, narration is never labelled, and
+    `(unlabelled)` costs nothing. A mark that does not close the one that opened the
+    message is a problem and not a substitution: the line stays Japanese.
+    """
+    cells = marked("「", "」", "『", "』")
+    words = {
+        "labelled": (5, 6, cells["「"], 7, cells["」"], END_WORD),
+        "bare": (cells["「"], 5, 6, cells["」"], END_WORD),
+        "narration": (cells["『"], 5, 6, cells["』"], END_WORD),
+        "unclosed": (5, cells["「"], 6, 7, END_WORD),
+        "mismatched": (5, cells["「"], 6, cells["』"], END_WORD),
+    }[shape]
+    result = dressed(words_bytes(*words), speaker)
+    page = result.laid_out.pages
+    assert page[0][0].startswith(prefix), f"{page[0][0]!r} does not open {prefix!r}"
+    assert page[-1][-1].endswith(suffix), f"{page[-1][-1]!r} does not end {suffix!r}"
+    assert bool(result.problems) == problem, result.problems
+
+
+def test_no_label_leaves_the_english_undressed():
+    """`--no-label` is the whole of the other branch: no name, and neither mark."""
+    cells = marked("「", "」")
+    original = words_bytes(5, 6, cells["「"], 7, cells["」"], END_WORD)
+    assert dressed(original, "Onkel", label=False).laid_out.pages == (("hello there",),)
+    assert dressed(original, "Onkel").laid_out.pages == (("Onkel「hello there」",),)
+
+
+def test_a_closing_mark_that_does_not_close_the_opening_one_is_never_substituted():
+    """`「…』` is a pair the original does not draw, and the narrowest place to see it.
+
+    `original_marks` used to take the last cell as the closer whatever it was, so a line
+    opening `「` and ending `』` was re-dressed as `Uncle「…』` -- marks invented by the
+    inserter. The closer is dropped and the line reported instead, which leaves it
+    Japanese rather than wrong on screen.
+    """
+    table = GlyphTable.load()
+    cells = marked("「", "』", "」")
+    mixed = original_marks(words_bytes(5, cells["「"], 6, cells["』"], END_WORD), table)
+    assert mixed == Marks("「", "", True, mixed.problem)
+    assert mixed.problem and "「" in mixed.problem and "』" in mixed.problem
+    matching = original_marks(words_bytes(5, cells["「"], 6, cells["」"], END_WORD), table)
+    assert matching == Marks("「", "」", True), "the matching pair is still read as a pair"
+
+
+def test_the_label_set_is_the_style_guides_and_a_name_outside_it_is_refused():
+    """The labels are `translation/style-guide.md` § 9's sentence, derived here rather
+    than retyped, so a label added to the guide and not to the build is a red test."""
+    guide = (REPO_ROOT / "translation" / "style-guide.md").read_text(encoding="utf-8")
+    sentence = re.search(r"Deutsche Labels: ([^.]+)\.", re.sub(r"\s+", " ", guide))
+    assert sentence, "the style guide no longer lists the German labels in one sentence"
+    assert set(sentence.group(1).split(", ")) == SPEAKER_LABELS
+    assert speaker_label("Onkel") == ("Onkel", [])
+    assert speaker_label("Shirabe, Moe, Tante") == ("Shirabe, Moe, Tante", [])
+    assert speaker_label("(unlabelled)") == ("", [])
+    assert speaker_label("") == ("", [])
+    assert speaker_label("Onkle") == ("Onkle", ["Onkle"])
+
+
+def test_an_edit_set_says_which_work_area_the_engine_it_installs_has():
+    """An edit set that raised the map work area must make the reinserter measure against
+    it; one that says nothing installs the retail engine; a lowered figure is nonsense."""
+    edit = ByteEdit(file=EXE_NAME, offset=0, old=b"\x01", new=b"\x02", reason="x")
+    assert EditSet((edit,), {"format": 1}).work_area_end == MAP_WORK_AREA_END
+    assert EditSet((edit,), {"map_work_area_end": 0x7C00}).work_area_end == 0x7C00
+    with pytest.raises(BuildRefused, match="map_work_area_end"):
+        _ = EditSet((edit,), {"map_work_area_end": 0x1000}).work_area_end
+
+
+# --- a patch a relocation would also write ---------------------------------------------------
+#
+# The arithmetic is asserted against a real member of the real archive in
+# `tests/test_real_vwf_build.py`, because what makes this check real is that
+# `Archive.base_lba` and a `SectorEdit`'s `lba` are the same frame -- something no
+# hand-chosen pair of numbers can say. What is left here is the two branches that need no
+# disc: the near miss, and the file that is never written by LBA at all.
+
+
+class ArchiveAt1000:
+    """Only what `check_no_sector_clash` reads of an `Archive`: where `BOKU.BIN` starts."""
+
+    base_lba = 1000
+
+
+def test_a_patch_in_a_file_no_relocation_writes_is_never_compared():
+    """`SCPS_100.88` is written only through its own extent, so it is out of scope."""
+    exe = ByteEdit(file=EXE_NAME, offset=0x1000, old=b"\0" * 4, new=b"\1" * 4, reason="word")
+    moved = SectorEdit(lba=1002, old=bytes(2048), new=b"\2" * 2048, reason="a member moved")
+    check_no_sector_clash([exe], [moved], ArchiveAt1000())
+
+
+def test_no_relocation_at_all_compares_nothing():
+    """A build with no growth writes no sector by LBA, so there is nothing to clash with."""
+    patch = ByteEdit(file=ARCHIVE_NAME, offset=0, old=b"\0" * 4, new=b"\1" * 4, reason="sheet")
+    check_no_sector_clash([patch], [], ArchiveAt1000())
+
+
+# --- what an overlay load overwrites ------------------------------------------------------------
+
+
+def test_an_overlay_load_writes_whole_sectors_from_the_overlay_base():
+    """A load is whole sectors, so it ends on a sector boundary past the file's own end."""
+    assert overlay_read_end([1]) == OVERLAY_LOAD_ADDRESS + 2048
+    assert overlay_read_end([2048, 44 * 2048 - 1]) == OVERLAY_LOAD_ADDRESS + 44 * 2048
+
+
+def test_an_executable_patch_in_the_overlay_region_is_refused():
+    """One byte into the region is refused; a patch ending at it, or in `BOKU.BIN`, is not."""
+    region = OVERLAY_LOAD_ADDRESS - EXE_LOAD_BIAS
+
+    def edit(file: str, offset: int) -> ByteEdit:
+        return ByteEdit(file=file, offset=offset, old=b"\0" * 4, new=b"\1" * 4, reason="table")
+
+    check_resident([edit(EXE_NAME, region - 4), edit(ARCHIVE_NAME, region)])
+    straddling = rf"table: 0x{OVERLAY_LOAD_ADDRESS - 3:08X} is in the overlay region"
+    with pytest.raises(BuildRefused, match=straddling):
+        check_resident([edit(EXE_NAME, region - 3)])
+
+
+def test_a_renderer_patch_alone_is_checked_against_the_overlay_loads_too(
+    disc_dir, real_image, tmp_path
+):
+    """`boku build --vwf` with no translation opens no walk, and the check must not need one:
+    the edit set is exactly the patch that puts resident bytes in the executable."""
+    ram = OVERLAY_LOAD_ADDRESS + 0x15A00  # past MUSI's file end, inside its last sector
+    at = ram - EXE_LOAD_BIAS
+    old = (disc_dir / "files" / EXE_NAME).read_bytes()[at : at + 4]
+    patch = ByteEdit(file=EXE_NAME, offset=at, old=old, new=b"\1\2\3\4", reason="a table")
+    with pytest.raises(BuildRefused, match=r"a table: .* overlay load"):
+        build(
+            source=real_image,
+            out_dir=tmp_path / "out",
+            disc_dir=disc_dir,
+            binary_patches=[patch],
+            dry_run=True,
+        )
+
+
+def test_an_edit_set_offers_its_island_s_tail_and_the_pc_host_data_to_moved_arrays(tmp_path):
+    """The tail is `[vwf_free, island_end)` as the font build recorded them; the PC-host data
+    is dead only because this renderer clears `g_pc_host`, so a build without it never
+    gets that region."""
+    gap = {"symbols": {"vwf_advance": "0x8005CD44"}, "bytes": 956, "island_end": "0x8005DCF8"}
+    edit_set = load_edit_set(write_edit_set(tmp_path / "e.json", EXE_EDIT, gap=gap))
+    tail = Region(0x8005CD44 + 956, 0x8005DCF8, "the renderer island's tail")
+    assert edit_set.array_regions == (*DEAD_REGIONS, PC_HOST_DATA, tail)
+    older = load_edit_set(write_edit_set(tmp_path / "o.json", EXE_EDIT))
+    assert older.array_regions == DEAD_REGIONS
+    assert PC_HOST_DATA not in DEAD_REGIONS
+
+
+def test_routines_in_the_dead_font_leave_only_its_tail_to_moved_arrays(tmp_path):
+    """Once the renderer's routines are assembled into `DEAD_REGIONS` (`routines`), the
+    arrays get what the routines left of it, and the routines' symbols are the ones a
+    hooked label or banner is pointed at."""
+    (font,) = DEAD_REGIONS
+    gap = {"symbols": {"vwf_advance": "0x8005CD44"}, "bytes": 956, "island_end": "0x8005DCF8"}
+    routines = {
+        "symbols": {"vwf_routines": f"0x{font.start:08X}", "vwf_fortune_banner": "0x80025200"},
+        "bytes": 1580,
+        "region_end": f"0x{font.end:08X}",
+    }
+    edit_set = load_edit_set(
+        write_edit_set(tmp_path / "e.json", EXE_EDIT, gap=gap, routines=routines)
+    )
+    assert edit_set.array_regions[0] == Region(font.start + 1580, font.end, "the dead font's tail")
+    assert font not in edit_set.array_regions
+    assert edit_set.label_routines == {"vwf_fortune_banner": 0x80025200}
+
+
+def test_an_unreachable_array_item_is_left_retail_and_not_counted_refused():
+    """`boku.arrays.UNREACHABLE` (bug sumo's move names): the English stays in the file,
+    the build writes nothing for it, and it is neither a problem nor a refusal."""
+    table = GlyphTable.load()
+    cell = table.from_character["「"]
+    walk = OneArraySite(words_to_bytes([cell, cell, 0x8000]), kind="ARR-L", line_id="musi@2C.3")
+    entry = TranslationEntry(line_id="musi@2C.3", speaker="(unlabelled)", pages=("Retreat",))
+    (result,) = lay_out(NoArchive(), walk, [entry], StockEncoder.load(), BoxSpec(999, 1))
+    assert result.laid_out is None and result.problems == ()
+    assert result.unreachable and not result.written
+    built = BuildResult(None, None, [result], (), "stock", BoxSpec(999, 1), "t", ())
+    assert built.refused_lines == [] and built.unreachable_lines == [result]

@@ -1,0 +1,425 @@
+# arrays (translation/days/README.md)
+# --- exe@80029920: a spoken message the program holds itself, outside every event
+exe@80029920.0	Onkel	So! Schluss mit Spielen fuer heute! // Das Abendessen ist schon feeeertig!
+# NOTE exe@80029920.0: the same recording as the uncle's call E0190.0; the same German.
+
+# --- exe@80029AFC: ant-count message; code writes 3 digit glyphs into words 1-3
+exe@80029AFC.0	(unlabelled)	"000 Ameisen sind erledigt."
+# NOTE exe@80029AFC.0: the corner brackets are part of this text, as ASCII quotes; the code writes the
+#   three digits into the cells right after the opening quote, so the number stays first
+#   (bible § 8, item 1).
+
+# --- exe@80029B20: controls help screen (3 pad types)
+exe@80029B20.0	(unlabelled)	Steuerkreuz
+exe@80029B20.1	(unlabelled)	Oben: Vorwaerts
+exe@80029B20.2	(unlabelled)	Li/Re: Drehen
+exe@80029B20.3	(unlabelled)	Unten: Umdrehen
+exe@80029B20.4	(unlabelled)	: Reden, Sehen
+exe@80029B20.5	(unlabelled)	Sprung, OK
+exe@80029B20.6	(unlabelled)	Ton aus
+exe@80029B20.7	(unlabelled)	: Rennen
+exe@80029B20.8	(unlabelled)	: Untermenue anzeigen
+exe@80029B20.9	(unlabelled)	↓
+exe@80029B20.10	(unlabelled)	{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}{G:1481}
+exe@80029B20.11	(unlabelled)	Waehle im Untermenue: Kescher halten / Kaeferkaefig /
+exe@80029B20.12	(unlabelled)	Sachen / Angelzeug / Drachen.
+exe@80029B20.13	(unlabelled)	○
+exe@80029B20.14	(unlabelled)	×
+exe@80029B20.15	(unlabelled)	{G:1482}{G:1483}{G:1484}
+exe@80029B20.16	(unlabelled)	{G:46}
+exe@80029B20.17	(unlabelled)	×
+exe@80029B20.18	(unlabelled)	{G:1485}{G:1486}{G:1487}
+exe@80029B20.19	(unlabelled)	L2
+exe@80029B20.20	(unlabelled)	L1
+exe@80029B20.21	(unlabelled)	{G:1474}{G:1475}
+# NOTE exe@80029B20.11-.12: one sentence, split where the Japanese splits it; .11 takes two rows
+#   on screen and .12 the row under them (boku.help_screen).
+#   "Stimme abbrechen" (.6) cuts a voiced line short.
+
+# --- exe@80036750: fortune result, drawn vertically
+exe@80036750.0	(unlabelled)	Grosses Pech!
+exe@80036750.1	(unlabelled)	Kleines Glueck!
+exe@80036750.2	(unlabelled)	Gutes Glueck!
+exe@80036750.3	(unlabelled)	Grosses Glueck!
+
+# --- exe@8003D2E0: insect names (ids 0-56; ids 56-59 remap to 23/24/27/30, id 60 to 56)
+exe@8003D2E0.0	(unlabelled)	Schwalbenschwanz
+exe@8003D2E0.1	(unlabelled)	Gelber Schwalbenschwanz
+exe@8003D2E0.2	(unlabelled)	Langschwanz-Schwalbenschwanz
+exe@8003D2E0.3	(unlabelled)	Chinesischer Pfauenfalter
+exe@8003D2E0.4	(unlabelled)	Moschusfalter
+exe@8003D2E0.5	(unlabelled)	Blaustreifen-Schwalbenschwanz
+exe@8003D2E0.6	(unlabelled)	Mikado-Schwalbenschwanz
+exe@8003D2E0.7	(unlabelled)	Kohlweissling
+exe@8003D2E0.8	(unlabelled)	Wandergelbling
+exe@8003D2E0.9	(unlabelled)	Indischer Admiral
+exe@8003D2E0.10	(unlabelled)	C-Falter
+exe@8003D2E0.11	(unlabelled)	Blauer Admiral
+exe@8003D2E0.12	(unlabelled)	Tagpfauenauge
+exe@8003D2E0.13	(unlabelled)	Grosser Schillerfalter
+exe@8003D2E0.14	(unlabelled)	Grosser Eisvogel
+exe@8003D2E0.15	(unlabelled)	Loomis-Blaeuling
+exe@8003D2E0.16	(unlabelled)	Gruener Zipfelfalter
+exe@8003D2E0.17	(unlabelled)	Blasser Grasblaeuling
+exe@8003D2E0.18	(unlabelled)	Kurzschwanz-Blaeuling
+exe@8003D2E0.19	(unlabelled)	Kastanientiger
+exe@8003D2E0.20	(unlabelled)	Kleines Waldauge
+exe@8003D2E0.21	(unlabelled)	Tengu-Falter
+exe@8003D2E0.22	(unlabelled)	Gruener Dickkopffalter
+exe@8003D2E0.23	(unlabelled)	Miyama-Hirschkaefer
+exe@8003D2E0.24	(unlabelled)	Riesen-Hirschkaefer
+exe@8003D2E0.25	(unlabelled)	Flach-Hirschkaefer
+exe@8003D2E0.26	(unlabelled)	Zwerg-Hirschkaefer
+exe@8003D2E0.27	(unlabelled)	Saege-Hirschkaefer
+exe@8003D2E0.28	(unlabelled)	Rotbein-Hirschkaefer
+exe@8003D2E0.29	(unlabelled)	Oni-Hirschkaefer
+exe@8003D2E0.30	(unlabelled)	Nashornkaefer
+exe@8003D2E0.31	(unlabelled)	Heike-Gluehwuermchen
+exe@8003D2E0.32	(unlabelled)	Fluss-Prachtlibelle
+exe@8003D2E0.33	(unlabelled)	Urzeitlibelle
+exe@8003D2E0.34	(unlabelled)	Berg-Keiljungfer
+exe@8003D2E0.35	(unlabelled)	Oniyanma
+exe@8003D2E0.36	(unlabelled)	Silber-Koenigslibelle
+exe@8003D2E0.37	(unlabelled)	Salz-Blaupfeil
+exe@8003D2E0.38	(unlabelled)	Sommer-Heidelibelle
+exe@8003D2E0.39	(unlabelled)	Brauen-Heidelibelle
+exe@8003D2E0.40	(unlabelled)	Falterlibelle
+exe@8003D2E0.41	(unlabelled)	Wanderheuschrecke
+exe@8003D2E0.42	(unlabelled)	Kutsuwamushi
+exe@8003D2E0.43	(unlabelled)	Kusakiri
+exe@8003D2E0.44	(unlabelled)	Umaoi
+exe@8003D2E0.45	(unlabelled)	Kirigirisu
+exe@8003D2E0.46	(unlabelled)	Enma-Grille
+exe@8003D2E0.47	(unlabelled)	Kusahibari
+exe@8003D2E0.48	(unlabelled)	Suzumushi
+exe@8003D2E0.49	(unlabelled)	Matsumushi
+exe@8003D2E0.50	(unlabelled)	Nii-nii-zemi
+exe@8003D2E0.51	(unlabelled)	Abura-zemi
+exe@8003D2E0.52	(unlabelled)	Ezo-zemi
+exe@8003D2E0.53	(unlabelled)	Higurashi
+exe@8003D2E0.54	(unlabelled)	Min-min-zemi
+exe@8003D2E0.55	(unlabelled)	Tsukutsuku-boshi
+exe@8003D2E0.56	(unlabelled)	Gottesanbeterin
+# NOTE exe@8003D2E0: the names of glossary § 4a.
+
+# --- exe@8003D2E0 in bug sumo's exchange notebook alone (boku.exchange_notebook)
+exe@8003D2E0.23@exchange	(unlabelled)	Miyama-Kaefer
+exe@8003D2E0.24@exchange	(unlabelled)	Riesen-Kaefer
+exe@8003D2E0.26@exchange	(unlabelled)	Zwerg-Kaefer
+exe@8003D2E0.27@exchange	(unlabelled)	Saege-Kaefer
+exe@8003D2E0.28@exchange	(unlabelled)	Rotbein-Kaefer
+exe@8003D2E0.30@exchange	(unlabelled)	Nashornkaefer
+# NOTE exe@8003D2E0.*@exchange: shorter names for the exchange notebook (<= 98 px right of the
+#   size badge); every other screen keeps the full name (glossary § 4a).
+
+# --- exe@8003D5F0: memory-card and save/load messages
+exe@8003D5F0.0	(unlabelled)	MEMORY CARD wird geprueft...
+exe@8003D5F0.1	(unlabelled)	Keine MEMORY CARD eingesteckt.
+exe@8003D5F0.2	(unlabelled)	Zugriff auf MEMORY CARD fehlgeschlagen.
+exe@8003D5F0.3	(unlabelled)	Kein freier Block auf MEMORY CARD.
+exe@8003D5F0.4	(unlabelled)	Keine Datei fuer dieses Spiel vorhanden.
+exe@8003D5F0.5	(unlabelled)	Keine fertige Spieldatei vorhanden.
+exe@8003D5F0.6	(unlabelled)	Welche Datei moechtest du laden?
+exe@8003D5F0.7	(unlabelled)	In welche Datei moechtest du speichern?
+exe@8003D5F0.8	(unlabelled)	Spiel trotzdem starten?
+exe@8003D5F0.9	(unlabelled)	Ist diese Datei in Ordnung?
+exe@8003D5F0.10	(unlabelled)	Diese Datei ueberschreiben?
+exe@8003D5F0.11	(unlabelled)	Daten werden geladen...
+exe@8003D5F0.12	(unlabelled)	Daten werden gespeichert...
+exe@8003D5F0.13	(unlabelled)	(MEMORY CARD nicht entfernen)
+exe@8003D5F0.14	(unlabelled)	Laden der Daten fehlgeschlagen.
+exe@8003D5F0.15	(unlabelled)	Speichern der Daten fehlgeschlagen.
+exe@8003D5F0.16	(unlabelled)	Formatieren fehlgeschlagen.
+exe@8003D5F0.17	(unlabelled)	Die MEMORY CARD wurde entfernt.
+exe@8003D5F0.18	(unlabelled)	Laden abgeschlossen.
+exe@8003D5F0.19	(unlabelled)	Speichern abgeschlossen.
+exe@8003D5F0.20	(unlabelled)	Formatieren abgeschlossen.
+exe@8003D5F0.21	(unlabelled)	Ereignisse bis heute auf der
+exe@8003D5F0.22	(unlabelled)	MEMORY CARD speichern?
+exe@8003D5F0.23	(unlabelled)	(1 Block benoetigt)
+exe@8003D5F0.24	(unlabelled)	Die MEMORY CARD ist nicht formatiert.
+exe@8003D5F0.25	(unlabelled)	Spiel trotzdem fortsetzen?
+exe@8003D5F0.26	(unlabelled)	Formatieren?
+exe@8003D5F0.27	(unlabelled)	Wird formatiert...
+exe@8003D5F0.28	(unlabelled)	Formatieren und Speichern abgeschlossen.
+exe@8003D5F0.29	(unlabelled)	Neue Datei
+exe@8003D5F0.30	(unlabelled)	Diese Datei ist beschaedigt.
+exe@8003D5F0.31	(unlabelled)	Diese Daten sind veraltet.
+# NOTE exe@8003D5F0: Sony's period wording for the card ("MEMORY CARD" in capitals); .21-.22 are
+#   one question drawn over two lines; the lenticular brackets of .13, .23 (and exe@8003D9BC.4)
+#   become parentheses, which the font has. .3 is worded to fit its panel on one line.
+
+# --- exe@8003D9BC: config screen labels
+exe@8003D9BC.0	(unlabelled)	Textanzeige
+exe@8003D9BC.1	(unlabelled)	Ton
+exe@8003D9BC.2	(unlabelled)	Controller
+exe@8003D9BC.3	(unlabelled)	Vibration
+exe@8003D9BC.4	(unlabelled)	(Rumble)
+
+# --- exe@8003DA00: extras menu labels
+exe@8003DA00.0	(unlabelled)	Bildertagebuch
+exe@8003DA00.1	(unlabelled)	Sammlung+Kaefig
+# NOTE exe@8003DA00.1: fits in the same font as the other labels (108 of the frame's 109 px).
+#   The row opens the specimens and the cage.
+exe@8003DA00.2	(unlabelled)	Drachen
+exe@8003DA00.3	(unlabelled)	Sachen
+exe@8003DA00.4	(unlabelled)	Ende
+exe@8003DA00.5	(unlabelled)	Essens-Quizquote
+
+# --- exe@8003DA4C: fish names
+exe@8003DA4C.0	(unlabelled)	Iwana
+exe@8003DA4C.1	(unlabelled)	Forelle
+exe@8003DA4C.2	(unlabelled)	Yamame
+
+# --- exe@80046158: insect cage: release?
+exe@80046158	[SEL]	Freilassen? | Ja | Nein
+
+# --- exe@80046178: insect cage full
+exe@80046178	[SEL]	Der Kaeferkaefig ist voll. | Diesen aufgeben | Erst mal einstecken
+
+# --- exe@800461BC: insect cage select
+exe@800461BC	[SEL]	Behalten | Lieber nicht
+
+# --- exe@800461CC: kite names
+exe@800461CC.0	(unlabelled)	Rechteckdrachen
+exe@800461CC.1	(unlabelled)	Nina-Drachen
+exe@800461CC.2	(unlabelled)	Zikadendrachen
+exe@800461CC.3	(unlabelled)	Vogeldrachen
+exe@800461CC.4	(unlabelled)	Karpfendrachen
+exe@800461CC.5	(unlabelled)	Flugzeugdrachen
+exe@800461CC.6	(unlabelled)	Drachenkette
+exe@800461CC.7	(unlabelled)	Boku-Drachen
+
+# --- exe@80046214: item names
+exe@80046214.0	(unlabelled)	Gymnastikkarte
+exe@80046214.1	(unlabelled)	Reiscracker-Gruss
+exe@80046214.2	(unlabelled)	Axt
+exe@80046214.3	(unlabelled)	Boellerbuendel
+exe@80046214.4	(unlabelled)	Zuckerwasser
+exe@80046214.5	(unlabelled)	Seltsames Ding
+exe@80046214.6	(unlabelled)	Ubli-bubli-bon
+exe@80046214.7	(unlabelled)	Shirabes Schleife
+exe@80046214.8	(unlabelled)	Sonnenblumen
+exe@80046214.9	(unlabelled)	Ken-bos Fell
+exe@80046214.10	(unlabelled)	Schlangenhaut
+exe@80046214.11	(unlabelled)	Gelbe Blume
+exe@80046214.12	(unlabelled)	Maiskolben
+exe@80046214.13	(unlabelled)	Foto
+exe@80046214.14	(unlabelled)	Wal-Ohrknochen
+# NOTE exe@80046214.0, .1, .3, .8: one-line versions fit the 115 px frame (glossary § 4e).
+
+# --- exe@800462C8: fishing message 0
+exe@800462C8.0	(unlabelled)	Morgens und abends angeln: Koeder nehmen.
+
+# --- exe@800462E4: fishing message 1
+exe@800462E4.0	(unlabelled)	Wenn der Biss schwer zu sehen ist, Pose nutzen.
+
+# --- exe@80046314: fishing message 2
+exe@80046314.0	(unlabelled)	Mittags angeln: Fliege nehmen.
+
+# --- exe@80046334: fishing message 3
+exe@80046334.0	(unlabelled)	Eine Spezial-Fliege aus Ken-bos Fell. Auf den dicken Fang!
+
+# --- exe@80046364: fishing menu word
+exe@80046364.0	(unlabelled)	Angelzeug
+
+# --- exe@8004636C: fishing menu word
+exe@8004636C.0	(unlabelled)	Sommerfang
+
+# --- exe@8004637C: fishing word 0
+exe@8004637C.0	(unlabelled)	Iwana
+
+# --- exe@80046384: fishing word 1
+exe@80046384.0	(unlabelled)	Regenbogenforelle
+
+# --- exe@80046390: fishing word 2
+exe@80046390.0	(unlabelled)	Yamame
+
+# --- exe@80046398: item descriptions
+exe@80046398.0	(unlabelled)	Beim Grabbesuch huetete ich das Haus; da kauften sie mir die.
+exe@80046398.1	(unlabelled)	Gefaehrlich, also duerfen Kinder es nicht anfassen.
+exe@80046398.2	(unlabelled)	Damit sind die Ameisen erledigt! Ist das etwas gemein?
+exe@80046398.3	(unlabelled)	Lockt viele Kaefer an. Mein eigenes Zuckerwasser.
+exe@80046398.4	(unlabelled)	Am Strand gefunden. Seltsame Form. Wem fehlt das?
+exe@80046398.5	(unlabelled)	Wessen Schatz ist das? Versteckte sich tief in der Hoehle.
+exe@80046398.6	(unlabelled)	Shirabes Fundstueck. Eine suesse kleine rote Schleife.
+exe@80046398.7	(unlabelled)	Geschenk von Shirabe. Muntere Sonnenblumen, gar nicht welk.
+exe@80046398.8	(unlabelled)	Tut mir leid, Ken-bo. Im Winter wird es hier wohl kalt.
+exe@80046398.9	(unlabelled)	Meine erste! Die Schlangenform ist noch ganz da.
+exe@80046398.10	(unlabelled)	Pressen wir die schoenen Blumen! Sie heissen Trollblumen.
+exe@80046398.11	(unlabelled)	Glaenzende Koerner, ganz viele, sitzen dicht an dicht.
+exe@80046398.12	(unlabelled)	Trieb jahrzehntelang im Meer... ein Raetsel-Fund vom Wal.
+
+# --- exe@80046614: photo and morning-glory captions
+exe@80046614.0	(unlabelled)	Ploetzlich ein Blitz im Wald... Da bin ich erschrocken.
+exe@80046614.1	(unlabelled)	Jetzt erschrecke ich nicht mehr. So ein Apparat... Baeaeah!
+exe@80046614.2	(unlabelled)	Dabei dachte ich, ich haette cooler posiert...
+exe@80046614.3	(unlabelled)	Schweinsnase!
+exe@80046614.4	(unlabelled)	Timing passte genau: Bitte laecheln!
+exe@80046614.5	(unlabelled)	Shirabe und ich, wir zwei. Geknipst von Tante.
+exe@80046614.6	(unlabelled)	Beim Drachensteigen kam Tante und knipste mich.
+exe@80046614.7	(unlabelled)	Vor den Sonnenblumen: Bitte laecheln!
+exe@80046614.8	(unlabelled)	Endlich entdeckt: Wolf-kun. Aber was ist da komisch?
+exe@80046614.9	(unlabelled)	Lebt wohl, alle. Ich fahre heim in die Stadt.
+exe@80046614.10	(unlabelled)	Prunkwinde, Tag 1. Die rosa Blueten sind offen.
+exe@80046614.11	(unlabelled)	Prunkwinde, Tag 2. Sonnen sich und wirken gemuetlich.
+exe@80046614.12	(unlabelled)	Prunkwinde, Tag 3. Grosse und kleine Brueder in Lila.
+exe@80046614.13	(unlabelled)	Prunkwinde, Tag 4. Bluehen noch voller Kraft.
+exe@80046614.14	(unlabelled)	Prunkwinde, Tag 5. Welche ist wohl am schoensten?
+exe@80046614.15	(unlabelled)	Prunkwinde, Tag 6. Sie singen zusammen ein Lied.
+exe@80046614.16	(unlabelled)	Prunkwinde, Tag 7. Grosse Schirme, weit zum Himmel offen.
+exe@80046614.17	(unlabelled)	Prunkwinde, Tag 8. Fluestern leise und plaudern!
+exe@80046614.18	(unlabelled)	Prunkwinde, Tag 9. Blueht naechstes Jahr wieder schoen, ja?
+
+# --- hhon@5328: insect book entries (60 = empty slot)
+hhon@5328.0	(unlabelled)	Schwalben-schwanz. Lebt in ganz Japan, auch bei mir daheim. Kaelte mag er nicht so.
+hhon@5328.1	(unlabelled)	Gelber Schwalben-schwanz. Seine Raupe ist komisch: Sie liiiebt Moehren und Petersilie, die ich hasse.
+hhon@5328.2	(unlabelled)	Langschwanz-Schwalben-schwanz. Sommerkinder werden groesser als die vom Fruehling. Seltsam, oder?
+hhon@5328.3	(unlabelled)	Chinesischer Pfauenfalter (Karasu-ageha, "Kraehen-falter"). Schoen blau-gruen, und dann "Kraehe"? Armer Kerl! Ein Schickimicki!
+hhon@5328.4	(unlabelled)	Moschusfalter. Er ist ein Maennchen, schicker als das Weibchen, und traegt Parfuem. Ich streng mich auch an.
+hhon@5328.5	(unlabelled)	Blaustreifen-Schwalben-schwanz. Erst gelbgruen, dann in der Sonne sofort blau... Eine Verwandlung!
+hhon@5328.6	(unlabelled)	Mikado-Schwalben-schwanz. Lebt auch in Indien und Sri Lanka. Ich will mal hin, aber wo liegt das?
+hhon@5328.7	(unlabelled)	Kohlweissling. Seine Raupe liebt Kohl! Sie frisst und frisst und taucht ueberall auf.
+hhon@5328.8	(unlabelled)	Wander-gelbling. Sein rosa Rand ist irgendwie suess. Wie bei einem Maedchen!
+hhon@5328.9	(unlabelled)	Indischer Admiral. Tagsueber ruht er ganz still, und abends legt er los. Ein Nacht-schwaermer.
+hhon@5328.10	(unlabelled)	C-Falter. Zackige Fluegel? Andere cho, andere Falter, haben das kein cho-tto bisschen!
+hhon@5328.11	(unlabelled)	Blauer Admiral. Seine lapisblauen Fluegel haben die Farbe des Nachthimmels in Onkels Tal.
+hhon@5328.12	(unlabelled)	Tagpfauen-auge. Vier Augen auf den Fluegeln plus seine echten macht sechs. Da werde ich wirr.
+hhon@5328.13	(unlabelled)	Grosser Schillerfalter. Riesig, bunt und wunderschoen: Japans Koenig der Falter.
+hhon@5328.14	(unlabelled)	Grosser Eisvogel. Er wohnt an kuehlen Orten, hoch auf Bergen, und sonnt sich gern.
+hhon@5328.15	(unlabelled)	Loomis-Blaeuling. Wegen Gift werden es immer weniger, bald keine mehr? Das lasse ich nie zu!
+hhon@5328.16	(unlabelled)	Gruener Zipfelfalter. Weltweit soll er hundert Verwandte haben, und er ist einer davon.
+hhon@5328.17	(unlabelled)	Blasser Grasblaeuling. Das Flecken-muster ist typisch. Im Sueden oft zu sehen; frisst Sauerklee.
+hhon@5328.18	(unlabelled)	Kurzschwanz-Blaeuling (Tsubame-shijimi). Wie eine Schwalbe gefaerbt, mit Gabelschwanz, zieht aber nicht fort.
+hhon@5328.19	(unlabelled)	Kastanientiger. Wenn die Zeit kommt, wandert er wie ein Vogel. Ein Sonderling.
+hhon@5328.20	(unlabelled)	Kleines Waldauge. Er mag Wolken lieber als Sonne. Zu heiss mag ich es auch nicht.
+hhon@5328.21	(unlabelled)	Tengu-Falter. Der Hoecker sieht aus wie eine Tengu-Nase, und sein Blattmuster ist ein echter Tarnmantel!
+hhon@5328.22	(unlabelled)	Gruener Dickkopffalter. Huebsche Fluegel, dicker Bauch, grosse Augen. Ich mag seinen Metallglanz!
+hhon@5328.23	(unlabelled)	Miyama-Hirschkaefer ♂. Buchen- und Eichensaft liebt er! Sein Kopf steht komisch ab...
+hhon@5328.24	(unlabelled)	Riesen-Hirschkaefer ♂. Der echte Hirschkaefer! Riesengross und stark! Hirschkaefer-Koooenig!
+hhon@5328.25	(unlabelled)	Flach-Hirschkaefer. Der grosse Zahn innen an seinen Zangen ist typisch! Pechschwarz, glaenzend. Cool...
+hhon@5328.26	(unlabelled)	Zwerg-Hirschkaefer. Ein kleiner Kerl, aber ab und zu wird einer ueber 5 Zentimeter!
+hhon@5328.27	(unlabelled)	Saege-Hirschkaefer ♂. Wie sein Name, eine Saege! Seine gezackten Zangen sind typisch!
+hhon@5328.28	(unlabelled)	Rotbein-Hirschkaefer. Weidensaft liebt er. Er sitzt am Ast; schuettelt man ihn, faellt er ab.
+hhon@5328.29	(unlabelled)	Oni-Hirschkaefer. Klein und niedlich, aber sehen seine kurzen Zangen wie Oni-Hoerner aus?
+hhon@5328.30	(unlabelled)	Nashornkaefer ♂. Kaempft mit nur einem Horn, zeigt aber Riesenkraft. Hirschkaefer sind nichts dagegen.
+hhon@5328.31	(unlabelled)	Heike-Glueh-wuermchen. Schon als Ei und Larve leuchtet es. Ein kuehles Licht: das Sommer-Glueh-wuermchen.
+hhon@5328.32	(unlabelled)	Fluss-Prachtlibelle. Wohnt an Bergfluessen, mit Fluegeln in Orange, Klar oder Braun.
+hhon@5328.33	(unlabelled)	Urzeitlibelle. Gibt es schon seit Fossilien-Tagen, heisst es. Wahnsinn.
+hhon@5328.34	(unlabelled)	Berg-Keiljungfer. Schluepft flussabwaerts im ruhigen Wasser und steigt im Sommer auf Berggipfel.
+hhon@5328.35	(unlabelled)	Oniyanma. Japans groesste Libelle. Frisst sogar Bienen! Es tut weh, wenn sie beisst!
+hhon@5328.36	(unlabelled)	Silber-Koenigslibelle. Ihr Revier liegt rund um den Teich. Ziemlich frech fuer eine Libelle.
+hhon@5328.37	(unlabelled)	Salz-Blaupfeil. Erst strohfarben, dann von weissem Puder bedeckt, wie mit Salz bestaeubt.
+hhon@5328.38	(unlabelled)	Sommer-Heidelibelle. Ausgewachsen wird sie von Kopf bis Schwanz knallrot. Rot wie Abendrot.
+hhon@5328.39	(unlabelled)	Brauen-Heidelibelle. Sie ist eine Libelle, aber schau genau: Sie hat Augenbrauen! Ich war baff.
+hhon@5328.40	(unlabelled)	Falterlibelle (Cho-tonbo). Eine Libelle, also warum "Cho", Falter? Komischer Name, und cho-mini!
+hhon@5328.41	(unlabelled)	Wanderheu-schrecke. Springt dutzende Male so hoch wie sie gross ist. In Schwaermen frisst sie Felder kahl.
+hhon@5328.42	(unlabelled)	Kutsuwamushi. Auf Lichtungen im Wald machen nur die Maennchen gacha-gacha.
+hhon@5328.43	(unlabelled)	Kusakiri. Sie mag feuchte Wiesen. Nachts singt sie ein langes jiiii ohne Pause.
+hhon@5328.44	(unlabelled)	Umaoi. Ihr Ruf zuii-cho klingt wie ein Pferde-treiber, darum heisst sie Umaoi, "Pferde-treiber".
+hhon@5328.45	(unlabelled)	Kirigirisu. Liebt Lauch und Gurken. In der Mittagshitze singt sie gii-chon.
+hhon@5328.46	(unlabelled)	Enma-Grille. Gruseliger Name, Enma, Hoellenkoenig, aber im Herbst ruft sie kuehl: koro-koro-rii-rii.
+hhon@5328.47	(unlabelled)	Kusahibari. Im Sommer am Tag, im Herbst nachts singt sie sanft: firiririri.
+hhon@5328.48	(unlabelled)	Suzumushi. Frueher hiess sie Matsumushi, heute Suzumushi. Welcher Name gefaellt ihr besser?
+hhon@5328.49	(unlabelled)	Matsumushi. Frueher hiess sie Suzumushi, heute Matsumushi. Eine wirre Beziehung.
+hhon@5328.50	(unlabelled)	Nii-nii-zemi. Kirsch-staemme mag sie. Sie hat einen seltsamen Gesang: chiii-iii.
+hhon@5328.51	(unlabelled)	Abura-zemi. In einem Krach wie heisses Oel, "abura", singt sie laut. Doppelt so heiss: Hochsommer!
+hhon@5328.52	(unlabelled)	Ezo-zemi. Mag Kiefern und Zedern. Sitzt kopfueber am Stamm und brummt ein tiefes giii.
+hhon@5328.53	(unlabelled)	Higurashi. Mag dunkle Dickichte. Abends singt sie kana-kana-kana, so traurig.
+hhon@5328.54	(unlabelled)	Min-min-zemi. Min-min-min-min, singt und singt, aber ihr Leben dauert nur zwei Wochen. Wie traurig.
+hhon@5328.55	(unlabelled)	Tsukutsuku-boshi. Kommt Ende August oft heraus, die Zikade, die den Herbst ankuendigt.
+hhon@5328.56	(unlabelled)	Miyama-Hirschkaefer ♀. Auch die Weibchen legen fleissig Eier fuer naechstes Jahr. Toll!
+hhon@5328.57	(unlabelled)	Riesen-Hirschkaefer ♀. Keine Zangen, aber bei der Groesse steht sie den Maennchen nichts nach!
+hhon@5328.58	(unlabelled)	Saege-Hirschkaefer ♀. So klein sie ist, sie schuftete drei Jahre im Holz, vom Ei zum Kaefer.
+hhon@5328.59	(unlabelled)	Nashornkaefer ♀. Klein und ohne Horn, darum schwach. Auf den ersten Blick ein schlichter Kaefer.
+hhon@5328.60	(unlabelled)	Frei
+# NOTE hhon@5328.3, .18: the entry is about the Japanese name, so the first line carries both
+#   (glossary § 4a). .10 and .40 pun on cho (butterfly; chotto, "a little"; super): kind 3, the
+#   word showing. Calls stay as the Japanese hears them (style guide § 7).
+
+# --- hhon@6874: insect book select
+hhon@6874	[SEL]	Loeschen? | Ja | Nein
+
+# --- musi@2C: bug-sumo move names
+musi@2C.0	(unlabelled)	Warten
+musi@2C.1	(unlabelled)	Ausruhen
+musi@2C.2	(unlabelled)	Vor
+musi@2C.3	(unlabelled)	Zurueck
+musi@2C.4	(unlabelled)	Griff
+musi@2C.5	(unlabelled)	Beide druecken
+musi@2C.6	(unlabelled)	1P drueckt
+musi@2C.7	(unlabelled)	2P drueckt
+musi@2C.8	(unlabelled)	MAX-Schub
+musi@2C.9	(unlabelled)	Seitwaerts
+musi@2C.10	(unlabelled)	Technik
+musi@2C.11	(unlabelled)	Treffer
+musi@2C.12	(unlabelled)	MAX gedrueckt
+musi@2C.13	(unlabelled)	Buchikamashi
+musi@2C.14	(unlabelled)	Tsuppari
+musi@2C.15	(unlabelled)	Utchari
+musi@2C.16	(unlabelled)	Gaburiyori
+musi@2C.17	(unlabelled)	Kampfgeist
+musi@2C.18	(unlabelled)	Uwatenage
+musi@2C.19	(unlabelled)	Brainbuster
+musi@2C.20	(unlabelled)	Hikiotoshi
+musi@2C.21	(unlabelled)	Susoharai
+musi@2C.22	(unlabelled)	Sukuinage
+musi@2C.23	(unlabelled)	Tsuridashi
+musi@2C.24	(unlabelled)	Ashihiki
+musi@2C.25	(unlabelled)	Umdreher
+musi@2C.26	(unlabelled)	Abisetaoshi
+musi@2C.27	(unlabelled)	Tsukidashi
+musi@2C.28	(unlabelled)	Sabaori
+musi@2C.29	(unlabelled)	Harite
+musi@2C.30	(unlabelled)	Mantis-Schere
+musi@2C.31	(unlabelled)	Mantis-Buster
+# NOTE musi@2C: real sumo techniques keep their Japanese names, one word as English sumo
+#   writes them; the joke moves are translated (glossary § 4b). .0-.12 are states, probably
+#   debug-only.
+
+# --- musi@348: bug-sumo button hint
+musi@348.0	(unlabelled)	{G:47}: Kaefer anfeuern
+
+# --- musi@358: bug-sumo strength labels
+musi@358.0	(unlabelled)	Leicht
+musi@358.1	(unlabelled)	Stark
+musi@358.2	(unlabelled)	King
+
+# --- musi@4: release this insect?
+musi@4	[SEL]	Diesen Kaefer freilassen? | Ja | Nein
+
+# --- tako@4: kite menu
+tako@4	[SEL]	Drachensteigen beenden | Drachen wechseln
+
+# --- tako@440: kite crash banner, vertical
+tako@440.0	(unlabelled)	Abgestuerzt!
+
+# --- title@7A78: yes / no
+title@7A78.0	(unlabelled)	Ja | Nein
+
+# --- zukan@32E8: write the diary and sleep?
+zukan@32E8	[SEL]	Bildertagebuch schreiben und schlafen? | Ja | Nein
+
+# --- exe@code:80037544: caught, day, month
+exe@code:80037544	(unlabelled)	Fang {day}.{month}.
+# NOTE exe@code:80037544: the Japanese is saishu ("collected") and the date. "Fang" alone keeps the
+#   bout screen's bottom row clear.
+
+# --- exe@code:80037698: specimen made, month, day (no caller found)
+exe@code:80037698	(unlabelled)	Praepariert am
+
+# --- exe@code:800377F8: wins, losses
+exe@code:800377F8	(unlabelled)	SN
+# NOTE exe@code:800377F8: S and N, one letter for each glyph the code draws (glossary § 4b).
+
+# --- title@code:8007BB60: 8, month, day
+title@code:8007BB60	(unlabelled)	{day}. August
+
+# --- title@code:8007C8EC: the ) after a slot number
+title@code:8007C8EC	(unlabelled)	) / )
+
+# --- title@code:80080484: the separators of 'n / 31' and 'n %'
+title@code:80080484	(unlabelled)	/31 / 0 / %
+
+# --- title@sjis:188: the title of the save on the memory card
+title@sjis:188	(unlabelled)	Bokus Ferien {slot} {day}. Aug.

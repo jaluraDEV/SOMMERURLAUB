@@ -1,0 +1,22 @@
+# Signs and writing painted into the scenery (PLAN GFX-08, GFX-09).
+# Format: translation/textures/README.md.
+
+# --- M_C15: the notice board on the path down to the beach
+tex@M_C15.0	Flut!
+tex@M_C15.1	Badeverbot
+
+# --- M_I14000: Saori's farewell note (day 28, <= 83 px per line)
+tex@M_I14000.note	Leb wohl. // Du warst // ein echt guter // Kerl.
+tex@M_I14000.signature	Deine Saori
+
+# --- M_I18: the sign on the upstairs door
+tex@M_I18.0	Zutritt // verboten!
+
+# --- M_S01000: the cover of the bug-trading notebook
+tex@M_S01000.0	Sumo // Tausch- // Heft
+
+# --- M_I23000: the hunting association's warning board
+tex@M_I23000.danger	GEFAHR!
+tex@M_I23000.houses	Haeuser nah,
+tex@M_I23000.shoot	Schussgefahr!
+tex@M_I23000.association	Praefektur // Jagdbund

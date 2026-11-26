@@ -1,0 +1,94 @@
+# day27 (translation/days/README.md)
+# --- E2760: D07 -- Saori's camp (Saori says goodbye)
+E2760.0	Saori	Mach es gut, du Rotzgoere.
+E2760.1	Boku	Hae?
+E2760.2	Saori	Morgen steige ich vom Berg hinab und fahre zurueck an die Uni.
+E2760.3	Boku	...Ach so.
+E2760.4	Saori	Ohh... bist du traurig?
+E2760.5	Boku	Warum sollte ich?
+E2760.6	Saori	...Na ja...
+E2760.7	Boku	Ich bin ueberhaupt nicht, kein bisschen, nicht ein Kruemelchen, nicht die Spur, gaaar nicht traurig! // Du fehlst mir weniger als das Zaepfchen einer kleinen Ameise!
+E2760.8	Saori	Ach, sicher, sicher...
+E2760.9	Saori	Aber... danke fuer alles. // Dieser Sommer hat ganz schoen Spass gemacht...
+E2760.10	Boku	Naechstes Jahr...
+E2760.11	Saori	Hm?
+E2760.12	Boku	Kommst du naechstes Jahr auch wieder...?
+E2760.13	Saori	Ja, natuerlich. // Woelfe gibt es hier irgendwo naemlich ohne Zweifel...
+E2760.14	Boku	Kommst du, weil du die Woelfe treffen willst?
+E2760.15	Saori	Na klar.
+E2760.16	Boku	......
+E2760.17	Saori	Ach, dieses Jahr habe ich viel mehr Gepaeck mitgebracht als sonst, das Einpacken wird laestig...
+E2760.18	Boku	Ich helfe dir naemlich nicht.
+E2760.19	Saori	Rotzgoere...
+
+# --- E2720: H08 -- the yard
+E2720.0	Boku	Tante... mir ist gerade etwas aufgefallen. // Wann genau machst du denn die Waesche?
+E2720.1	Tante	Hae? Na, bevor ihr alle zur Radio-Gymnastik aufwacht, Boku-kun...
+E2720.2	Tante	Vor der Radio-Gymnastik habe ich die Waesche und das Fruehstueck // schon alles, alles fertig.
+
+# --- E2710: H26 -- the workshop
+E2710.0	Onkel	Heute Abend mache ich den Ofen auf, also komm schauen. // Ein ganzer Berg voller Schaetze!
+E2710.1	Onkel	Ob das auf dem Foto wohl wirklich ein Japanischer Wolf ist...
+E2710.2	Boku	Warum?
+E2710.3	Onkel	War nur so ein Gefuehl... // Vielleicht lebt auf diesem Berg etwas noch Geheimnisvolleres und Erhabeneres, etwas Unbekanntes.
+E2710.4	Boku	Hae? Onkel, weisst du irgendetwas?
+E2710.5	Onkel	Tja, wer weiss...
+E2710.6	Onkel	Boku-kun, heute Abend mache ich den Ofen auf, also komm schauen. Das wird spannend!
+
+# --- E2712: G01 -- living room (the tanka again)
+E2712.0	Onkel	Im Grillenlied / erzittert / meines Ofens / noch zarte Flamme; / moege mein Kind von ihr umarmt sein. // Verstehe... wenn ich so bin, dann bin ich wohl auch noch ein kleines Gefaess...
+E2712.1	Onkel	Was laeuft denn im Fernsehen?
+# NOTE E2712.0: utsuwa ga chiisai ("das Gefaess ist klein") bedeutet kleingeistig/engherzig sein;
+#   ein Toepfer sagt es ueber sich selbst (Stilbibel § 10). Hier sein schlichtes Erwachsenen-"ich", allein (§ 2).
+
+# --- E2714: H13 -- behind the workshop (the kiln opened)
+E2714.0	Onkel	Hmm, das ist gar nicht uebel gelungen.
+E2714.1	Onkel	An was fuer ein Motiv wage ich mich wohl als naechstes?
+
+# --- E2730: G16 -- Moe's bed
+E2730.0	Boku	Onee-chan, kann es sein, dass du es liebst zu schlafen...
+E2730.1	Moe	Ja. Wenn ich Zeit haette, wuerde ich am liebsten jeden Tag etwa fuenfzehn Stunden schlafen...
+E2730.2	Moe	Oh, was ist das denn?
+E2730.3	Boku	Das... Ubli-bubli-bon.
+E2730.4	Moe	Was ist das? // Nanu, da sind ein englisches Woerterbuch und... ein zerfledderter Brief drin.
+E2730.5	Boku	Also ist es doch ein Buch von Ausserirdischen.
+E2730.6	Moe	Dummkopf, das ist Englisch. Eng-lisch!
+E2730.7	Boku	Onee-chan, verstehst du Englisch?
+E2730.8	Moe	Natuerlich nicht. Das unterrichtet schliesslich der Lehrer, den ich am meisten hasse.
+E2730.9	Moe	Ich versuche mal, ein Stueck von dem Brief zu lesen.
+E2730.10	Boku	Ja, lies vor, lies vor!
+E2730.11	(voice only)
+E2730.12	Moe	...Der Brief war leider auch auf Englisch.
+E2730.13	Boku	(stoehn)...
+E2730.14	Moe	Was mache ich nur? Selbst wenn ich ihn uebersetzen wollte, mein Woerterbuch liegt in der Schule... // Ob hier irgendwo ein englisches Woerterbuch herumliegt?
+E2730.15	Boku	...Onee-chan, machst du das mit Absicht?
+E2730.16	Moe	Hae? Was? Waaas? Was meinst du?
+E2730.17	Moe	Bis zum Abendessen habe ich den Brief uebersetzt.
+E2730.18	Boku	Kannst du das?
+E2730.19	Moe	Sei stiiill! // Wenn ich mir vorstelle, dass da jemandes Geheimnis drinsteckt, klopft mein Herz vor Aufregung... // und irgendwie fuehlt sich mein eigenes Elend gleich leichter an.
+
+# --- E2732: G17 -- the veranda; H06 -- the garden
+E2732.0	Boku	......
+E2732.1	Moe	"Warum spielst du heute nicht?" Das willst du doch fragen, oder?
+E2732.2	Boku	Ja. Warum?
+E2732.3	Moe	Heute ist wieder ein Abend, an dem man dem Fluestern der Herbstinsekten lauscht, darum.
+E2732.4	Boku	......
+E2732.5	Moe	Die Wolken sind so schoen, vom Mondlicht beschienen.
+E2732.6	Moe	Wenn wir hier zur selben Zeit denselben Himmel und dieselben Wolken sehen koennten wie in der Stadt, // dann koennten wir, selbst nachdem du heimgefahren bist, Boku-kun, am Telefon... // denselben Himmel ansehen und mit demselben Gefuehl ueber dieselben Dinge reden.
+E2732.7	Moe	Ach... ich bin wohl doch eine truebe Tasse, was? // Was mache ich um diese Uhrzeit draussen?
+E2732.8	Moe	Irgendwie, nachdem ich diesen alten Brief gelesen habe... // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
+E2732.9	Boku	Aber wem gehoert er denn?
+E2732.10	Moe	Ich weiss nicht, wem, aber, hmm, wie soll ich sagen... // das muss jemand mit einem sehr warmen Herzen zurueckgelassen haben...
+E2732.11	Moe	Ab morgen...
+E2732.12	Boku	Was?
+E2732.13	Moe	Ab morgen gebe ich mir Muehe... das habe ich mir ein bisschen vorgenommen.
+
+# --- E2740: H17 -- the woodshed
+E2740.0	Shirabe	Sie haben gestern das Feuer im Hangofen geloescht, aber wenn man nahe herangeht, ist er noch warm.
+E2740.1	Shirabe	Wo wir gerade daran denken: Frueher, als ich im Ofen Verstecken gespielt habe, // hat Papa furchtbar mit mir geschimpft...
+
+# --- E2741: G06 -- TV room
+E2741.0	Shirabe	Das bleibt nur unter uns... // Frueher hat Shirabe einmal die Keramik ganz hinten in Papas Werkstatt // mitsamt dem Regal umgeworfen...
+E2741.1	Boku	Hae? Was bist du denn fuer ein schlimmes Kind!
+E2741.2	Shirabe	Was ich eben gesagt habe... bleibt ein absolutes Geheimnis vor allen, abgemacht?
+E2741.3	Shirabe	Aber das Brennen ist vorbei, also gibt es jetzt wieder mehr von Papas misslungenen Stuecken, // die ich mit Spass kaputtschlagen kann, klirr, klirr!

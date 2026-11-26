@@ -1,0 +1,39 @@
+# day10 (translation/days/README.md)
+# --- E1021: G03 -- kitchen
+E1021.0	Tante	Oh... der Mirin geht zur Neige. // Na gut, dann vielleicht morgen.
+
+# --- E1020: H08 -- the yard
+E1020.0	Tante	Moe-chan hat gesagt "Boku-kun freigegeben!", weisst du. // Hm-hm... was das wohl bedeutet? // Wenn du neugierig bist, schau doch in ihrem Zimmer vorbei.
+E1020.1	Tante	Sojasosse... Ingwer... Zucker... // ...und was mache ich mit dem Fisch?
+E1020.2	Tante	Auch heute weht wieder eine schoene Brise.
+
+# --- E1012: G01 -- living room
+E1012.0	Onkel	Kaoru, Bier!
+E1012.1	Tante	Wenn du den Gasherd putzt, denke ich vielleicht darueber nach.
+E1012.2	Onkel	Na los, mit der Kraft meiner Gedanken: Bier, komm her...
+E1012.3	Onkel	Puh... jetzt habe ich noch mehr Durst.
+
+# --- E1013: G01 -- living room
+E1013.0	Onkel	Kaoru, hol mir ein Bier.
+E1013.1	Onkel	Kaoru, na los doch.
+E1013.2	Tante	Wenn ich es dir hole, wie viel gibst du mir dafuer?
+E1013.3	Onkel	Jetzt reichts. Aus reinem Trotz gehe ich es mir nicht selbst holen.
+E1013.4	Tante	Das stoert niemanden.
+E1013.5	Onkel	"Das stoert niemanden"... ich bin doch derjenige, den es stoert!
+
+# --- E1031: G15 -- the sisters' room
+E1031.0	Moe	Ehehe... im Moment schreibt Onee-chan // voller Leidenschaft an etwas ganz, ganz Wichtigem.
+E1031.1	Moe	Ob morgen... wohl schoenes Wetter wird?
+
+# --- E1040: H09 -- garden corner where Shirabe watches ants
+E1040.0	Boku	Welches Gericht von der Schulspeisung magst du? Ich mag frittiertes Walfleisch!
+E1040.1	Shirabe	Shirabe mag... Harusame-Salat und Curry-Eintopf!
+E1040.2	Shirabe	Walfleisch ist so zaeh, weisst du. // Manchmal kaue ich noch darauf herum, wenn die Mittagspause schon vorbei ist...
+
+# --- E1041: G06 -- TV room
+E1041.0	Boku	Was fuer Brotsorten gibt es bei euch in der Schulspeisung?
+E1041.1	Shirabe	Aehm, da gibt es Koppe-chan, und manchmal Weissbrot...
+E1041.2	Boku	Gibt es nur zum Weissbrot Margarine oder Marmelade?
+E1041.3	Shirabe	Genau... // Und manchmal... ein- oder zweimal im Monat gibt es frittiertes Brot!
+E1041.4	Shirabe	Wenn es frittiertes Brot gibt, freue ich mich riiiesig!
+# NOTE E1041.1: Koppe-Broetchen mit Shirabes verniedlichendem -chan.

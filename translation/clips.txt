@@ -1,0 +1,54 @@
+# Die Sprachclips aus dem Spielcode (BOKU_XA.XCH, XCH.00-XCH.47).
+# Format: translation/README.md § clips.txt. Lizenz: CC BY-SA 4.0.
+
+# --- XCH.34: Einschlafen in der ersten Nacht (nur Tag 1).
+XCH.34	Erzaehler	Und so ging der erste Tag jener Sommerferien zu Ende.
+
+# --- XCH.41-XCH.45: die fuenf Epiloge (ENDOTI, ueber den Schlussbildern; 28-49 s).
+XCH.41	Erzaehler	Am Ende zogen beide Schwestern spaeter in die Stadt, // schlossen Bilderbuch-Ehen und gruendeten glueckliche Familien. // Jetzt ist Moes aelteste Tochter in der dritten Klasse der Mittelschule... // ja, sie ist schon genauso alt wie ihre Mutter damals.	5.3 12.4 17.0 21.3
+XCH.42	Erzaehler	Nachdem ich die Universitaet verliess und rund sieben Jahre bei einem Kunstverlag arbeitete, // begann ich durch eine Fuegung, kurz vor 30, // denselben Weg wie mein Onkel, den Weg der Toepferei. // Heute vertraut man mir auch schon das ganze Tonkneten an, // doch irgendwie wird mir an der Scheibe manchmal noch schwindlig.	7.0 10.1 16.2 20.7 26.4
+XCH.43	Erzaehler	Volle fuenfundzwanzig Jahre sind seit jenem Sommer schon vergangen. // Heute arbeite ich bei einem grossen Elektronikkonzern, // schreibe meist Steuerprogramme fuer Funkgeraete und fertige Entwuerfe an. // Weisse Trennwaende und grauer Teppich; // das kalte Leuchtstofflicht, das rund um die Uhr nicht schlaeft. // In einem oeden Buero, unter engem Zeitplan, // stelle ich sie mir manchmal vor: // wie ich im starken Sonnenlicht, den Schweiss im Nacken spuerend, // ueber die Huegel und Felder rannte... // jene Tage jenes Sommers.	8.3 12.0 18.2 21.5 25.9 29.4 31.6 35.9 38.2 41.7
+XCH.44	Erzaehler	Das war alles, woran ich mich aus jenem Sommer erinnerte. // Spaeter wurde ich ein erfolgreicher Schriftsteller, // und heute lebe ich in einem Hotel in New York mit Blick auf die Brooklyn Bridge, // auf der Suche nach den Worten des Epilogs, der das Ende dieser Geschichte meiner Kindheit schmuecken soll. // Wo ich gerade daran denke: zum Countdown fuer 2001 // kommen wohl auch Shirabe und Moe nach langer Zeit aus Japan herueber. // Leb wohl, 20. Jahrhundert.	9.5 12.8 17.5 25.0 29.1 35.1 38.8
+XCH.45	Erzaehler	Etwa 15 Jahre nach jenen Sommerferien // wurde im Tal von Tsukiyono ein riesiger Mehrzweck-Staudamm fertiggestellt. // Dort, wo einst das Haus meines Onkels stand, // ist das Wasser in der Regenzeit 200 Meter tief. // Nichts ist mehr uebrig, das an jene Tage erinnert.	5.3 12.2 15.0 18.1 24.2
+
+# --- XCH.00-XCH.33, XCH.35-XCH.40: Kaefer-Sumo-Stimmen (MUSI) und ein Jubelruf.
+XCH.00	Guts	Ich trete zuerst gegen dich an.
+XCH.01	Guts	Oh, ich hab keinen. Jemand anderes vor!
+XCH.02	Guts	Sieht aus, als haette niemand einen.
+XCH.03	Guts	Endlich schlaegt die grosse Stunde fuer den hier!
+XCH.04	Guts	Okay, los!
+XCH.05	Guts	Ja, ja, ja, ja!
+XCH.06	Guts	Gib alles!
+XCH.07	Guts	Hehe, na wie ist das!
+XCH.08	Guts	Super! Gewonnen!
+XCH.09	Guts	Hehe, natuerlich habe ich gewonnen.
+XCH.10	Guts	Oh, verloren.
+XCH.11	Guts	Argh, das wurmt!
+XCH.12	Guts	Dann tauschen wir den dagegen.
+XCH.13	Fat	Meine Wenigkeit tritt zuerst gegen dich an!
+XCH.14	Fat	Hab keinen. Wechsel.
+XCH.15	Fat	Gib Vollgas!
+XCH.16	Fat	Hehe, laeuft super, allerbestens!
+XCH.17	Fat	Oh-oh-oh-oh!
+XCH.18	Fat	Hahaha... geschafft!
+XCH.19	Fat	Kinderleicht.
+XCH.20	Fat	Hae? Wie konnte das passieren?
+XCH.21	Fat	Tzz, verloren.
+XCH.22	Fat	Klar, tauschen wir.
+XCH.23	Brille	Anscheinend bin ich zuerst dran.
+XCH.24	Brille	Tut mir leid, ich habe keinen.
+XCH.25	Brille	Gib alles!
+XCH.26	Brille	Super! Das koennte ich gewinnen!
+XCH.27	Brille	Oh nein, ich verliere.
+XCH.28	Brille	Hae? Ich habe gewonnen!
+XCH.29	Brille	Sieht aus, als gewinne ich.
+XCH.30	Brille	Ach... verloren.
+XCH.31	Brille	Oh, ich will staerker werden.
+XCH.32	Brille	Oh, danke. Dann tauschen wir gegen den da.
+XCH.33	(unlabelled)	Juhu! Geschafft!
+XCH.35	Guts	Okay, als Naechstes bin ich dran.
+XCH.36	Guts	Wie waers dann mit dem hier?
+XCH.37	Fat	Okay, als Naechstes ist meine Wenigkeit dran.
+XCH.38	Fat	Na gut. Wie waers dann mit dem da?
+XCH.39	Brille	Als Naechstes bin ich dran, hm.
+XCH.40	Brille	Geht dann vielleicht dieser hier?

@@ -1,0 +1,70 @@
+# day23 (translation/days/README.md)
+# --- E2360: D07 -- Saori's camp
+E2360.0	Saori	Boku-kun, wie viele Farbnamen kannst du sagen?
+E2360.1	Boku	Mmm, ganz viele.
+E2360.2	Saori	Welche Farbe hat dann der Himmel heute?
+E2360.3	Boku	Blau!
+E2360.4	Saori	...Nanu, er ist wirklich einfach nur blau.
+E2360.5	Boku	Saori, wenn du so lange stillsitzt...
+E2360.6	Saori	Was denn?
+E2360.7	Boku	dann stechen dich die Muecken.
+
+# --- E2320: H10 -- the garden corner
+E2320.0	Tante	Boku-kun... Bokus Sommerferien haben auch nur noch eine Woche uebrig. // Mach schnell all das, was du noch machen willst, solange du kannst!
+E2320.1	Tante	Tante haette auch gern Sommerferien, und wenn es nur ungefaehr eine Woche waere.
+# NOTE E2320.0: Die Titelphrase des Spiels im Dialog (Stilbibel § 1).
+
+# --- E2312: G01 -- living room
+E2312.0	Onkel	Es wird Zeit, dass ich den Hangofen anheize...
+E2312.1	Boku	Hae? Wann, wann?
+E2312.2	Onkel	Bald...
+E2312.3	Onkel	Der Hangofen... im Sommer ist das ganz schoen heiss, weisst du.
+
+# --- E2330: G16 -- Moe's bed (the book from the shelter)
+E2330.0	Moe	Ach, ich habe wirklich auf gar nichts Lust... // Ich wuenschte, ich koennte alles erledigen, waehrend ich genau so hier liegen bleibe...
+E2330.1	Moe	Ach... ich wuenschte, irgendwer, egal wer, wuerde mich aufmuntern.
+E2330.2	Moe	Oh, was ist das denn?
+E2330.3	Boku	Das... Ubli-bubli-bon.
+E2330.4	Moe	Was ist das? // Nanu, da sind ein englisches Woerterbuch und... ein zerfledderter Brief drin.
+E2330.5	Boku	Also ist es doch ein Buch von Ausserirdischen.
+E2330.6	Moe	Dummkopf, das ist Englisch. Eng-lisch!
+E2330.7	Boku	Onee-chan, verstehst du Englisch?
+E2330.8	Moe	Natuerlich nicht. Das unterrichtet schliesslich der Lehrer, den ich am meisten hasse.
+E2330.9	Moe	Ich versuche mal, ein Stueck von dem Brief zu lesen.
+E2330.10	Boku	Ja, lies vor, lies vor!
+E2330.11	(voice only)
+E2330.12	Moe	...Der Brief war leider auch auf Englisch.
+E2330.13	Boku	(stoehn)...
+E2330.14	Moe	Was mache ich nur? Selbst wenn ich ihn uebersetzen wollte, mein Woerterbuch liegt in der Schule... // Ob hier irgendwo ein englisches Woerterbuch herumliegt?
+E2330.15	Boku	...Onee-chan, machst du das mit Absicht?
+E2330.16	Moe	Hae? Was? Waaas? Was meinst du?
+E2330.17	Moe	Bis zum Abendessen habe ich den Brief uebersetzt.
+E2330.18	Boku	Kannst du das?
+E2330.19	Moe	Sei stiiill! // Wenn ich mir vorstelle, dass da jemandes Geheimnis drinsteckt, klopft mein Herz vor Aufregung... // und irgendwie fuehlt sich mein eigenes Elend gleich leichter an.
+# NOTE E2330.11: Umblaettern der Briefseiten, keine Stimme.
+
+# --- E2331: G15 -- the sisters' room
+E2331.0	Moe	Wo wir gerade davon reden, dieser Schatz vom Konrektor... // was mag das bloss wirklich sein?
+E2331.1	Moe	Komisch... irgendwie macht es mich doch ein bisschen neugierig.
+E2331.2	Boku	Du, ich habe tief in der Hoehle etwas Seltsames gefunden.
+E2331.3	Moe	Hae, waaas? // Hmm, ich bin gerade im Faulenzer-Modus, also bring es morgen Mittag her.
+E2331.4	Moe	Onee-chan ist schon ganz schlaefrig...
+E2331.5	Moe	Irgendwie, nachdem ich diesen alten Brief gelesen habe... // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
+E2331.6	Boku	Aber wem gehoert er denn?
+E2331.7	Moe	Ich weiss nicht, wem, aber, hmm, wie soll ich sagen... // das muss jemand mit einem sehr warmen Herzen zurueckgelassen haben...
+E2331.8	Moe	Ab morgen...
+E2331.9	Boku	Was?
+E2331.10	Moe	Ab morgen gebe ich mir Muehe... das habe ich mir ein bisschen vorgenommen.
+
+# --- E2340: H10 -- garden corner where Shirabe watches ants
+E2340.0	Shirabe	Heute Morgen beim Gesichtwaschen ist mir etwas aufgefallen... // ist Angeln nicht unheimlich?
+E2340.1	Boku	Wie?
+E2340.2	Shirabe	Denn wenn ein Wal an den Haken ginge, // wuerde er einen dann nicht bis hinaus aufs Meer ziehen?
+E2340.3	Shirabe	Heute Morgen beim Zaehneputzen ist mir etwas aufgefallen... // Drachensteigen ist in Wahrheit ein wundervolles Spiel, nicht wahr?
+E2340.4	Shirabe	Denn wenn man vom Drachen hochgezogen wuerde // und einfach hoch hinauf in den Himmel floege, waere das doch ein sehr, sehr wundervolles Erlebnis!
+
+# --- E2341: G06 -- TV room
+E2341.0	Shirabe	Morgen zum Abendessen gibt es Fruehlingsrollen, heisst es... // Chinesisches Essen ist fuer Shirabe zu fettig. Damit kann ich nichts anfangen.
+E2341.1	Boku	Und welches von Tantes Gerichten magst du dann?
+E2341.2	Shirabe	Aehm, Bratreis und Schwein suess-sauer...
+E2341.3	Boku	Das ist doch chinesisch.

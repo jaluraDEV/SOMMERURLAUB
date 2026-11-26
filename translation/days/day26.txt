@@ -1,0 +1,102 @@
+# day26 (translation/days/README.md)
+# --- E2615: H15 -- the climbing kiln
+E2615.0	Onkel	So, wir haben fast die Zieltemperatur!
+E2615.1	Boku	Wie hoch ist sie jetzt?
+E2615.2	Onkel	Ueber neunzig Prozent vom Ziel, wuerde ich sagen.
+E2615.3	Onkel	Puh... nur noch ein kleines Stueck...
+
+# --- E2616: H15 -- the climbing kiln
+E2616.0	Onkel	Geschafft! Endlich hat er die Zieltemperatur erreicht. // Jetzt muss ich das nur noch zwei Stunden lang halten, dann ist alles bestens!
+E2616.1	Onkel	Also gut, der letzte Endspurt. Packen wir es an!
+E2616.2	Onkel	Puh... uebrigens, der Regen eben hat zwar sofort wieder aufgehoert, aber das war vielleicht ein Guss!
+
+# --- E2617: H13 -- behind the workshop
+E2617.0	Onkel	Puh, endlich geschafft.
+E2617.1	Boku	Danke fuer deine Muehe.
+E2617.2	Onkel	Morgen Abend mache ich den Ofen auf und zeige dir, was gebrannt wurde.
+E2617.3	Onkel	Puh... dieses Gefuehl ist doch durch nichts auf der Welt zu ersetzen...
+
+# --- E2624: H15 -- the climbing kiln
+E2624.0	Tante	Gib alles, Yusaku! Bald gibt es nach langer Zeit wieder Bares!
+E2624.1	Tante	Irgendwie bin ich selbst ganz muede geworden.
+
+# --- E2660: D07 -- Saori's camp
+E2660.0	Saori	Mit dieser Welt ist es wohl bald vorbei...
+E2660.1	Boku	Was! Warum?
+E2660.2	Saori	Bald ist Herbst, da hilft alles Zappeln nichts!
+E2660.3	Boku	......
+E2660.4	Boku	Saori, du kommst gar nicht oft zum Baden.
+E2660.5	Saori	Ja, es ist noch nicht so kalt, darum wasche ich mich tagsueber im Teich.
+
+# --- E2614: H13 -- behind the workshop (the morning after the night's firing)
+E2614.0	Boku	Onkel, was hast du die ganze Nacht gemacht?
+E2614.1	Onkel	Ich war die ganze Zeit hier. Holz spalten, Holz nachlegen... immer wieder.
+E2614.2	Boku	Wie heiss ist es jetzt drinnen?
+E2614.3	Onkel	...Etwa siebzig Prozent vom Ziel, wuerde ich sagen. // Jedenfalls legt Onkel jetzt schneller Holz nach, // um die Temperatur hochzubringen.
+E2614.4	Onkel	(gaehn)... aber wenn man es laenger nicht gemacht hat, macht es einen doch muede.
+
+# --- E2623: H13 -- behind the workshop
+E2623.0	Tante	Gib alles, Yusaku! Bald gibt es nach langer Zeit wieder Bares!
+E2623.1	Tante	Irgendwie bin ich selbst ganz muede geworden.
+
+# --- E2613: G01 -- living room
+E2613.0	Onkel	ZzZzz......
+
+# --- E2630: G15 -- the sisters' room
+E2630.0	Moe	Sag mal, warst du eigentlich schon in dem Luftschutzbunker am Ufer vom Drachengott-Teich? // Der ist schon halb eingestuerzt, da darfst du auf keinen Fall rein. // Das ist sehr gefaehrlich.
+E2630.1	Moe	Onee-chan ist ein Angsthase, deshalb traut sie sich da nicht rein.
+E2630.2	Moe	Mensch, gestern Nacht beim Lernen fuer die Pruefungen... // wie soll ich sagen, bin ich richtig eingeschlafen, und mein Lehrbuch ist ganz hinueber.
+E2630.3	Boku	Wieso denn?
+E2630.4	Moe	Sabber.
+E2630.5	Moe	Wenn meine Noten zum neuen Schuljahr nicht schlecht sind, // lerne ich vielleicht ein bisschen mehr in meinem eigenen Tempo.
+E2630.6	Moe	Oh, was ist das denn?
+E2630.7	Boku	Das... Ubli-bubli-bon.
+E2630.8	Moe	Was ist das? // Nanu, da sind ein englisches Woerterbuch und... ein zerfledderter Brief drin.
+E2630.9	Boku	Also ist es doch ein Buch von Ausserirdischen.
+E2630.10	Moe	Dummkopf, das ist Englisch. Eng-lisch!
+E2630.11	Boku	Onee-chan, verstehst du Englisch?
+E2630.12	Moe	Natuerlich nicht. Das unterrichtet schliesslich der Lehrer, den ich am meisten hasse.
+E2630.13	Moe	Ich versuche mal, ein Stueck von dem Brief zu lesen.
+E2630.14	Boku	Ja, lies vor, lies vor!
+E2630.15	(voice only)
+E2630.16	Moe	...Der Brief war leider auch auf Englisch.
+E2630.17	Boku	(stoehn)...
+E2630.18	Moe	Was mache ich nur? Selbst wenn ich ihn uebersetzen wollte, mein Woerterbuch liegt in der Schule... // Ob hier irgendwo ein englisches Woerterbuch herumliegt?
+E2630.19	Boku	...Onee-chan, machst du das mit Absicht?
+E2630.20	Moe	Hae? Was? Waaas? Was meinst du?
+E2630.21	Moe	Bis zum Abendessen habe ich den Brief uebersetzt.
+E2630.22	Boku	Kannst du das?
+E2630.23	Moe	Sei stiiill! // Wenn ich mir vorstelle, dass da jemandes Geheimnis drinsteckt, klopft mein Herz vor Aufregung... // und irgendwie fuehlt sich mein eigenes Elend gleich leichter an.
+
+# --- E2632: G17 -- the veranda; H06 -- the garden (twenty years from now)
+E2632.0	Moe	(seufz)... was ich wohl in zwanzig Jahren mache?
+E2632.1	Moe	Was fuer eine Welt dann wohl ist?
+E2632.2	Boku	In zwanzig Jahren?
+E2632.3	Moe	Kurz vor dem einundzwanzigsten Jahrhundert... // vielleicht... leben dann Menschen auf dem Mond, // hm-hm, und Autos fliegen durch die Luft, meinst du nicht?
+E2632.4	Boku	Und Roboter machen unsere Hausaufgaben...
+E2632.5	Moe	Genau, genau... // Aber Mandarinen am Kotatsu und der Silvester-Gesangswettbewerb sind dann vielleicht verschwunden...
+E2632.6	Boku	Wie die Sommerferien in zwanzig Jahren wohl sind...?
+E2632.7	Moe	Hmm...
+E2632.8	Boku	Du, ich habe tief in der Hoehle etwas Seltsames aufgehoben.
+E2632.9	Moe	Hae? Was mag das sein? // Dann bring es morgen Mittag in Onee-chans Zimmer.
+E2632.10	Moe	Irgendwie, nachdem ich diesen alten Brief gelesen habe... // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
+E2632.11	Boku	Aber wem gehoert er denn?
+E2632.12	Moe	Ich weiss nicht, wem, aber, hmm, wie soll ich sagen... // das muss jemand mit einem sehr warmen Herzen zurueckgelassen haben...
+E2632.13	Moe	Ab morgen...
+E2632.14	Boku	Was?
+E2632.15	Moe	Ab morgen gebe ich mir Muehe... das habe ich mir ein bisschen vorgenommen.
+
+# --- E2640: H17 -- the woodshed
+E2640.0	Shirabe	Wenn sie den Hangofen anheizen, ist das ganze Brennholz, das sie tagelang gespalten haben, // im Nu aufgebraucht...
+E2640.1	Shirabe	Shirabe ist froh, dass sie nicht als Junge geboren wurde. // Ich haette bestimmt beim Holzspalten helfen muessen!
+E2640.2	Shirabe	Wohnen oben bei den Antennen auf dem Berg Teppen Menschen?
+E2640.3	Shirabe	Ob man den Rauch vom Hangofen vom Berg Teppen aus sieht?
+
+# --- E2641: G06 -- TV room
+E2641.0	Boku	Es gibt wirklich nur noch sonnige Tage, was?
+E2641.1	Shirabe	Ja, komisch, heute sollte es doch regnen.
+E2641.2	Shirabe	Vielleicht hat es nicht gestimmt, weil es eine Sandale war und kein Geta?
+E2641.3	Shirabe	Der Regen heute... hoffentlich sind die kleinen Ameisen nicht ertrunken.
+E2641.4	Shirabe	Shirabe kann beim Kraulen nicht richtig Luft holen...
+# NOTE E2641.1-.2: Kinder sagen das Wetter voraus, indem sie einen Geta-Holzschuh wegtreten: oben = schoen,
+#   unten = Regen. Shirabe hat eine Sandale benutzt.

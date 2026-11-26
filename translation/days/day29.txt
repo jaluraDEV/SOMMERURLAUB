@@ -1,0 +1,129 @@
+# day29 (translation/days/README.md)
+# --- E2901: G02 -- breakfast
+E2901.0	Tante	Boku-kun, du siehst ja schon wieder ganz fit aus!
+E2901.1	Boku	Ja, mir geht es wieder gut.
+E2901.2	Tante	Ach ja? Da bin ich aber froh!
+E2901.3	Onkel	Wenn man ein Kind ist... // sind das Erkaelten und das Gesundwerden irgendwie beide einfach und leicht zu verstehen. Das war schoen.
+E2901.4	Tante	Einfach ist in allem am besten.
+E2901.5	Boku	Das klingt ja, als waere ich...
+E2901.6	Shirabe	Na, Jungs sind eben einfach gestrickt!
+E2901.7	(voice only)
+E2901.8	Onkel	Also dann, itadakimaasu!
+E2901.9	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+
+# --- E2902: G02 -- after breakfast (the morning-glory photographs)
+E2902.0	Onkel	Gochisosama deshita.
+E2902.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E2902.2	Tante	Boku-kun, wenn du Ende des Monats nach Hause faehrst... // willst du deiner Mama Gemuese oder Blumen von hier mitbringen?
+E2902.3	Onkel	Aber sie steht doch kurz vor der Geburt... // Selbst wenn er welches mitbringt, ist das Kochen dann nicht zu anstrengend fuer sie?
+E2902.4	Tante	Stimmt... Boku-kun, dann nehmen wir fuer deine Mama wenigstens Blumen mit. // Was fuer Blumen mag deine Mama denn?
+E2902.5	Boku	Mmm, so etwas weiss ich nicht.
+E2902.6	Tante	Verstehe......
+E2902.7	Shirabe	Boku-kun mag Sonnenblumen!
+E2902.8	Tante	So ist das also...
+E2902.9	Tante	Boku-kun, hier...
+E2902.10	Tante	Fotos von den Prunkwinden, die du grossgezogen hast... // Ich habe sie jeden einzelnen Tag fotografiert, an dem sie geblueht haben, // und die besonders schoenen herausgesucht. // Es gab zufaellig fuer jeden Tag ein gutes Bild, // also bekommst du fuer jeden Bluetetag ein Foto geschenkt!
+E2902.11	Boku	Tante! Vielen, vielen Dank!
+E2902.12	Tante	Aber nicht doch, ich habe zu danken. Gute Arbeit.
+E2902.13	Boku	Ich passe gut darauf auf.
+E2902.14	Shirabe	Aber deine Lieblingsblume ist die Sonnenblume, klar?
+E2902.15	Boku	Hae?
+E2902.16	Tante	Hm-hm... Shirabe, du bist ein komisches Maedchen.
+# NOTE E2902.7: Shirabe nennt ihn hier ausnahmsweise "Boku-kun" statt "du".
+
+# --- E2920: H05 -- the morning-glory trellis
+E2920.0	Tante	Sag mal, magst du auch Sonnenblumen, Boku-kun?
+E2920.1	Boku	Ja, tue ich.
+E2920.2	Tante	Moegen alle Jungen Sonnenblumen?
+E2920.3	Boku	Warum?
+E2920.4	Tante	Unser Onii-chan, der gestorben ist, mochte Sonnenblumen auch ueber alles...
+
+# --- E2912: G01 -- living room
+E2912.0	Onkel	In letzter Zeit fuehle ich mich abends irgendwie einsam, irgendwie traurig... // ein seltsames Gefuehl ist das...
+E2912.1	Onkel	Wo wir gerade daran denken, in dem Jahr, als der Krieg endete... // ging der Sommer vielleicht auch ungefaehr so zu Ende...
+
+# --- E2913: G01 -- living room
+E2913.0	Onkel	Boku-kun... du willst sicher schnell nach Hause und deinen kleinen Bruder sehen, oder?
+E2913.1	Boku	Weiss nicht. Nicht so richtig...
+E2913.2	Onkel	Was! Warum? Babys sind doch niedlich...
+E2913.3	Boku	In der Welt der Kinder gibt es Dinge, die nur Kinder verstehen...
+E2913.4	Onkel	Oh? Hoer einer an.
+E2913.5	Onkel	Aber einen Bruder zu haben, ist eine feine Sache, weisst du.
+
+# --- E2922: G01 -- living room
+E2922.0	Tante	Ach, vielleicht bekomme ich selbst auch noch eins...
+
+# --- E2930: G15 -- the sisters' room
+E2930.0	Moe	Uebrigens, heute ist der errechnete Termin deiner Mama, Boku-kun.
+E2930.1	Boku	Hae? Was ist ein Termin?
+E2930.2	Moe	Mmm, der Tag, an dem das Baby auf die Welt kommen soll!
+E2930.3	Boku	Onee-chan, ich habe in der Hoehle etwas Seltsames gefunden.
+E2930.4	Moe	Ohh, etwas Seltsames? Das ist ja toll. // Vielleicht wird es dein Schatz fuers Leben, Boku-kun, // also heb es ganz, ganz gut auf.
+E2930.5	Boku	Dann haben Menschen also schon Termine im Kalender, bevor sie geboren sind.
+
+# --- E2932: G17 -- the veranda
+E2932.0	Moe	Jetzt, wo du ein grosser Bruder bist, musst du auch vernuenftiger werden, Boku-kun.
+E2932.1	Boku	Ja! Ich gebe mir Muehe.
+E2932.2	Moe	Wobei diejenige, die vernuenftiger werden muss, vielleicht eher Onee-chan ist...
+
+# --- E2940: H09 -- garden corner where Shirabe watches ants
+E2940.0	Shirabe	Uebrigens... Jumbo-san war in letzter Zeit gar nicht da, oder?
+E2940.1	Boku	Wer? Wer ist das?
+E2940.2	Shirabe	Hae? Du kennst ihn nicht!
+E2940.3	Shirabe	Wirklich, du bist hoffnungslos! Du solltest einfach nach Hause fahren...
+E2940.4	Shirabe	Also, Jumbo-san ist ein Fisch... // er wohnt ein Stueck hinter den Lila Zutzlern, und er und Shirabe sind dicke Freunde.
+E2940.5	Shirabe	Ob ihn jemand aufgegessen hat? Aber warum... // warum gehen alle, alle miteinander, irgendwann einfach weg...
+E2940.6	Shirabe	Hast du dich, bevor du heimfaehrst, ordentlich von Jumbo-san verabschiedet?
+E2940.7	Boku	Wer ist das?
+E2940.8	Shirabe	Hae? Du kennst ihn nicht? Er ist ein grosser Fisch... // Du bist einen ganzen Monat lang hier gewesen und weisst nicht einmal das? // Wirklich, was fuer ein hoffnungsloser Mensch! Dann fahr doch nach Hause! // Er wohnt ein Stueck hinter den Lila Zutzlern... // Er ist sooo riesig gross!
+E2940.9	Shirabe	Aber warum... warum gehen alle, alle miteinander, irgendwann einfach weg...
+# NOTE E2940.0: Jumbo-san, Shirabes Name fuer den Riesenfisch, den Herrn des Teichs (Glossar § 1).
+
+# --- E2950: A18 -- the secret base (goodbyes)
+E2950.0	Guts	Wenn du zurueck bist, lass dich von deinen Freunden dort nicht unterkriegen.
+E2950.1	Boku	Haha, ich bin schliesslich von Anfang an dort zur Schule gegangen.
+E2950.2	Guts	Stimmt auch wieder...
+E2950.3	Fat	Du, iss ordentlich und leg noch ein bisschen zu...
+E2950.4	Boku	Ja, genau richtig viel.
+E2950.5	Brille	Boku-kun... irgendwie fuehlt es sich an, als waeren wir schon lange befreundet.
+E2950.6	Boku	...Ja, stimmt.
+
+# --- E2951: A18 -- the secret base
+E2951.0	Guts	Ich... wenn ich mit der Schule fertig bin, muss ich wahrscheinlich in die Stadt gehen.
+E2951.1	Boku	Warum?
+E2951.2	Guts	Sie verkaufen unsere Reisfelder...
+E2951.3	Boku	......
+
+# --- E2952: A18 -- the secret base
+E2952.0	Fat	Bohnenstange! Willst du nicht auch so dick werden wie meine Wenigkeit?
+E2952.1	Boku	...Ich glaube, Moe-neechan mag wahrscheinlich schlanke Leute.
+E2952.2	Fat	Gahaha! Was soll das denn... // Das ist doch nur eine Laune, bis sie sich in meine Wenigkeit verliebt.
+
+# --- E2953: A18 -- the secret base
+E2953.0	Brille	Sobald das neue Schuljahr anfaengt, schreibe ich dir einen Brief, Boku-kun.
+E2953.1	Boku	Ja, dann schreibe ich ordentlich zurueck.
+
+# --- E2904: G02 -- dinner (the phone call)
+E2904.0	Moe	Jaaa, ich gehe ran!
+E2904.1	Moe	Hallo, hier Sorano... Oh! Onkel Kubota!
+E2904.2	Moe	...Nein, nein, wir haben fuer alles zu danken. // Oh, tatsaechlich! Dann gebe ich Ihnen gleich Boku-kun. // Boku-kuuun...
+
+# --- E2906: G01, G02, G06 -- the house; G08 -- the telephone
+E2906.0	Moe	Dein Papa ist am Telefon! Boku-kun, herzlichen Glueckwunsch!
+E2906.1	Boku	Ja, verstanden, Papa. // Mhm, mhm...
+E2906.2	Boku	Tschuess, Papa.
+
+# --- E2907: G06, G17, H06, H24 -- a brother
+E2907.0	Boku	Es ist ein Junge, haben sie gesagt...
+E2907.1	(unlabelled)	Super! Herzlichen Glueckwunsch!
+E2907.2	Moe	Herzlichen Glueckwunsch, Onii-chan!
+E2907.3	Boku	Ja!
+# NOTE E2907.2: Moe nennt ihn mit demselben Wort, das der einzige Name ihres verstorbenen Bruders war (Stilbibel § 2).
+
+# --- E2941: G06 -- TV room
+E2941.0	Shirabe	Nur weil du ein grosser Bruder geworden bist, brauchst du dir nichts einzubilden.
+E2941.1	Boku	Baeaeah!
+E2941.2	Shirabe	Shirabe will auch einen kleinen Bruder. Ob mir wohl jemand einen schenkt?
+E2941.3	Boku	Warum bekommst du nicht selbst einen?
+E2941.4	Shirabe	Niemals! Ich will mein Single-Leben noch eine ganze Weile geniessen!
+E2941.5	Shirabe	Wenn ich einen kleinen Bruder bekomme, mache ich ihn zu meinem Handlanger!

@@ -1,0 +1,102 @@
+# day22 (translation/days/README.md)
+# --- E2221: G03 -- kitchen
+E2221.0	Boku	Onkel hat gesagt: "Das bleibt ein absolutes Geheimnis vor Tante!" // Also verrate ich dir nichts.
+E2221.1	Tante	Ach, so ist das? Danke fuer die wertvolle Information, Boku-kun.
+
+# --- E2260: D07 -- Saori's camp
+E2260.0	Saori	Wie lange ich dieses Jahr wohl hier bleibe?
+E2260.1	Saori	Uaaah... Ich habe mich verlegen und kann den Hals nicht mehr bewegen...
+
+# --- E2202: G02 -- after breakfast (the wedding anniversary)
+E2202.0	Onkel	Gochisosama deshita.
+E2202.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E2202.2	Onkel	Tadaaa! Nun denn, was fuer ein Tag ist heute?
+E2202.3	Shirabe	Du machst jedes Jahr sofort einen roten Kreis darum, sobald der Kalender da ist. Wie sollte man das vergessen?
+E2202.4	Boku	Was fuer ein Tag ist denn?
+E2202.5	Onkel	Es ist unser Hochzeitstag.
+E2202.6	Moe	Ehrlich, da kann man euch beide nur beneiden...
+E2202.7	(voice only)
+
+# --- E2220: H06 -- garden off the veranda
+E2220.0	Tante	Ach so, heute war unser Hochzeitstag...
+E2220.1	Tante	Ich hatte es ganz vergessen.
+
+# --- E2212: G01 -- living room
+E2212.0	Boku	Onkel, vor wie vielen Jahren habt ihr beiden heute geheiratet?
+E2212.1	Onkel	Vor siebzehn Jahren. // Gedacht war es fuer den Tag davor, // aber das war ein Sonntag, und da hatte das Bezirksamt Suginami geschlossen.
+E2212.2	Onkel	So ist das also... siebzehn Jahre sind schon vergangen...
+
+# --- E2210: H26 -- the workshop
+E2210.0	Onkel	Boku-kun, was fuer ein Maedchen wirst du wohl eines Tages heiraten?
+E2210.1	[SEL]	Eine umwerfende Schoenheit | Eine Zaibatsu-Erbin | Eine aeltere Frau
+E2210.2	Onkel	Du weisst wohl nicht, was diese Woerter bedeuten... aber am Ende zaehlt der Charakter!
+E2210.3	Onkel	Wobei Geld zu haben wohl besser ist, als keins zu haben... // Onkel war noch nie reich, daher weiss ich es ehrlich gesagt nicht.
+E2210.4	Onkel	Tante ist naemlich ein Jahr aelter als Onkel. // Obwohl es eine arrangierte Ehe war, habe ich bis kurz vor der Anmeldung geglaubt, sie waere juenger.
+E2210.5	Boku	Warum?
+E2210.6	Onkel	Sie hatte wohl eine Katze aufgesetzt, wie man so sagt, und einen Hund, und einen Tanuki, alle moeglichen Tiere... // Ach! Was ich gerade gesagt habe, bleibt ein absolutes Geheimnis vor Tante, abgemacht?
+# NOTE E2210.6: neko o kaburu ("eine Katze aufsetzen") bedeutet, sich unschuldig zu verstellen; der Onkel
+#   erweitert die Redewendung auf Hund und Tanuki (Stilbibel § 8 Typ 3, woertlich uebersetzt).
+
+# --- E2203: G02 -- dinner (sushi)
+E2203.0	Boku	Irgendwie delikat, oder?
+E2203.1	Tante	Deluxe!
+E2203.2	Boku	...Das.
+E2203.3	Onkel	Ahem, heute...
+E2203.4	Tante	Die Seite dort ist ohne Wasabi.
+E2203.5	Shirabe	Sushi!
+E2203.6	Boku	Sushi!
+E2203.7	Shirabe	Du bekommst Kappa-Maki!
+E2203.8	Boku	Ooch...
+E2203.9	Shirabe	Ohoho, heute ist alles ausser Kappa verboten, merk dir das!
+E2203.10	Boku	Baeh...
+E2203.11	Tante	Na, na.
+E2203.12	Boku	Ich fresse dich aaauf...
+E2203.13	Moe	Ich mag keinen Hamachi.
+E2203.14	Boku	Oh! Ich liebe ihn!
+E2203.15	Shirabe	Ich sagte nein!
+E2203.16	Boku	Onee-chan, gibt es noch etwas, das du nicht magst?
+E2203.17	Shirabe	Du kriegst Kappa!
+E2203.18	Boku	...Ich glaube, ich werde auf die schiefe Bahn geraten.
+E2203.19	Moe	Du, wann geben wir ihnen das Geschenk?
+E2203.20	Onkel	Nun denn, zuerst ein paar Worte von Papa...
+E2203.21	Shirabe, Moe, Boku, Tante	Itadakimaaasu!
+# NOTE E2203.0-.2: Verwechslung von Deluxe und delikat von Tag 18 (E1820.8), vertauscht (Stilbibel § 8 Typ 2).
+
+# --- E2205: G06 -- TV room (the presents)
+E2205.0	Boku	Das ist also Patchin-Werk.
+E2205.1	Moe	Genau.
+E2205.2	Shirabe	Wir schenken es Papa und Mama heute zu ihrem Jahrestag.
+E2205.3	Shirabe	Fuer Mama einen Topflappen, und fuer Papa eine Cho-Krawatte!
+E2205.4	Boku	Eine Cho-Krawatte? Eine Billion Krawatten?
+E2205.5	Moe	Cho wie Schmetterling. Eine Fliege!
+# NOTE E2205.3-.5: cho dreifach: "super", "Billion" und "Schmetterling" (eine Fliege ist eine
+#   "Schmetterlingskrawatte"); im Japanischen klingen alle drei gleich (Stilbibel § 8 Typ 3).
+
+# --- E2231: G15 -- the sisters' room
+E2231.0	Moe	Sag mal, ob ich wohl auch einen Schatz fuers Leben finden kann?
+E2231.1	Boku	......?
+E2231.2	(unlabelled)	Sag mal, Onee-chan, was ist in deinem bisherigen Leben das Wichtigste?
+E2231.3	Moe	Was waere das wohl? // Also, meine Eltern und Geschwister, meine besten Freunde und alle anderen Menschen, die mir nahestehen... // die sind mir natuerlich alle sehr wichtig, aber abgesehen von ihnen... // fallen mir fuer mich hoechstens die schoenen Erinnerungen aus meiner Kindheit ein... // etwas anderes Wertvolles faellt mir nicht ein...
+E2231.4	Boku	Hmm, Erinnerungen sind also dein wertvoller Schatz.
+E2231.5	Moe	Ja, und dann vielleicht noch jene Spieluhr.
+E2231.6	Moe	Diese Spieluhr macht so einen niedlichen Klang, weisst du.
+# NOTE E2231.1-.2: Eine Aeusserung ueber zwei Meldungen, erst eine stumme Pause, dann Bokus Frage
+#   (Stilbibel § 9).
+
+# --- E2241: G06 -- TV room
+E2241.0	Shirabe	Gaeeehn... ich habe zu viel gegessen. // Mir kommt es vor, als wuerde gleich ein zappelnder Thunfisch aus meinem Mund huepfen.
+E2241.1	Shirabe	Meine Taille ist schon wieder verschwunden.
+
+# --- E2204: G02 -- after dinner (the vice-principal's treasure)
+E2204.0	Onkel	Gochisosama deshita.
+E2204.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E2204.2	Tante	Onee-chan, Shirabe, vielen Dank fuer heute. // Papa und Mama werden eure Geschenke als Schatz fuers Leben aufbewahren.
+E2204.3	Moe	Schaetze, hm... // Ich haette auch gern etwas, das ich einen Schatz fuers Leben nennen kann...
+E2204.4	Onkel	Du bist erst fuenfzehn, Moe. // Da wirst du von nun an doch noch so viele finden koennen, wie du willst, oder?
+E2204.5	Moe	Hmm, so sollte das Leben wohl sein...
+E2204.6	Moe	Da faellt mir ein: An unserer Schule, dieser uebermotivierte Konrektor... // es heisst, er haette im Krieg einen kostbaren Schatz hier in den Bergen hinterm Haus versteckt.
+E2204.7	Shirabe	Hae? Was, was, waaas...
+E2204.8	Onkel	Aber ein Schatz aus der Kriegszeit... wenn Kinder wie Shirabe und Moe ihn heute saehen, // kaeme er euch wahrscheinlich ueberraschend schaebig vor, denke ich.
+E2204.9	Moe	Was koennte das sein?
+E2204.10	Shirabe	Ein Lendenschurz!
+E2204.11	(voice only)

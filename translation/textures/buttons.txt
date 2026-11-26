@@ -1,0 +1,75 @@
+# The small buttons drawn in textures (PLAN GFX-07): stone "Zurueck" plaques and paper speech
+# balloons. Format: translation/textures/README.md; which texture each id is, where and how
+# it is drawn: boku/texture_buttons.py BUTTONS, research/texture-recipes.md § "Buttons".
+
+# --- stone "Ende" (Back)
+btn@T_CONFIG.back	Ende
+btn@M_S01001.back	Ende
+btn@T_MEMORY.back	Ende
+btn@NIKKI_W.back	Ende
+btn@M_S01100.back	Ende
+btn@TK_WAL.back	Ende
+btn@TZICON.back	Ende
+btn@PK_WAL.back	Ende
+btn@MZ00.back	Ende
+btn@SAMP.back	Ende
+btn@MZKAN.back	Ende
+btn@FS_WAL.back	Ende
+
+# --- balloons. NIKKI_W.good_night: the diary desk's idle hint.
+btn@NIKKI_W.good_night	Gute // Nacht
+
+# --- the desk (SUB)
+btn@SUB.belongings	Zeug
+btn@SUB.kite	Flug
+btn@SUB.tackle	Angel
+btn@SUB.cage	Box
+btn@SUB.empty_handed	Leer
+btn@SUB.net	Netz
+btn@SUB.back	Ende
+
+# --- the bag (PK_WAL) and the kite record (TK_WAL)
+btn@PK_WAL.belongings	Zeug
+btn@PK_WAL.prev_page	Zur.
+btn@PK_WAL.next_page	Vor
+btn@TK_WAL.kite	Flug
+
+# --- the kite book (TZICON)
+btn@TZICON.make_this_kite	Bauen
+
+# --- bug sumo (M_S01100)
+btn@M_S01100.release	Frei
+btn@M_S01100.swap	Deal
+btn@M_S01100.cage	Box
+btn@M_S01100.rank	Rang
+btn@M_S01100.me	Ich
+btn@M_S01100.gong	Gong
+btn@M_S01100.place	Rein
+btn@M_S01100.trade_plate	Deal
+btn@M_S01100.close	Ende
+
+# --- the insect box (MZ02, SAMP)
+btn@MZ02.cage	Box
+btn@MZ02.release	Frei- // lassen
+btn@MZ02.magnifier	Lupe // Detail
+btn@MZ02.medicine	Medizin
+btn@MZ02.syringe	Spritze
+btn@MZ02.collecting_box	Fach
+btn@MZ02.remove_specimen	Raus
+btn@MZ02.prev_page	Zur.
+btn@MZ02.next_page	Vor
+btn@SAMP.species_list	Arten- // liste
+btn@SAMP.medicine	Medizin
+btn@SAMP.syringe	Spritze
+
+# --- the radio-exercise attendance card (PK_ITM, item 0x6c), set in Sprout
+btn@PK_ITM.title	Radio- // Gymnastik // Stempelkarte
+btn@PK_ITM.footer	Einen gesunden Sommer!
+
+# --- the fishing record's balloon (FS_WAL)
+btn@FS_WAL.tackle	Angel- // zeug
+
+# --- the insect cage (MITIM)
+btn@MITIM.take_out	Raus
+btn@MITIM.back	Ende
+btn@MITIM.rare	Wow!

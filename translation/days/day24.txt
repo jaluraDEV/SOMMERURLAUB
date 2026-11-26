@@ -1,0 +1,82 @@
+# day24 (translation/days/README.md)
+# --- E2460: D07 -- Saori's camp
+E2460.0	Boku	Saori, was lernst du in der Schule?
+E2460.1	Saori	......Kritzeln.
+E2460.2	Boku	Wie?
+E2460.3	Boku	Du hast so viele Buecher mitgebracht. Wie hast du die alle hergeschleppt?
+E2460.4	Saori	......Mit Sturheit.
+E2460.5	Boku	Wie?
+
+# --- E2420: H07 -- outside the dining room
+E2420.0	Tante	Langsam gehen mir die Ideen fuers Abendessen aus...
+E2420.1	Tante	Ich habs! Das habe ich schon eine Weile nicht mehr gemacht.
+
+# --- E2412: G01 -- living room
+E2412.0	Onkel	Morgen heize ich den Ofen an.
+E2412.1	Boku	Was! Echt?
+E2412.2	Onkel	Ja! // Solange du hier bist, muss ich dir schliesslich wenigstens einmal etwas Grossartiges zeigen.
+E2412.3	Onkel	Ich muss die ganze Nacht ueber am Ofen Wache halten, // aber Boku-kun, du darfst nicht mit mir aufbleiben, verstanden?
+
+# --- E2430: G16 -- Moe's bed
+E2430.0	Moe	In letzter Zeit bin ich tagsueber so muede. // Ob Onee-chan wohl nachtaktiv geworden ist?
+E2430.1	Boku	Nacht-takt-iv?
+E2430.2	Moe	Das heisst, nachts wach sein. // Wie Eule-san oder Fledermaus-kun... // Riesengleithoernchen-san und Momonga-chan gehoeren auch dazu.
+E2430.3	Moe	Aber frag nicht nach dem Unterschied zwischen Riesengleithoernchen-san und Momonga-chan.
+E2430.4	Moe	Oh, was ist das denn?
+E2430.5	Boku	Das... Ubli-bubli-bon.
+E2430.6	Moe	Was ist das? // Nanu, da sind ein englisches Woerterbuch und... ein zerfledderter Brief drin.
+E2430.7	Boku	Also ist es doch ein Buch von Ausserirdischen.
+E2430.8	Moe	Dummkopf, das ist Englisch. Eng-lisch!
+E2430.9	Boku	Onee-chan, verstehst du Englisch?
+E2430.10	Moe	Natuerlich nicht. Das unterrichtet schliesslich der Lehrer, den ich am meisten hasse.
+E2430.11	Moe	Ich versuche mal, ein Stueck von dem Brief zu lesen.
+E2430.12	Boku	Ja, lies vor, lies vor!
+E2430.13	(voice only)
+E2430.14	Moe	...Der Brief war leider auch auf Englisch.
+E2430.15	Boku	(stoehn)...
+E2430.16	Moe	Was mache ich nur? Selbst wenn ich ihn uebersetzen wollte, mein Woerterbuch liegt in der Schule... // Ob hier irgendwo ein englisches Woerterbuch herumliegt?
+E2430.17	Boku	...Onee-chan, machst du das mit Absicht?
+E2430.18	Moe	Hae? Was? Waaas? Was meinst du?
+E2430.19	Moe	Bis zum Abendessen habe ich den Brief uebersetzt.
+E2430.20	Boku	Kannst du das?
+E2430.21	Moe	Sei stiiill! // Wenn ich mir vorstelle, dass da jemandes Geheimnis drinsteckt, klopft mein Herz vor Aufregung... // und irgendwie fuehlt sich mein eigenes Elend gleich leichter an.
+# NOTE E2430.0-.1: yorugata ("Nachtmensch"), von Boku als unbekanntes Wort verhaspelt (Stilbibel § 8 Typ 1);
+#   Moe erklaert es. Musasabi und Momonga sind das Grosse und das Kleine Gleithoernchen.
+
+# --- E2432: G17 -- the veranda (the stars; living alone in spring)
+E2432.0	Boku	Der Sternenhimmel ist echt schoen.
+E2432.1	Moe	Ja.
+E2432.2	Boku	Wenn ich in die Stadt zurueckkehre, kann ich ihn nicht mehr sehen.
+E2432.3	Moe	Ja.
+E2432.4	Boku	Onee-chan, wohnst du ab naechstem Fruehling allein?
+E2432.5	Moe	Mmm...
+E2432.6	Boku	Ach so, dann bist du nicht mehr hier.
+E2432.7	Moe	Ja.
+E2432.8	Boku	......
+E2432.9	Moe	Aber...
+E2432.10	(voice only)
+E2432.11	Moe	Wenn ich meinen Abschluss habe, komme ich bestimmt zurueck.
+E2432.12	Boku	Ganz bestimmt?
+E2432.13	Moe	Ja!
+E2432.14	(voice only)
+E2432.15	Moe	Onee-chan ist heute Abend der Tofu-Mann.
+E2432.16	Boku	Du, ich habe tief in der Hoehle etwas Seltsames aufgehoben.
+E2432.17	Moe	Hae? Was mag das sein? // Dann bring es morgen Mittag in Onee-chans Zimmer.
+E2432.18	Moe	Irgendwie, nachdem ich diesen alten Brief gelesen habe... // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
+E2432.19	Boku	Aber wem gehoert er denn?
+E2432.20	Moe	Ich weiss nicht, wem, aber, hmm, wie soll ich sagen... // das muss jemand mit einem sehr warmen Herzen zurueckgelassen haben...
+E2432.21	Moe	Ab morgen...
+E2432.22	Boku	Was?
+E2432.23	Moe	Ab morgen gebe ich mir Muehe... das habe ich mir ein bisschen vorgenommen.
+# NOTE E2432.15: Der schiefe Klarinettenton (.14) klingt wie das Horn des Tofu-Verkaeufers am Abend.
+
+# --- E2440: H04 -- garden corner where Shirabe watches ants
+E2440.0	Boku	Dreikaesehoch, du liebst kleine Ameisen ueber alles, was?
+E2440.1	Shirabe	Na, wenn man irgendwo geboren wird, wo es so wenig Unterhaltung gibt, // freundet sich doch jeder mit kleinen Ameisen an!
+E2440.2	Shirabe	Alle in unserer Familie ausser Papa haben auf beiden Augen eine Sehkraft von 20/10.
+
+# --- E2441: G06 -- TV room
+E2441.0	Shirabe	Was macht das Wolfsmaedchen wohl so weit draussen auf dem Land?
+E2441.1	Shirabe	Unser Bad muss ihr ganz schoen gefallen haben.
+E2441.2	Shirabe	Du, ein Wolf ist doch der Boesewicht in den Maerchen, oder?
+E2441.3	Shirabe	Frauen fuehlen sich zu jeder Zeit vom Boesen angezogen, nicht wahr?

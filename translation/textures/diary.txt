@@ -1,0 +1,97 @@
+# The picture diary (PLAN GFX-04): Boku's entry on each page, keyed by page id.
+# Format: translation/textures/README.md. Style: translation/style-guide.md § 14.
+# GameFace, max 5 ruled lines, no " and no ( ).
+
+nikki@NIKKI_001	Mama bekommt ein Baby, deshalb ist grosses Durcheinander! Ich bin bei Onkel zu Gast. Ob es hier viele tolle Sachen gibt?
+nikki@NIKKI_002	Kaefer sind schnell. Ich bin langsam. Ich habe nur 2 Beine. Die haben ganz viele. Ich verliere.
+nikki@NIKKI_003	Ich war zum ersten Mal angeln. Ein Fisch, der sogar falsche Koeder schnappt, ist noch gieriger als ich.
+nikki@NIKKI_004	Ich bin mit Dreikaesehoch durch Huegel und Felder gelaufen. Die Sonne schien hell. Der Wind tat richtig gut.
+nikki@NIKKI_005	Tante hat ein Foto gemacht. Ich habe das V-Zeichen gezeigt. Obwohl Tante huebsch ist, hat sie auch eine Kamera.
+nikki@NIKKI_006	Onkel war weg, da bin ich nachts Gluehwuermchen fangen gegangen. Obwohl ihr Po leuchtet, verbrennen sie sich nicht.
+nikki@NIKKI_007	Ich habe einen riesig grossen Fisch gefangen. Vor Schreck ist mir fast ein bisschen Pipi in die Hose gegangen.
+nikki@NIKKI_008	Als ich das Wespennest mit dem Stock anstiess und herunterwarf, erschraken die Wespen. Ich erschrak auch.
+nikki@NIKKI_010	Endlich habe ich einen Hirschkaefer gefangen. Er ist schwarz und ziemlich cool. Das ist mein Kaefer Nummer eins!
+nikki@NIKKI_011	Oben auf dem Huegel. Ich liess den Drachen von Onkel steigen. Es war schwer, aber er stieg hoch in den blauen Himmel.
+nikki@NIKKI_012	Auf dem Drachenhuegel eine Sternschnuppe am Tag. Es war ein Satellit, befreundet mit UFOs. Dahinter liegt das riesige All.
+nikki@NIKKI_013	Die Spezial-Fliege von Onkel. Damit gehoert mir der grosse Yamame im Onkel-Teich. Alles, alles gehoert mir!
+nikki@NIKKI_016	Meine Prunkwinde ist aufgeblueht. Sie bluehte richtig schoen. Aber mittags wird sie schlapp. Fehlt ihr etwa Kraftfutter?
+nikki@NIKKI_017	Platsch, platsch. Die Sonne sank ins Meer. Sie verwandelte sich in sieben Farben. Das ist ein Geheimnis.
+nikki@NIKKI_018	Ich schaute in den Himmel und erfand Namen fuer die neuesten Wolken. Manchmal bekam ich Hunger, und manchmal vermisste ich Mama.
+nikki@NIKKI_020	Heute habe ich aufs Haus aufgepasst. Ganz allein. Ganz fuer mich allein. Aber einsam bin ich ueberhaupt nicht.
+nikki@NIKKI_021	Das seltsame Ding war wirklich ein Wal-Ohrknochen. He, erzaehl mir Geschichten vom weiten, weiten Meer.
+nikki@NIKKI_022	Im Wald war etwas Komisches, und es hat mich angeheult. Jedenfalls war es gruselig. Ich bin blitzschnell weggerannt.
+nikki@NIKKI_023	Die Schaukel saust hin und her. Wie lustig! Ich schwinge ganz hoch und bin Tarzan! Ein wilder Schrei!
+nikki@NIKKI_024	Mein erster Job ist Prunkwinden-Kapitaen. Hoffentlich bluehen ganz, ganz viele schoene Blumen.
+nikki@NIKKI_025	Ich habe heimlich ein Geheimversteck entdeckt! Da lag sogar eine halb aufgegessene Wassermelone. Weeeer war der Taeter?
+nikki@NIKKI_026	Puh, harte Arbeit ist anstrengend. Ich habe Onkel auf dem Feld geholfen. Was fuer ein braver Junge ich bin!
+nikki@NIKKI_027	Knirsch, knirsch, Schabeeis. Wenn man viel Erdbeer- und Melonensirup draufgiesst, wird die Zunge bunt wie bei einem Alien.
+nikki@NIKKI_028	Der Melonendieb kann wirklich schnell weglaufen. Naechstes Mal lasse ich ihn bestimmt nicht entkommen. Glaube ich.
+nikki@NIKKI_029	Am Ende habe ich mich mit einem Dieb angefreundet... So ist das Leben eben.
+nikki@NIKKI_030	Nashornkaefer lieben suesse Sachen. Huch, die sind genau wie wir. Vergessen das Zaehneputzen und kriegen Schimpfe.
+nikki@NIKKI_031	Kaefer-Sumo geht um Leben und Tod. Wer fester drueckt, gewinnt. Hakkeyoi, nokotta! Klack, klack, klack!
+nikki@NIKKI_033	Eine Nashornkaefer-Falle! Jede Menge Zuckerwasser! Ob jetzt wohl ganz viele Kaefer kommen?
+nikki@NIKKI_034	Puff! Schoenes Feuerwerk weit weg. Knister... Viele Raketen bluehten am stillen Nachthimmel.
+nikki@NIKKI_035	Alle, alle zusammen, lebt wohl. Alle, alle zusammen, macht es gut. Alle, alle zusammen, ich hab euch lieb.
+nikki@NIKKI_036	Dunkel, dunkel, tief unten im Brunnen. Gruselig, gruselig, gleich kommt ein Geist raus. Ganz viele gruselige Sachen!
+nikki@NIKKI_037	Im Teich. Ein grosser Yamame blitzte glatt und silbern auf. Bestimmt hat er mich angeschaut.
+nikki@NIKKI_038	Der Yukata riecht nach der Kleidertruhe. Er erinnert mich an Omas Haus. Wie es wohl dem dicken Glueckskater geht?
+nikki@NIKKI_039	Das Leuchten der Wunderkerzen. Sogar ein Grundschueler wird auf seine Art traurig... Ich starre lang in das vergaengliche Licht.
+nikki@NIKKI_040	Ein Nashornkaefer gegen jede Regel. Riesig und schwer, kaum zu baendigen. Der macht echt wilde Tricks!
+nikki@NIKKI_041	Endlich ist sie fertig: die Baumstammbruecke. Ein grosser Sprung fuer die Menschheit hat begonnen.
+nikki@NIKKI_042	Die Prunkwinde ist leider verwelkt. Ob sie wohl hungrig war?
+nikki@NIKKI_044	Die erste Gottesanbeterin, die ich je sah, war Guts-kuns Geheimwaffe.
+nikki@NIKKI_045	Irgendetwas im Wald hat geblitzt! Darum hat mein Herz so geklopft, verstehst du?
+nikki@NIKKI_046	Ein knallrotes Zelt am Ufer des Teichs. Wer hat das aufgebaut? Ein Zelt in den Farben des Herbstes.
+nikki@NIKKI_047	Moe-neechan hat den Brief gelesen. Sie hat gar keinen Schwung mehr. Was ist los? Ein Maedchenherz ist kompliziert.
+nikki@NIKKI_048	Leb wohl, liebe Prunkwinde. Blueh naechstes Jahr irgendwo wieder, ja? Bestimmt. Versprochen.
+nikki@NIKKI_049	Bumm! Bumm-bumm! Eine neue junge Frau. Sie ist wunderschoen, also gebe ich bei Papa an. Und vor Mama bleibt es geheim.
+nikki@NIKKI_050	In letzter Zeit hat Moe-neechan immer noch keinen Schwung. Ein Maedchenherz ist verwirrend.
+nikki@NIKKI_051	Niemand glaubt mir, kein kleines bisschen. Jetzt werde ich eben ein bisschen frech. Nur ein bisschen.
+nikki@NIKKI_052	Onkel, Tante und Moe-neechan halten eine Besprechung. Es geht um diese Bupertaet, weisst du.
+nikki@NIKKI_053	Ich bin im Wald wieder diesem seltsamen Wesen begegnet. Das seltsame Wesen liebt suesse Sachen.
+nikki@NIKKI_054	Die Maschine vom Wolfsmaedchen. Ich locke das Gespenst hinein und mache ein Foto. Was fuer eine tolle Idee!
+nikki@NIKKI_055	Mir wurde im heissen Bad schwindelig und ich hatte einen komischen Traum. Ich bin wohl auch in der Bupertaet.
+nikki@NIKKI_056	So aufregend, so spannend. Aber wenn es ein Alien ist, wird seine Rache gruselig. So gruselig.
+nikki@NIKKI_057	Onkel, Tante, alles Gute zum Hochzeitstag. Ihr zwei bleibt fuer immer und ewig gluecklich.
+nikki@NIKKI_058	Ich hasse Schlangen. Aber ich mag Aal, deshalb ist das schwierig.
+nikki@NIKKI_059	Der grosse Plan: ein Erfolg? Ein Reinfall? Auf dem Foto war ein Japanischer Wolf.
+nikki@NIKKI_060	Das geheime Buch aus der Hoehle. Ein Kinderschatz aus dem Krieg. Es war tatsaechlich ein englisches Woerterbuch.
+nikki@NIKKI_061	Moe-neechan hat wieder Mut gefasst. Auch wenn du auf der Oberschule bist, spiel mit mir, ja? Versprochen?
+nikki@NIKKI_063	Ganz oben auf dem Berg Teppen schmeckt die Luft richtig, richtig gut, und man sieht weit weg, bumm!
+nikki@NIKKI_064	Stroemender Regen. Unterstellen. Als es aufhoerte, eine glitzernde Regenbogenbruecke. Ich sah klar bis zum fernen Wald.
+nikki@NIKKI_065	Heute habe ich mich mit dem Wolfsmaedchen verlobt. Ich mache mir Sorgen, ob ich sie richtig versorgen kann.
+nikki@NIKKI_066	In einem riesig grossen Baum fliesst ganz viel Wasser. Ich hoere es, plitscher platscher, plitscher platscher.
+nikki@NIKKI_067	Leb wohl, Frau, die ich liebte. Du mochtest den Japanischen Wolf lieber als mich, nicht wahr?
+nikki@NIKKI_068	Immer im Kreis, mir wird schwindelig. Immer im Kreis. Die Blumen, der Himmel, alles soll sich drehen!
+nikki@NIKKI_069	Hust, hust. Als ich eine Sommererkaeltung hatte, legte Tante ihre Stirn an meine, und mein Herz klopfte... Ich waer gern ein Kind hier.
+nikki@NIKKI_070	Mein kleiner Bruder ist geboren. Ich freue mich. Aber die Ferien sind fast vorbei. Ich bin froh. Ich bin traurig.
+nikki@NIKKI_071	Sie verschwand auf der Suche nach Sonnenblumen. Sie waren ein Geschenk fuer mich. Shirabe, danke, danke.
+nikki@NIKKI_072	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_073	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_074	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_075	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_076	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_077	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_078	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_079	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_080	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_081	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_082	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_083	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_084	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_085	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_086	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_087	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_088	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_089	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_090	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_091	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_092	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_093	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_094	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_095	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_096	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_097	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_098	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_099	Heute war ein wunderbarer Tag voller Nichts.
+nikki@NIKKI_100	Diese Sommerferien waren wunderbare Sommerferien voller Nichts.

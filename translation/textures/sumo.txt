@@ -1,0 +1,48 @@
+# Bug sumo's bout (PLAN GFX-12). Format: translation/textures/README.md; what each is and where
+# it is drawn: boku/texture_sumo.py, research/texture-recipes.md § "Bug sumo's bout".
+
+sumo@plate.stamina	Energie
+
+sumo@rank.weak	Leicht
+sumo@rank.strong	Stark
+sumo@rank.king	King
+
+sumo@move.heading	Siegeszug
+sumo@move.0	Oshidashi
+sumo@move.1	Buchikamashi
+sumo@move.2	Tsuppari
+sumo@move.3	Utchari
+sumo@move.4	Gaburiyori
+sumo@move.5	Kampfgeist
+sumo@move.6	Uwatenage
+sumo@move.7	Brainbuster
+sumo@move.8	Hikiotoshi
+sumo@move.9	Susoharai
+sumo@move.10	Sukuinage
+sumo@move.11	Tsuridashi
+sumo@move.12	Ashihiki
+sumo@move.13	Umdreher
+sumo@move.14	Abisetaoshi
+sumo@move.15	Tsukidashi
+sumo@move.16	Sabaori
+sumo@move.17	Harite
+sumo@move.18	Mantis-Schere
+sumo@move.19	Mantis-Buster
+sumo@move.20	Unentschieden
+sumo@move.21	Ausdauer-Sieg
+
+sumo@move.gloss-0	Hinausstoss vorn
+sumo@move.gloss-1	Kopf-voran-Sturm
+sumo@move.gloss-2	Offene Stoesse
+sumo@move.gloss-3	Kippwurf am Rand
+sumo@move.gloss-4	Federnder Schub
+sumo@move.gloss-6	Ueberarmwurf
+sumo@move.gloss-8	Hand-Niederzug
+sumo@move.gloss-9	Fussfeger hinten
+sumo@move.gloss-10	Guertelloser Wurf
+sumo@move.gloss-11	Herausheben vorn
+sumo@move.gloss-12	Beinzug
+sumo@move.gloss-14	Rueckwaerts-Fall
+sumo@move.gloss-15	Frontal-Abstoss
+sumo@move.gloss-16	Vorwaerts-Fall
+sumo@move.gloss-17	Offene Ohrfeige

@@ -1,0 +1,1360 @@
+"""`PLAN PIPE-06` -- the translation lints, run over the committed translation files.
+
+Every check answers one question about a *committed* file against the *local* script
+store, and answers it in the store's own numbers. The fix for an overflow is another page
+or a wider box, never a shorter translation (README § "Who this is for"), so a finding
+reports what is over and by how much and stops there; nothing here rewrites English.
+
+    ./make.sh lint-translation                  # translation/days (+ any translation/samples)
+    ./make.sh lint-translation --encoder stock  # in the retail 14-px full-width cells
+
+What it checks, and where each rule comes from
+----------------------------------------------
+* **`unknown-id`** -- the id is not a line in the script. Voice-only ids count: they have
+  no text on the disc and are listed so the ids line up
+  (`translation/days/README.md` § Format).
+* **`translated-twice`** -- one id given English in two places. Whichever the build's
+  loader picked, the other was written for nothing.
+* **`select-options` / `select-shape`** -- the option count is `g_select_lines` in the
+  executable, not data, so options map 1:1 (`boku/layout.py`). A box that opens with a
+  question spends its first lines on it and the row lists the question first (style guide
+  § 13), so those fields are counted against the prompt count, not the option count.
+* **`page-count`** -- a voiced message's page turns are a frame countdown matched to the
+  clip (`research/text-format.md`, `0x8002`), so the count is fixed. An unvoiced line's
+  is not, and a difference there is a `page-count-unvoiced` warning, not an error.
+* **`unencodable`** -- a character the chosen encoder draws no cell for. An array item
+  may also use the sheet's own glyphs, `{G:n}` or a character the sheet draws
+  (`boku.layout.sheet_cells`).
+* **`page-lines` / `page-width`** -- the page measured in pixels through
+  `boku.layout`, in the box `TXT-07` measured on the running prototype. The engine has no
+  wrap logic and clips at the screen edge silently, so this is the real gate
+  (`research/vwf-prototype.md`).
+* **`select-width`** -- a select line cannot wrap; a second line would be a second option.
+  Measured against the row the renderer draws (`renderer_for`), not the band.
+* **`array-bytes`** -- a code-file array item has no slack, and one that cannot move (a raw
+  row, `boku.arrays.byte_limit`) is held to its own bytes -- except a banner's, which is
+  written elsewhere whole and held to its box (`boku.code_text.BANNERS`). A menu held in a
+  code file (an **S** array) is written as a `[SEL]` row and checked like a select -- its
+  line count is the original's -- and for its bytes like an array.
+* **`array-room`** -- a grown array moves whole (`boku.array_relocate`), so what limits it
+  is the free space: the build's own allocation, over this import and the edit set's
+  regions, and a refusal names the array's laid-out lines.
+* **`unreachable`** -- *a warning*: a row of an array no retail path draws
+  (`boku.arrays.UNREACHABLE`); its English is kept and the build leaves the retail bytes.
+* **`not-placeable`** -- *a warning*: a label assembled from instruction immediates whose
+  English needs more glyphs than the function draws (`boku.code_text`): one character per
+  drawn glyph is placed by rewriting the immediates, more is a change to its layout.
+* **`date-label`** -- the two date labels (`boku.code_text.DATE_LABELS`) are redrawn around
+  their English (`asm/labels.asm`) and must mark where the code draws its numbers (each
+  entry's `places` and `example`).
+* **`save-title`** -- the memory-card title (`title@sjis:188`) must mark where the code puts
+  the slot and the day (`{slot}`, `{day}`), encode as full-width Shift-JIS, and fit the
+  card's 64-byte field at slot 15, day 31.
+* **`answer-pair`** -- the card screens' two answers (`title@7A78.0`) not written as
+  `Ja | Nein`; their widths and cells are `array-width` and `array-bytes`
+  (`boku.layout.ANSWER_PAIR`).
+* **`array-counted`** -- an item whose cells the program overwrites before drawing
+  (`boku.arrays.COUNTED_CELLS`, the ant count) keeps digits there.
+* **`array-width`** -- an array item wider, in pixels, than its surface's measured box
+  (`boku.boxes`, `research/data/text-boxes.tsv`, `PLAN TXT-07`). A surface with no row has
+  not been measured and is held to its bytes alone. **`array-lines`**: an item whose box
+  holds several lines (descriptions) wrapped to more than it holds.
+* **`additive-word`** -- *a heuristic, and a warning only.* The pilot's recurring defect
+  was English the Japanese does not have -- adverbs and intensifiers added for rhythm
+  (`translation/days/README.md` § "Lessons from the pilot"). It fires when an English
+  intensifier is present and the source line carries none of a matching set. It is
+  word-list matching, it has no idea what the sentence means, and it is right often
+  enough to be worth a look and wrong often enough that it may never fail a build. A
+  settled rendering that holds such a word (`SETTLED_PHRASES`: Fat's "yours truly",
+  glossary § 1 and style guide § 5) is taken out first. A word a translator kept after
+  looking (PLAN `TRN-16`) is recorded in the file as `# VOICE <id>: <word>[, <word>] --
+  <why>`, anywhere in the file that holds the row, and is not flagged again in that line.
+* **`voice-note`** -- *a warning only*: a `# VOICE` note that records nothing -- not of the
+  form above (one id, a reason after ` -- `), its id not a row of its file, or naming a word
+  the heuristic does not flag in that line.
+* **`em-dash`** -- *a warning only*, on every em dash (style guide § 18): the dash is a
+  habit of machine-written English and is used only where the Japanese breaks or trails
+  the line with a dash-like mark. A warning is a prompt to check the source, not a ban.
+* **`cue-*`** -- `translation/movies.txt`, the movie subtitles: `boku.movie_cues.check`'s
+  rules, measured in the cell map the build installs whatever `--encoder` says, because the
+  movies are drawn only in that font; without one the pixel rules are a `cue-unmeasured`
+  warning, never a pass.
+* **`reader-vs-loader`** -- this module's parse against `boku.translation.SampleScenes`,
+  the loader the image build reads English through. Two parsers of one format
+  is a real risk, so they are compared rather than trusted.
+
+The label and the marks
+-----------------------
+The build dresses a message the way the Japanese was dressed: `boku.layout.original_marks`
+reads the opening mark, the closing mark and whether a label stood in front, and
+`lay_out_message` inserts `<speaker>「` before page 1's first word and `」` after the last
+page's last word, as text (style guide § 9). So this lint charges exactly those runs --
+page 1's first line loses the label's cells and the opening mark, the last page's last
+line carries the closing mark -- read through the same function over the same speaker
+field. `--no-label` measures the bare English, which is what `boku build --no-label`
+inserts. A character the encoder has no cell for is charged at its fallback advance, which
+is deliberately the pessimistic way round for a limit nobody has settled.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from collections.abc import Callable, Iterable, Iterator, Mapping, Sequence
+from dataclasses import dataclass, field, replace
+from pathlib import Path
+
+from boku import REPO_ROOT, clip_subs, epilogue, exchange_notebook, movie_cues
+from boku.archive import DEFAULT_DISC_DIR, Archive, ArchiveError
+from boku.arrays import byte_limit, unreachable
+from boku.boxes import TextBox, box_for, box_spec_for
+from boku.code_text import (
+    DATE_LABELS,
+    banner_of,
+    lay_out_banner,
+    lay_out_code_label,
+    lay_out_date_label,
+    lay_out_save_title,
+)
+from boku.extract import SCRIPT_DIR_NAME
+from boku.glyphs import GlyphTable
+from boku.insect_box import notebook_copy
+from boku.layout import (
+    ANSWER_PAIR,
+    DIALOGUE_BAND,
+    MENU_IS_SEL,
+    SELECT_ROW,
+    SHEET_CELL_PROBLEMS,
+    BoxSpec,
+    CellMapEncoder,
+    Encoder,
+    LabelledBox,
+    LaidOut,
+    LayoutError,
+    StockEncoder,
+    WithSheetSymbols,
+    label_allowance,
+    lay_out_answer_pair,
+    lay_out_array,
+    lay_out_array_select,
+    lay_out_subtitle,
+    measure,
+    original_marks,
+    select_row_of,
+    speaker_label,
+    unencodable,
+    wrap,
+)
+from boku.script_store import (
+    Store,
+    StoreMissing,
+    is_array,
+    is_array_select,
+    load_store,
+    original_bytes,
+    page_count,
+    pages_fixed_by_voice,
+    select_shape,
+)
+from boku.sites import RESIDENT_BLOCK_ADDRS
+from boku.translation import SampleScenes, TranslationEntry, select_fields
+from boku.voice import xch_nodes
+
+# `LabelledBox`, `label_allowance`, `original_marks`, `speaker_label` and `select_fields`
+# are imported, not defined: the marks and the label's pixels live in `boku.layout` beside
+# the `lay_out_message` that inserts the same runs while a build lays words out, and a
+# `[SEL]` row's fields live beside the `TranslationEntry` they are read off. Nothing here
+# may define a second copy -- that is a lint and a build measuring different text.
+
+DEFAULT_SOURCES = (REPO_ROOT / "translation" / "days", REPO_ROOT / "translation" / "samples")
+"""What `./make.sh lint-translation` lints when it is given nothing."""
+
+RESIDENT_PREFIXES = frozenset(f"exe@{ram:08X}" for ram in RESIDENT_BLOCK_ADDRS)
+"""The executable's resident event blocks, whose messages move like arrays."""
+
+DEFAULT_CELLS = REPO_ROOT / "build" / "vwf" / "edits.json"
+"""The cell map, read out of the edit set `boku build --vwf` installs the renderer from
+(`./make.sh build-days` writes it, in every mode). It is deliberately the *same file* the
+build measures in: a lint pointed at a font file of its own passes lines the build then
+wraps differently, and every gate stays green while the two disagree."""
+
+
+# --- the additive-word heuristic ------------------------------------------------------------
+
+ADDITIVE_WORDS = (
+    "absolut",
+    "eigentlich",
+    "extrem",
+    "halt",
+    "komplett",
+    "recht",
+    "sehr",
+    "total",
+    "ueberhaupt",
+    "voellig",
+    "wirklich",
+    "ziemlich",
+)
+"""German intensifiers / filler words to flag unless matched in the source (strictly ASCII
+`ae/oe/ue/ss`). Override with `--additive-words FILE`, one word per line."""
+
+SOURCE_INTENSIFIERS = (
+    "\u3068\u3066\u3082",
+    "\u3068\u3063\u3066\u3082",
+    "\u3059\u3054\u304f",
+    "\u3059\u3063\u3054\u304f",
+    "\u3059\u3054\u3044",
+    "\u672c\u5f53\u306b",
+    "\u307b\u3093\u3068",
+    "\u307e\u3063\u305f\u304f",
+    "\u3061\u3087\u3063\u3068",
+    "\u305a\u3044\u3076\u3093",
+    "\u304b\u306a\u308a",
+    "\u975e\u5e38\u306b",
+    "\u5b9f\u306b",
+    "\u5927\u5909",
+    "\u305f\u3044\u3078\u3093",
+    "\u3081\u3061\u3083",
+    "\u5168\u7136",
+    "\u305c\u3093\u305c\u3093",
+    "\u7d76\u5bfe",
+    "\u3082\u306e\u3059\u3054",
+)
+"""Source-side intensifiers that make an English one a translation rather than an
+addition. Written as escapes because this file is tracked and the repo holds no Japanese
+(CLAUDE.md § "This repo is public"); they are dictionary words, not the game's text."""
+
+
+EM_DASH = "\u2014"
+"""What `em-dash` looks for."""
+
+
+FORBIDDEN_GERMAN = re.compile(r"[\u00e4\u00f6\u00fc\u00c4\u00d6\u00dc\u00df]")
+"""Real German umlauts and Eszett: game fonts carry ASCII only (style guide § 9)."""
+
+FORBIDDEN_QUOTES = re.compile(r"[\u201e\u201c\u00bb\u00ab]")
+"""Typographic German quotation marks: use straight ASCII quotes (style guide § 9)."""
+
+
+def german_ascii_problems(text: str) -> list[tuple[str, str]]:
+    """`(check, message)` for real umlauts/Eszett or typographic German quotes in `text`."""
+    out: list[tuple[str, str]] = []
+    if umlauts := FORBIDDEN_GERMAN.findall(text):
+        chars = "".join(dict.fromkeys(umlauts))
+        out.append(
+            (
+                "umlaut",
+                f"Umlaut gefunden \u2014 bitte ASCII-Umschrift ae/oe/ue/ss verwenden ({chars!r})",
+            )
+        )
+    if quotes := FORBIDDEN_QUOTES.findall(text):
+        chars = "".join(dict.fromkeys(quotes))
+        out.append(
+            (
+                "typographic-quote",
+                f"Typografische Anfuehrungszeichen gefunden ({chars!r}) \u2014 bitte gerade "
+                f"ASCII-Anfuehrungszeichen '\"' verwenden",
+            )
+        )
+    return out
+
+
+SETTLED_PHRASES = ("sehr wohl", "meine wenigkeit")
+"""Settled German renderings that hold a word of `ADDITIVE_WORDS` (e.g. "sehr wohl", Fat's
+*ore-sama* "meine Wenigkeit", style guide § 5). Taken out of a line before counting."""
+
+
+def read_word_list(path: Path) -> tuple[str, ...]:
+    """One word per line; `#` comments and blanks ignored. Lower-cased, deduplicated."""
+    words: list[str] = []
+    for raw in Path(path).read_text(encoding="utf-8").splitlines():
+        word = raw.split("#", 1)[0].strip().lower()
+        if word and word not in words:
+            words.append(word)
+    return tuple(words)
+
+
+# --- findings -------------------------------------------------------------------------------
+
+ERROR = "ERROR"
+WARNING = "WARNING"
+
+
+@dataclass(frozen=True, order=True)
+class Finding:
+    """One thing wrong with one row, in the store's numbers."""
+
+    file: str
+    number: int
+    line_id: str
+    check: str
+    severity: str
+    message: str
+
+    @property
+    def is_error(self) -> bool:
+        return self.severity == ERROR
+
+    def format(self) -> str:
+        return (
+            f"{self.severity} {self.file}:{self.number} {self.line_id} {self.check} {self.message}"
+        )
+
+
+# --- the translation files ---------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class Row:
+    """One row of a translation file, with the `#` notes written immediately above it."""
+
+    line_id: str
+    speaker: str
+    text: str
+    path: Path
+    number: int
+    notes: tuple[str, ...] = ()
+    voice: frozenset[str] = frozenset()
+    """The words a `# VOICE` note in this row's file keeps on purpose (`VOICE_NOTE`)."""
+
+    @property
+    def file(self) -> str:
+        return self.path.name
+
+    @property
+    def has_english(self) -> bool:
+        """A `(voice only)` row has none unless it gives a subtitle (`VO-02`)."""
+        return bool(self.text)
+
+    @property
+    def is_select(self) -> bool:
+        return self.speaker == SampleScenes.SELECT
+
+    @property
+    def entry(self) -> TranslationEntry:
+        """The same `TranslationEntry` the build's loader makes of this row.
+
+        Built from `SampleScenes`' own constants so the two cannot drift silently; that
+        they do not drift *at all* is what `reader-vs-loader` below checks.
+        """
+        if self.is_select:
+            return TranslationEntry(
+                line_id=self.line_id,
+                speaker=self.speaker,
+                options=tuple(o.strip() for o in self.text.split(SampleScenes.OPTION)),
+                origin=f"{self.file}:{self.number}",
+            )
+        return TranslationEntry(
+            line_id=self.line_id,
+            speaker=self.speaker,
+            pages=tuple(p.strip() for p in self.text.split(SampleScenes.PAGE_BREAK)),
+            origin=f"{self.file}:{self.number}",
+        )
+
+
+def parse_file(path: Path) -> tuple[list[Row], list[Finding]]:
+    """Rows and the problems the format itself shows, in file order."""
+    return parse_text(path.read_text(encoding="utf-8"), path)
+
+
+VOICE_NOTE = re.compile(r"VOICE\s+([^\s,]+):\s*(.+?)\s+--\s+\S.*$")
+"""`# VOICE <id>: <word>[, <word>] -- <why>`: the additive-word heuristic's finding on
+those words of that line was looked at and the words kept (PLAN `TRN-16`)."""
+
+
+def parse_text(text: str, path: Path) -> tuple[list[Row], list[Finding]]:
+    """`parse_file` over text not yet on disk -- a translator's answer before it is saved.
+    `path` is only where the rows say they come from."""
+    rows: list[Row] = []
+    findings: list[Finding] = []
+    notes: list[str] = []
+    for number, raw in enumerate(text.splitlines(), start=1):
+        line = raw.rstrip()
+        if not line:
+            notes = []
+            continue
+        if line.lstrip().startswith("#"):
+            notes.append(line.lstrip().lstrip("#").strip())
+            continue
+        fields = line.split("\t")
+        if len(fields) < 2:
+            findings.append(
+                Finding(
+                    path.name,
+                    number,
+                    "-",
+                    "malformed",
+                    ERROR,
+                    "no tab; a row is `id <TAB> speaker <TAB> English`",
+                )
+            )
+            notes = []
+            continue
+        rows.append(
+            Row(
+                line_id=fields[0].strip(),
+                speaker=fields[1].strip(),
+                text=fields[2].strip() if len(fields) > 2 else "",
+                path=path,
+                number=number,
+                notes=tuple(notes),
+            )
+        )
+        notes = []
+    voice: dict[str, set[str]] = {}
+    for _, line_id, words in voice_notes(text):
+        if words is not None:
+            voice.setdefault(line_id, set()).update(words)
+    rows = [
+        replace(row, voice=frozenset(voice[row.line_id])) if row.line_id in voice else row
+        for row in rows
+    ]
+    return rows, findings
+
+
+def voice_notes(text: str) -> Iterator[tuple[int, str, frozenset[str] | None]]:
+    """Every `# VOICE` comment of a file: its line number, the id it names (`-` if none),
+    and the words it keeps -- `None` when it is not of `VOICE_NOTE`'s form, which settles
+    nothing and `_check_voice_notes` says so. Not a parse finding: those refuse an answer
+    and fail the lock check, and a note is only ever a warning."""
+    for number, raw in enumerate(text.splitlines(), start=1):
+        note = raw.strip().lstrip("#").strip()
+        if not raw.lstrip().startswith("#") or not note.startswith("VOICE"):
+            continue
+        found = VOICE_NOTE.match(note)
+        if found is None:
+            named = re.match(r"VOICE\s+(\S+?):", note)
+            yield number, named.group(1) if named else "-", None
+            continue
+        words = frozenset(w.strip().lower() for w in found.group(2).split(",") if w.strip())
+        yield number, found.group(1), words
+
+
+def translation_paths(sources: Sequence[Path]) -> list[Path]:
+    """Every `*.txt` under the given files and directories, sorted. Missing ones are fine."""
+    found: list[Path] = []
+    for source in sources:
+        source = Path(source)
+        if source.is_dir():
+            found.extend(sorted(source.glob("*.txt")))
+        elif source.is_file():
+            found.append(source)
+    return sorted(set(found))
+
+
+def load_rows(paths: Sequence[Path]) -> tuple[list[Row], list[Finding]]:
+    rows: list[Row] = []
+    findings: list[Finding] = []
+    for path in paths:
+        file_rows, file_findings = parse_file(path)
+        rows.extend(file_rows)
+        findings.extend(file_findings)
+    return rows, findings
+
+
+# --- the box, and the label that sits in it ------------------------------------------------------
+
+
+def box_from(
+    width: int, lines: int, guard_from: int, guard_width: int, name: str = DIALOGUE_BAND.name
+) -> BoxSpec:
+    """A `BoxSpec` from the command line's four numbers, refusing a box nothing fits in."""
+    if width <= 0 or lines <= 0:
+        raise LayoutError(f"a box is at least 1 line of 1 px; {lines} x {width} is not")
+    if guard_from and not guard_width:
+        raise LayoutError("--guard-from without --guard-width leaves the guarded line no room")
+    return BoxSpec(
+        width=width,
+        lines=lines,
+        guarded_from=guard_from,
+        guarded_width=guard_width,
+        name=name,
+    )
+
+
+def fit_page(
+    encoder: Encoder, text: str, box: BoxSpec, reserve: int = 0
+) -> tuple[list[str], list[int]]:
+    """Break one page into lines and measure each, with `reserve` px gone from line 1.
+
+    The wrap itself is `boku.layout.wrap` -- the same greedy pixel wrap the build inserts
+    with -- run against a box whose first line is narrowed by the label. Its own widths
+    are then re-measured against the unnarrowed box so a finding quotes the real limit.
+    """
+    if reserve:
+        narrowed = LabelledBox(
+            width=box.width,
+            lines=box.lines,
+            guarded_from=box.guarded_from,
+            guarded_width=box.guarded_width,
+            name=box.name,
+            reserve=reserve,
+        )
+        broken = wrap(encoder, text, narrowed)
+        widths = [measure(encoder, line) for line in broken]
+        if widths:
+            widths[0] += reserve
+        return broken, widths
+    broken = wrap(encoder, text, box)
+    return broken, [measure(encoder, line) for line in broken]
+
+
+# --- the checks ------------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class Options:
+    """Everything a run of the lint can be told, so one call site can hold it."""
+
+    encoder: Encoder
+    box: BoxSpec = DIALOGUE_BAND
+    label: bool = True
+    """Charge the label and marks the build inserts. There is no switch for *which* marks:
+    they are the ones the Japanese drew (`boku.layout.original_marks`), not a choice."""
+    additive_words: tuple[str, ...] = ADDITIVE_WORDS
+    additive: bool = True
+    boxes: Mapping[str, TextBox] | None = None
+    """The non-dialogue boxes by line id; `None` reads `research/data/text-boxes.tsv`."""
+    select_row: BoxSpec = SELECT_ROW
+    """What one select option may take (`renderer_for`)."""
+    array_room: (
+        Callable[
+            [Mapping[str, Sequence[int]], Mapping[str, TranslationEntry]],
+            Sequence[tuple[str, str]] | None,
+        ]
+        | None
+    ) = None
+    """Given every array item's laid-out words and the rows of the executable's resident
+    event blocks (which move the same way and compete for the same room), `None` when the
+    grown ones fit the free space, else `(line id, why)` for every item it leaves in
+    Japanese -- the build's own `boku.build.move_arrays`, which `main_lint` passes when the
+    import is here."""
+
+
+@dataclass
+class _Context:
+    """Per-run state the checks share: the store, the options, the growing findings."""
+
+    store: Store
+    options: Options
+    table: GlyphTable
+    findings: list[Finding] = field(default_factory=list)
+    array_words: dict[str, tuple[int, ...]] = field(default_factory=dict)
+    """Array items that laid out cleanly, for `Options.array_room`."""
+    block_rows: dict[str, TranslationEntry] = field(default_factory=dict)
+    """Rows of the resident event blocks, for `Options.array_room`."""
+
+    def say(self, row: Row, check: str, severity: str, message: str) -> None:
+        self.findings.append(Finding(row.file, row.number, row.line_id, check, severity, message))
+
+
+def lint_rows(store: Store, rows: Sequence[Row], options: Options) -> list[Finding]:
+    """Every finding over these rows, sorted by file then row."""
+    context = _Context(store=store, options=options, table=GlyphTable.load())
+    english = [row for row in rows if row.has_english]
+    _check_ids(context, rows, english)
+    _check_voice_notes(context, rows)
+    for row in rows:
+        _check_german_ascii(context, row)
+    for row in english:
+        if row.entry.voice_only:
+            _check_subtitle(context, row)
+            continue
+        if exchange_notebook.is_variant(row.line_id):
+            text, encoder = " ".join(row.entry.pages), options.encoder
+            laid = exchange_notebook.lay_out(row.line_id, text, encoder, options.boxes)
+            _say_laid(context, row, laid, "array-width")
+            continue
+        record = store.lines.get(row.line_id)
+        if record is None:
+            continue  # unknown: `_check_ids` has already said so
+        _check_row(context, row, record)
+        if row.line_id.split(".", 1)[0] in RESIDENT_PREFIXES:
+            context.block_rows[row.line_id] = row.entry
+        if options.additive:
+            _check_additive(context, row, record)
+        _check_em_dash(context, row)
+    if options.array_room is not None and (context.array_words or context.block_rows):
+        by_id = {row.line_id: row for row in english}
+        refused = options.array_room(context.array_words, context.block_rows) or ()
+        for line_id, message in refused:
+            context.say(by_id[line_id], "array-room", ERROR, message)
+    context.findings.extend(_check_loader_agreement(rows))
+    return sorted(context.findings)
+
+
+def _check_ids(context: _Context, rows: Sequence[Row], english: Sequence[Row]) -> None:
+    legal = context.store.known_ids
+    for row in rows:
+        variant = exchange_notebook.is_variant(row.line_id)
+        if (exchange_notebook.base_of(row.line_id) if variant else row.line_id) not in legal:
+            context.say(
+                row,
+                "unknown-id",
+                ERROR,
+                f"{row.line_id} is not a line in the script ({len(legal)} ids known)",
+            )
+    seen: dict[str, Row] = {}
+    for row in english:
+        first = seen.get(row.line_id)
+        if first is None:
+            seen[row.line_id] = row
+            continue
+        context.say(
+            row,
+            "translated-twice",
+            ERROR,
+            f"{row.line_id} is given English twice; first at {first.file}:{first.number}",
+        )
+
+
+def _check_subtitle(context: _Context, row: Row) -> None:
+    """A `(voice only)` row's English (`VO-02`): what the band can draw, with no Japanese to
+    hold it against. Its page timers come from the clip at build time, so only the fit and the
+    cells are checked here -- the same problems `boku.build` would refuse the line for."""
+    options = context.options
+    laid = lay_out_subtitle(row.line_id, row.entry.pages, 0, options.encoder, options.box)
+    for problem in laid.problems:
+        context.say(row, "subtitle-fit", ERROR, problem)
+
+
+def _say_laid(context: _Context, row: Row, laid: LaidOut, check: str) -> None:
+    """Each of `laid`'s problems as an error -- `unencodable` for a cell, else `check` -- or,
+    with none, its words offered to the room check, as an array's are."""
+    for problem in laid.problems:
+        detail = problem.split(": ", 1)[-1]
+        unencodable_cell = any(said in problem for said in SHEET_CELL_PROBLEMS)
+        context.say(row, "unencodable" if unencodable_cell else check, ERROR, detail)
+    if not laid.problems:
+        context.array_words[row.line_id] = laid.words
+
+
+def _check_row(context: _Context, row: Row, record: dict) -> None:
+    shape = select_shape(record)
+    if shape is not None:
+        _check_select(context, row, record, shape)
+        return
+    if is_array_select(record):
+        if row.is_select:
+            _check_array_select(context, row, record)
+        else:
+            context.say(row, "select-shape", ERROR, f"{row.line_id} is {MENU_IS_SEL}")
+        return
+    if row.is_select:
+        context.say(
+            row,
+            "select-shape",
+            ERROR,
+            f"{row.line_id} is written as a SELECT but the store has it as a message",
+        )
+        return
+    if (why := unreachable(row.line_id)) is not None:
+        context.say(row, "unreachable", WARNING, why)
+        return
+    if row.line_id in DATE_LABELS:
+        laid = lay_out_date_label(row.line_id, " ".join(row.entry.pages), context.options.encoder)
+        _say_laid(context, row, laid, "date-label")
+        return
+    if banner_of(row.line_id) is not None:
+        laid = lay_out_banner(
+            row.line_id,
+            " ".join(row.entry.pages),
+            context.options.encoder,
+            box_spec_for(row.line_id, context.options.boxes),
+        )
+        _say_laid(context, row, laid, "array-width")
+        return
+    if record["kind"] == "code-label":
+        text = " ".join(row.entry.pages)
+        laid = lay_out_code_label(row.line_id, record["runs"], text, context.options.encoder)
+        for problem in laid.problems:
+            detail = problem.split(": ", 1)[-1]
+            unencodable_cell = any(said in problem for said in SHEET_CELL_PROBLEMS)
+            check = "unencodable" if unencodable_cell else "not-placeable"
+            context.say(row, check, ERROR if unencodable_cell else WARNING, detail)
+        return
+    if record["kind"] == "sjis-title":
+        laid = lay_out_save_title(row.line_id, " ".join(row.entry.pages))
+        for problem in laid.problems:
+            context.say(row, "save-title", ERROR, problem.split(": ", 1)[-1])
+        if not laid.problems:
+            context.array_words[row.line_id] = laid.words  # it moves like an array
+        return
+    if is_array(record):
+        _check_array(context, row, record)
+        return
+    _check_message(context, row, record)
+
+
+def _check_select(context: _Context, row: Row, record: dict, shape: tuple[int, int]) -> None:
+    options, prompts = shape
+    if not row.is_select:
+        context.say(
+            row,
+            "select-shape",
+            ERROR,
+            f"{row.line_id} is a SELECT of {options} option(s) but is written as a message",
+        )
+        return
+    question, given = select_fields(row.entry, prompts)
+    if len(given) != options or len(question) != prompts:
+        context.say(
+            row,
+            "select-options",
+            ERROR,
+            f"{len(given)} option(s) given; g_select_lines fixes {options}"
+            + (
+                f", after {prompts} prompt line(s) the row lists first "
+                f"(style guide § 13); {len(question)} given"
+                if prompts
+                else ""
+            ),
+        )
+    encoder = context.options.encoder
+    drawn = (*question, *given)  # the box draws the question too, so it is measured too
+    missing = unencodable(encoder, "".join(drawn))
+    if missing:
+        context.say(
+            row, "unencodable", ERROR, f"the {encoder.name} draws no cell for {''.join(missing)!r}"
+        )
+    width = context.options.select_row.width
+    for index, line in enumerate(drawn, start=1):
+        pixels = measure(encoder, line)
+        if pixels > width:
+            context.say(
+                row,
+                "select-width",
+                ERROR,
+                f"line {index}: {pixels} px in {width}, {pixels - width} over; "
+                f"a select line cannot wrap",
+            )
+
+
+def _check_array_select(context: _Context, row: Row, record: dict) -> None:
+    """A code-file menu, through the same `lay_out_array_select` the build uses."""
+    laid = lay_out_array_select(
+        row.line_id,
+        row.entry.options,
+        original_bytes(record, context.table),
+        context.options.encoder,
+        byte_limit(row.line_id, record["capacity"]["bytes"]),
+        context.options.select_row,
+    )
+    if not laid.problems:
+        context.array_words[row.line_id] = laid.words
+    for problem in laid.problems:
+        check = "array-bytes"
+        if "draws no cell" in problem:
+            check = "unencodable"
+        elif "g_select_lines" in problem:
+            check = "select-options"
+        elif "cannot wrap" in problem:
+            check = "select-width"
+        context.say(row, check, ERROR, problem.split(": ", 1)[-1])
+
+
+def _check_array(context: _Context, row: Row, record: dict) -> None:
+    """Bytes and pixels, through the same `lay_out_array` and box the build uses."""
+    encoder = context.options.encoder
+    text = " ".join(row.entry.pages)
+    size = byte_limit(row.line_id, record["capacity"]["bytes"])
+    if row.line_id == ANSWER_PAIR.line_id:
+        original = original_bytes(record, context.table)
+        panel = box_for(row.line_id, context.options.boxes)
+        right = panel.right if panel else ANSWER_PAIR.second_x
+        laid = lay_out_answer_pair(row.line_id, text, original, encoder, right, size)
+        if not laid.problems:
+            context.array_words[row.line_id] = laid.words
+        for problem in laid.problems:
+            check = "answer-pair"
+            if "draws no cell" in problem:
+                check = "unencodable"
+            elif "span holds" in problem:
+                check = "array-width"
+            elif "the row holds" in problem:
+                check = "array-bytes"
+            context.say(row, check, ERROR, problem.split(": ", 1)[-1])
+        return
+    laid = lay_out_array(
+        row.line_id,
+        text,
+        original_bytes(record, context.table),
+        encoder,
+        size,
+        box_spec_for(row.line_id, context.options.boxes),
+    )
+    if not laid.problems:
+        context.array_words[row.line_id] = laid.words
+        context.array_words |= notebook_copy(row.line_id, laid, encoder)  # placed too
+    for problem in laid.problems:
+        detail = problem.split(": ", 1)[-1]
+        check = "array-bytes"
+        severity = ERROR
+        if " px and " in problem and problem.endswith(" over"):
+            check = "array-width"
+        elif re.search(r" takes \d+ lines and .* holds \d+$", problem):
+            check = "array-lines"
+        elif "drawn as a group" in problem:
+            check, severity = "array-group", WARNING
+        elif any(said in problem for said in SHEET_CELL_PROBLEMS):
+            check = "unencodable"
+        elif "no English was given" in problem:
+            check = "array-empty"
+        elif "writes its count into cells" in problem:
+            check = "array-counted"
+        context.say(row, check, severity, detail)
+
+
+def _dressed(
+    context: _Context, row: Row, record: dict, pages: Sequence[str]
+) -> tuple[int, list[str]]:
+    """`(pixels reserved at the head of page 1, the pages with the closing mark on)`.
+
+    Exactly what `boku.build.lay_out` will insert around this message, read through the
+    same `original_marks` over the same `speaker_label`: the label and the opening mark
+    lead page 1's first line, the closing mark ends the last page's last line. Charging
+    one and not the other is a page the lint passes and the build refuses -- measured at
+    up to 6 px, which is a whole bracket.
+    """
+    pages = list(pages)
+    if not context.options.label or not pages:
+        return 0, pages
+    marks = original_marks(original_bytes(record, context.table), context.table)
+    if marks.problem:
+        # The build refuses the line rather than dressing it in marks the original does
+        # not pair, so a lint that said nothing would pass a line that stays Japanese.
+        context.say(row, "original-marks", ERROR, marks.problem)
+    label = speaker_label(row.speaker)[0] if marks.labelled else ""
+    encoder = context.options.encoder
+    missing = unencodable(encoder, label + marks.opening + marks.closing)
+    if missing:
+        context.say(
+            row,
+            "unencodable",
+            ERROR,
+            f"the {encoder.name} draws no cell for {''.join(missing)!r} in the label and "
+            f"marks the build draws around this line",
+        )
+    pages[-1] = pages[-1] + marks.closing
+    return label_allowance(encoder, label, marks.opening), pages
+
+
+def _check_message(context: _Context, row: Row, record: dict) -> None:
+    encoder = context.options.encoder
+    box = context.options.box
+    pages = row.entry.pages
+    original = page_count(record)
+    if len(pages) != original:
+        voiced = pages_fixed_by_voice(record)
+        context.say(
+            row,
+            "page-count" if voiced else "page-count-unvoiced",
+            ERROR if voiced else WARNING,
+            f"{len(pages)} page(s) given, the original has {original}"
+            + (
+                "; the page turns are a frame countdown matched to the voice clip and cannot move"
+                if voiced
+                else "; these page breaks are not voice-timed, so this may be deliberate"
+            ),
+        )
+    missing = unencodable(WithSheetSymbols(encoder), "".join(pages))
+    if missing:
+        context.say(
+            row, "unencodable", ERROR, f"the {encoder.name} draws no cell for {''.join(missing)!r}"
+        )
+    reserve, pages = _dressed(context, row, record, pages)
+    for number, text in enumerate(pages, start=1):
+        broken, widths = fit_page(encoder, text, box, reserve if number == 1 else 0)
+        if len(broken) > box.lines:
+            context.say(
+                row,
+                "page-lines",
+                ERROR,
+                f"page {number}: {len(broken)} lines in {box.name}, which holds {box.lines}; "
+                f"the fix is another page or a wider box, never a shorter line",
+            )
+        for index, (broken_line, pixels) in enumerate(zip(broken, widths, strict=True), start=1):
+            limit = box.width_of_line(index)
+            if pixels > limit:
+                charged = reserve and number == 1 and index == 1
+                head = " (the label and opening mark included)" if charged else ""
+                context.say(
+                    row,
+                    "page-width",
+                    ERROR,
+                    f"page {number} line {index}: {pixels} px in {limit}, "
+                    f"{pixels - limit} over{head} ({broken_line!r} does not break)",
+                )
+
+
+_WORD = re.compile(r"[a-z']+")
+
+
+def _check_additive(context: _Context, row: Row, record: dict) -> None:
+    """The pilot's recurring defect, as far as a word list can see it, less the words a
+    `# VOICE` note kept; and a note naming a word it does not flag. Warnings only."""
+    source = context.store.japanese[record["id"]].plain()
+    flagged: list[str] = []
+    if not any(marker in source for marker in SOURCE_INTENSIFIERS):
+        text = row.text.lower()
+        for phrase in SETTLED_PHRASES:
+            text = text.replace(phrase, " ")
+        words = set(_WORD.findall(text))
+        flagged = [word for word in context.options.additive_words if word in words]
+    stale = sorted(row.voice - set(flagged))
+    if stale:
+        context.say(
+            row,
+            "voice-note",
+            WARNING,
+            f"a VOICE note keeps {', '.join(stale)}, which the heuristic does not flag in this "
+            f"line; drop the note, or name only the words it flags",
+        )
+    added = [word for word in flagged if word not in row.voice]
+    if added:
+        context.say(
+            row,
+            "additive-word",
+            WARNING,
+            f"heuristic: {', '.join(added)} in the English, no intensifier in the source "
+            f"({len(SOURCE_INTENSIFIERS)} looked for) -- check it is a translation, not an "
+            f"addition",
+        )
+
+
+def _check_voice_notes(context: _Context, rows: Sequence[Row]) -> None:
+    """The `# VOICE` notes of each file the rows come from that settle nothing: not of the
+    form, or naming no row of their file. Read from the file, as `parse_text` leaves them."""
+    by_path: dict[Path, set[str]] = {}
+    for row in rows:
+        by_path.setdefault(row.path, set()).add(row.line_id)
+    for path, ids in by_path.items():
+        if not path.is_file():
+            continue
+        for number, line_id, words in voice_notes(path.read_text(encoding="utf-8")):
+            if words is None:
+                problem = (
+                    "a VOICE note settles nothing unless it is "
+                    "`# VOICE <id>: <word>[, <word>] -- <why>`, one id and its reason"
+                )
+            elif line_id not in ids:
+                problem = f"a VOICE note for {line_id}, not a row of this file"
+            else:
+                continue
+            context.findings.append(
+                Finding(path.name, number, line_id, "voice-note", WARNING, problem)
+            )
+
+
+def _check_german_ascii(context: _Context, row: Row) -> None:
+    """Style guide § 9: forbid real umlauts/Eszett and typographic German quotes."""
+    for check, message in german_ascii_problems(f"{row.speaker}\t{row.text}"):
+        context.say(row, check, ERROR, message)
+
+
+def _check_em_dash(context: _Context, row: Row) -> None:
+    """Style guide § 18, as a prompt to look at the source. Warning only."""
+    count = row.text.count(EM_DASH)
+    if count:
+        context.say(
+            row,
+            "em-dash",
+            WARNING,
+            f"{count} em dash(es); style guide § 18 keeps one only where the Japanese breaks "
+            f"or trails the line with a dash-like mark -- check the source",
+        )
+
+
+def _check_loader_agreement(rows: Sequence[Row]) -> Iterator[Finding]:
+    """This module's parse against the loader the build reads English through.
+
+    A disagreement means the lint passed something other than what would be built, which
+    is the one failure a lint can cause on its own.
+    """
+    paths = sorted({row.path for row in rows})
+    if not paths:
+        return
+    theirs = {entry.line_id: entry for entry in SampleScenes.from_paths(paths)}
+    mine: dict[str, tuple[Row, TranslationEntry]] = {}
+    for row in rows:
+        if row.has_english and row.line_id not in mine:
+            mine[row.line_id] = (row, row.entry)
+    for line_id in sorted(set(mine) | set(theirs)):
+        here = mine.get(line_id)
+        there = theirs.get(line_id)
+        ours = here[1] if here else None
+        if ours == there:
+            continue
+        row = here[0] if here else None
+        yield Finding(
+            row.file if row else "-",
+            row.number if row else 0,
+            line_id,
+            "reader-vs-loader",
+            ERROR,
+            f"this lint reads {ours!r}; boku.translation reads {there!r}",
+        )
+
+
+# --- running it -------------------------------------------------------------------------------
+
+
+def renderer_for(kind: str, cells: Path | None) -> tuple[Encoder, BoxSpec]:
+    """`(encoder, select row)` for `stock` or `cellmap`. A cell map defaults to the edit set
+    the build installs, and the select row is the one that edit set was assembled with
+    (`boku.layout.select_row_of`) -- one file read for both, as `EditSet` does."""
+    if kind == "stock":
+        return StockEncoder.load(), SELECT_ROW
+    path = Path(cells) if cells is not None else DEFAULT_CELLS
+    if not path.is_file():
+        raise LayoutError(
+            f"the lint measures in the font the build installs, {path}, which is not "
+            f"there; run `./make.sh build-days`, give --cells FILE to measure another font, "
+            f"or --encoder stock for the retail cells"
+        )
+    try:
+        document = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as error:
+        raise LayoutError(f"{path}: {error}") from error
+    return CellMapEncoder.from_document(document, path.name), select_row_of(document)
+
+
+def make_encoder(kind: str, cells: Path | None) -> Encoder:
+    """`stock` or `cellmap`; a cell map defaults to the edit set the build installs."""
+    return renderer_for(kind, cells)[0]
+
+
+def lint_movies(path: Path, encoder: Encoder | None, cells: Path) -> list[Finding]:
+    """The movie cue file against the movie list and, given one, the font's pixels.
+    `cells` is where the font was looked for, which the warning names when it was not."""
+    rows, problems = movie_cues.read(path)
+    problems += movie_cues.check(rows, movie_cues.read_movie_lengths(), encoder)
+    findings = [Finding(path.name, p.line, p.key, p.check, ERROR, p.message) for p in problems]
+    for row in rows:
+        for check, message in german_ascii_problems(row.text):
+            findings.append(Finding(path.name, row.line, row.key, check, ERROR, message))
+    if encoder is None and rows:
+        findings.append(
+            Finding(
+                path.name,
+                0,
+                "-",
+                "cue-unmeasured",
+                WARNING,
+                f"no cell map at {cells}: the cues' widths, line counts and glyphs "
+                f"were not measured; run `./make.sh build-days` or give --cells",
+            )
+        )
+    return findings
+
+
+def lint_movie_file(movies: Path | None, options: Options, cells: Path | None) -> list[Finding]:
+    """`lint_movies` over `--movies`, in the font the movies are drawn in: `--encoder
+    cellmap`'s, else the cell map at `--cells` or the default if the build has written one
+    -- never the stock 14-px cells, which no movie draws. The default cue file may be
+    absent (nothing to lint); a file named on the command line may not, so a mistyped path
+    raises `OSError` rather than linting nothing and passing."""
+    if movies is None or (
+        Path(movies) == movie_cues.CUE_FILE and not movie_cues.CUE_FILE.is_file()
+    ):
+        return []
+    path = Path(cells) if cells is not None else DEFAULT_CELLS
+    if isinstance(options.encoder, CellMapEncoder):
+        encoder: Encoder | None = options.encoder
+    else:
+        encoder = CellMapEncoder.from_json(path) if path.is_file() else None
+    return lint_movies(Path(movies), encoder, path)
+
+
+def lint_clip_file(clips: Path | None, options: Options, disc_dir: Path) -> list[Finding]:
+    """`translation/clips.txt` (`boku.clip_subs`): each row laid out against its own clip in
+    the band, and an epilogue's against its picture, as the build lays it out, every problem
+    an error. No file, no findings."""
+    if clips is None:
+        return []
+    entries, unread = clip_subs.read(Path(clips))
+    if not entries and not unread:
+        return []
+    archive = Archive(Path(disc_dir))
+    name = Path(clips).name
+    try:
+        pictures = epilogue.pictures(archive)
+    except epilogue.EpilogueError as error:
+        return [Finding(name, 0, "-", "clip-format", ERROR, str(error))]
+    _words, problems = clip_subs.lay_out_clips(
+        entries, xch_nodes(archive), options.encoder, pictures, options.box
+    )
+    out = [Finding(name, 0, "-", "clip-format", ERROR, problem) for problem in unread]
+    for entry in entries:
+        number = int(entry.origin.rsplit(":", 1)[1])
+        clip_text = "\t".join((entry.speaker, *entry.pages, *entry.options, *entry.prompts))
+        for check, message in german_ascii_problems(clip_text):
+            out.append(Finding(name, number, entry.line_id, check, ERROR, message))
+    for problem in problems:
+        number = int(problem.origin.rsplit(":", 1)[1])
+        out.append(Finding(name, number, problem.line_id, "clip-subtitle", ERROR, problem.message))
+    return out
+
+
+def lint_everything(
+    store: Store,
+    rows: Sequence[Row],
+    options: Options,
+    disc_dir: Path,
+    encoder_kind: str,
+    cells: Path | None,
+    movies: Path | None = movie_cues.CUE_FILE,
+    clips: Path | None = clip_subs.CLIP_FILE,
+) -> list[Finding]:
+    """What `boku lint` reports over these rows, the movie cues and the clip subtitles, the
+    array room measured against this import -- `main_lint`'s findings, and the reader's
+    inline marks (`boku.reader`). Raises `OSError`, `LayoutError` or `ArchiveError` when a
+    named file or the import cannot be read."""
+    options = replace(options, array_room=_array_room(Path(disc_dir), encoder_kind, cells, options))
+    return [
+        *lint_rows(store, rows, options),
+        *lint_movie_file(movies, options, cells),
+        *lint_clip_file(clips, options, disc_dir),
+    ]
+
+
+def format_report(findings: Iterable[Finding]) -> list[str]:
+    return [finding.format() for finding in findings]
+
+
+def summarise(findings: Sequence[Finding]) -> str:
+    errors = sum(1 for f in findings if f.is_error)
+    warnings = len(findings) - errors
+    by_check = ", ".join(
+        f"{check} {sum(1 for f in findings if f.check == check)}"
+        for check in sorted({f.check for f in findings})
+    )
+    return f"{errors} error(s), {warnings} warning(s)" + (f" -- {by_check}" if by_check else "")
+
+
+def main_lint(
+    sources: Sequence[Path],
+    disc_dir: Path,
+    encoder_kind: str,
+    cells: Path | None,
+    width: int,
+    lines: int,
+    guard_from: int,
+    guard_width: int,
+    label: bool,
+    additive: bool,
+    additive_words: Path | None,
+    movies: Path | None = movie_cues.CUE_FILE,
+    clips: Path | None = clip_subs.CLIP_FILE,
+) -> int:
+    paths = translation_paths(sources or DEFAULT_SOURCES)
+    if not paths:
+        print(f"lint: no *.txt translation files under {', '.join(str(s) for s in sources)}")
+        return 2
+    try:
+        store = load_store(Path(disc_dir) / SCRIPT_DIR_NAME)
+        encoder, select_row = renderer_for(encoder_kind, cells)
+        options = Options(
+            encoder=encoder,
+            box=box_from(width, lines, guard_from, guard_width),
+            select_row=select_row,
+            label=label,
+            additive=additive,
+            additive_words=(read_word_list(additive_words) if additive_words else ADDITIVE_WORDS),
+        )
+    except (StoreMissing, LayoutError) as error:
+        print(f"lint: {error}", file=sys.stderr)
+        return 2
+    rows, findings = load_rows(paths)
+    try:
+        findings = sorted(
+            [
+                *findings,
+                *lint_everything(
+                    store, rows, options, disc_dir, encoder_kind, cells, movies, clips
+                ),
+            ]
+        )
+    except (OSError, LayoutError, ArchiveError) as error:
+        print(f"lint: {error}", file=sys.stderr)
+        return 2
+    print(
+        f"read {', '.join(path.name for path in paths)} "
+        f"({len(rows)} row(s)) against {store.root} in {options.encoder.name}, "
+        f"{options.box.name} {options.box.lines}x{options.box.width} px"
+    )
+    for line in format_report(findings):
+        print(line)
+    print(summarise(findings))
+    return 1 if any(finding.is_error for finding in findings) else 0
+
+
+def _array_room(disc_dir: Path, encoder_kind: str, cells: Path | None, options: Options):
+    """`Options.array_room` over this import, in the regions the build would use: the
+    edit set's when the cell map is one, else the dead regions alone. It runs the build's
+    own `move_arrays` -- a resident block's rows laid out by the build's own `lay_out`, in
+    `options`' font and box -- so it finds every item the build would refuse. The import is
+    opened only when asked; a missing one is no check (`None`)."""
+    from boku.array_relocate import DEAD_REGIONS
+    from boku.build import BuildRefused, lay_out, load_edit_set, move_arrays
+    from boku.sites import SiteError, load
+
+    def edit_set():
+        path = cells or DEFAULT_CELLS
+        if encoder_kind == "cellmap" and path.is_file():
+            try:
+                return load_edit_set(path)
+            except (BuildRefused, OSError, ValueError, KeyError):
+                pass  # the cell map is not an edit set: measure in the dead regions alone
+        return None
+
+    def room(words, blocks):
+        try:
+            archive, walk = load(disc_dir) if blocks else (Archive(disc_dir), None)
+        except (ArchiveError, SiteError):
+            return None
+        words = dict(words)
+        if blocks:
+            laid = lay_out(
+                archive,
+                walk,
+                list(blocks.values()),
+                options.encoder,
+                options.box,
+                label=options.label,
+                select_row=options.select_row,
+            )
+            words |= {line.line_id: line.laid_out.words for line in laid if line.written}
+        installed = edit_set()
+        _, refused = move_arrays(
+            archive,
+            words,
+            installed.array_regions if installed else DEAD_REGIONS,
+            skip_unfitted=True,
+            routines=installed.label_routines if installed else None,
+        )
+        if not refused:
+            return None
+        return [(line, reasons[0]) for line, reasons in refused.items()]
+
+    return room
+
+
+def add_arguments(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
+    """The lint's switches, on `boku lint`. Shared with nothing; kept beside the code."""
+    parser.add_argument(
+        "sources",
+        nargs="*",
+        type=Path,
+        metavar="FILE",
+        help=(
+            "translation files or directories of them (default: "
+            f"{', '.join(str(p.relative_to(REPO_ROOT)) for p in DEFAULT_SOURCES)})"
+        ),
+    )
+    parser.add_argument(
+        "--disc",
+        type=Path,
+        default=DEFAULT_DISC_DIR,
+        metavar="DIR",
+        help=f"the import whose script store the ids are checked against (default: "
+        f"{DEFAULT_DISC_DIR}/)",
+    )
+    parser.add_argument(
+        "--encoder",
+        choices=("stock", "cellmap"),
+        default="cellmap",
+        help=(
+            "which font's widths to measure in: the variable-width cell map the build "
+            "installs (--cells), or the game's own full-width Latin cells at a fixed 14 px, "
+            "which the VWF build no longer draws (default: cellmap)"
+        ),
+    )
+    parser.add_argument(
+        "--cells",
+        type=Path,
+        metavar="FILE",
+        help=f"the cell map --encoder cellmap reads (default: {DEFAULT_CELLS})",
+    )
+    parser.add_argument(
+        "--box-width",
+        type=int,
+        default=DIALOGUE_BAND.width,
+        metavar="PX",
+        help=f"usable pixels per line (default: {DIALOGUE_BAND.width}, the dialogue band)",
+    )
+    parser.add_argument(
+        "--box-lines",
+        type=int,
+        default=DIALOGUE_BAND.lines,
+        metavar="N",
+        help=f"lines that draw cleanly on one page (default: {DIALOGUE_BAND.lines})",
+    )
+    parser.add_argument(
+        "--guard-from",
+        type=int,
+        default=DIALOGUE_BAND.guarded_from,
+        metavar="N",
+        help=(
+            f"first line the next-page pencil sits on, 0 for none "
+            f"(default: {DIALOGUE_BAND.guarded_from})"
+        ),
+    )
+    parser.add_argument(
+        "--guard-width",
+        type=int,
+        default=DIALOGUE_BAND.guarded_width,
+        metavar="PX",
+        help=f"what a guarded line fits in instead (default: {DIALOGUE_BAND.guarded_width})",
+    )
+    parser.add_argument(
+        "--no-label",
+        dest="label",
+        action="store_false",
+        help=(
+            "measure the bare English, without charging the speaker label and the marks "
+            "the build draws around it in the original's style (style guide § 9). What "
+            "`boku build --no-label` inserts"
+        ),
+    )
+    parser.add_argument(
+        "--no-additive",
+        dest="additive",
+        action="store_false",
+        help="skip the additive-word heuristic, which only ever warns",
+    )
+    parser.add_argument(
+        "--additive-words",
+        type=Path,
+        metavar="FILE",
+        help="the English intensifier list to use instead of the built-in one, one per line",
+    )
+    parser.add_argument(
+        "--movies",
+        type=Path,
+        default=movie_cues.CUE_FILE,
+        metavar="FILE",
+        help=(
+            "the movie cue file linted beside the day files, always in the cell map "
+            f"(default: {movie_cues.CUE_FILE.relative_to(REPO_ROOT)})"
+        ),
+    )
+    parser.set_defaults(
+        run=lambda args: main_lint(
+            args.sources,
+            args.disc,
+            args.encoder,
+            args.cells,
+            args.box_width,
+            args.box_lines,
+            args.guard_from,
+            args.guard_width,
+            args.label,
+            args.additive,
+            args.additive_words,
+            args.movies,
+        )
+    )
+    return parser

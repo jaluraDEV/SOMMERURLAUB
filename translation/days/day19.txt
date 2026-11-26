@@ -1,0 +1,92 @@
+# day19 (translation/days/README.md)
+# --- E1905: C05 -- the sunflower road (the howl)
+E1905.0	(voice only)
+E1905.1	(voice only)
+
+# --- E1921: G03 -- kitchen
+E1921.0	Tante	Na ja, fuer Onee-chans Diaet kommt das vielleicht genau richtig...
+
+# --- E1901: G02 -- breakfast, Moe absent
+E1901.0	Shirabe	Onee-chan ist nicht da.
+E1901.1	Tante	Nein, ist sie nicht.
+E1901.2	Onkel	Na ja, vom Nichtessen stirbt man zwei, drei Tage lang noch nicht, aber... // wenn es zu lange dauert, muessen wir ordentlich... // unsere Rolle als Papa und Mama spielen.
+E1901.3	Tante	Stimmt.
+E1901.4	Onkel	Also dann, itadakimaasu!
+E1901.5	Shirabe, Moe, Boku, Tante	Itadakimaasu!
+
+# --- E1902: G02 -- after breakfast
+E1902.0	Onkel	Gochisosama deshita.
+E1902.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+
+# --- E1920: H08 -- the yard
+E1920.0	Tante	Ich moechte~ eine groessere Welt sehen~ // Ich bin~ eine weisse Kosmee~
+E1920.1	Boku	Was ist das fuer ein Lied?
+E1920.2	Tante	Wie? Ach... das ist ein Hana-uta, ein Liedchen, das Tante einfach vor sich hinsummt.
+E1920.3	Boku	Ein Hana-uta? Ein Nasenlied?
+E1920.4	Tante	Ein Blumenlied!
+E1920.5	Tante	Ich moechte~ eine groessere Welt sehen~ // Ich bin~ eine weisse Kosmee~
+# NOTE E1920.2-.4: hana-uta bedeutet Summen, geschrieben "Nasenlied"; hana heisst auch "Blume" (Stilbibel § 8 Typ 3). Da gesungen wird, bleibt die Tilde (~) (§ 10).
+
+# --- E1912: G01 -- living room
+E1912.0	Onkel	Die Gedankenwelt von Maedchen koennen Maenner wohl nie verstehen.
+E1912.1	Boku	Wovon redest du?
+E1912.2	Onkel	Die Geschichte von einem geplagten Vater mit einer Tochter in der Pubertaet...
+E1912.3	Boku	Bupertaet?
+E1912.4	Onkel	Pubertaet.
+E1912.5	Onkel	Als wir in der Pubertaet waren, war Japan noch furchtbar arm, weisst du.
+# NOTE E1912.3-.4: shushinki statt shishunki (Stilbibel § 8 Typ 1).
+
+# --- E1910: H26 -- the workshop
+E1910.0	Boku	Ich habe das Wolfsmaedchen getroffen.
+E1910.1	Onkel	Ach ja? Ein ziemlich interessantes Maedchen, oder?
+E1910.2	Boku	Interessant... na ja, eher eine komische junge Frau.
+E1910.3	Onkel	Hahaha, das stimmt allerdings.
+
+# --- E1903: G02 -- dinner
+E1903.0	Boku	Moe-neechan, warum machst du so ein trauriges Gesicht?
+E1903.1	Tante	Na, na, kommt! Essen wir schnell.
+E1903.2	Onkel	Also dann, itadakimasu!
+E1903.3	Shirabe, Moe, Boku, Tante	Itadakimasu!
+
+# --- E1930: G16 -- Moe's bed
+E1930.0	Boku	Onee-chan, geht es dir gut?
+E1930.1	Moe	...Ja, es geht mir gut.
+E1930.2	Boku	Tante hat gesagt, dass alle Maedchen mal so werden...
+E1930.3	Moe	......
+E1930.4	Boku	Was tut dir denn weh?
+E1930.5	Moe	Irgendwie meine Traeume, meine Hoffnungen... // all diese Dinge fuer die Zukunft sind mir jetzt einfach egal geworden.
+E1930.6	Boku	......
+E1930.7	Moe	Ich habe doch gesagt, lass mich einfach in Ruhe...
+
+# --- E1931: G15 -- the sisters' room
+E1931.0	Moe	Onee-chan hat sich entschieden. Tut mir leid, dass ich dir auch so viel Kummer gemacht habe, Boku-kun...
+E1931.1	Moe	Ich nutze diese Chance... und mache eine ganz gruendliche Diaet!
+
+# --- E1940: H04 -- garden corner where Shirabe watches ants
+E1940.0	Shirabe	Was verkaufen sie denn in dem Tante-Emma-Laden in deiner Stadt?
+E1940.1	Boku	Menko-Karten und Baelle und Knallerbsen.
+E1940.2	Shirabe	Ach so, lauter Sachen, die man nicht essen kann. // So etwas brauchte ich bis zu diesem Alter auch nie zu kennen...
+E1940.3	Boku	Oh, Landkinder kennen Tante-Emma-Laeden also echt nicht.
+E1940.4	Shirabe	Stimmt.
+E1940.5	Boku	Die verkaufen da auch jede Menge Suessigkeiten...
+E1940.6	Shirabe	Was fuer Suessigkeiten verkaufen sie denn?
+E1940.7	Boku	Hehe, verrate ich nicht! // Du musst es ja sowieso nicht wissen, oder?
+
+# --- E1941: G06 -- TV room
+E1941.0	Boku	He, irgendwie habe ich das Gefuehl, jeden Tag laufen dieselben Sendungen?
+E1941.1	Shirabe	Hae? Na klar.
+E1941.2	Boku	Nanu? Gibt es hier nur drei Programme?
+
+# --- E1904: G02 -- after dinner ("I saw a ghost")
+E1904.0	Onkel	Gochisosama deshita.
+E1904.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E1904.2	Boku	He, Onkel... // darf man alles glauben, was man mit eigenen Augen sieht und mit eigenen Ohren hoert?
+E1904.3	Onkel	Hmmm, das ist eine schwierige Frage. Zum Beispiel...
+E1904.4	Onkel	Gibt es da ein gutes Beispiel?
+E1904.5	Tante	Hm-hm... das gibt es, das gibt es. // ...Zum Beispiel sieht Yusaku fuer mich manchmal wie ein ganz toller Vater aus, // und manchmal wie ein komplett unmoeglicher, hoffnungsloser... // ganz gewoehnlicher Nichtsnutz-Onkel.
+E1904.6	Boku	Ich habe heute... ein Gespenst gesehen.
+E1904.7	Shirabe	...So etwas solltest du lieber nicht herumerzaehlen.
+E1904.8	Tante	Ach, ich glaube dir das.
+E1904.9	Onkel	Als ich klein war, dachte ich in einer verschneiten Nacht einmal, Ausserirdische seien gekommen...
+E1904.10	Tante	Und was war es in Wahrheit?
+E1904.11	Onkel	Als ich erwachsen war und in einem Programmkino einen alten amerikanischen Film sah, // kam da eine Szene vor, die genau meiner Erinnerung glich...

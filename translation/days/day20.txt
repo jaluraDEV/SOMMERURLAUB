@@ -1,0 +1,86 @@
+# day20 (translation/days/README.md)
+# --- E2006: G01 -- living room; G06 -- TV room (the family argument, overheard)
+E2006.0	Moe	Ich habe mich entschieden! // Ich gehe weder auf die Oberschule noch auf die Uni. Ich bleibe mein ganzes Leben hier...
+E2006.1	Tante	Dann kannst du doch nach dem Abschluss der Oberschule nach Tsukiyono zurueckkommen, oder? // In Sagi-no-sato gibt es schliesslich auch genug Arbeit.
+E2006.2	Moe	Irgendwie... ehrlich gesagt habe ich kein Selbstvertrauen mehr! // Kein Selbstvertrauen, keinen Antrieb, keine Hoffnung, gar nichts... // ...Papa, du hast doch oft gesagt, dass Menschen so leben koennen, wie sie es sich wuenschen, // dass man mit genug Willenskraft genau so werden kann, wie man es sich ertraeumt... // Wer immer wieder scheitert, mag sich eben so, // und wer immer wieder gruebelt, gruebelt eben gern... // Wenn man also an sein starkes Ich glaubt und danach lebt, kann man wirklich stark werden // und jeden Wunsch irgendwann wahr machen.
+E2006.3	Onkel	Deswegen haeltst du Papa aber nicht fuer einen Luegner, oder, Moe?
+E2006.4	Moe	Natuerlich nicht! // Aber weisst du... ein Traum, dem man nachjagt, kann ueberraschend leicht zerbrechen, habe ich gemerkt... // und danach ist es irgendwie einfach zu traurig... // Weisst du! Schon das blosse Atmen macht mich niedergeschlagen, und meine Gelenke tun weh...
+E2006.5	Tante	Mit deinen Noten ist es doch gar kein so schwerer Traum, // auf die Oberschule zu kommen, oder?
+E2006.6	Onkel	Wie? Das ist aber etwas kraenkend.
+E2006.7	Moe	Denn ueber die Dinge, die mich quaelen, sind in der Welt der Erwachsenen wie euch // doch laengst alle Urteile gefaellt, nicht wahr?
+E2006.8	Onkel	Hast du Angst vor den Aufnahmepruefungen?
+E2006.9	Moe	......
+E2006.10	Onkel	Willst du mir... nicht den Grund sagen?
+E2006.11	Onkel	Ge-Gelenke?
+E2006.12	Onkel	Ja, und ausserdem... // ein Schulabschluss ist nichts, was man unbedingt braucht, um ins Leben zu gehen, // und ein Maedchen wie du, Moe, kann sich auch ohne hoehere Schule ganz natuerlich Bildung aneignen, glaube ich. // Aber wenn du dir nicht noch ein wenig Zeit nimmst, um deine Gedanken zu ordnen, // endet es am Ende in etwas, das du bereust, meinst du nicht?
+E2006.13	Moe	Aber ihr beide seid doch gemein!
+
+# --- E2060: D07 -- Saori's camp
+E2060.0	Boku	Onee-chan, du malst wohl gerne.
+E2060.1	Saori	......Ja, ich male gern.
+E2060.2	Boku	Warum?
+E2060.3	Saori	Hae? Wenn du mich fragst, warum, bringst du mich in Verlegenheit, aber... // hmm... beim Malen schult man sein Auge fuer die Dinge. // Das fuehrt auch dazu, sich selbst zu erkennen... // und ausserdem freut sich das Gehirn, wenn man etwas lange und genau betrachtet.
+E2060.4	Boku	Ist das so?
+E2060.5	Saori	Hmph, Goeren lassen sich aber auch sofort reinlegen.
+E2060.6	Saori	Ach... ich habe vergessen, die Farben nachzukaufen, die mir ausgehen.
+
+# --- E2002: G02 -- breakfast
+E2002.0	Onkel	Dass sie sogar die Oberschule aufgibt... // Papa dachte, Moe waere schon etwas erwachsener...
+
+# --- E2020: H07 -- outside the dining room
+E2020.0	Tante	Unsere Tochter ist ganz schoen stark geworden.
+E2020.1	Tante	Da sind wohl die Eltern besonders tuechtig.
+
+# --- E2012: G01 -- living room
+E2012.0	Onkel	Puh......
+E2012.1	Boku	Was ist los?
+E2012.2	Onkel	In deinem Alter // sind Papa und Mama noch perfekte Wesen, oder?
+E2012.3	Boku	Ich verstehe nicht richtig, was du meinst.
+E2012.4	Onkel	Fuer Onkel waren die eigenen Eltern... // zumindest bis Onkel ueber dreissig war, // Menschen, bei denen ich keine Schwaechen oder grossen Schwindel entdecken konnte... // In gewisser Weise waren sie fast perfekt... // Aber jetzt, wo Onkel selbst als Vater dran ist, // durchschaut mich meine fuenfzehnjaehrige Tochter einfach frontal...
+E2012.5	Boku	...Hast du verloren?
+E2012.6	Onkel	Kann sein... // Aber vielleicht sind Eltern zu jeder Zeit so.
+E2012.7	Onkel	Heute fuehlt sich sogar der Wind, der ueber die Veranda weht, irgendwie halbherzig an...
+
+# --- E2010: H26 -- the workshop
+E2010.0	Onkel	Sag mal... Boku-kun, welchen Beruf moechtest du spaeter mal ergreifen?
+E2010.1	Boku	Hae? // Ich... // bin noch am Ueberlegen...
+
+# --- E2031: G16 -- Moe's bed
+E2031.0	Moe	Onee-chan hat einen furchtbar grausamen Charakter...
+E2031.1	Boku	Warum?
+E2031.2	Moe	Ach... ich bin einfach zu ehrlich.
+E2031.3	Moe	...Was soll ich nur tun?
+
+# --- E2040: H09 -- garden corner where Shirabe watches ants
+E2040.0	Shirabe	Warum arbeiten die Arbeiterameisen ohne ein Wort der Klage // Tag fuer Tag fuer die Ameisenkoenigin?
+E2040.1	Boku	Woher soll ich das wissen?
+E2040.2	Shirabe	Hehe... Shirabe weiss es.
+E2040.3	Boku	......
+E2040.4	Shirabe	Weil die Ameisenkoenigin das einzige Maedchen im ganzen Bau ist!
+
+# --- E2041: G06 -- TV room
+E2041.0	Boku	He, hat der Fernseher... wirklich nur drei Programme?
+E2041.1	Shirabe	Hae? Gibt es bei dir etwa noch mehr?
+E2041.2	Shirabe	Dabei sind es bei uns sogar schon mehr Programme geworden...
+
+# --- E2004: G02 -- after dinner (Saori comes for a bath)
+E2004.0	Onkel	Gochisosama deshita.
+E2004.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E2004.2	Saori	Yusaku-san, Kaa-san, ich bin gekommen, um mir das Bad auszuleihen.
+E2004.3	Saori	Kaa-san, entschuldigen Sie die spaete Stoerung.
+E2004.4	Tante	Schon gut. Fuehlen Sie sich wie zu Hause und lassen Sie sich Zeit im Bad.
+E2004.5	Saori	Vielen herzlichen Dank.
+E2004.6	Saori	Nanu? Angenehm...
+E2004.7	Tante	Das ist der Sohn meines grossen Bruders. Seine Mutter ist hochschwanger, deshalb passen wir auf ihn auf...
+E2004.8	Boku	...I-ich bin Boku.
+E2004.9	Saori	Ach, ich bin Saori. Guten Abend! Hehe... was fuer ein Suesser.
+E2004.10	Boku	Ein Suesser?
+E2004.11	Shirabe	Hehe, was fuer ein Suesser.
+E2004.12	Saori	Hey, Boku-kun, du sitzt ja auf dem Geburtstagsplatz! Nicht schlecht!
+E2004.13	Boku	Nicht schlecht?
+E2004.14	Shirabe	Da ist jemand ganz zaappeliiig...
+# NOTE E2004.12: Der "Geburtstagsplatz" ist der Ehrenplatz am Kopfende des Tisches, an dem das Geburtstagskind sitzt.
+
+# --- E2061: G04 -- washroom / bath
+E2061.0	(voice only)
+E2061.1	Saori	Nanu, wer ist denn da? Entschuldigung, ich bin gerade drin.

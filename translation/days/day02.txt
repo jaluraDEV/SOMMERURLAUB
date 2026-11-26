@@ -1,0 +1,112 @@
+# Day 2 - August 2. Boku is made morning-glory captain; the workshop; the secret base and the
+# wrecked watermelon, and he says nothing at dinner (PLAN TRN-04).
+# Every event whose id is E02xx (day = id / 100), in the order the game plays them - except
+# E0221, the guess-the-dinner game, which is day-independent by condition, reachable on day 1,
+# and translated in shared.txt (each event is translated once, days/README.md). E0205 (the
+# beehive) is day-independent by condition too - it needs the fishing rod, so day 3 at the
+# earliest - but nothing else holds it, so it is here. No E02xx event hands over to an event
+# outside the day: E0205 hands over to map B05 and E0255 to the close-up I04 and back, map
+# changes with no event (scene JSON "handovers"). The day's dinner opens with the shared chorus
+# E0009 (shared.txt) after the dinner call E0190 (day01.txt); breakfast opens with E0006, the
+# 7:00 chorus, which is day-independent, not reachable on day 1, and not yet translated in any
+# file - it belongs in shared.txt, not here. E0202 evidently stands in for the generic
+# after-breakfast E0007 (same hour, same map, same opening lines; EVVER puts EV0202 on the day).
+# Format: translation/days/README.md. Policies: style-guide.md, glossary.md, bible.md § 4
+# (day 2).
+#
+# Morning: E0202 (after breakfast, forced, 8:00), then free time - E0220 (the washing, before
+# 14:00), E0207 (the trellis, no text), E0210 (the workshop, before 16:00), E0254 / E0255 (the
+# secret base, days 2-4), E0206 (the fallen bridge), E0205 (the beehive, listed with the forest
+# events). Afternoon: E0212 (the living room, 16:00-17:00), E0240 (Shirabe in the garden,
+# before 18:00). Evening: E0204 (after dinner, forced), E0213, E0241.
+
+# --- E0202: G02 -- dining room, after breakfast
+E0202.0	Onkel	Gochisosama deshita.
+E0202.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E0202.2	Tante	He, Boku-kun, magst du Blumen?
+E0202.3	[SEL]	Ja | Nein
+E0202.4	Tante	Hmm, verstehe. Also dann...
+E0202.5	Onkel	Boku-kun, hiermit ernenne ich dich zum Prunkwinden-Kapitaen!
+E0202.6	(voice only)
+E0202.7	Tante	Geh von hier in den Garten und links um das Haus herum, // da steht ein Prunkwinden-Spalier, das giess bitte jeden Tag. // Bald bluehen dort viele schoene Blumen.
+E0202.8	Erzaehler	Und so wurde ich zum Prunkwinden-Kapitaen ernannt.
+
+# --- E0220: H06 -- garden off the veranda, the washing line
+E0220.0	Tante	Wolkenloser Himmel! // Im Hochsommer Waesche waschen fuehlt sich doch immer herrlich an!
+E0220.1	Boku	Hmm.
+E0220.2	Tante	Besonders an so einem schoenen Tag wie heute... // wenn ich einen ganzen Berg Waesche aufhaenge, // als wuerde ich die Flaggen der Familie Sorano hissen und meine Hausfrauenkraft zur Schau stellen... // da ueberkommt mich als Frau so ein seltsames, stolzes Gefuehl...
+E0220.3	Boku	Was soll das denn heissen...
+E0220.4	Tante	Hm-hm. Aber wenn du mal heiratest, Boku-kun... // und selbst Gelegenheit hast, viel Waesche aufzuhaengen, // verstehst du es vielleicht ein kleines bisschen.
+E0220.5	Boku	Meinst du?
+E0220.6	Tante	Allerdings nur, wenn du ein oooordentlicher // Ehemann wirst, der seiner Frau zur Hand geht.
+E0220.7	Tante	Hm-hm... Es waere wohl ein trauriges Leben, das nie zu begreifen.
+E0220.8	Tante	Uebrigens, hier scheint jemand zu sein... // der sein Versprechen von heute Morgen noch nicht erfuellt hat...
+E0220.9	Tante	Ach ja, Boku-kun... wenn du als Prunkwinden-Kapitaen durchhaeltst und es nicht vergisst, // bekommst du von Tante vor dem Ende der Sommerferien ein Geschenk!
+
+# --- E0207: the morning-glory trellis (H05), from day 2 once appointed. No text - the spigot
+#     and the watering animation; it sets flag 6 (watered today).
+
+# --- E0210: H26 -- the workshop
+E0210.0	Onkel	Hallo.
+E0210.1	Onkel	Boku-kun! Das ist Onkels Werkstatt. // Na? Ein ganz interessanter Ort, oder... // Die Werkstatt traegt den Namen dieser Gegend und heisst Tsukiyono-Brennofen. // Hier knete ich den Ton und drehe an der Toepferscheibe.
+E0210.2	Onkel	Der grosse Ofen ein Stueck weiter Richtung Bach heisst Hangofen, // und dort halten wir einen Tag und eine Nacht lang das Feuer am Brennen, um die Keramik fertigzustellen.
+E0210.3	Boku	Hae? Zuendest du ihn vielleicht an, waehrend ich hier bin?
+E0210.4	Onkel	Hmm, im Sommer wird es beim Brennen heiss, deshalb moechte ich es in Wahrheit nicht machen, // aber bis Ende August sammelt sich wohl einiges zum Brennen an, // also werde ich ihn dann anheizen muessen.
+E0210.5	Boku	Darauf freue ich mich irgendwie.
+E0210.6	Onkel	Onkel freut sich auch darauf, bis auf die Hitze.
+E0210.7	Onkel	Nanu, du bist ja noch hier. // Bei Onkel zu Hause gibt es neben der Veranda ein Hintertor, // von dort kommst du ueber die Bruecke hinaus in die Berge. // Kinder sollen draussen in der Natur spielen. // Nachts sind die Berge gefaehrlich, deshalb ist dort nur tagsuber geoeffnet.
+
+# --- E0254: A17 -- approach to the secret base
+E0254.0	Erzaehler	Es war wohl der Ort, an dem sich die Bengel der Gegend sonst herumtrieben... // das sogenannte Geheimversteck.
+# --- E0255: A18 -- inside the secret base; I04 -- close-up
+E0255.0	Boku	Was ist das denn hiiier?
+E0255.1	Erzaehler	Es waren die Ueberreste von Wassermelonen, die die Melonendiebe aufgegessen und verstreut hatten...
+
+# --- E0206: A16 -- the fallen bridge
+E0206.0	Boku	Nanu... Hier komme ich ja gar nicht weiiiter.
+E0206.1	Boku	Wenn ich diesen Baum faelle, kann ich vielleicht eine Bruecke bauen?
+
+# --- E0205: A13 -- the beehive
+E0205.0	Boku	Whoa!
+E0205.1	Erzaehler	Das grosse Wespennest schwankte hin und her... // Es sah so aus, als wuerde es nach ein paar weiteren Stupsern mit der Angelrute zu Boden fallen...
+E0205.2	Boku	Geschafft!
+
+# --- E0221: the kitchen (G03), 14:00-17:00, the guess-the-dinner game - in shared.txt (its
+#     condition admits every day but 15 and 30, day 1 included). Not repeated here.
+
+# --- E0212: G01 -- living room
+E0212.0	Onkel	Um diese Uhrzeit hat Onkel immer schon Feierabend gemacht und ist nach Hause gekommen. // Aber die Werkstatt bleibt bis kurz vor dem Abendessen aufgeschlossen, // also geh nicht hinein, wenn Onkel nicht da ist, klar?
+E0212.1	Onkel	Du hast die Prunkwinden heute offenbar ordentlich gegossen. Danke fuer deine Muehe. // Vergiss es bitte auch ab morgen nicht.
+
+# --- E0240: H09 -- garden corner where Shirabe watches ants
+E0240.0	Shirabe	Warum bist du hergekommen?
+E0240.1	Boku	......
+E0240.2	Shirabe	Wenn dir etwas zustoesst, ist das nicht meine Schuld.
+E0240.3	Boku	Hae? Wieso?
+E0240.4	Shirabe	Verrate ich niiicht.
+E0240.5	Shirabe	Shirabe spielt naemlich gern allein, also lass sie gefaelligst in Ruhe!
+E0240.6	Boku	......
+
+# --- E0204: G02 -- dining room, after dinner
+E0204.0	Onkel	Gochisosama deshita.
+E0204.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
+E0204.2	Onkel	Uebrigens treiben die Melonendiebe in letzter Zeit wieder ihr Unwesen. // Wenn es noch schlimmer wird, brauchen wir vielleicht eine Wache.
+E0204.3	Onkel	Boku-kun, sag mir bitte Bescheid, wenn du etwas siehst.
+E0204.4	Erzaehler	Was damals beim Geheimversteck geschehen war... // das verschwieg ich meinem Onkel aus irgendeinem Grund.
+
+# --- E0213: G01 -- living room
+E0213.0	Boku	Onkel... // wenn du die Melonendiebe faengst, was machst du dann mit ihnen?
+E0213.1	Onkel	Hmm, was wohl? Onkel hat als Kind selbst mal welche gestohlen...
+E0213.2	Boku	Waaas?! // Du warst auch mal ein Dieb, Onkel?
+E0213.3	Onkel	He, he, drueck dich nicht so schlimm aus... // Was wir geklaut haben, war nichts Grosses wie eine Wassermelone. // Ja, so eine konnte man ganz allein auf einmal verputzen. // Huebsche kleine Dinger, die wir damals Ajiuri nannten.
+E0213.4	Tante	Ist das nicht...
+E0213.5	Tante	das, was man heute eine Melone nennt?
+E0213.6	Boku	Das ist ein Verbrechen.
+E0213.7	Onkel	Red doch bitte nicht gleich so furchtbar daher.
+# NOTE E0213.3: Ajiuri, eine kleine suesse Melone; die naechsten beiden Zeilen erklaeren es (Glossar § 5).
+
+# --- E0241: G06 -- TV room
+E0241.0	Shirabe	Ohje, ich habe Hunger... // dabei habe ich doch gerade erst gegessen...
+E0241.1	Boku	Was isst du denn gern?
+E0241.2	Shirabe	Wie bitte! Wo eine Dame doch gerade einen eleganten Moment nach dem Essen geniesst!
+E0241.3	Shirabe	Ich habe gesagt, lass Shirabe in Ruhe!

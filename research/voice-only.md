@@ -1,0 +1,187 @@
+# Voice with no text on the disc (PLAN `VO-01`, `FMV-02`)
+
+Measured 2026-09-22 on the dump of [disc-recon.md](disc-recon.md). What each clip *says* is
+[`data/voice-only.tsv`](data/voice-only.tsv)'s `said` column, in English; the Japanese heard
+lives only under `work/voice/` (CLAUDE.md). How the English reaches the screen is `VO-02`
+(events), `VO-03` (the endings) and `FMV-04` (movies); what the translation files are is
+[translation/voice-only.md](../translation/voice-only.md).
+
+## Where speech without text comes from
+
+`__STR/BOKU_XA.XAM` (LBA 54417, 96,453 sectors) is 16-way interleaved XA, 37.8 kHz 4-bit
+mono, 4,032 samples a sector. Three things name clips in it, all with the same 12-byte key
+`{u32 start, u32 end, u8 channel, u8 file, u16 0}` ([event-scripts.md](event-scripts.md) §
+Voice key):
+
+| source | rows | distinct clips | what |
+|---|---:|---:|---|
+| event `XA` instructions (opcode `0x0F`) | 115 | 63 | a voice or sound played with no text; every null text entry is named by exactly one |
+| `g_xa_clips` (`BOKU_XA.XCH`, `u32 48` + 48 keys, loaded by `xa_init` `0x8002AFB4` — [loading-and-memory.md](loading-and-memory.md)) | 48 | 48 | clips native code plays by index: the boys' bug-sumo lines, the first night's narration, the five epilogues |
+| event `XAMSG` keys | — | 2,100 | voiced lines *with* text; not in this table (no key is shared with an `XA`; the two sets are the 2,163 of event-scripts.md) |
+
+`./make.sh voice-only` writes one row per event `XA` (`line_id` `E<event>.<message>`, the id
+the day files' `(voice only)` rows carry) and one per `g_xa_clips` record (`XCH.<index>`).
+
+**Nothing else in the XAM is a clip.** Every file-2/3 audio sector is named by one of those
+keys except 257 sectors in 13 short runs (§ Unreferenced runs lists the 12 of 4 sectors
+or more). File number 1 (9,370 sectors)
+is mastering filler, not content: 2-sector gaps between clips, and at the tail each channel's
+last 100 sectors (10.67 s) repeated until the file ends — measured byte-identical at a lag of
+exactly 100 sectors on all 14 channels that have a tail. Whisper over the tail therefore
+"hears" the end of an epilogue four times over.
+
+### Reconciling the counts quoted elsewhere
+
+* **115** `XA` instructions = 115 distinct null-text messages (every one reachable, each
+  named once); they play **63** distinct keys, so `same_clip_as` names the rows sharing one.
+* **446** null-text entries ([text-format.md](text-format.md)) counts *stored copies*: the
+  same event block sits in several map variants. `copies` is that count per row, and it sums
+  to 446 (a test counts it from the blocks independently).
+* **108** ([event-scripts.md](event-scripts.md) § Speakers) is the rows whose `speaker` is
+  `VOICE` — no character's mouth moves (slot 255, or slot 22, which names no one). The other
+  7 flap a group's mouths: 5 `ALL`, 1 `GUTS+FAT+MEGANE`, 1 `BOKU+GUTS+FAT+MEGANE`.
+
+### Columns
+
+| column | from |
+|---|---|
+| `line_id`, `node` | the message and the instruction's pc (`boku.events`); `XCH.nn` and `BOKU_XA.XCH[n]` for `g_xa_clips` |
+| `day` | the event id's day (`EventWorld.when`); blank for ids that carry none and for events whose condition names its own day |
+| `speaker`, `slot` | `EventWorld.speaker` and operand `@6`; `-` for `g_xa_clips`, which has no operand |
+| `xa_file`, `channel`, `start`, `end` | the key; `start`/`end` are sectors of `BOKU_XA.XAM` |
+| `sectors`, `seconds` | the clip's own sectors, both ends included: `(end − start) / 16 + 1`, × 4,032 / 37,800 |
+| `copies` | stored block copies of the event holding this null entry (1 for `g_xa_clips`) |
+| `same_clip_as` | other rows with an identical key |
+| `said`, `notes` | **by hand**, carried across a regeneration: `wordless` or an English gist |
+
+## Unreferenced runs
+
+File-2/3 audio no key names (sector ranges of `BOKU_XA.XAM`, channel = `start % 16`). None of
+them is played (§ Nothing plays them, below).
+
+| sectors | file | heard (plain pass; none of these was decoded gated) | Jay, by ear (2026-09-24) |
+|---|---:|---|---|
+| 3387–3643 | 2 | words: "maybe it's reaching the end of its life" — the same words the plain pass hears over the opening movie's music at 41 s | the ASR is right; where it plays not known |
+| 10652–10748 | 2 | nothing (stock line) | the jingle when Boku is given a new role |
+| 10721–10945 | 3 | words: "thank you for the meal" | everyone's *gochisōsama deshita*, voices overlapping |
+| 10813–10957 | 2 | words: "thank you for the meal" | Uncle's *gochisōsama deshita*, alone |
+| 28925–29005 | 3 | words: "huh?" | *are?* or *ore*; where it plays not known |
+| 29041–29361 | 3 | words: "what's this?" | the ASR is right: Boku asking about something; where not known |
+| 61999–62463 | 2 | laughter | laughter; where not known |
+| 76910–77134 | 3 | a word, uncertain ("welt") | the aunt talking; the ASR is right |
+| 88162–88738 | 3 | nothing (stock line) | a car starting |
+| 88276–88324 | 3 | nothing (stock line) | a clock or a light switching on |
+| 88787–90131 | 2 | nothing (stock line) | a car driving |
+| 89437–89533 | 3 | nothing (stock line) | wordless, not identified |
+
+### Nothing plays them (PLAN `VO-08`, 2026-09-24)
+
+Jay took the seven with a voice for lines heard in play, from map interactions played by a
+reference not yet decoded, and the well's narration for the same. Measured, there is no such
+reference:
+
+* **Every key the XA code reads comes from a block or `g_xa_clips`.** `xa_play`
+  (`0x8002B3E4`) holds the only `CdControl(CdlSetfilter)` (`0x8002B458`), so it alone picks
+  the channel a clip plays on; it records the key in the current-key pointer `0x800357AC`.
+  Two pre-seek routines write that pointer too, setting no filter: `0x8002B150`
+  (`g_xa_clips + 12·n`, from overlays) and `0x8002B200` (the next message's key, reached from
+  the `XSEEK` handler through `0x8002CF5C`); and the XA tick's disk-error retry
+  (`0x8002B778`) re-reads whatever key the pointer names. `xa_play` has exactly two callers:
+  `xa_play_indexed` (`0x8002B4E4`, `g_xa_clips + 12·n`) and the event voice routine
+  `0x8002CF14`, which hands it `block + entry[m].offset`, message *m*'s key in the running
+  event's block. `0x8002CF14`'s three callers take *m* from an instruction's operand byte
+  (`0x8002F4C8`, `0x8002F5AC`) or from `PROG 16`'s dinner line (`0x8003191C`,
+  `g_dinner_menu[day − 1] + 7`). No overlay calls `xa_play`, and nothing holds the address
+  of `xa_play`, `xa_play_indexed` or `0x8002CF14` as data or builds it with `lui`/`addiu`
+  (the executable and all of `BOKU.BIN`, which is stored uncompressed). The CD driver's
+  own command table (`0x80068B00`, the index `0x80049D88` takes) holds no Setfilter and no
+  ReadS, and the movie player streams only the `M*.IKI` files its table names.
+* **No key names them.** The runs are, by construction, the sectors no event key and no
+  `g_xa_clips` record covers; and no `{u32 start, u32 end}` pair of any run — file-relative
+  or offset by the XAM's LBA — occurs anywhere in the executable or `BOKU.BIN`
+  (`BOKU_XA.XCH` is 580 bytes: its count and 48 keys, nothing after them).
+* **What Jay heard is another clip.** On Beetle, day 3 after breakfast
+  (`./make.sh examine work/saves/corpus/day03.mcd G02 0`, stock disc): `E0302.0`/`.1`'s
+  *gochisōsama deshita* play the shared keys of `E0007.0`/`.1` (sectors 14–238, 15–335),
+  used by every such breakfast; the role jingle is `E0302.6`'s key 88726–89190 (3.2 s). The
+  orphans are other recordings: none of the audio sectors of 10652, 10721 or 10813 matches
+  a sector of `E0007.0`/`.1`, `E0010.0`/`.1` or `E0302.6` byte for byte.
+  Run 3387's words are the opening movie's at 41 s (`M27`, its own audio), and the uncle
+  says them again of the axe (`E0814.0`). A car in play is `E0504.0`/`E1502.7`'s clip
+  (89160–90584, the father's car); everyone laughing is `E2204.11`'s (60404–60852). The
+  well's narration is `E2405.0`, a voiced message with text (sumo.md § The well on the
+  shortcut).
+* **Where they sit says what they are.** The XAM's clips run roughly in event order, and each
+  run lies among the keys of one scene: 10652–10957 among `E0302`/`E0303` (day 3's breakfast
+  and dinner), 28925 and 29041 among `E0740`/`E0741`/`E0807`, 61999 among `E2203`–`E2206`,
+  76910 among `E2720`/`E2732`, 3387 among `E0104`/`E0171`. They are takes recorded for those
+  scenes and never used (an inference from where they sit): the game plays a shared take
+  instead (the breakfast lines), or the line was cut.
+
+So there is nothing to subtitle here: every clip the game plays from the XAM is a message's
+key or an `XCH` record. The no-text ones are the rows of this file, and each worded one has
+English (`VO-04`); the rest are lines with text, which the script translation covers.
+
+## The movies' audio and the frame a cue keys to
+
+`./make.sh voice-only` also decodes the audio of the movies `movies.tsv` marks `VOICE`
+(`M27`, `M28`, `M60`, `M120`, `M260`) from the `.IKI` extent with ffmpeg's `psxstr` demuxer
+to `work/voice/movies/<file>.wav`. Measured on all five: slot *j* (10 sectors, 0-based) of the
+extent carries STR header frame *j* + 1, and the last 5 slots repeat the stop frame
+([movies.md](movies.md) § 1). The first audio sector is extent sector 7, and ffmpeg puts the
+audio's t = 0 there (its packets are stamped 0, 0.0533, 0.1067 s — 8 sectors apart — on
+`M120`). So a time *t* seconds into that WAV is on screen as header frame
+`floor(15 (t + 7/150)) + 1`, computed exactly (`boku.voice.header_frame`) — the number
+`FMV-04`'s hook compares. Frame values in `work/voice/` use it.
+
+## The listening pass
+
+`./make.sh voice-only --transcribe` runs whisper.cpp large-v3, Japanese, twice over every
+clip and movie ([tooling-setup.md](tooling-setup.md) § XA): once plain and once behind the
+Silero voice-activity gate. They fail in opposite directions, which is why both:
+
+* **Plain, over a clip with no speech, Whisper invents a stock line** — the closing phrases
+  of subtitled web video ("thanks for watching", "please subscribe", a subtitler's credit)
+  over a sound effect, music or near-silence. 34 of the 63 event clips drew one; the gated
+  pass left 31 of those empty and heard a cat's mew or the stock line again in the rest.
+* **Gated, a shout under half a second is dropped** — `XCH.06`'s one-word cheer (0.34 s)
+  came back empty gated and correct plain.
+* Without `-mc 0` (no text carried between 30 s windows) large-v3 locked onto one line and
+  repeated it for the rest of `M28`'s song; the tool always passes it.
+
+A row was marked by reading both passes against the scene around it (the lines before and
+after in play order, from `disc/script/`). Speech Whisper transcribed cleanly in both passes
+is taken as speech; a stock line plain and nothing gated is taken as wordless; the rest was
+decided from context and says so in `notes`.
+
+### What was found (2026-09-22)
+
+* **Event `XA` rows: 16 of 115 have words** (16 distinct clips: 12 broadcasts and 4
+  voices): the high-school baseball commentary and results on the television (`E0305.0`–`.4`,
+  day 3; 3.8 minutes), the August 6 / 9 / 15 news (`E0606.0`, `E0905.1`, `E1505.0`), the
+  evening news items and a drama narrator's line (`E4052.2`–`.5`), three voices on Saori's
+  recorder (`E1861.30`–`.32`), and one remembered line about the vice-principal's buried
+  treasure (`E2305.0`). The other 99 are wordless: laughter, the howl, Ken-bō, Nora, the
+  camera, doors, jingles, bath and drink sounds, the monk's sutra (not transcribed; liturgy).
+  `E2330.11` and the four rows sharing its clip are page turns, no voice (Jay, by ear,
+  2026-09-24) — not Moe reading the English letter aloud.
+* **`g_xa_clips`: 46 of 48 have words.** `XCH.00`–`.32` and `.35`–`.40` are the bug-sumo
+  lines (challenge, trade, cheer, win, lose, in the boys' voices; 39 clips), `XCH.33` a cheer; `XCH.34` is the
+  adult narrator's "and so the first day of that summer vacation came to an end" — the
+  voice-over going to sleep on day 1 that opened `VO-01`; **`XCH.41`–`.45` are the five
+  epilogues** (28–49 s each; which is which is in `said`). `XCH.46`/`.47` are a click and
+  beeps. `ENDOTI` plays `41 +` the ending number in `0x80035F42` (`0x80079BE4`;
+  [event-scripts.md](event-scripts.md) § Native clips); `ENDOTI.OVL` holds no key.
+* **Movies**: `M27` is 60 s of music, the opening monologue from 70 s to 181 s (16 segments; one
+  short voice at 41 s is uncertain),
+  then the theme song from 202 s; `M28` is music, one narrated sentence at 64–69.5 s, then the
+  theme song and the credits; `M60`, `M120`, `M260` are one to three narrated sentences each
+  (`M120`'s sentence runs on past the movie's end). The songs are transcribed and marked
+  `song`; they are subtitled (Jay, 2026-09-23; research/movies.md § 11).
+* **The well narration Jay heard** is not voice-only: it is `E2405.0`, a voiced message with
+  text, played the second time the shortcut's well (`E08`) is examined
+  ([sumo.md](sumo.md) § The well on the shortcut). `E8062` is the other well, `B06`.
+
+Where the Japanese is: `work/voice/voice-only.asr.tsv` (both passes and the neighbouring
+lines, per row), `work/voice/reviewed/` (the corrected transcripts), `work/voice/movies/`
+(`<file>.asr.tsv` / `.vad.asr.tsv`, timed, with 1-based frames).
