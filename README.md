@@ -51,7 +51,8 @@
 1. Lade das `.zip`-Archiv aus den **[Releases](../../releases)** herunter und entpacke es.
 2. Lege die Datei `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.0.0.ppf` in **denselben Ordner** wie dein japanisches Original-Spiel (z. B. `Boku no Natsuyasumi.bin` + `.cue`).
 3. **Benenne die `.ppf`-Datei exakt genauso wie deine `.bin`/`.img`-Datei** (z. B. `Boku no Natsuyasumi.ppf`) – die Dateiendung `.ppf` bleibt dabei erhalten.
-4. Starte das Spiel ganz normal in **DuckStation** – der Deutsch-Patch wird automatisch beim Laden angewendet (alternativ in DuckStation per Rechtsklick auf das Spiel → *Eigenschaften* → *Patches* auswählen).
+4. Öffne in **DuckStation** die **Einstellungen → Konsole** und setze dort den Haken bei **„Image-Patches anwenden“** (*Apply Image Patches* – ist standardmäßig **aus**!). *(Hinweis: Der Reiter „Patch-Dateien“ in den Spieleigenschaften ist nur für Cheat-Codes, nicht für `.ppf`-Dateien.)*
+5. Starte das Spiel ganz normal über die `.cue` (oder `.chd`) in **DuckStation** – der Deutsch-Patch wird automatisch beim Laden angewendet.
 
 ### Methode 2: Mit GUI-Tool (`Delta Patcher` / `MultiPatch` – für alle Emulatoren)
 
