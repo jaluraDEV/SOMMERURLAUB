@@ -13,7 +13,7 @@
   <a href="../../releases"><strong>Patch herunterladen (Releases)</strong></a> ·
   <a href="#installation--anleitung">Anleitung</a> ·
   <a href="#pruefsummen-sha-1">Pruefsummen</a> ·
-  <a href="#lizenzen--credits">Lizenzen &amp; Credits</a>
+  <a href="#licenses--credits">Licenses &amp; Credits</a>
 </p>
 
 ---
@@ -62,10 +62,10 @@
 
 ---
 
-## Lizenzen & Credits
+## Licenses & Credits
 
-Dieses Projekt basiert auf dem englischen Uebersetzungsprojekt **[jeapostrophe/boku-ps1](https://github.com/jeapostrophe/boku-ps1)** von **Jay McCarthy** (inkl. der dort dokumentierten Vorarbeiten und Credits an `pleonex`, `HilltopWorks`, `GriffithVIII`, `psyouloveme`, `KendritPy` und `snake7594`, siehe [research/related-projects.md](research/related-projects.md)). Fuer **Projekt SOMMERURLAUB** wurden die gesamte Uebersetzung, das Glossar, die Stilbibel, Teile der Linter-/Pipeline-Regeln sowie die Texturen komplett ins Deutsche uebertragen und angepasst.
+This project is based on **[jeapostrophe/boku-ps1](https://github.com/jeapostrophe/boku-ps1)** by **Jay McCarthy** (including the foundational research and credits to `pleonex`, `HilltopWorks`, `GriffithVIII`, `psyouloveme`, `KendritPy`, and `snake7594`; see [research/related-projects.md](research/related-projects.md)). For **Projekt SOMMERURLAUB**, the entire script, glossary, style guide, pipeline/linter rules, and textures were translated and adapted into German.
 
-Es gilt die **Dual-Lizenz** des Basis-Projekts:
-- **Code, Build-Tools, Skripte & Assembly-Patches:** [MIT-Lizenz](LICENSE) ([opensource.org/licenses/MIT](https://opensource.org/licenses/MIT))
-- **Uebersetzungsskript & Kontext-Notizen (`translation/`):** [CC BY-SA 4.0](LICENSE-translation) ([creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/))
+The **dual license** of the upstream project applies:
+- **Code, build tools, scripts & assembly patches:** [MIT License](LICENSE) ([opensource.org/licenses/MIT](https://opensource.org/licenses/MIT))
+- **Translation script & context notes (`translation/`):** [CC BY-SA 4.0](LICENSE-translation) ([creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/))
