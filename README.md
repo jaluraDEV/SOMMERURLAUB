@@ -46,15 +46,36 @@
 
 ## Installation & Anleitung
 
-1. **Eigenen Dump der japanischen Original-CD (`SCPS-10088`) bereitstellen** (`.bin` / `.img` + `.cue`). Falls ein `.chd` vorliegt, vorher mit `chdman` entpacken.
-2. **SHA-1-Prüfsumme prüfen:** Der unmodifizierte Original-Dump muss exakt den Redump-SHA-1 `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` haben.
-3. **Patch anwenden:**
-   - **Mit `xdelta3` / MultiPatch (empfohlen):** Das Archiv aus den [Releases](../../releases) entpacken und die `.xdelta`-Datei auf dein Original-Image anwenden:
-     ```bash
-     xdelta3 -d -s "Boku no Natsuyasumi (Japan).bin" "Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.0.0.xdelta" image.img
-     ```
-   - **Mit DuckStation (PPF-On-the-Fly):** Alternativ die enthaltene `.ppf`-Datei in DuckStation als Patch hinterlegen oder fest patchen.
-4. **Spielen:** Die beiliegende `image.cue` (zusammen mit der gepatchten `image.img`) in **DuckStation** oder **RetroArch (Beetle PSX)** laden.
+### Methode 1: DuckStation (am einfachsten – ohne Zusatzprogramm)
+
+1. Lade das `.zip`-Archiv aus den **[Releases](../../releases)** herunter und entpacke es.
+2. Lege die Datei `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.0.0.ppf` in **denselben Ordner** wie dein japanisches Original-Spiel (z. B. `Boku no Natsuyasumi.bin` + `.cue`).
+3. **Benenne die `.ppf`-Datei exakt genauso wie deine `.bin`/`.img`-Datei** (z. B. `Boku no Natsuyasumi.ppf`) – die Dateiendung `.ppf` bleibt dabei erhalten.
+4. Starte das Spiel ganz normal in **DuckStation** – der Deutsch-Patch wird automatisch beim Laden angewendet (alternativ in DuckStation per Rechtsklick auf das Spiel → *Eigenschaften* → *Patches* auswählen).
+
+### Methode 2: Mit GUI-Tool (`Delta Patcher` / `MultiPatch` – für alle Emulatoren)
+
+Ideal, wenn du ein dauerhaft gepatchtes Image für **RetroArch (Beetle PSX)**, **DuckStation** oder andere Emulatoren erstellen möchtest:
+
+1. Lade ein kostenloses GUI-Patch-Tool herunter:
+   - **Windows / Linux:** [Delta Patcher](https://github.com/marco-calautti/DeltaPatcher/releases)
+   - **macOS:** [MultiPatch](https://projects.saphenko.com/multipatch/)
+2. Falls dein Original-Spiel als `.chd` vorliegt, entpacke es vorher mit `chdman` zu `.bin` + `.cue`.
+3. *(Empfohlen)* Prüfe die SHA-1-Prüfsumme deines Original-Dumps: Sie muss exakt `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` lauten.
+4. Öffne das Patch-Tool:
+   - **Original file:** Deine japanische Original-`.bin`/`.img`-Datei auswählen.
+   - **XDelta patch:** `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.0.0.xdelta` aus dem entpackten ZIP auswählen.
+   - Auf **Apply patch** klicken.
+5. Benenne die fertig gepatchte Datei in `image.img` um, lege sie in denselben Ordner wie die beiliegende `image.cue` und öffne `image.cue` in **DuckStation** oder **RetroArch (Beetle PSX)**.
+
+<details>
+<summary>Alternative für Terminal-Nutzer (xdelta3 CLI)</summary>
+
+```bash
+xdelta3 -d -s "Boku no Natsuyasumi (Japan).bin" "Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.0.0.xdelta" image.img
+```
+
+</details>
 
 ---
 
