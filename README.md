@@ -30,12 +30,17 @@
 
 ---
 
-## Rechtlicher Hinweis
+## Rechtlicher Hinweis / Legal Notice
 
 > **Rechtlicher Hinweis:**  
 > *Boku no Natsuyasumi* (ぼくのなつやすみ, PS1, `SCPS-10088`, 2000) ist © **Sony Interactive Entertainment** (ursprünglich Sony Computer Entertainment Inc.) und entwickelt von **Millennium Kitchen**.  
 > **Projekt SOMMERURLAUB** ist ein unkommerzielles Fan-Übersetzungsprojekt und steht in keiner Verbindung zu Sony Interactive Entertainment oder Millennium Kitchen.  
 > Dieses Repository und die Releases enthalten **keinerlei Original-Spieldateien**. Zur Nutzung wird eine eigene Kopie (Dump) der japanischen Original-CD benötigt.
+>
+> **Legal Notice:**  
+> *Boku no Natsuyasumi* (ぼくのなつやすみ, PS1, `SCPS-10088`, 2000) is © **Sony Interactive Entertainment** (originally Sony Computer Entertainment Inc.) and developed by **Millennium Kitchen**.  
+> **Projekt SOMMERURLAUB** is a non-commercial fan translation project and is not affiliated with or endorsed by Sony Interactive Entertainment or Millennium Kitchen.  
+> This repository and its releases contain **no original game files**. A personal copy (dump) of the original Japanese disc is required to use this patch.
 
 ---
 
