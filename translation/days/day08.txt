@@ -4,7 +4,7 @@ E0811.0	Onkel	Ich habe die alte Axt im Schuppen verstaut, // aber sie ist gefäh
 E0811.1	Onkel	Oh je, mein Muskelkater.
 
 # --- E0821: G03 -- kitchen
-E0821.0	Tante	Warst du heute schon in Onee-chans Zimmer? // Onee-chan hat gesagt, ab heute ist Boku-kun freigegeben.
+E0821.0	Tante	Warst du heute schon in Onee-chans Zimmer? // Onee-chan hat gesagt: "Ab heute ist Boku-kun freigegeben."
 
 # --- E0814: H13 -- behind the workshop, the chopping block
 E0814.0	Onkel	Puh... diese Axt hat wohl bald ausgedient. // Ich bringe sie in den Schuppen und nehme eine neue.

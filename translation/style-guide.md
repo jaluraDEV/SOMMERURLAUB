@@ -143,10 +143,10 @@ Im Skript gibt es ueber zwanzig sprachabhaengige Stellen (komplett vorgeloest in
   Deutsche Labels: Boku, Onkel, Tante, Moe, Shirabe, Guts, Fat, Brille, Vater, Mönch, Junge, Frau, Saori, Erzaehler, Alle.
 * **Keine aeusseren Anfuehrungszeichen um Dialogzeilen:** Der Renderer setzt das Label und die Klammern (`Label「...」`) bzw. bei Erzaehlung `『...』` automatisch; Systemmeldungen erscheinen schlicht ohne Klammern. **Einzige Ausnahme `movies.txt`:** Weil FMV-Untertitel keinen Originaltext auf der Disc als Klammertraeger haben, tragen die Erzaehler-Untertitel dort direkt `『 』` im Text (ein Paar pro Satz, auch ueber mehrere Cues).
 * **Gerade ASCII-Anfuehrungszeichen `"..."` nur im Satzinneren:** Erlaubt sind sie fuer zitierte Woerter oder Schilder innerhalb einer Zeile (`Es wird "Gedicht" geschrieben und "Shirabe" ausgesprochen.`, `E0177.1`), **niemals** `„..."` oder `»...«` und **niemals** um eine ganze Dialogzeile. **Sonderregel fuer Texturen:** `GameFace` besitzt kein `"` und hat nur vertikale Klammern `( )` — in `GameFace`-Texturen (`diary.txt`, `ui.txt`, `signs.txt`, `sumo.txt`, `kite.txt`, `mzkan@*.name`, `tzkan@*.name`, Stein-/Abzeichen-Buttons) daher **weder `"` noch `(` / `)`** verwenden! `Bean` und `Sprout` besitzen kein `%`.
-* **Verbindliche ASCII-Umschrift (`ae/oe/ue/ss`):** Die Spielfonts arbeiten ohne Font-Umbau und kennen keine echten Umlaute, kein Eszett und keine typografischen Anfuehrungszeichen. Fuer **alle** Spieltexte gilt ausnahmslos:
-  - `ä` -> `ae`, `ö` -> `oe`, `ü` -> `ue`, `Ä` -> `Ae`, `Ö` -> `Oe`, `Ü` -> `Ue`, `ß` -> `ss`
-  - Kein echtes `ä`, `ö`, `ü`, `Ä`, `Ö`, `Ü`, `ß`, `„`, `“`, `»`, `«` oder `–` (Halbgeviertstrich) in Spielzeilen oder Glossareintraegen!
-  - **Wortstamm- und Kompositafallen beachten:** **`Raeume`** (nicht *Raueme*), **`Baeume`** (nicht *Baueme*), **`laeuft`** (nicht *lauft* oder *leuft*), **`Groesse`**, **`Strasse`**, **`Spass`**, **`heiss`**.
+* **Echte deutsche Umlaute und Eszett (seit v1.1.0):** Die Spielfonts (`placeholder-glyphs.txt`, `GameFace`, `Bean`, `Sprout`) enthalten `ä, ö, ü, Ä, Ö, Ü, ß`. Für **alle** Spieltexte gilt daher verbindlich:
+  - Echte Umlaute und Eszett (`ä, ö, ü, Ä, Ö, Ü, ß`) verwenden (nicht mehr `ae/oe/ue/ss`).
+  - **Ausnahmen:** `title@sjis:188` (Memory-Card-Titel, Shift-JIS) darf **keine** Umlaute/`ß` enthalten; `Erzaehler` bleibt als interner Sprecher-Marker unverändert.
+  - Weiterhin **verboten** bleiben typografische Anführungszeichen (`„`, `“`, `»`, `«`) und der Halbgeviertstrich (`–`) in Spielzeilen!
 * **Geteilte Aeusserungen ueber zwei Meldungen** (`E1405.1`–`.2`, `E2231.1`–`.2`, `E2303.3`–`.4`): Als einen gemeinsamen Satz in ihrer Reihenfolge uebersetzen.
 * **Normale deutsche Zeichensetzung:** Kommas und abschliessende Punkte sauber setzen.
 * **Auslassungspunkte (`...`):** Immer genau drei Punkte ohne Leerzeichen davor und mit einem Leerzeichen danach mitten im Satz (`...Neun.`). Stumme Meldungen (`……`) werden zu `......`.
@@ -191,7 +191,7 @@ Im Skript gibt es ueber zwanzig sprachabhaengige Stellen (komplett vorgeloest in
 
 ## 14. Text in Texturen
 
-* **Das Bildertagebuch** (`diary.txt`, 93 aktive Eintraege): Kurze, einfache Drittklaessler-Saetze in Bokus Stimme, fehlerfrei nach `ae/oe/ue/ss` geschrieben, **maximal 5 Zeilen**, ein Absatz (**kein ` // `**, **kein `"`**, **keine `( )`** in `GameFace`). Im eigenen Tagebuch sagt Boku fuer *isoro* **"zu Gast sein"** (`"ich bin bei Onkel und Tante zu Gast"`), nicht *"Kostgaenger"*.
+* **Das Bildertagebuch** (`diary.txt`, 93 aktive Einträge): Kurze, einfache Drittklässler-Sätze in Bokus Stimme mit echten Umlauten/`ß`, **maximal 5 Zeilen**, ein Absatz (**kein ` // `**, **kein `"`**, **keine `( )`** in `GameFace`). Im eigenen Tagebuch sagt Boku für *isoro* **"zu Gast sein"** (`"ich bin bei Onkel und Tante zu Gast"`), nicht *"Kostgänger"*.
 * **Buechercover, Kalender, Schilder** werden beim Typesetten ins Deutsche gesetzt.
 * **Vom Erzaehler vorgelesene Schilder** (`E1707.0`) werden in der Erzaehlung uebersetzt.
 * **Verwittertes Schild** (`E8060.0`): Luecken im verwitterten Text exakt beibehalten.

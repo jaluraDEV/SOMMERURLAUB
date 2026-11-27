@@ -5,10 +5,10 @@
 XCH.34	Erzaehler	Und so ging der erste Tag jener Sommerferien zu Ende.
 
 # --- XCH.41-XCH.45: die fuenf Epiloge (ENDOTI, ueber den Schlussbildern; 28-49 s).
-XCH.41	Erzaehler	Am Ende zogen beide Schwestern später in die Stadt, // schlossen Bilderbuch-Ehen und gründeten glückliche Familien. // Jetzt ist Moes älteste Tochter in der dritten Klasse der Mittelschule... // ja, sie ist schon genauso alt wie ihre Mutter damals.	5.3 12.4 17.0 21.3
+XCH.41	Erzaehler	Später zogen beide Schwestern schließlich in die Stadt, // schlossen Bilderbuch-Ehen und gründeten glückliche Familien. // Jetzt ist Moes älteste Tochter in der dritten Klasse der Mittelschule... // ja, sie ist schon genauso alt wie ihre Mutter damals.	5.3 12.4 17.0 21.3
 XCH.42	Erzaehler	Nachdem ich die Universität verlassen und rund sieben Jahre bei einem Kunstverlag gearbeitet hatte, // begann ich durch eine Fügung, kurz vor 30, // denselben Weg wie mein Onkel, den Weg der Töpferei. // Heute vertraut man mir auch schon das ganze Tonkneten an, // doch irgendwie wird mir an der Scheibe manchmal noch schwindlig.	7.0 10.1 16.2 20.7 26.4
-XCH.43	Erzaehler	Volle fünfundzwanzig Jahre sind seit jenem Sommer schon vergangen. // Heute arbeite ich bei einem großen Elektronikkonzern, // schreibe meist Steuerprogramme für Funkgeräte und fertige Entwürfe an. // Weiße Trennwände und grauer Teppich; // das kalte Leuchtstofflicht, das rund um die Uhr nicht schläft. // In einem öden Büro, unter engem Zeitplan, // stelle ich sie mir manchmal vor: // wie ich im starken Sonnenlicht, den Schweiß im Nacken spürend, // über die Hügel und Felder rannte... // jene Tage jenes Sommers.	8.3 12.0 18.2 21.5 25.9 29.4 31.6 35.9 38.2 41.7
-XCH.44	Erzaehler	Das war alles, woran ich mich aus jenem Sommer erinnerte. // Später wurde ich ein erfolgreicher Schriftsteller, // und heute lebe ich in einem Hotel in New York mit Blick auf die Brooklyn Bridge, // auf der Suche nach den Worten des Epilogs, der das Ende dieser Geschichte meiner Kindheit schmücken soll. // Wo ich gerade daran denke: Zum Countdown für 2001 // kommen wohl auch Shirabe und Moe nach langer Zeit aus Japan herüber. // Leb wohl, 20. Jahrhundert.	9.5 12.8 17.5 25.0 29.1 35.1 38.8
+XCH.43	Erzaehler	Volle fünfundzwanzig Jahre sind seit jenem Sommer schon vergangen. // Heute arbeite ich bei einem großen Elektronikkonzern, // schreibe meist Steuerprogramme für Funkgeräte und fertige Entwürfe an. // Weiße Trennwände und grauer Teppich; // das kalte Leuchtstofflicht, das rund um die Uhr nicht schläft. // In einem öden Büro, unter Zeitdruck, // stelle ich sie mir manchmal vor: // wie ich im starken Sonnenlicht, den Schweiß im Nacken spürend, // über die Hügel und Felder rannte... // jene Tage jenes Sommers.	8.3 12.0 18.2 21.5 25.9 29.4 31.6 35.9 38.2 41.7
+XCH.44	Erzaehler	Das war alles, woran ich mich aus jenem Sommer erinnerte. // Später wurde ich ein erfolgreicher Schriftsteller, // und heute lebe ich in einem Hotel in New York mit Blick auf die Brooklyn Bridge, // auf der Suche nach den Worten des Epilogs, der das Ende dieser Geschichte meiner Kindheit schmücken soll. // Jetzt, wo ich daran denke: Zum Countdown für 2001 // kommen wohl auch Shirabe und Moe nach langer Zeit aus Japan herüber. // Leb wohl, 20. Jahrhundert.	9.5 12.8 17.5 25.0 29.1 35.1 38.8
 XCH.45	Erzaehler	Etwa 15 Jahre nach jenen Sommerferien // wurde im Tal von Tsukiyono ein riesiger Mehrzweck-Staudamm fertiggestellt. // Dort, wo einst das Haus meines Onkels stand, // ist das Wasser in der Regenzeit 200 Meter tief. // Nichts ist mehr übrig, das an jene Tage erinnert.	5.3 12.2 15.0 18.1 24.2
 
 # --- XCH.00-XCH.33, XCH.35-XCH.40: Kaefer-Sumo-Stimmen (MUSI) und ein Jubelruf.
@@ -16,7 +16,7 @@ XCH.00	Guts	Ich trete zuerst gegen dich an.
 XCH.01	Guts	Oh, ich hab keinen. Jemand anderes vor!
 XCH.02	Guts	Sieht aus, als hätte niemand einen.
 XCH.03	Guts	Endlich schlägt die große Stunde für den hier!
-XCH.04	Guts	Okay, los!
+XCH.04	Guts	Alles klar, los!
 XCH.05	Guts	Ja, ja, ja, ja!
 XCH.06	Guts	Gib alles!
 XCH.07	Guts	Hehe, na, wie ist das!
@@ -46,9 +46,9 @@ XCH.30	Brille	Ach... verloren.
 XCH.31	Brille	Oh, ich will stärker werden.
 XCH.32	Brille	Oh, danke. Dann tauschen wir gegen den da.
 XCH.33	(unlabelled)	Juhu! Geschafft!
-XCH.35	Guts	Okay, als Nächstes bin ich dran.
-XCH.36	Guts	Wie wärs dann mit dem hier?
-XCH.37	Fat	Okay, als Nächstes ist meine Wenigkeit dran.
-XCH.38	Fat	Na gut. Wie wärs dann mit dem da?
+XCH.35	Guts	Alles klar, als Nächstes bin ich dran.
+XCH.36	Guts	Wie wär's dann mit dem hier?
+XCH.37	Fat	Alles klar, als Nächstes ist meine Wenigkeit dran.
+XCH.38	Fat	Na gut. Wie wär's dann mit dem da?
 XCH.39	Brille	Als Nächstes bin ich dran, hm.
 XCH.40	Brille	Geht dann vielleicht dieser hier?

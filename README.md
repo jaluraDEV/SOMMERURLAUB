@@ -85,7 +85,7 @@ xdelta3 -d -s "Boku no Natsuyasumi (Japan).bin" "Boku_no_Natsuyasumi_DE_SOMMERUR
 | Version | Original-Dump (vorher) | Gepatchtes Image (nachher) |
 |---|---|---|
 | Original (`SCPS-10088`) | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` |
-| **SOMMERURLAUB v1.1.0** | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` | `c08431a6b9c8d35547e28cd0aec3639c580d14eb` |
+| **SOMMERURLAUB v1.1.0** | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` | `2ab7298f3ebd33f71b93664923be57a3c2093f13` |
 | **SOMMERURLAUB v1.0.0** | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` | `eaddd03ef086c2af85c627c8af81b3edbe5a65f3` |
 
 ---

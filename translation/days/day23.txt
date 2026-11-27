@@ -10,8 +10,8 @@ E2360.6	Saori	Was denn?
 E2360.7	Boku	dann stechen dich die Mücken.
 
 # --- E2320: H10 -- the garden corner
-E2320.0	Tante	Boku-kun... Bokus Sommerferien haben auch nur noch eine Woche übrig. // Mach schnell all das, was du noch machen willst, solange du kannst!
-E2320.1	Tante	Tante hätte auch gern Sommerferien, und wenn es nur ungefähr eine Woche wäre.
+E2320.0	Tante	Boku-kun... von Bokus Sommerferien ist auch nur noch eine Woche übrig. // Mach schnell all das, was du noch machen willst, solange du kannst!
+E2320.1	Tante	Tante hätte auch gern Sommerferien, und wenn es auch nur etwa eine Woche wäre.
 # NOTE E2320.0: Die Titelphrase des Spiels im Dialog (Stilbibel § 1).
 
 # --- E2312: G01 -- living room
@@ -49,7 +49,7 @@ E2331.1	Moe	Komisch... irgendwie macht es mich doch ein bisschen neugierig.
 E2331.2	Boku	Du, ich habe tief in der Höhle etwas Seltsames gefunden.
 E2331.3	Moe	Hä, waaas? // Hmm, ich bin gerade im Faulenzer-Modus, also bring es morgen Mittag her.
 E2331.4	Moe	Onee-chan ist schon ganz schläfrig...
-E2331.5	Moe	Irgendwie, nachdem ich diesen alten Brief gelesen habe... // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
+E2331.5	Moe	Irgendwie... seit ich diesen alten Brief gelesen habe, // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
 E2331.6	Boku	Aber wem gehört er denn?
 E2331.7	Moe	Ich weiß nicht, wem, aber, hmm, wie soll ich sagen... // das muss jemand mit einem sehr warmen Herzen zurückgelassen haben...
 E2331.8	Moe	Ab morgen...

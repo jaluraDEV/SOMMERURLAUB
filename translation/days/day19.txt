@@ -73,7 +73,7 @@ E1940.6	Shirabe	Was für Süßigkeiten verkaufen sie denn?
 E1940.7	Boku	Hehe, verrate ich nicht! // Du musst es ja sowieso nicht wissen, oder?
 
 # --- E1941: G06 -- TV room
-E1941.0	Boku	He, irgendwie habe ich das Gefühl, jeden Tag laufen dieselben Sendungen?
+E1941.0	Boku	He, irgendwie habe ich das Gefühl, jeden Tag laufen dieselben Sendungen.
 E1941.1	Shirabe	Hä? Na klar.
 E1941.2	Boku	Nanu? Gibt es hier nur drei Programme?
 

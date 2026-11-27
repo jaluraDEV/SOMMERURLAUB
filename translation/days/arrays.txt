@@ -236,7 +236,7 @@ exe@80046384.0	(unlabelled)	Regenbogenforelle
 exe@80046390.0	(unlabelled)	Yamame
 
 # --- exe@80046398: item descriptions
-exe@80046398.0	(unlabelled)	Beim Grabbesuch hütete ich das Haus; da kauften sie mir die.
+exe@80046398.0	(unlabelled)	Beim Grabbesuch hütete ich das Haus; da brachten sie mir die mit.
 exe@80046398.1	(unlabelled)	Gefährlich, also dürfen Kinder sie nicht anfassen.
 exe@80046398.2	(unlabelled)	Damit sind die Ameisen erledigt! Ist das etwas gemein?
 exe@80046398.3	(unlabelled)	Lockt viele Käfer an. Mein eigenes Zuckerwasser.
@@ -253,7 +253,7 @@ exe@80046398.12	(unlabelled)	Trieb jahrzehntelang im Meer... ein Rätsel-Fund vo
 # --- exe@80046614: photo and morning-glory captions
 exe@80046614.0	(unlabelled)	Plötzlich ein Blitz im Wald... Da bin ich erschrocken.
 exe@80046614.1	(unlabelled)	Jetzt erschrecke ich nicht mehr. So ein Apparat... Bäääh!
-exe@80046614.2	(unlabelled)	Dabei dachte ich, ich hätte cooler posiert...
+exe@80046614.2	(unlabelled)	Dabei dachte ich, ich hätte lässiger posiert...
 exe@80046614.3	(unlabelled)	Schweinsnase!
 exe@80046614.4	(unlabelled)	Timing passte genau: Bitte lächeln!
 exe@80046614.5	(unlabelled)	Shirabe und ich, wir zwei. Geknipst von Tante.
@@ -297,15 +297,15 @@ hhon@5328.21	(unlabelled)	Tengu-Falter. Der Höcker sieht aus wie eine Tengu-Nas
 hhon@5328.22	(unlabelled)	Grüner Dickkopffalter. Hübsche Flügel, dicker Bauch, große Augen. Ich mag seinen Metallglanz!
 hhon@5328.23	(unlabelled)	Miyama-Hirschkäfer ♂. Buchen- und Eichensaft liebt er! Sein Kopf steht komisch ab...
 hhon@5328.24	(unlabelled)	Riesen-Hirschkäfer ♂. Der echte Hirschkäfer! Riesengroß und stark! Hirschkäfer-Kööönig!
-hhon@5328.25	(unlabelled)	Flach-Hirschkäfer. Der große Zahn innen an seinen Zangen ist typisch! Pechschwarz, glänzend. Cool...
+hhon@5328.25	(unlabelled)	Flach-Hirschkäfer. Der große Zahn innen an seinen Zangen ist typisch! Pechschwarz, glänzend. Klasse...
 hhon@5328.26	(unlabelled)	Zwerg-Hirschkäfer. Ein kleiner Kerl, aber ab und zu wird einer über 5 Zentimeter!
 hhon@5328.27	(unlabelled)	Säge-Hirschkäfer ♂. Wie sein Name, eine Säge! Seine gezackten Zangen sind typisch!
 hhon@5328.28	(unlabelled)	Rotbein-Hirschkäfer. Weidensaft liebt er. Er sitzt am Ast; schüttelt man ihn, fällt er ab.
 hhon@5328.29	(unlabelled)	Oni-Hirschkäfer. Klein und niedlich, aber sehen seine kurzen Zangen wie Oni-Hörner aus?
 hhon@5328.30	(unlabelled)	Nashornkäfer ♂. Kämpft mit nur einem Horn, zeigt aber Riesenkraft. Hirschkäfer sind nichts dagegen.
 hhon@5328.31	(unlabelled)	Heike-Glüh-würmchen. Schon als Ei und Larve leuchtet es. Ein kühles Licht: das Sommer-Glüh-würmchen.
-hhon@5328.32	(unlabelled)	Fluss-Prachtlibelle. Wohnt an Bergflüssen, mit Flügeln in Orange, Klar oder Braun.
-hhon@5328.33	(unlabelled)	Urzeitlibelle. Gibt es schon seit Fossilien-Tagen, heißt es. Wahnsinn.
+hhon@5328.32	(unlabelled)	Fluss-Prachtlibelle. Wohnt an Bergflüssen, mit orangen, klaren oder braunen Flügeln.
+hhon@5328.33	(unlabelled)	Urzeitlibelle. Gibt es schon seit der Zeit der Fossilien, heißt es. Wahnsinn.
 hhon@5328.34	(unlabelled)	Berg-Keiljungfer. Schlüpft flussabwärts im ruhigen Wasser und steigt im Sommer auf Berggipfel.
 hhon@5328.35	(unlabelled)	Oniyanma. Japans größte Libelle. Frisst sogar Bienen! Es tut weh, wenn sie beißt!
 hhon@5328.36	(unlabelled)	Silber-Königslibelle. Ihr Revier liegt rund um den Teich. Ziemlich frech für eine Libelle.
@@ -323,7 +323,7 @@ hhon@5328.47	(unlabelled)	Kusahibari. Im Sommer am Tag, im Herbst nachts singt s
 hhon@5328.48	(unlabelled)	Suzumushi. Früher hieß sie Matsumushi, heute Suzumushi. Welcher Name gefällt ihr besser?
 hhon@5328.49	(unlabelled)	Matsumushi. Früher hieß sie Suzumushi, heute Matsumushi. Eine wirre Beziehung.
 hhon@5328.50	(unlabelled)	Nii-nii-zemi. Kirsch-stämme mag sie. Sie hat einen seltsamen Gesang: chiii-iii.
-hhon@5328.51	(unlabelled)	Abura-zemi. In einem Krach wie heißes Öl, "abura", singt sie laut. Doppelt so heiß: Hochsommer!
+hhon@5328.51	(unlabelled)	Abura-zemi. Sie lärmt wie brutzelndes heißes Öl, "abura". Doppelt so heiß: Hochsommer!
 hhon@5328.52	(unlabelled)	Ezo-zemi. Mag Kiefern und Zedern. Sitzt kopfüber am Stamm und brummt ein tiefes giii.
 hhon@5328.53	(unlabelled)	Higurashi. Mag dunkle Dickichte. Abends singt sie kana-kana-kana, so traurig.
 hhon@5328.54	(unlabelled)	Min-min-zemi. Min-min-min-min, singt und singt, aber ihr Leben dauert nur zwei Wochen. Wie traurig.

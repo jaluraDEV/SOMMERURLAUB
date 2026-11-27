@@ -198,7 +198,7 @@ E6000.3	Saori	Irgendwie... na ja.
 E6000.4	Boku	Warum ist das wohl so?
 E6000.5	Saori	Es geht einfach nicht.
 E6000.6	Boku	Aber jetzt bist du auf einen Schlag berühmt, große Schwester!
-E6000.7	Saori	Haha... Dummchen. Kennst du den Nipponibis? // Da finde ich endlich einen Lebensraum der Wölfe, und darf es keinem verraten.
+E6000.7	Saori	Haha... Dummchen. Kennst du den Nipponibis? // Da finde ich endlich einen Lebensraum der Wölfe und darf es keinem verraten.
 E6000.8	Boku	...Hä?
 E6000.9	Saori	Aber warum kommt er ausgerechnet zu Zuckerwasser? // Es gibt zwar Berichte, dass sie Salz mögen...
 E6000.10	Saori	Hast du etwa bei der Kamera was angestellt?
@@ -243,7 +243,7 @@ E6004.27	Boku	......
 E6004.28	Saori	Und deshalb bin ich irgendwie eine traurige, einsame Wolke...
 E6004.29	Saori	Buh!
 E6004.30	Boku	Wah, hast du mich erschreckt!
-E6004.31	Saori	Hehe, na wie war das!
+E6004.31	Saori	Hehe, na, wie war das?
 E6004.32	Boku	Huch? Es hat wirklich geklappt.
 E6004.33	Saori	Ohh, tatsächlich.
 E6004.34	Boku	...Ja.
@@ -297,7 +297,7 @@ E8011.0	(unlabelled)	Auf dem Hausaltar sind ein wenig Reis und Süßigkeiten geo
 E8012.0	(unlabelled)	Zusammen mit ein paar Comics liegen hier Schulbücher für die dritte Klasse.
 
 # --- E8013: G14 -- Bokus Zimmer
-E8013.0	(unlabelled)	Ein zerknüllter Klassenarbeit-Zettel. Darauf steht "Sorano Shirabe".
+E8013.0	(unlabelled)	Ein zerknüllter Klassenarbeitszettel. Darauf steht "Sorano Shirabe".
 
 # --- E8015: H17 -- der Holzschuppen
 E8015.0	(unlabelled)	Neben dem Schuppen sind Bündel aus gespaltenem Feuerholz aufgestapelt.
@@ -483,7 +483,7 @@ E4001.0	Erzaehler	Das war das erste Mal, dass ich das Zimmer der Schwestern betr
 
 # --- E0906: A01 -- der Teich unter der Autobahn
 E0906.0	Boku	Huch, was ist das denn?
-E0906.1	Boku	Boah! Was zur Hölle ist das?
+E0906.1	Boku	Boah! Was zum Kuckuck ist das?
 
 # --- E0923: B07 -- ein Kaeferbaum (das zweite Foto der Tante)
 E0923.0	Boku	Huch? Das ist ja Tante.
@@ -633,7 +633,7 @@ E1504.11	Onkel	ist tatsächlich der Ohrknochen eines Wals!
 E1504.12	Boku	Hä? Von einem Wal!
 E1504.13	Onkel	Ganz genau. // Bei Säugetieren im Meer wie Walen und Delfinen // sinkt nach dem Tod der Körper auf den Meeresgrund, // aber die Ohrknochen sind nicht mit den anderen Knochen verwachsen, // deshalb lösen sie sich zuerst und werden ans Ufer gespült, heißt es.
 E1504.14	Boku	Aber kann man so etwas denn finden?
-E1504.15	Onkel	Na ja, die Chancen stehen wohl nicht besonders hoch, // aber wenn man am Ufer entlanggeht und gründlich sucht, // kann man mit Glück zwei oder drei an einem einzigen Tag finden, sagt man. // Vielleicht bekommen die Wale, die bei ihrer Entwicklung vom Land ins Meer zurückgekehrt sind, // wieder Sehnsucht nach diesem Land und kehren zurück.
+E1504.15	Onkel	Na ja, die Chancen stehen wohl nicht besonders hoch, // aber wenn man am Ufer entlanggeht und gründlich sucht, // kann man mit Glück zwei oder drei an einem einzigen Tag finden, sagt man. // Vielleicht bekommen die Wale, die bei ihrer Entwicklung vom Land ins Meer zurückgekehrt sind, // wieder Sehnsucht nach diesem Land und kommen zurück.
 E1504.16	Boku	Hmm, ach so.
 
 # --- E1605: H10 -- Gartenecke (Nora)
@@ -800,7 +800,7 @@ E1908.0	(unlabelled)	Böller gezündet.
 E1908.1	(voice only)
 
 # --- E1951: A18 -- das Geheimversteck
-E1951.0	Guts	Letzten Monat in der Schule... // hat der Lehrer nur die Mädchen zusammengerufen und irgendwas gemacht. // So lange haben die Jungs Völkerball gespielt.
+E1951.0	Guts	Letzten Monat in der Schule... // hat der Lehrer nur die Mädchen zusammengerufen und irgendwas gemacht. // Solange haben die Jungs Völkerball gespielt.
 
 # --- E1952: A18 -- das Geheimversteck
 E1952.0	Fat	Bei dem Eis mit dem Gewinn-Stempel im Deckel... // da habe ich mal dreimal hintereinander gewonnen.
@@ -879,7 +879,7 @@ E6100.3	Saori	Irgendwie... na ja.
 E6100.4	Boku	Warum ist das wohl so?
 E6100.5	Saori	Es geht einfach nicht.
 E6100.6	Boku	Aber jetzt bist du auf einen Schlag berühmt, große Schwester!
-E6100.7	Saori	Haha... Dummchen. Kennst du den Nipponibis? // Da finde ich endlich einen Lebensraum der Wölfe, und darf es keinem verraten.
+E6100.7	Saori	Haha... Dummchen. Kennst du den Nipponibis? // Da finde ich endlich einen Lebensraum der Wölfe und darf es keinem verraten.
 E6100.8	Boku	...Hä?
 E6100.9	Saori	Aber warum kommt er ausgerechnet zu Zuckerwasser? // Es gibt zwar Berichte, dass sie Salz mögen...
 E6100.10	Saori	Hast du etwa bei der Kamera was angestellt?
@@ -945,7 +945,7 @@ E6104.27	Boku	......
 E6104.28	Saori	Und deshalb bin ich irgendwie eine traurige, einsame Wolke...
 E6104.29	Saori	Buh!
 E6104.30	Boku	Wah, hast du mich erschreckt!
-E6104.31	Saori	Hehe, na wie war das!
+E6104.31	Saori	Hehe, na, wie war das?
 E6104.32	Boku	Huch? Es hat wirklich geklappt.
 E6104.33	Saori	Ohh, tatsächlich.
 E6104.34	Boku	...Ja.
@@ -1064,7 +1064,7 @@ E2505.3	Erzaehler	Und westlich des Hügels, wie von den Armen des umliegenden Wa
 E2506.0	Erzaehler	Er war von Bergsteigern errichtet worden, Stein für Stein sorgfältig aufeinandergesetzt.
 
 # --- E2504: G02 -- Abendessen ("Ich bin froh, dass ich hergekommen bin")
-E2504.0	Boku	He, heute bin ich // bis ganz auf den Gipfel von dem Berg mit den zwei Antennen gestiegen.
+E2504.0	Boku	He, heute bin ich // bis ganz nach oben auf den Berg mit den zwei Antennen gestiegen.
 E2504.1	Onkel	Hä? Du warst ganz oben auf dem Berg Teppen... Die Aussicht von dort ist die beste, oder?
 E2504.2	Boku	Ja.
 E2504.3	Tante	Wir sind auch gleich nach unserem Umzug hierher dort hinaufgestiegen. // Als ich den Blick von jenem Gipfel sah... // ach... da dachte ich aus tiefstem Herzen, wie froh ich bin, dass wir hergezogen sind.
@@ -1073,7 +1073,7 @@ E2504.5	Tante	Hm? Was ist denn?
 E2504.6	Erzaehler	Ich wollte noch nicht nach Hause zurück... // Aus irgendeinem Grund brachte ich diese paar Worte einfach nicht heraus.
 E2504.7	Boku	...Ich bin auch froh, dass ich hergekommen bin.
 E2504.8	Tante	Hm-hm-hm...... danke. // Es freut mich, dass es dir hier gefällt, Boku-kun.
-E2504.9	Shirabe	Irgendwann bist du ganz eines von unseren Kindern geworden.
+E2504.9	Shirabe	Ehe wir uns versahen, bist du ganz eines von unseren Kindern geworden.
 E2504.10	Boku	Bin ich dann auch Shirabes Onii-chan?
 E2504.11	Shirabe	Niemals!
 E2504.12	Tante	Na los, sagen wir schnell gochisosama.
@@ -1146,7 +1146,7 @@ E3176.2	Tante	Ja!
 # --- E3177: I31 -- Nahaufnahme
 E3177.0	Moe	Wah! Mama! Gemein!
 E3177.1	Onkel	Was ist denn los?
-E3177.2	Moe	Im Moment zumindest, vorerst... // soll derjenige, den ich liebe, Papa sein...
+E3177.2	Moe	Im Moment zumindest, vorerst... // ist der, den ich am liebsten mag, Papa...
 E3177.3	Onkel	Vorerst also... hmm... // hier erreicht der Kummer eines Vaters mit Töchtern seinen Höhepunkt, mit allem Drum und Dran...
 E3177.4	Tante	Nanu? // Wenn du Papa als deinen Schatz willst, vergiss nicht, dass direkt hier eine mächtige Rivalin steht!
 E3177.5	Moe	Ach so? Na, ich gebe auch nicht nach!

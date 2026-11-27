@@ -7,7 +7,7 @@ E2615.3	Onkel	Puh... nur noch ein kleines Stück...
 
 # --- E2616: H15 -- the climbing kiln
 E2616.0	Onkel	Geschafft! Endlich hat er die Zieltemperatur erreicht. // Jetzt muss ich das nur noch zwei Stunden lang halten, dann ist alles bestens!
-E2616.1	Onkel	Also gut, der letzte Endspurt. Packen wir es an!
+E2616.1	Onkel	Also gut, Endspurt. Packen wir es an!
 E2616.2	Onkel	Puh... übrigens, der Regen eben hat zwar sofort wieder aufgehört, aber das war vielleicht ein Guss!
 
 # --- E2617: H13 -- behind the workshop
@@ -33,7 +33,7 @@ E2614.0	Boku	Onkel, was hast du die ganze Nacht gemacht?
 E2614.1	Onkel	Ich war die ganze Zeit hier. Holz spalten, Holz nachlegen... immer wieder.
 E2614.2	Boku	Wie heiß ist es jetzt drinnen?
 E2614.3	Onkel	...Etwa siebzig Prozent vom Ziel, würde ich sagen. // Jedenfalls legt Onkel jetzt schneller Holz nach, // um die Temperatur hochzubringen.
-E2614.4	Onkel	(gähn)... aber wenn man es länger nicht gemacht hat, macht es einen doch müde.
+E2614.4	Onkel	(gähn)... aber wenn man es länger nicht gemacht hat, wird man doch müde.
 
 # --- E2623: H13 -- behind the workshop
 E2623.0	Tante	Gib alles, Yusaku! Bald gibt es nach langer Zeit wieder Bares!
@@ -79,7 +79,7 @@ E2632.6	Boku	Wie die Sommerferien in zwanzig Jahren wohl sind...?
 E2632.7	Moe	Hmm...
 E2632.8	Boku	Du, ich habe tief in der Höhle etwas Seltsames aufgehoben.
 E2632.9	Moe	Hä? Was mag das sein? // Dann bring es morgen Mittag in Onee-chans Zimmer.
-E2632.10	Moe	Irgendwie, nachdem ich diesen alten Brief gelesen habe... // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
+E2632.10	Moe	Irgendwie... seit ich diesen alten Brief gelesen habe, // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
 E2632.11	Boku	Aber wem gehört er denn?
 E2632.12	Moe	Ich weiß nicht, wem, aber, hmm, wie soll ich sagen... // das muss jemand mit einem sehr warmen Herzen zurückgelassen haben...
 E2632.13	Moe	Ab morgen...

@@ -112,7 +112,7 @@ E0652.10	Fat	Moe-san ist eben doch wundervoll, oder... // Hast du es gut, dass d
 # --- E0653: A18 -- the secret base
 E0653.0	Brille	Boku-kun, liest du auch viele Bücher?
 E0653.1	Boku	Ja, ich liebe Bücher.
-E0653.2	Brille	Zum Glück... Ich hatte es nämlich schwer, weil ich mit den Kindern hier nicht dieselben Themen habe.
+E0653.2	Brille	Zum Glück... Ich hatte es nämlich schwer, weil ich mit den Kindern hier keine gemeinsamen Themen habe.
 E0653.3	Guts, Fat	Damit stellst du uns ja als Idioten hin!
 
 # --- E0607: B10 -- the hill; I35 -- close-up

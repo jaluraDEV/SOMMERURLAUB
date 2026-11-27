@@ -59,7 +59,7 @@ E0183.0	Tante	Dieses Zimmer kannst du ganz nach Lust und Laune benutzen.
 E0184.0	Tante	Ich habe deinen Futon heute so lange in die Sonne gelegt, bis er aufgegeben hat, // darum ist er ganz weich und flauschig, perfekt zum Schlafen. // Du wirst tief und fest schlafen, eingehüllt in den Duft der Sonne.
 E0184.1	Boku	Ja. Danke, Tante.
 E0184.2	(voice only)
-E0184.3	Boku	Tante ist echt eine tolle Person. // Das ist ja wie... eine Futon-Explosion!
+E0184.3	Boku	Tante ist echt super. // Das ist ja wie... eine Futon-Explosion!
 
 # --- E0185: G13 -- Boku's room
 E0185.0	Tante	Also dann, bis zum Abendessen... // ist noch ungefähr eine Stunde Zeit, würde ich sagen. // Geh ein bisschen im Haus oder im Garten spazieren. // Aber heute ist es schon spät, also darfst du nicht in die Berge gehen. // Das ist nun mal die Regel bei Tante zu Hause.

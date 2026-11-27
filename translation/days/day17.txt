@@ -21,7 +21,7 @@ E1720.1	Tante	Hmmm, sie lässt sich gar nicht mit einem Wort beschreiben.
 E1720.2	Boku	Warum?
 E1720.3	Tante	Weißt du... // sie ist eine bildhübsche junge Frau, die wie ein wohlerzogener junger Mann wirkt.
 E1720.4	Boku	...eine Tunte?
-E1720.5	Tante	Wenn ich noch etwas jünger wäre, würde ich auch gern noch alles Mögliche ausprobieren...
+E1720.5	Tante	Wenn ich noch etwas jünger wäre, würde ich auch gern alles Mögliche ausprobieren...
 # NOTE E1720.4: okama, gemaess Stilbibel § 12 uebersetzt.
 
 # --- E1712: G01 -- living room
@@ -51,5 +51,5 @@ E1730.3	Moe	Wenn bis morgen keine Antwort kommt, nehme ich meinen Mut zusammen u
 
 # --- E1740: H09 -- garden corner where Shirabe watches ants
 E1740.0	Shirabe	Sag mal, gibt es bei euch auch einen Tante-Emma-Laden?
-E1740.1	Boku	Klar gibt es den, aber wieso?
+E1740.1	Boku	Klar gibt es einen, aber wieso?
 E1740.2	Shirabe	Hier... ist es so tief auf dem Land, dass es keinen Tante-Emma-Laden gibt. // Dabei bin ich doch so trendbewusst.

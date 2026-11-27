@@ -34,7 +34,7 @@ E1402.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
 E1402.2	Onkel	Mmm, heute ist wieder schönes Wetter.
 E1402.3	Tante	Sagt mal, ihr geht also doch zusammen zum Kap der Winde?
 E1402.4	Shirabe	Ja, wir gehen!
-E1402.5	Onkel	Jedenfalls ist es dorthin weit, also trödelt unterwegs nicht so viel herum, verstanden? // Wenn ihr bis zum Abend nicht ankommt und halb am Heulen seid, braucht ihr bei Papa nicht zu jammern.
+E1402.5	Onkel	Jedenfalls ist es dorthin weit, also trödelt unterwegs nicht so viel herum, verstanden? // Wenn ihr bis zum Abend nicht ankommt und kurz vorm Heulen seid, braucht ihr bei Papa nicht zu jammern.
 E1402.6	Shirabe	Ja, verstanden.
 E1402.7	Shirabe	Also dann, folge Shirabe ordentlich. // Erst mal geht Shirabe schon bis zur neuen Brücke vor.
 

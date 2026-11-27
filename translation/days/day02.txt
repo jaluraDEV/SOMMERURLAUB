@@ -98,7 +98,7 @@ E0204.4	Erzaehler	Was damals beim Geheimversteck geschehen war... // das verschw
 E0213.0	Boku	Onkel... // wenn du die Melonendiebe fängst, was machst du dann mit ihnen?
 E0213.1	Onkel	Hmm, was wohl? Onkel hat als Kind selbst mal welche gestohlen...
 E0213.2	Boku	Waaas?! // Du warst auch mal ein Dieb, Onkel?
-E0213.3	Onkel	He, he, drück dich nicht so schlimm aus... // Was wir geklaut haben, war nichts Großes wie eine Wassermelone. // Ja, so eine konnte man ganz allein auf einmal verputzen. // Hübsche kleine Dinger, die wir damals Ajiuri nannten.
+E0213.3	Onkel	He, he, drück dich nicht so schlimm aus... // Was wir geklaut haben, war nichts Großes wie eine Wassermelone. // Etwas Kleines, das man ganz allein auf einmal verputzen konnte. // Hübsche kleine Dinger, die wir damals Ajiuri nannten.
 E0213.4	Tante	Ist das nicht...
 E0213.5	Tante	das, was man heute eine Melone nennt?
 E0213.6	Boku	Das ist ein Verbrechen.

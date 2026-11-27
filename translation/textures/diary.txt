@@ -10,7 +10,7 @@ nikki@NIKKI_005	Tante hat ein Foto gemacht. Ich habe das V-Zeichen gezeigt. Obwo
 nikki@NIKKI_006	Onkel war weg, da bin ich nachts Glühwürmchen fangen gegangen. Obwohl ihr Po leuchtet, verbrennen sie sich nicht.
 nikki@NIKKI_007	Ich habe einen riesig großen Fisch gefangen. Vor Schreck ist mir fast ein bisschen Pipi in die Hose gegangen.
 nikki@NIKKI_008	Als ich das Wespennest mit dem Stock anstieß und herunterwarf, erschraken die Wespen. Ich erschrak auch.
-nikki@NIKKI_010	Endlich habe ich einen Hirschkäfer gefangen. Er ist schwarz und ziemlich cool. Das ist mein Käfer Nummer eins!
+nikki@NIKKI_010	Endlich habe ich einen Hirschkäfer gefangen. Er ist schwarz und richtig stark. Das ist mein Käfer Nummer eins!
 nikki@NIKKI_011	Oben auf dem Hügel. Ich ließ den Drachen von Onkel steigen. Es war schwer, aber er stieg hoch in den blauen Himmel.
 nikki@NIKKI_012	Auf dem Drachenhügel eine Sternschnuppe am Tag. Es war ein Satellit, befreundet mit UFOs. Dahinter liegt das riesige All.
 nikki@NIKKI_013	Die Spezial-Fliege von Onkel. Damit gehört mir der große Yamame im Onkel-Teich. Alles, alles gehört mir!
@@ -60,10 +60,10 @@ nikki@NIKKI_061	Moe-neechan hat wieder Mut gefasst. Auch wenn du auf der Obersch
 nikki@NIKKI_063	Ganz oben auf dem Berg Teppen schmeckt die Luft richtig, richtig gut, und man sieht weit weg, bumm!
 nikki@NIKKI_064	Strömender Regen. Unterstellen. Als es aufhörte, eine glitzernde Regenbogenbrücke. Ich sah klar bis zum fernen Wald.
 nikki@NIKKI_065	Heute habe ich mich mit dem Wolfsmädchen verlobt. Ich mache mir Sorgen, ob ich sie richtig versorgen kann.
-nikki@NIKKI_066	In einem riesig großen Baum fließt ganz viel Wasser. Ich höre es, plitscher platscher, plitscher platscher.
+nikki@NIKKI_066	In einem riesig großen Baum fließt ganz viel Wasser. Ich höre es, plitscher-platscher, plitscher-platscher.
 nikki@NIKKI_067	Leb wohl, Frau, die ich liebte. Du mochtest den Japanischen Wolf lieber als mich, nicht wahr?
 nikki@NIKKI_068	Immer im Kreis, mir wird schwindelig. Immer im Kreis. Die Blumen, der Himmel, alles soll sich drehen!
-nikki@NIKKI_069	Hust, hust. Als ich eine Sommererkältung hatte, legte Tante ihre Stirn an meine, und mein Herz klopfte... Ich wär gern ein Kind hier.
+nikki@NIKKI_069	Hust, hust. Als ich eine Sommererkältung hatte, legte Tante ihre Stirn an meine, und mein Herz klopfte... Ich wäre gern ein Kind hier.
 nikki@NIKKI_070	Mein kleiner Bruder ist geboren. Ich freue mich. Aber die Ferien sind fast vorbei. Ich bin froh. Ich bin traurig.
 nikki@NIKKI_071	Sie verschwand auf der Suche nach Sonnenblumen. Sie waren ein Geschenk für mich. Shirabe, danke, danke.
 nikki@NIKKI_072	Heute war ein wunderbarer Tag voller Nichts.

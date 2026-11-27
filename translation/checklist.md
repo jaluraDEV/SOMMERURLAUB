@@ -4,7 +4,7 @@ Kompakte Endkontrolle fuer alle Uebersetzungs- und Pruef-Laeufe (Stufen 4–7). 
 
 ## Global (Stufen 4–7)
 
-* **ASCII-Umschrift (`ae/oe/ue/ss`) strikt einhalten (Stilbibel § 9):** Null `[äöüÄÖÜß„“»«]` im Spieltext und in Glossareintraegen; Stammfallen pruefen (`Raeume`, `Baeume`, `laeuft`, `Groesse`, `Strasse`, `Spass`, `heiss`).
+* **Echte Umlaute/`ß` (seit v1.1.0, Stilbibel § 9):** Echte `ä, ö, ü, Ä, Ö, Ü, ß` im Spieltext (Ausnahmen: `title@sjis:188` ohne Umlaute/`ß`, Marker `Erzaehler`); weiterhin null `[„“»«]` im Spieltext.
 * **Gerade ASCII-Quotes `"..."` nur im Satzinneren (Stilbibel § 9):** Nie `„..."` oder `»...«`, und **niemals** Anfuehrungszeichen um ganze Dialogzeilen (der Renderer zeichnet `Label「...」` bzw. `『...』`).
 * **`Du / Ihr / Sie`-Matrix (Stilbibel § 2):** Familie Sorano und Kinder untereinander = `du / ihr`; Boku -> Moench und anfangs Saori = `Sie`; Saori -> Boku = `du` (`Kleiner`, `Knirps`); Saori -> Erwachsene = `Sie`.
 * **Exakte 15 `Deutsche Labels` (Stilbibel § 9):** `Boku, Onkel, Tante, Moe, Shirabe, Guts, Fat, Brille, Vater, Moench, Junge, Frau, Saori, Erzaehler, Alle` (Chor kommagetrennt, sonst `(unlabelled)`).

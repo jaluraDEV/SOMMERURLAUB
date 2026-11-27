@@ -5,7 +5,7 @@
 # Vergleiche zusammenhaengend, genau ein Paar 『 』 pro Satz ueber seine Cues hinweg.
 
 # --- M27, das Intro. 0-60 s Musik; Vater am Autoradio; Monolog ab 70 s.
-M27	619	660	Der machts wohl nicht mehr lange.
+M27	619	660	Der macht's wohl nicht mehr lange.
 M27	1050	1104	『Es war ein sehr, sehr heißer Sommertag.』
 M27	1105	1213	『Jene Hitze war, als hätte sich alles | Leben auf Erden verheddert und verstrickt,
 M27	1214	1288	und als würde irgendwo ein Gott, | der ratlos nichts mehr zu lenken vermochte,

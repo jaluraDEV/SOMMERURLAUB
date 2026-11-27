@@ -37,7 +37,7 @@ E1203.6	Onkel	Vielen herzlichen Dank.
 E1203.7	Mönch	Ja, ja.
 E1203.8	Mönch	Nanu, ein neues Gesicht... // Boku-chan, how-oldo are-you? // Gahahahaha... Wie alt bist du denn?
 E1203.9	Boku	...Neun.
-E1203.10	Mönch	So, so, ein ziemlich klug aussehender junger Herr. // Da muss ich daran denken, wie ich in demselben Alter war.
+E1203.10	Mönch	So, so, ein ziemlich klug aussehender junger Herr. // Da muss ich daran denken, wie ich in deinem Alter war.
 E1203.11	Mönch	Wo habt ihr ihn denn entführt?
 # NOTE E1203.8: Das Englisch des Moenchs steht im Original in Katakana und er uebersetzt sich selbst (Stilbibel § 16).
 

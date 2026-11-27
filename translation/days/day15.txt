@@ -3,7 +3,7 @@
 E1505.0	(voice only)	Nun, 30 Jahre nach jenem Tag // ist vielleicht die Zeit gekommen, über die wahre Bedeutung des Friedens nachzudenken, den wir genießen.
 
 # --- E1501: G02 -- breakfast
-E1501.0	Tante	Boku-kun, heute gehen alle von Tantes Haus // zum Grabbesuch für den Onii-chan dieser Familie, // könntest du da allein auf das Haus aufpassen?
+E1501.0	Tante	Boku-kun, heute gehen alle hier aus dem Haus // zum Grabbesuch für unseren Onii-chan, // könntest du da allein auf das Haus aufpassen?
 E1501.1	Boku	Ja, ich komme allein klar.
 E1501.2	Shirabe	Stell ja keinen Unfug an.
 E1501.3	Tante	Ach, Shirabe, du wieder.
@@ -17,7 +17,7 @@ E1502.2	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
 E1502.3	Tante	So, bevor wir losgehen, das Abendessen-Quiz!
 E1502.4	Tante	Boku-kun! Was glaubst du, gibt es heute zum Abendessen?
 E1502.5	Tante	Dann freu dich schon mal auf das Abendessen heute.
-E1502.6	Onkel	Also dann, wir gehen alle zum Grabbesuch. // Hier kommt sowieso kein Einbrecher her, also verhalte dich ganz wie immer.
+E1502.6	Onkel	Also dann, wir gehen alle zum Grabbesuch. // Hier kommt sowieso kein Einbrecher her, also mach einfach alles wie immer.
 E1502.7	(voice only)
 
 # --- E1503: G02 -- dinner (the family back from the grave)

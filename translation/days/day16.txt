@@ -21,7 +21,7 @@ E1612.6	Onkel	Nora stand eines Tages plötzlich vor unserem Tor. // Und am Ende 
 # NOTE E1612.5: nora, "Streunerin"; der Onkel erklaert den Namen, daher bleibt das Wort sichtbar (Glossar § 1).
 
 # --- E1610: H26 -- the workshop
-E1610.0	Onkel	Boku-kun, Onkels Spezialschaukel... // bist du schon mal damit gefahren?
+E1610.0	Onkel	Boku-kun, Onkels Spezialschaukel... // hast du schon mal auf ihr geschaukelt?
 E1610.1	[SEL]	Ja | Nein
 E1610.2	Onkel	Ach so, dann pass aber gut auf beim Schaukeln.
 E1610.3	Onkel	Oh...... noch nicht? // Macht Spaß! Los, geh schnell schaukeln.

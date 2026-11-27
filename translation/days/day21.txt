@@ -40,7 +40,7 @@ E2105.9	Boku	Hä?
 E2105.10	Moe	Hm, nein, nichts.
 
 # --- E2109: G15 -- the sisters' room
-E2109.0	Moe	Es tut mir zwar leid für dich, Boku-kun, aber durch den Schreck im Bad... // hat sich der Nebel in meinem Herzen ein bisschen gelichtet, und mir ist leichter ums Herz.
+E2109.0	Moe	Es tut mir zwar leid für dich, Boku-kun, aber durch den Schreck im Bad... // hat sich der Nebel in mir ein bisschen gelichtet, und mir ist leichter ums Herz.
 E2109.1	Boku	......
 E2109.2	Moe	Aber auf Lernen und Jugend und so... // auf das ganze mühsame Zeug habe ich trotzdem überhaupt keine Lust...
 E2109.3	Moe	Ach, ich habe wirklich auf gaaar nichts Lust.

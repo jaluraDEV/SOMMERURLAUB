@@ -26,7 +26,7 @@ E1331.0	Moe	Nanu...? Heute ist Freitag der 13. ...
 E1331.1	Moe	Ach, dann ist der Sonderverkauf bei Yahaba-ya ja schon vorbei.
 
 # --- E1340: H04 -- garden corner where Shirabe watches ants
-E1340.0	Boku	Nachdem Uri Geller berühmt wurde, // gab es da nicht haufenweise Gabel-Löffel mit Spuren, wo sie mit Gewalt verbogen wurden?
+E1340.0	Boku	Nachdem Uri Geller berühmt wurde, // gab es da nicht haufenweise Gabel-Löffel, die offensichtlich mit Gewalt verbogen wurden?
 E1340.1	Shirabe	An unserer Schule haben sogar die Lehrer ihre Gedankenkraft geübt.
 E1340.2	Shirabe	Trotzdem, warum wird man zu Hause ausgeschimpft, wenn man Reis mit dem Löffel isst, // während es in der Schule erlaubt ist?
 

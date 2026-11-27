@@ -1,6 +1,6 @@
 # Deutsches Glossar (`boku-ps1-de`)
 
-Jeder wiederkehrende Begriff mit verbindlicher deutscher Schreibweise nach [style-guide.md](style-guide.md) (Status: verbindlich, 2026-11-26). **Alle Spieltext-Spalten und Beispiele nutzen strikt `ae/oe/ue/ss`, gerade ASCII-Anfuehrungszeichen `"..."` und enthalten null japanische Schriftzeichen (nur Romaji ohne Makrons).** Wo ein Begriff einer technischen Pixelgrenze unterliegt, wurde er direkt gegen `CellMapEncoder` (`build/vwf/edits.json`), `GameFace`, `Bean` bzw. `Sprout` geprueft (`-px` = Pixelbreite).
+Jeder wiederkehrende Begriff mit verbindlicher deutscher Schreibweise nach [style-guide.md](style-guide.md) (Stand v1.1.0, 2026-11-27). **Alle Spieltexte nutzen echte deutsche Umlaute/`ß` (Ausnahmen: `title@sjis:188` und interner Marker `Erzaehler`), gerade ASCII-Anführungszeichen `"..."` und enthalten null japanische Schriftzeichen (nur Romaji ohne Makrons).** Wo ein Begriff einer technischen Pixelgrenze unterliegt, wurde er direkt gegen `CellMapEncoder` (`build/vwf/edits.json`), `GameFace`, `Bean` bzw. `Sprout` geprüft (`-px` = Pixelbreite).
 
 ---
 
@@ -340,7 +340,7 @@ Bekannte japanische Gerichte behalten ihren Namen (Stilbibel § 15); Hausmannsko
 
 Verbindliche deutsche Loesungen fuer saemtliche Wortspiele nach Stilbibel § 8 (Typ 1: Kind verhaspelt schweres Wort; Typ 2: Lehnwoerter; Typ 3: japanisches Homophon sichtbar halten):
 
-| # | IDs | Typ | Verbindliche deutsche Loesung (`ae/oe/ue/ss`) |
+| # | IDs | Typ | Verbindliche deutsche Lösung (v1.1.0 mit echten Umlauten/`ß`) |
 |---|---|---|---|
 | 1 | `E0177.2` | Typ 1 | `Unser Papa ist cool, oder? // Er ist Ke-ra-mi-ker. Er macht Teller und Reisschalen.` |
 | 2 | `E0340.1`–`.2` | Typ 1 | `.1`: `...Was heisst "ungehobelt"?` / `.2`: `Genau das nicht zu wissen, nennt man ungehobelt.` |
