@@ -49,7 +49,7 @@
 ### Methode 1: DuckStation (am einfachsten – ohne Zusatzprogramm)
 
 1. Lade das `.zip`-Archiv aus den **[Releases](../../releases)** herunter und entpacke es.
-2. Lege die Datei `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.2.0.ppf` in **denselben Ordner** wie dein japanisches Original-Spiel (z. B. `Boku no Natsuyasumi.bin` + `.cue`).
+2. Lege die Datei `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.1.0.ppf` in **denselben Ordner** wie dein japanisches Original-Spiel (z. B. `Boku no Natsuyasumi.bin` + `.cue`).
 3. **Benenne die `.ppf`-Datei exakt genauso wie deine `.bin`/`.img`-Datei** (z. B. `Boku no Natsuyasumi.ppf`) – die Dateiendung `.ppf` bleibt dabei erhalten.
 4. Öffne in **DuckStation** die **Einstellungen → Konsole** und setze dort den Haken bei **„Image-Patches anwenden“** (*Apply Image Patches* – ist standardmäßig **aus**!). *(Hinweis: Der Reiter „Patch-Dateien“ in den Spieleigenschaften ist nur für Cheat-Codes, nicht für `.ppf`-Dateien.)*
 5. Starte das Spiel ganz normal über die `.cue` (oder `.chd`) in **DuckStation** – der Deutsch-Patch wird automatisch beim Laden angewendet.
@@ -65,7 +65,7 @@ Ideal, wenn du ein dauerhaft gepatchtes Image für **RetroArch (Beetle PSX)**, *
 3. *(Empfohlen)* Prüfe die SHA-1-Prüfsumme deines Original-Dumps: Sie muss exakt `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` lauten.
 4. Öffne das Patch-Tool:
    - **Original file:** Deine japanische Original-`.bin`/`.img`-Datei auswählen.
-   - **XDelta patch:** `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.2.0.xdelta` aus dem entpackten ZIP auswählen.
+   - **XDelta patch:** `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.1.0.xdelta` aus dem entpackten ZIP auswählen.
    - Auf **Apply patch** klicken.
 5. Benenne die fertig gepatchte Datei in `image.img` um, lege sie in denselben Ordner wie die beiliegende `image.cue` und öffne `image.cue` in **DuckStation** oder **RetroArch (Beetle PSX)**.
 
@@ -73,7 +73,7 @@ Ideal, wenn du ein dauerhaft gepatchtes Image für **RetroArch (Beetle PSX)**, *
 <summary>Alternative für Terminal-Nutzer (xdelta3 CLI)</summary>
 
 ```bash
-xdelta3 -d -s "Boku no Natsuyasumi (Japan).bin" "Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.2.0.xdelta" image.img
+xdelta3 -d -s "Boku no Natsuyasumi (Japan).bin" "Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.1.0.xdelta" image.img
 ```
 
 </details>
@@ -85,7 +85,7 @@ xdelta3 -d -s "Boku no Natsuyasumi (Japan).bin" "Boku_no_Natsuyasumi_DE_SOMMERUR
 | Version | Original-Dump (vorher) | Gepatchtes Image (nachher) |
 |---|---|---|
 | Original (`SCPS-10088`) | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` |
-| **SOMMERURLAUB v1.2.0** | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` | `c08431a6b9c8d35547e28cd0aec3639c580d14eb` |
+| **SOMMERURLAUB v1.1.0** | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` | `c08431a6b9c8d35547e28cd0aec3639c580d14eb` |
 | **SOMMERURLAUB v1.0.0** | `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` | `eaddd03ef086c2af85c627c8af81b3edbe5a65f3` |
 
 ---
