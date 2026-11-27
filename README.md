@@ -26,7 +26,7 @@
 - **Alle 314 UI-, Menü-, Item- & Enzyklopädie-Einträge** (`arrays.txt`), inkl. aller 57 Insektennamen, Fische, Drachen und Memory-Card-Texte.
 - **Alle 300 Textur-Texte** (`textures/`): Titelmenü, Stein-Buttons, Schilder, Rekorde, Käfer-Sumo-HUD, Drachen-HUD, Insekten- & Drachen-Lexikon sowie alle **93 Seiten von Bokus Bildertagebuch**.
 - **Alle 89 Film- & Sprachclip-Untertitel** (`movies.txt` & `clips.txt`): Intro (`M27`), Abspann (`M28`), Titelsong, Zwischensequenzen, Käfer-Sumo-Rufe und alle **5 End-Epiloge** (`XCH.41`–`XCH.45`). Die japanische Sprachausgabe bleibt bewusst erhalten.
-- **Nichts gekürzt („Nothing is cut to fit“):** Überlange Text-Container werden automatisch reloziert; alle drei Spielfonts (`VWF`, `GameFace`, `Bean`/`Sprout`) nutzen die saubere ASCII-Umlaut-Konvention (`ae`, `oe`, `ue`, `ss`).
+- **Nichts gekürzt („Nothing is cut to fit“):** Überlange Text-Container werden automatisch reloziert; alle Spielfonts (`VWF`, `GameFace`, `Bean`/`Sprout`) unterstützen echte deutsche Umlaute und Eszett (`ä`, `ö`, `ü`, `Ä`, `Ö`, `Ü`, `ß`).
 
 ---
 
@@ -49,7 +49,7 @@
 ### Methode 1: DuckStation (am einfachsten – ohne Zusatzprogramm)
 
 1. Lade das `.zip`-Archiv aus den **[Releases](../../releases)** herunter und entpacke es.
-2. Lege die Datei `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.0.0.ppf` in **denselben Ordner** wie dein japanisches Original-Spiel (z. B. `Boku no Natsuyasumi.bin` + `.cue`).
+2. Lege die Datei `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.1.0.ppf` in **denselben Ordner** wie dein japanisches Original-Spiel (z. B. `Boku no Natsuyasumi.bin` + `.cue`).
 3. **Benenne die `.ppf`-Datei exakt genauso wie deine `.bin`/`.img`-Datei** (z. B. `Boku no Natsuyasumi.ppf`) – die Dateiendung `.ppf` bleibt dabei erhalten.
 4. Öffne in **DuckStation** die **Einstellungen → Konsole** und setze dort den Haken bei **„Image-Patches anwenden“** (*Apply Image Patches* – ist standardmäßig **aus**!). *(Hinweis: Der Reiter „Patch-Dateien“ in den Spieleigenschaften ist nur für Cheat-Codes, nicht für `.ppf`-Dateien.)*
 5. Starte das Spiel ganz normal über die `.cue` (oder `.chd`) in **DuckStation** – der Deutsch-Patch wird automatisch beim Laden angewendet.
@@ -65,7 +65,7 @@ Ideal, wenn du ein dauerhaft gepatchtes Image für **RetroArch (Beetle PSX)**, *
 3. *(Empfohlen)* Prüfe die SHA-1-Prüfsumme deines Original-Dumps: Sie muss exakt `5959bf7d9835d0a60aeb0143e2d0fc564bfea9fa` lauten.
 4. Öffne das Patch-Tool:
    - **Original file:** Deine japanische Original-`.bin`/`.img`-Datei auswählen.
-   - **XDelta patch:** `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.0.0.xdelta` aus dem entpackten ZIP auswählen.
+   - **XDelta patch:** `Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.1.0.xdelta` aus dem entpackten ZIP auswählen.
    - Auf **Apply patch** klicken.
 5. Benenne die fertig gepatchte Datei in `image.img` um, lege sie in denselben Ordner wie die beiliegende `image.cue` und öffne `image.cue` in **DuckStation** oder **RetroArch (Beetle PSX)**.
 
@@ -73,7 +73,7 @@ Ideal, wenn du ein dauerhaft gepatchtes Image für **RetroArch (Beetle PSX)**, *
 <summary>Alternative für Terminal-Nutzer (xdelta3 CLI)</summary>
 
 ```bash
-xdelta3 -d -s "Boku no Natsuyasumi (Japan).bin" "Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.0.0.xdelta" image.img
+xdelta3 -d -s "Boku no Natsuyasumi (Japan).bin" "Boku_no_Natsuyasumi_DE_SOMMERURLAUB_v1.1.0.xdelta" image.img
 ```
 
 </details>
