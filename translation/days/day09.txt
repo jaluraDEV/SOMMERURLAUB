@@ -1,43 +1,43 @@
 # day09 (translation/days/README.md)
 # --- E0920: H06 -- garden off the veranda, the washing line
 E0920.0	Tante	Gestern war das Feuerwerksfest in Sagi-no-sato. // Von deinem Zimmer aus konnte man es bestimmt sehen, Boku-kun. // Hast du es gar nicht bemerkt?
-E0920.1	Tante	Das Feuerwerk gestern war wirklich schoen, oder? // Unser Onii-chan hier im Haus hat das Feuerwerksfest von Sagi-no-sato auch ueber alles geliebt.
+E0920.1	Tante	Das Feuerwerk gestern war wirklich schön, oder? // Unser Onii-chan hier im Haus hat das Feuerwerksfest von Sagi-no-sato auch über alles geliebt.
 E0920.2	Tante	Bei den Feuerwerksfesten in Tantes Kindheit // war ich so ein kleiner Knirps, dass ich mich nur noch an die Yukata-Muster der Leute vor mir erinnere.
 
 # --- E0910: H26 -- the workshop
-E0910.0	Onkel	Ich habe die alte Axt im Schuppen verstaut, // aber sie ist gefaehrlich, Boku-kun, also fass sie nicht an.
+E0910.0	Onkel	Ich habe die alte Axt im Schuppen verstaut, // aber sie ist gefährlich, Boku-kun, also fass sie nicht an.
 
 # --- E0912: G01 -- living room
-E0912.0	Onkel	Nanu? Das Feuerwerksfest war also tatsaechlich gestern. // Wenn ich so zurueckdenke... er hat das Feuerwerksfest von Sagi-no-sato auch ueber alles geliebt.
-E0912.1	Onkel	Ach, ich haette das Feuerwerksfest gern gesehen.
+E0912.0	Onkel	Nanu? Das Feuerwerksfest war also tatsächlich gestern. // Wenn ich so zurückdenke... er hat das Feuerwerksfest von Sagi-no-sato auch über alles geliebt.
+E0912.1	Onkel	Ach, ich hätte das Feuerwerksfest gern gesehen.
 
 # --- E0905: G06 -- TV room (August 9, the Nagasaki ceremony on the news)
 E0905.0	(voice only)
-E0905.1	(voice only)	Die Klosterglocken laeuten voller Trauer, als wollten sie die aus aller Welt versammelten Menschen umhuellen.
+E0905.1	(voice only)	Die Klosterglocken läuten voller Trauer, als wollten sie die aus aller Welt versammelten Menschen umhüllen.
 # NOTE E0905.0-.1: .0 sind nur die Glocken ohne Text; "Kloster" entspricht dem Wort des Sprechers.
 
 # --- E0930: G15 -- the sisters' room
 E0930.0	Moe	Oh, willkommen, Boku-kun.
 E0930.1	Boku	Onee-chan, hast du gerade eben auch gelernt?
-E0930.2	Moe	Hae? Aehm...
+E0930.2	Moe	Hä? Ähm...
 E0930.3	Moe	Hehe, im Moment ist ein bisschen Faulenz-Zeit.
 E0930.4	Boku	Warum lernst du denn immer so viel?
-E0930.5	Moe	Weil deine grosse Schwester eine traurige Pruefungsschuelerin ist.
-E0930.6	Moe	Pruefungsschuelerin... was fuer eine oede Jugend.
+E0930.5	Moe	Weil deine große Schwester eine traurige Prüfungsschülerin ist.
+E0930.6	Moe	Prüfungsschülerin... was für eine öde Jugend.
 
 # --- E0931: G15 -- the sisters' room
-E0931.0	Moe	Ach, Schluss mit dem Lernen, Schluss... // So laestig...
-E0931.1	Moe	Ob wohl ein Krieg anfaengt und die Aufnahmepruefungen naechstes Jahr einfach so wegfallen?
-E0931.2	Moe	Aber wenn wirklich ein Krieg anfaengt, waere das auch ziemlich schlecht.
+E0931.0	Moe	Ach, Schluss mit dem Lernen, Schluss... // So lästig...
+E0931.1	Moe	Ob wohl ein Krieg anfängt und die Aufnahmeprüfungen nächstes Jahr einfach so wegfallen?
+E0931.2	Moe	Aber wenn wirklich ein Krieg anfängt, wäre das auch ziemlich schlecht.
 
 # --- E0940: H10 -- garden corner where Shirabe watches ants
 E0940.0	Boku	Du hast wenige Freunde...
 E0940.1	Shirabe	Stimmt. Na und?
 E0940.2	Boku	Warum?
-E0940.3	Shirabe	Weiss ich doch nicht.
+E0940.3	Shirabe	Weiß ich doch nicht.
 E0940.4	Shirabe	Vielleicht, weil ich den anderen beim Mittagessen die Beilagen und das Kaffeepulver wegnehme?
 
 # --- E0941: G06 -- TV room
-E0941.0	Boku	Was gibt es bei eurer Schulspeisung alles fuer die Milch?
-E0941.1	Shirabe	Aehm, da gibt es Kaffee, da gibt es Kakao... // und Erdbeermarmelade!
-E0941.2	Shirabe	Hae? Macht ihr euch mit Erdbeermarmelade keine Erdbeermilch?
+E0941.0	Boku	Was gibt es bei eurer Schulspeisung alles für die Milch?
+E0941.1	Shirabe	Ähm, da gibt es Kaffee, da gibt es Kakao... // und Erdbeermarmelade!
+E0941.2	Shirabe	Hä? Macht ihr euch mit Erdbeermarmelade keine Erdbeermilch?

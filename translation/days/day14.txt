@@ -2,11 +2,11 @@
 # --- E1405: C14 -- the beach
 E1405.0	Shirabe	Ach, ich war ja schon ewig nicht mehr am Meer. // Sag mal, kannst du schwimmen?
 E1405.1	Boku	......
-E1405.2	(unlabelled)	Und was ist mit dir, Dreikaesehoch?
+E1405.2	(unlabelled)	Und was ist mit dir, Dreikäsehoch?
 E1405.3	Shirabe	Shirabe hat zuerst gefragt. Antworte ordentlich!
 E1405.4	Boku	Ach komm, sag du doch zuerst.
 E1405.5	Shirabe	Du zuerst!
-E1405.6	Boku	......Kann es sein, dass wir beide nicht schwimmen koennen?
+E1405.6	Boku	......Kann es sein, dass wir beide nicht schwimmen können?
 E1405.7	Shirabe	......
 E1405.8	Shirabe	So, wir sind gleich am Kap der Winde. // Mit vollem Elan und ganzer Kraft, auf geht's!
 # NOTE E1405.1-.2: Eine Aeusserung ueber zwei Meldungen: eine stille Pause, dann Bokus Gegenfrage (Stilbibel § 9).
@@ -14,10 +14,10 @@ E1405.8	Shirabe	So, wir sind gleich am Kap der Winde. // Mit vollem Elan und gan
 # --- E1406: C18 -- the Cape of Winds
 E1406.0	Shirabe	Angekommen, angekommen... Du bist Zweiter, und Shirabe holt den ersten Preis!
 E1406.1	Boku	Puh... so weit weg war das also.
-E1406.2	Shirabe	Frueher sind wir oft alle zusammen zum Picknick hierhergekommen.
+E1406.2	Shirabe	Früher sind wir oft alle zusammen zum Picknick hierhergekommen.
 E1406.3	Boku	Hmmm, ach so.
-E1406.4	Shirabe	Gaeeehn... // Die Sonne brennt so schoen warm, da werde ich irgendwie ganz schlaefrig...
-E1406.5	Boku	Gaeeehn, ich auch...
+E1406.4	Shirabe	Gääähn... // Die Sonne brennt so schön warm, da werde ich irgendwie ganz schläfrig...
+E1406.5	Boku	Gääähn, ich auch...
 E1406.6	Boku	Aaah!
 E1406.7	Shirabe	Wie, was... was ist los?
 E1406.8	Boku	Huch?
@@ -25,69 +25,69 @@ E1406.9	Shirabe	Hm? Was ist denn?
 E1406.10	Boku	...Nichts.
 E1406.11	Boku	Ach... ich bin eingeschlafen.
 E1406.12	Shirabe	Ach... ich bin eingeschlafen.
-E1406.13	Boku	Hae? Mach mir nicht alles nach!
+E1406.13	Boku	Hä? Mach mir nicht alles nach!
 E1406.14	Shirabe	Oh, sieh mal, sieh mal! Die Sonne geht im Meer unter...
 
 # --- E1402: G02 -- after breakfast
 E1402.0	Onkel	Gochisosama deshita.
 E1402.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E1402.2	Onkel	Mmm, heute ist wieder schoenes Wetter.
+E1402.2	Onkel	Mmm, heute ist wieder schönes Wetter.
 E1402.3	Tante	Sagt mal, ihr geht also doch zusammen zum Kap der Winde?
 E1402.4	Shirabe	Ja, wir gehen!
-E1402.5	Onkel	Jedenfalls ist es dorthin weit, also troedelt unterwegs nicht so viel herum, verstanden? // Wenn ihr bis zum Abend nicht ankommt und halb am Heulen seid, braucht ihr bei Papa nicht zu jammern.
+E1402.5	Onkel	Jedenfalls ist es dorthin weit, also trödelt unterwegs nicht so viel herum, verstanden? // Wenn ihr bis zum Abend nicht ankommt und halb am Heulen seid, braucht ihr bei Papa nicht zu jammern.
 E1402.6	Shirabe	Ja, verstanden.
-E1402.7	Shirabe	Also dann, folge Shirabe ordentlich. // Erst mal geht Shirabe schon bis zur neuen Bruecke vor.
+E1402.7	Shirabe	Also dann, folge Shirabe ordentlich. // Erst mal geht Shirabe schon bis zur neuen Brücke vor.
 
 # --- E1420: H06 -- garden off the veranda; H08 -- the yard (the aunt's war story)
-E1420.0	Tante	Morgen ist schon der Grabbesuch... // Bokus Sommerferien sind schon zur Haelfte um, nicht wahr?
+E1420.0	Tante	Morgen ist schon der Grabbesuch... // Bokus Sommerferien sind schon zur Hälfte um, nicht wahr?
 E1420.1	Boku	He, welcher Krieg ist denn am morgigen Datum zu Ende gegangen?
-E1420.2	Tante	Ja, morgen ist der Gedenktag zum Kriegsende... // an dem Tag ging der Pazifikkrieg zu Ende, als Tante ungefaehr so alt war wie du jetzt, Boku-kun. // Tante ist in einer Hafenstadt auf Hokkaido namens Otaru aufgewachsen, // und eines Morgens, als ich auf den Huegel nahe unserem Haus stieg, // lagen da auf einmal ganz viele grosse amerikanische Kriegsschiffe im Hafen. // Tante hat so einen Schreck bekommen, dass ich schnell ins Haus zurueckgelaufen bin und mich versteckt habe.
+E1420.2	Tante	Ja, morgen ist der Gedenktag zum Kriegsende... // an dem Tag ging der Pazifikkrieg zu Ende, als Tante ungefähr so alt war wie du jetzt, Boku-kun. // Tante ist in einer Hafenstadt auf Hokkaido namens Otaru aufgewachsen, // und eines Morgens, als ich auf den Hügel nahe unserem Haus stieg, // lagen da auf einmal ganz viele große amerikanische Kriegsschiffe im Hafen. // Tante hat so einen Schreck bekommen, dass ich schnell ins Haus zurückgelaufen bin und mich versteckt habe.
 E1420.3	Boku	Hattest du Angst, Amerikaner zu treffen?
-E1420.4	Tante	Ja, denn man hatte uns beigebracht, wenn uns die amerikanischen Soldaten fangen, // streuen sie Salz ueber uns und knabbern uns vom Kopf her auf. // Aber weisst du, einer der amerikanischen Soldaten, die an Land kamen, // hob in der Gasse vor unserem Haus ein kleines streunendes Kaetzchen auf, // und als ich heimlich durch einen Fensterspalt zusah, wie er "Miau... miau..." zu ihm sagte, // da dachte Tante: "Nanu, das ist ja ein Mensch genau wie wir."
-E1420.5	Tante	Seit jenem Tag sind nun schon dreissig Jahre vergangen...
+E1420.4	Tante	Ja, denn man hatte uns beigebracht, wenn uns die amerikanischen Soldaten fangen, // streuen sie Salz über uns und knabbern uns vom Kopf her auf. // Aber weißt du, einer der amerikanischen Soldaten, die an Land kamen, // hob in der Gasse vor unserem Haus ein kleines streunendes Kätzchen auf, // und als ich heimlich durch einen Fensterspalt zusah, wie er "Miau... miau..." zu ihm sagte, // da dachte Tante: "Nanu, das ist ja ein Mensch genau wie wir."
+E1420.5	Tante	Seit jenem Tag sind nun schon dreißig Jahre vergangen...
 # NOTE E1420.0: Die Titelphrase im Dialog: "Bokus Sommerferien" (Stilbibel § 1).
 
 # --- E1412: G01 -- living room
-E1412.0	Onkel	Heute Abend ist es aber schwuel...
+E1412.0	Onkel	Heute Abend ist es aber schwül...
 E1412.1	Onkel	Vielleicht sollte ich langsam mal zumindest den Ventilator herausholen.
 
 # --- E1403: C04 -- far end of the log bridge
 E1403.0	Shirabe	Ah, da kommt er ja, da kommt er.
 E1403.1	Shirabe	Na, na, gute Arbeit, gute Arbeit.
 E1403.2	Shirabe	Sag mal, hier sieht es aus wie tief in den Bergen. Ein bisschen unheimlich, oder?
-E1403.3	Boku	Hae? Warum? Ueberhauuupt nicht. Mir macht das nichts aus.
-E1403.4	Shirabe	Ach, so ist das. Also ehrlich, wo ich mir doch extra Muehe gegeben habe...
-E1403.5	Shirabe	Na dann gehe ich wieder vor. // Naechster Treffpunkt: das Sonnenblumenfeld!
+E1403.3	Boku	Hä? Warum? Überhauuupt nicht. Mir macht das nichts aus.
+E1403.4	Shirabe	Ach, so ist das. Also ehrlich, wo ich mir doch extra Mühe gegeben habe...
+E1403.5	Shirabe	Na dann gehe ich wieder vor. // Nächster Treffpunkt: das Sonnenblumenfeld!
 
 # --- E1430: G15 -- the sisters' room
-E1430.0	Moe	Ach... langsam koennte die Antwort doch kommen...
+E1430.0	Moe	Ach... langsam könnte die Antwort doch kommen...
 E1430.1	Boku	Welche Antwort?
-E1430.2	Moe	Ehehe... tja, was koennte das wohl sein?
-E1430.3	Moe	Sag bloss... ich habe die Adresse falsch aufgeschrieben?
+E1430.2	Moe	Ehehe... tja, was könnte das wohl sein?
+E1430.3	Moe	Sag bloß... ich habe die Adresse falsch aufgeschrieben?
 
 # --- E1431: G15 -- the sisters' room
-E1431.0	Moe	Morgen ist schon der 15. August... // Ach, ich wuerde so gern ans Meer fahren...
-E1431.1	Moe	Aber ich kann ueberhaupt nicht schwimmen... // Ich bin mal beim Gesichtwaschen fast ertrunken.
+E1431.0	Moe	Morgen ist schon der 15. August... // Ach, ich würde so gern ans Meer fahren...
+E1431.1	Moe	Aber ich kann überhaupt nicht schwimmen... // Ich bin mal beim Gesichtwaschen fast ertrunken.
 E1431.2	Moe	Wie war es am Kap der Winde?
 E1431.3	Boku	Ja, die Abendsonne ist mit einem Zischen ins Meer getaucht.
 E1431.4	Moe	Ahaha... das klingt lustig.
 E1431.5	Boku	Aber ich... musste auf dem Kap an Mama denken.
 
 # --- E1440: H10 -- garden corner where Shirabe watches ants
-E1440.0	Shirabe	Ach, ich wuerde so gern mal wieder zum Kap der Winde gehen. Das ist schon ewig her.
+E1440.0	Shirabe	Ach, ich würde so gern mal wieder zum Kap der Winde gehen. Das ist schon ewig her.
 E1440.1	Boku	Was ist das?
-E1440.2	Shirabe	Ein Ort, wo der Sonnenuntergang wunderschoen ist... // Aber die Bruecke auf dem Weg ist eingestuerzt, deshalb kommt man nicht hin. // Du! Mach da mal was!
-E1440.3	Shirabe	Das Kap der Winde ist naemlich ein wirklich schoener Ort.
+E1440.2	Shirabe	Ein Ort, wo der Sonnenuntergang wunderschön ist... // Aber die Brücke auf dem Weg ist eingestürzt, deshalb kommt man nicht hin. // Du! Mach da mal was!
+E1440.3	Shirabe	Das Kap der Winde ist nämlich ein wirklich schöner Ort.
 
 # --- E1441: G06 -- TV room
-E1441.0	Shirabe	Die Sommerferien sind schon zur Haelfte vorbei. // Dabei gibt es noch so viele Dinge, die ich in den Ferien machen will. Wie ueberaus schrecklich.
+E1441.0	Shirabe	Die Sommerferien sind schon zur Hälfte vorbei. // Dabei gibt es noch so viele Dinge, die ich in den Ferien machen will. Wie überaus schrecklich.
 E1441.1	Boku	Was willst du denn machen?
 E1441.2	Shirabe	Dinge, die man nur im Sommer machen kann...
 E1441.3	Shirabe	Zum Beispiel die Fusselflocken von meinen dicken Wintersocken abzupfen...
-E1441.4	Shirabe	Shirabe hat ganz brav gewartet, also wo bist du denn bloss hingegangen?
+E1441.4	Shirabe	Shirabe hat ganz brav gewartet, also wo bist du denn bloß hingegangen?
 E1441.5	Boku	Es war eben auf einmal schon Abend geworden.
 E1441.6	Boku	He, hast du irgendein neues Wolkenmodell gefunden?
-E1441.7	Shirabe	Noe.
+E1441.7	Shirabe	Nö.
 E1441.8	Shirabe	Weil Shirabe... geschlafen und dabei gesabbert hat.
 
 # --- E1404: C07 -- the sunflower fields
@@ -96,10 +96,10 @@ E1404.1	Shirabe	Von hier bis fast ans Meer ist alles ein einziges langes, bironc
 E1404.2	Boku	Bironcho?
 E1404.3	Shirabe	Toll, nicht wahr! // Unser Onii-chan...
 E1404.4	Shirabe	ist gestorben, als Shirabe im Kindergarten war, aber...
-E1404.5	Shirabe	er hat Sonnenblumen ueeber alles geliebt.
-E1404.6	Boku	Hae? Warum?
+E1404.5	Shirabe	er hat Sonnenblumen üüber alles geliebt.
+E1404.6	Boku	Hä? Warum?
 E1404.7	Shirabe	Bei der Tanabata-Verlosung hat er ein Sonnenblumen-T-Shirt gewonnen.
-E1404.8	Shirabe	Aber, aber, er hat auch mal... // eine riesengrosse Spieluhr gewonnen.
+E1404.8	Shirabe	Aber, aber, er hat auch mal... // eine riesengroße Spieluhr gewonnen.
 E1404.9	Boku	Ach so, er mochte sie, weil er etwas gewonnen hat.
 E1404.10	Shirabe	Na und? Hast du was dagegen?
 E1404.11	Boku	Neeein, gar nicht! // Aber...
@@ -107,5 +107,5 @@ E1404.12	Shirabe	Was?
 E1404.13	Boku	Aber ich liebe Sonnenblumen auch!
 E1404.14	Shirabe	Oh, du auch... // Hehe, wusste ich's doch, wusste ich's doch.
 E1404.15	Boku	Na und? Hast du was dagegen?
-E1404.16	Shirabe	Gar nichts! Na dann, naechster Treffpunkt ist der Strand! // Oh! Unterwegs teilt sich der Weg, // aber geh rechts geradeaus Richtung Grosse Eiche, dann kommst du zum Strand. // Bye-yoyooon!
+E1404.16	Shirabe	Gar nichts! Na dann, nächster Treffpunkt ist der Strand! // Oh! Unterwegs teilt sich der Weg, // aber geh rechts geradeaus Richtung Große Eiche, dann kommst du zum Strand. // Bye-yoyooon!
 # NOTE E1404.1: bironcho, Shirabes erfundenes Wort fuer etwas endlos Langes; als Klangwort belassen (Stilbibel § 7).

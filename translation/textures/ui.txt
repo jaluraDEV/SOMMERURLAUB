@@ -12,7 +12,7 @@ tex@T_TITLE.3	Optionen
 # --- T_CONFIG: the settings screen (research/texture-recipes.md § "T_CONFIG"). The five labels
 # down the left are text the renderer draws (exe@8003D9BC), not these. heading: the plaque
 # top left (<= 50 px in GameFace).
-tex@T_CONFIG.heading	Menue
+tex@T_CONFIG.heading	Menü
 tex@T_CONFIG.voice_text	Stimme + Text
 tex@T_CONFIG.voice_text_note	Abbruch OK
 tex@T_CONFIG.voice_only	Nur Stimme
@@ -22,7 +22,7 @@ tex@T_CONFIG.mono	Mono
 tex@T_CONFIG.action	Aktion
 tex@T_CONFIG.cancel	Abbruch
 tex@T_CONFIG.run	Rennen
-tex@T_CONFIG.sub_screen	Unter- // menue
+tex@T_CONFIG.sub_screen	Unter- // menü
 
 # --- T_MEMORY: the "summer memories" album, reached from the title menu once a finished
 # game is on the card. Its heading plaque (<= 99 px per line).

@@ -518,17 +518,7 @@ def test_a_marker_sign_too_wide_for_its_room_is_refused_not_cut():
                              BlockFace(), "the sign")  # fmt: skip
 
 
-@pytest.mark.parametrize(
-    ("bad_text", "expected"),
-    [
-        ("K\u00e4fer", "Umlaut gefunden"),
-        ("Gr\u00f6sse", "Umlaut gefunden"),
-        ("Fl\u00fcgel", "Umlaut gefunden"),
-        ("Stra\u00dfe", "Umlaut gefunden"),
-        ("\u201eHallo\u201c", "Typografische Anfuehrungszeichen"),
-    ],
-)
-def test_ink_of_refuses_umlauts_and_typographic_quotes_with_ascii_hint(bad_text, expected):
-    entry = tt.Entry("tex@X.0", bad_text, "s:1")
-    with pytest.raises(tt.TextureTextError, match=expected):
+def test_ink_of_refuses_typographic_quotes_with_ascii_hint():
+    entry = tt.Entry("tex@X.0", "\u201eHallo\u201c", "s:1")
+    with pytest.raises(tt.TextureTextError, match="Typografische Anfuehrungszeichen"):
         tt.ink_of(BlockFace(), entry)

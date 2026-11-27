@@ -399,7 +399,7 @@ SPEAKER_LABELS = frozenset(
         "Fat",
         "Brille",
         "Vater",
-        "Moench",
+        "Mönch",
         "Junge",
         "Frau",
         "Saori",

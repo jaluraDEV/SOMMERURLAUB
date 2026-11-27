@@ -3,41 +3,41 @@
 E3006.0	(unlabelled)	Shirabes Schleife gefunden.
 
 # --- E3007: C04 -- far end of the log bridge
-E3007.0	Onkel	So! Die Spielzeit fuer heute ist vorbei! // Das Abendessen ist schon feeertig!
+E3007.0	Onkel	So! Die Spielzeit für heute ist vorbei! // Das Abendessen ist schon feeertig!
 
 # --- E3023: H06 -- garden off the veranda (day 30: where is Shirabe? the quiz)
-E3023.0	Tante	Sag mal, Boku-kun, hast du Shirabe gesehen? // Sie ist jetzt schon eine ganze Weile weg... // Ich habe ueberall gesucht, was mir eingefallen ist. Was mag nur mit ihr passiert sein...
-E3023.1	Tante	Ich denke, sie muesste jeden Moment zurueckkommen...
-E3023.2	[SEL]	Curry-Reis | Haehnchen-Katsu | Lachs Muellerin Art
-E3023.3	[SEL]	Hayashi-Reis | Hamburger Steak | Wuerfelsteak
-E3023.4	[SEL]	Gebratenes Fleisch mit Gemuese | Karaage | Tonkatsu
-E3023.5	[SEL]	Hiyashi Chuka | Schwein und Kohl in Austernsosse | Fruehlingsrollen und Happosai
+E3023.0	Tante	Sag mal, Boku-kun, hast du Shirabe gesehen? // Sie ist jetzt schon eine ganze Weile weg... // Ich habe überall gesucht, was mir eingefallen ist. Was mag nur mit ihr passiert sein...
+E3023.1	Tante	Ich denke, sie müsste jeden Moment zurückkommen...
+E3023.2	[SEL]	Curry-Reis | Hähnchen-Katsu | Lachs Müllerin Art
+E3023.3	[SEL]	Hayashi-Reis | Hamburger Steak | Würfelsteak
+E3023.4	[SEL]	Gebratenes Fleisch mit Gemüse | Karaage | Tonkatsu
+E3023.5	[SEL]	Hiyashi Chuka | Schwein und Kohl in Austernsoße | Frühlingsrollen und Happosai
 E3023.6	[SEL]	Salzgegrillter Sanma | Sashimi und Tempura | Frittierte Sardinen
 E3023.7	[SEL]	Frittierte Garnelen | Nikujaga | Kohlrouladen
-E3023.8	[SEL]	Omurice | Frittierter Lachs | Haehnchen-Saute
+E3023.8	[SEL]	Omurice | Frittierter Lachs | Hähnchen-Saute
 E3023.9	[SEL]	Katsudon | Bastardmakrele nach Nanban-Art | Curry-Reis
-E3023.10	[SEL]	Menchi-Katsu | Bratreis und Schwein suess-sauer | Hamburger Steak
+E3023.10	[SEL]	Menchi-Katsu | Bratreis und Schwein süß-sauer | Hamburger Steak
 E3023.11	[SEL]	Spaghetti | Miso-mariniertes Grill-Schwein | Omurice
-E3023.12	[SEL]	Seebarsch Muellerin Art | Sanma Kabayaki | Frittierte Sardinen
+E3023.12	[SEL]	Seebarsch Müllerin Art | Sanma Kabayaki | Frittierte Sardinen
 E3023.13	[SEL]	Kohlrouladen | Tonkatsu | Korokke
-E3023.14	[SEL]	Sashimi und Tempura | Fruehlingsrollen und Happosai | Gefuellte frittierte Lotuswurzel
+E3023.14	[SEL]	Sashimi und Tempura | Frühlingsrollen und Happosai | Gefüllte frittierte Lotuswurzel
 E3023.15	[SEL]	Gyoza | Oyakodon | Hamburger Steak
-E3023.16	[SEL]	Bratreis und Schwein suess-sauer | Curry-Reis | Korokke
+E3023.16	[SEL]	Bratreis und Schwein süß-sauer | Curry-Reis | Korokke
 E3023.17	[SEL]	Spaghetti | Hiyamugi | Oyakodon mit Lachs und Lachsrogen
 E3023.18	[SEL]	Katsu-Curry | Inari-zushi | Omurice
-E3023.19	[SEL]	Kohlrouladen | Huehnchen in Tomatensosse | Gefuellte gruene Paprika
-E3023.20	[SEL]	Ingwer-Schwein | Bratreis und Schwein suess-sauer | Seebarsch Muellerin Art
-E3023.21	[SEL]	Tonkatsu | Fruehlingsrollen und Happosai | Karaage
+E3023.19	[SEL]	Kohlrouladen | Hühnchen in Tomatensoße | Gefüllte grüne Paprika
+E3023.20	[SEL]	Ingwer-Schwein | Bratreis und Schwein süß-sauer | Seebarsch Müllerin Art
+E3023.21	[SEL]	Tonkatsu | Frühlingsrollen und Happosai | Karaage
 E3023.22	[SEL]	Frittierte Garnelen | Bastardmakrelen-Tataki | Hamburger Steak
-E3023.23	[SEL]	Jingisukan | Sushi | Wuerfelsteak
-E3023.24	[SEL]	Sashimi und Tempura | Gegrillter Hokke | Gefuellte frittierte Lotuswurzel
-E3023.25	[SEL]	Haehnchen-Saute | Katsudon | Fruehlingsrollen und Happosai
-E3023.26	[SEL]	Trockencurry | Huehnchen in Tomatensosse | Omurice
+E3023.23	[SEL]	Jingisukan | Sushi | Würfelsteak
+E3023.24	[SEL]	Sashimi und Tempura | Gegrillter Hokke | Gefüllte frittierte Lotuswurzel
+E3023.25	[SEL]	Hähnchen-Saute | Katsudon | Frühlingsrollen und Happosai
+E3023.26	[SEL]	Trockencurry | Hühnchen in Tomatensoße | Omurice
 E3023.27	[SEL]	Spaghetti | Curry-Reis | Gratin
 E3023.28	[SEL]	Bastardmakrele nach Nanban-Art | Gebratener Reis und Happosai | Nikujaga
-E3023.29	[SEL]	Kohlrouladen | Gefuellte gruene Paprika | Hayashi-Reis
+E3023.29	[SEL]	Kohlrouladen | Gefüllte grüne Paprika | Hayashi-Reis
 E3023.30	[SEL]	Curry-Reis | Ingwer-Schwein | Korokke
-E3023.31	[SEL]	Karaage | Seebarsch Muellerin Art | Jingisukan
+E3023.31	[SEL]	Karaage | Seebarsch Müllerin Art | Jingisukan
 E3023.32	Tante	Boku-kun! Was glaubst du, gibt es heute zum Abendessen?
 E3023.33	Tante	Dann freu dich schon mal auf das Abendessen heute.
 
@@ -47,10 +47,10 @@ E3024.1	Tante	Shirabe... Shirabe-chaaan...
 E3024.2	Boku	Du, Tante.
 E3024.3	Tante	Hm...... was ist denn?
 E3024.4	Boku	Vielleicht ist Shirabe weggelaufen... // weil ich morgen nach Hause fahre?
-E3024.5	Tante	Ja, das koennte sein. Auf den ersten Blick wirkt sie so willensstark, dieses Maedchen, aber... // tief im Inneren ist sie ein sehr sanftes, feinfuehliges Kind...
-E3024.6	Boku	Ich gebe mir Muehe und suche nach ihr.
-E3024.7	Tante	Gut. Dann schau du Richtung Meer, Boku-kun... // Aber geh nicht an gefaehrliche Orte.
-E3024.8	Boku	Ja, ich weiss.
+E3024.5	Tante	Ja, das könnte sein. Auf den ersten Blick wirkt sie so willensstark, dieses Mädchen, aber... // tief im Inneren ist sie ein sehr sanftes, feinfühliges Kind...
+E3024.6	Boku	Ich gebe mir Mühe und suche nach ihr.
+E3024.7	Tante	Gut. Dann schau du Richtung Meer, Boku-kun... // Aber geh nicht an gefährliche Orte.
+E3024.8	Boku	Ja, ich weiß.
 E3024.9	Tante	Shirabe... Shirabe-chaaan...
 
 # --- E3034: B05 -- just beyond the beehive
@@ -59,18 +59,18 @@ E3034.1	Moe	Verstehe...
 E3034.2	Moe	Wirklich... allen solche Sorgen zu machen. So ein Dummkopf.
 
 # --- E3050: A18 -- the empty secret base; A07 -- the tool store
-E3050.0	Erzaehler	Am Tag vor meiner Heimkehr war niemand im Geheimversteck unter der Autobahn... // Natuerlich war das fuer mich ein einsamer Anblick, // aber Kinder kennen die Grausamkeit von Kindern, // und so redete ich mir zu: So etwas kommt eben vor...
-E3050.1	Erzaehler	Doch der kuehle Wind ueber dem Teich liess mich spueren, dass von meinem kurzen Sommer in diesen Huegeln // nicht mehr viel Zeit uebrig war... // So etwas kommt vor... dachte ich, und dennoch // schmerzte mir irgendwie die Brust...
+E3050.0	Erzaehler	Am Tag vor meiner Heimkehr war niemand im Geheimversteck unter der Autobahn... // Natürlich war das für mich ein einsamer Anblick, // aber Kinder kennen die Grausamkeit von Kindern, // und so redete ich mir zu: So etwas kommt eben vor...
+E3050.1	Erzaehler	Doch der kühle Wind über dem Teich ließ mich spüren, dass von meinem kurzen Sommer in diesen Hügeln // nicht mehr viel Zeit übrig war... // So etwas kommt vor... dachte ich, und dennoch // schmerzte mir irgendwie die Brust...
 
 # --- E3001: G02 -- breakfast
-E3001.0	Onkel	Dass wir so zusammen fruehstuecken, Boku-kun... // morgen ist schon das letzte Mal, nicht?
+E3001.0	Onkel	Dass wir so zusammen frühstücken, Boku-kun... // morgen ist schon das letzte Mal, nicht?
 E3001.1	Boku	Ja, stimmt. // Ich freue mich schon darauf, das Baby zu sehen...
-E3001.2	Tante	Wenn du nach Hause kommst, gruess Yuzuki-san schoen von mir. // Morgen Vormittag kommt wohl dein Papa, // also was du noch erledigen musst, solange du hier bist, // mach das alles heute noch fertig.
+E3001.2	Tante	Wenn du nach Hause kommst, grüß Yuzuki-san schön von mir. // Morgen Vormittag kommt wohl dein Papa, // also was du noch erledigen musst, solange du hier bist, // mach das alles heute noch fertig.
 E3001.3	Boku	Jaaa!
-E3001.4	Shirabe	Aehm...
+E3001.4	Shirabe	Ähm...
 E3001.5	Tante	Was ist denn?
 E3001.6	Shirabe	...Schon gut. Nichts.
-E3001.7	Tante	Hm-hm-hm, was fuer ein komisches Maedchen.
+E3001.7	Tante	Hm-hm-hm, was für ein komisches Mädchen.
 E3001.8	Shirabe	...Ich sagte doch, nichts.
 E3001.9	Boku	Koooomisch.
 E3001.10	Shirabe	......
@@ -80,39 +80,39 @@ E3001.12	Shirabe, Moe, Boku, Tante	Itadakimaasu!
 # --- E3002: G02 -- after breakfast (Shirabe gone)
 E3002.0	Onkel	Gochisosama deshita.
 E3002.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E3002.2	Tante	Shirabe-chan... nanu? Sie ist nicht da... // Wo ist das Maedchen denn hingegangen, ohne auch nur Gochisosama zu sagen?
+E3002.2	Tante	Shirabe-chan... nanu? Sie ist nicht da... // Wo ist das Mädchen denn hingegangen, ohne auch nur Gochisosama zu sagen?
 
 # --- E3014: A15 -- the nectar flowers
 E3014.0	Onkel	Shirabe... Haaallo, Shirabe...
 E3014.1	Onkel	Oh! Hast du Shirabe gesehen? // Kaoru sagt, sie hat sie seit heute Morgen nicht mehr gesehen, also bin ich auf der Suche nach ihr...
-E3014.2	Boku	Wo du es sagst, nach dem Fruehstueck... habe ich eine rote Schleife auf der Veranda gefunden.
+E3014.2	Boku	Wo du es sagst, nach dem Frühstück... habe ich eine rote Schleife auf der Veranda gefunden.
 E3014.3	Onkel	Ob das Shirabes ist?
 E3014.4	Boku	Das glaube ich schon.
 E3014.5	Onkel	......
-E3014.6	Onkel	Sie ist kein Kind, das etwas Unueberlegtes tut, also ist sie bestimmt wohlauf, aber...
+E3014.6	Onkel	Sie ist kein Kind, das etwas Unüberlegtes tut, also ist sie bestimmt wohlauf, aber...
 
 # --- E3033: H12
-E3033.0	Moe	Wo ist dieses Maedchen bloss hingegangen? // Du, hast du Shirabe gesehen? Sie scheint irgendwohin verschwunden zu sein. // Wirklich, so eine Unruhestifterin!
+E3033.0	Moe	Wo ist dieses Mädchen bloß hingegangen? // Du, hast du Shirabe gesehen? Sie scheint irgendwohin verschwunden zu sein. // Wirklich, so eine Unruhestifterin!
 E3033.1	Moe	Wenn ich sie finde, verpasse ich ihr eine. Ehrlich...
 
 # --- E3030: G15 -- the sisters' room
-E3030.0	Moe	Packst du schon fuer die Heimfahrt?
-E3030.1	Boku	Ueberhaupt nicht... Ich habe schliesslich nur eine kleine Tasche mitgebracht.
+E3030.0	Moe	Packst du schon für die Heimfahrt?
+E3030.1	Boku	Überhaupt nicht... Ich habe schließlich nur eine kleine Tasche mitgebracht.
 E3030.2	Moe	...Ach, deshalb hast du jeden Tag dieselben Sachen angehabt.
 
 # --- E3042: C02 -- the sunflower field (Shirabe found)
 E3042.0	Shirabe	Auch wenn du weg bist, wird dich hier niemand vermissen! // Ganz, ganz sicher niemand!
-E3042.1	Boku	...Alle denken, du bist verschwunden, und suchen dich ueberall.
-E3042.2	Shirabe	Hae! Wer ist verschwunden?
-E3042.3	Boku	Du. Drei. Kaese. Hoch.
-E3042.4	Shirabe	Was soll das denn heissen?
+E3042.1	Boku	...Alle denken, du bist verschwunden, und suchen dich überall.
+E3042.2	Shirabe	Hä! Wer ist verschwunden?
+E3042.3	Boku	Du. Drei. Käse. Hoch.
+E3042.4	Shirabe	Was soll das denn heißen?
 E3042.5	Boku	Wie auch immer, kommst du nicht nach Hause?
-E3042.6	Shirabe	Nein! Ich habe hier noch etwas zu tun. // Uebrigens, hast du in der Naehe vom Haus meine Schleife liegen sehen? // Ich habe sie heute Morgen verloren... ich binde sie mit einem Gummiband fest.
+E3042.6	Shirabe	Nein! Ich habe hier noch etwas zu tun. // Übrigens, hast du in der Nähe vom Haus meine Schleife liegen sehen? // Ich habe sie heute Morgen verloren... ich binde sie mit einem Gummiband fest.
 E3042.7	Boku	...Alle machen sich Sorgen.
-E3042.8	Shirabe	Du bist so hartnaeckig... Tu etwas dagegen, du bist doch mein Diener, mein Ge-Boku, oder?
-E3042.9	Boku	...Was soll das denn heissen?
-E3042.10	Shirabe	Hoer auf, mich zu nerven! Baeaeah!
-E3042.11	Boku	Selber baeaeah!
+E3042.8	Shirabe	Du bist so hartnäckig... Tu etwas dagegen, du bist doch mein Diener, mein Ge-Boku, oder?
+E3042.9	Boku	...Was soll das denn heißen?
+E3042.10	Shirabe	Hör auf, mich zu nerven! Bäääh!
+E3042.11	Boku	Selber bäääh!
 E3042.12	Shirabe	Du bist so...
 E3042.13	Boku	Was?
 E3042.14	Shirabe	Ach, vergiss es. Mach doch, was du willst!
@@ -126,34 +126,34 @@ E3003.0	Moe	Mama! Shirabe ist wieder da!
 E3003.1	Tante	...!
 
 # --- E3005: G17 -- the veranda (the bouquet)
-E3005.0	Onkel	Na, na, wir haben uns Sorgen gemacht, aber zum Glueck ist nichts passiert. Gut, gut.
+E3005.0	Onkel	Na, na, wir haben uns Sorgen gemacht, aber zum Glück ist nichts passiert. Gut, gut.
 E3005.1	Moe	Dummchen.
 E3005.2	Tante	Shirabe-chan... wo warst du denn?
 E3005.3	Shirabe	Richtung Meer...
 E3005.4	Onkel	Du darfst nicht so weit allein weggehen.
 E3005.5	Shirabe	Tut mir leid...
-E3005.6	Moe	Hae? Du bist ja ungewoehnlich brav.
-E3005.7	Shirabe	Das...... ist fuer dich.
-E3005.8	Boku	Hae?
-E3005.9	Shirabe	Ich sagte, das ist fuer dich!
+E3005.6	Moe	Hä? Du bist ja ungewöhnlich brav.
+E3005.7	Shirabe	Das...... ist für dich.
+E3005.8	Boku	Hä?
+E3005.9	Shirabe	Ich sagte, das ist für dich!
 E3005.10	Boku	......
 
 # --- E3013: G01 -- living room
 E3013.0	Onkel	ZzZzz......
 
 # --- E3022: G01 -- living room
-E3022.0	Tante	Tante wollte in Wahrheit eine richtige Berufsfotografin in Tokio werden, // jemand, dessen Werk auch nach dem Tod noch weiterlebt... // Aber da ich zwei so reizende Kinder auf die Welt bringen durfte, // habe ich meinen Traum am Ende vielleicht doch erfuellt, hm-hm... // Oh? Wo ich daran denke, das habe ich noch nie jemandem erzaehlt... // warum habe ich es dir wohl gesagt, Boku-kun... // Hmm... wie seltsam...
+E3022.0	Tante	Tante wollte in Wahrheit eine richtige Berufsfotografin in Tokio werden, // jemand, dessen Werk auch nach dem Tod noch weiterlebt... // Aber da ich zwei so reizende Kinder auf die Welt bringen durfte, // habe ich meinen Traum am Ende vielleicht doch erfüllt, hm-hm... // Oh? Wo ich daran denke, das habe ich noch nie jemandem erzählt... // warum habe ich es dir wohl gesagt, Boku-kun... // Hmm... wie seltsam...
 
 # --- E3031: G15 -- the sisters' room
 E3031.0	Moe	Heute, Shirabe... als Papa sie gefunden hat, war sie wohl im Sonnenblumenfeld. // Pass gut auf Shirabes Geschenk auf, ja...
 E3031.1	Boku	Ja!
-E3031.2	Moe	Ob Shirabe gleich fruehmorgens losgezogen ist, // um Sonnenblumen fuer dich zu pfluecken, Boku-kun?
-E3031.3	Boku	Wer weiss...
-E3031.4	Moe	Ich habe gehoert, du hast Shirabe heute gefunden, Boku-kun. // Tut mir leid, dass meine kleine Schwester dir Umstaende gemacht hat. Danke...
-E3031.5	Moe	Oh, ich weiss! Als Dankeschoen gebe ich dir eine Belohnung.
+E3031.2	Moe	Ob Shirabe gleich frühmorgens losgezogen ist, // um Sonnenblumen für dich zu pflücken, Boku-kun?
+E3031.3	Boku	Wer weiß...
+E3031.4	Moe	Ich habe gehört, du hast Shirabe heute gefunden, Boku-kun. // Tut mir leid, dass meine kleine Schwester dir Umstände gemacht hat. Danke...
+E3031.5	Moe	Oh, ich weiß! Als Dankeschön gebe ich dir eine Belohnung.
 E3031.6	(unlabelled)	Ein neuer Stempel auf der Radio-Gymnastikkarte!
 E3031.7	Moe	Ehehe, das ist ein Geheimnis...
-E3031.8	Moe	Ach, ab uebermorgen ist schon wieder Schule...
+E3031.8	Moe	Ach, ab übermorgen ist schon wieder Schule...
 
 # --- E3043: G07 -- foot of the stairs
 E3043.0	Shirabe	Du solltest einfach schnell nach Hause gehen...
@@ -162,15 +162,15 @@ E3043.1	Shirabe	Ich hasse die Sommerferien...
 # --- E3004: G02 -- after dinner (the aunt's happiness)
 E3004.0	Onkel	Gochisosama deshita.
 E3004.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E3004.2	Tante	Sag mal, Boku-kun... // findest du nicht auch, dass Tantes Maedchen beide richtig, richtig liebe Kinder sind?
+E3004.2	Tante	Sag mal, Boku-kun... // findest du nicht auch, dass Tantes Mädchen beide richtig, richtig liebe Kinder sind?
 E3004.3	Boku	...Ja.
-E3004.4	Tante	Weisst du, Tante... schon allein, wenn ich die beiden so in meiner Naehe habe, // denke ich mir: Ach, wie schoen, dass ich geboren wurde, // und wie schoen, dass ich ihre Mutter werden durfte... // so gluecklich bin ich... // Und Yusaku habe ich auch ueber alles lieb, dass er mir so eine glueckliche Familie geschenkt hat...
+E3004.4	Tante	Weißt du, Tante... schon allein, wenn ich die beiden so in meiner Nähe habe, // denke ich mir: Ach, wie schön, dass ich geboren wurde, // und wie schön, dass ich ihre Mutter werden durfte... // so glücklich bin ich... // Und Yusaku habe ich auch über alles lieb, dass er mir so eine glückliche Familie geschenkt hat...
 E3004.5	Boku	......
-E3004.6	Tante	Konnte Tante dir in diesen Sommerferien auch etwas von ihrem Glueck abgeben, Boku-kun?
+E3004.6	Tante	Konnte Tante dir in diesen Sommerferien auch etwas von ihrem Glück abgeben, Boku-kun?
 E3004.7	[SEL]	Ja! | Geht so
 E3004.8	Tante	Das freut mich. Danke, Boku-kun...
-E3004.9	Tante	Hm-hm, verstehe. Geht so, hm... // Aber wir alle hatten eine richtig, richtig schoene Zeit mit dir, Boku-kun. // Es ist schon eine ganze Weile her, dass es im Haus so lebhaft war...
+E3004.9	Tante	Hm-hm, verstehe. Geht so, hm... // Aber wir alle hatten eine richtig, richtig schöne Zeit mit dir, Boku-kun. // Es ist schon eine ganze Weile her, dass es im Haus so lebhaft war...
 E3004.10	Boku	...War ich denn so ein lautes Kind?
-E3004.11	Tante	Hm-hm, ueberhaupt nicht. Du warst ein sehr braver Junge...
+E3004.11	Tante	Hm-hm, überhaupt nicht. Du warst ein sehr braver Junge...
 E3004.12	Boku	Echt? Danke, Tante!
 E3004.13	Tante	Gern geschehen.

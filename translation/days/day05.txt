@@ -19,92 +19,92 @@
 E0502.0	Onkel	Gochisosama deshita.
 E0502.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
 E0502.2	Tante	Yu-chan, du gehst heute Abend zur Versammlung in Sagi-no-sato, nicht wahr?
-E0502.3	Onkel	Ja! Es geht wohl darum, wie wir Pflanzenschutzmittel etwas bedachter einsetzen koennen, // damit sich die Gluehwuermchenlarven auch in anderen Baechen ausserhalb von Tsukiyono vermehren... // Ich esse zu Abend und gehe dann los.
-E0502.4	Boku	Gluehwuermchenlarven?
-E0502.5	Onkel	Ah, es gibt eine Gluehwuermchenart, die ihre Larvenzeit im Fluss verbringt. // Sie fressen die Wasserschnecken im Fluss und werden gross. // Ach ja, Onkel ist heute Abend nicht da, // aber es ist gefaehrlich, also darfst du nicht zum Gluehwuermchenbach gehen.
+E0502.3	Onkel	Ja! Es geht wohl darum, wie wir Pflanzenschutzmittel etwas bedachter einsetzen können, // damit sich die Glühwürmchenlarven auch in anderen Bächen außerhalb von Tsukiyono vermehren... // Ich esse zu Abend und gehe dann los.
+E0502.4	Boku	Glühwürmchenlarven?
+E0502.5	Onkel	Ah, es gibt eine Glühwürmchenart, die ihre Larvenzeit im Fluss verbringt. // Sie fressen die Wasserschnecken im Fluss und werden groß. // Ach ja, Onkel ist heute Abend nicht da, // aber es ist gefährlich, also darfst du nicht zum Glühwürmchenbach gehen.
 E0502.6	Boku	Ja, verstanden, Onkel.
-E0502.7	Erzaehler	Das war meine einzige Gelegenheit, nachts zum Gluehwuermchenbach zu gehen.
+E0502.7	Erzaehler	Das war meine einzige Gelegenheit, nachts zum Glühwürmchenbach zu gehen.
 
 # --- E0520: H06 -- garden off the veranda, the washing line
-E0520.0	Tante	Boku-kun! Wollen wir das Abendessen-Ratespiel spielen? // Wenn du mitraten willst, sprich am spaeten Nachmittag in der Kueche mit Tante.
-E0520.1	Tante	Tante freut sich jeden Tag darauf, fuer alle zu kochen...
+E0520.0	Tante	Boku-kun! Wollen wir das Abendessen-Ratespiel spielen? // Wenn du mitraten willst, sprich am späten Nachmittag in der Küche mit Tante.
+E0520.1	Tante	Tante freut sich jeden Tag darauf, für alle zu kochen...
 E0520.2	Tante	Boku-kun, langsam vermisst du sicher deine Mama. // Hast du vielleicht Heimweh?
 E0520.3	Boku	Was ist Heimweh?
-E0520.4	Tante	Na ja, jemand, der bisher immer bei dir war // und den du ueber alles gern hast, ist jetzt nicht um dich herum, oder? // So wie dein Papa und deine Mama. // Wirst du dann nicht irgendwie traurig oder einsam?
+E0520.4	Tante	Na ja, jemand, der bisher immer bei dir war // und den du über alles gern hast, ist jetzt nicht um dich herum, oder? // So wie dein Papa und deine Mama. // Wirst du dann nicht irgendwie traurig oder einsam?
 E0520.5	Boku	Warum?
 E0520.6	Tante	Nanu? Du bist nicht einsam?
-E0520.7	Boku	...Noe.
+E0520.7	Boku	...Nö.
 E0520.8	Tante	Also nein, du bist ja schon ganz erwachsen, Boku-kun.
-E0520.9	Boku	Ja, aber jetzt, wo ich weiss, was Heimweh bedeutet, // habe ich irgendwie Lust bekommen, mal Heimweh zu haben.
+E0520.9	Boku	Ja, aber jetzt, wo ich weiß, was Heimweh bedeutet, // habe ich irgendwie Lust bekommen, mal Heimweh zu haben.
 E0520.10	Tante	...Verstehe. Na dann viel Erfolg dabei.
-E0520.11	Tante	Tante hat naemlich... // als sie jung war und in die Stadt kam, sofort Heimweh bekommen.
+E0520.11	Tante	Tante hat nämlich... // als sie jung war und in die Stadt kam, sofort Heimweh bekommen.
 
 # --- E0510: H26 -- the workshop
 E0510.0	Boku	Oh, vor dir steht ein Flugzeugmodell, Onkel!
-E0510.1	Onkel	Ja! // Als Onkels Kind noch klein war, hat es Flugzeuge ueber alles geliebt. // Da hat Tante es mit aller Muehe zusammengebaut.
+E0510.1	Onkel	Ja! // Als Onkels Kind noch klein war, hat es Flugzeuge über alles geliebt. // Da hat Tante es mit aller Mühe zusammengebaut.
 E0510.2	Boku	Kannst du keine bauen, Onkel?
-E0510.3	Onkel	Ahaha, Onkel kann sie auch bauen und baut sie gern, // aber fuer so etwas ist meistens Tante zustaendig.
-E0510.4	Boku	Onkel, hast du schon mal Gluehwuermchen gesehen?
-E0510.5	Onkel	Mhm. Frueher sah man sie ausserdem ueberall.
+E0510.3	Onkel	Ahaha, Onkel kann sie auch bauen und baut sie gern, // aber für so etwas ist meistens Tante zuständig.
+E0510.4	Boku	Onkel, hast du schon mal Glühwürmchen gesehen?
+E0510.5	Onkel	Mhm. Früher sah man sie außerdem überall.
 # NOTE E0510.1: "Onkels Kind", ohne Pronomen: Das Japanische nennt weder Geschlecht noch Namen des Kindes.
 
 # --- E0540: H09 -- garden corner where Shirabe watches ants
-E0540.0	Shirabe	Die Arbeiterameisen schuften auch heute wieder fleissig vor sich hin. // Wie schoen...
-E0540.1	Shirabe	Hast du heute den Orakel-Jizo ausprobiert? // Wenn du es immer und immer wieder versuchst, bis Grosses Glueck herauskommt, // bessert sich dein kuenftiges Leben vielleicht ein bisschen, selbst bei so einem Pechvogel wie dir.
-E0540.2	Boku	Aber dann... muesste ich Jizo-sama ja ganz oft schlagen!
+E0540.0	Shirabe	Die Arbeiterameisen schuften auch heute wieder fleißig vor sich hin. // Wie schön...
+E0540.1	Shirabe	Hast du heute den Orakel-Jizo ausprobiert? // Wenn du es immer und immer wieder versuchst, bis Großes Glück herauskommt, // bessert sich dein künftiges Leben vielleicht ein bisschen, selbst bei so einem Pechvogel wie dir.
+E0540.2	Boku	Aber dann... müsste ich Jizo-sama ja ganz oft schlagen!
 E0540.3	Shirabe	Das ist doch besser, als von mir geschlagen zu werden, oder?
 
 # --- E0551: A18 -- inside the secret base
-E0551.0	Junge	Hae? Wer bist du denn?
+E0551.0	Junge	Hä? Wer bist du denn?
 E0551.1	Boku	...Hast du Wassermelone gegessen?
 E0551.2	Junge	Ja, hier darf man so viel essen, wie man will.
 E0551.3	Boku	Schmeckt sie?
 E0551.4	Junge	Nicht so gut wie die bei meinem Opa in Okuzawa, aber hmm... geht so. // Willst du welche? Wenn ja, bringe ich dir welche mit.
 E0551.5	Boku	Dann nehme ich ein andermal welche.
-E0551.6	Junge	Wie heisst du?
-E0551.7	Boku	...Man nennt mich Boku. // Ich bin nur ueber die Sommerferien da unten bei meinem Onkel zu Besuch.
-E0551.8	Junge	Was?! Igitt, das ist schlecht... // Bei deinem Onkel, das ist doch das Haus da drueben, das Keramik macht, oder?
+E0551.6	Junge	Wie heißt du?
+E0551.7	Boku	...Man nennt mich Boku. // Ich bin nur über die Sommerferien da unten bei meinem Onkel zu Besuch.
+E0551.8	Junge	Was?! Igitt, das ist schlecht... // Bei deinem Onkel, das ist doch das Haus da drüben, das Keramik macht, oder?
 E0551.9	Boku	Ja...
 E0551.10	Boku	Die Wassermelone ist auch von dort.
 E0551.11	Junge	So ist das...
-E0551.12	Junge	Verrat mich ja nicht. // Kapiert? Das ist ein Versprechen unter Maennern. Wer es bricht, kriegt hundert Klapse aufs Handgelenk. // Ganz, ganz sicher!
-E0551.13	Boku	Ja, ich weiss.
+E0551.12	Junge	Verrat mich ja nicht. // Kapiert? Das ist ein Versprechen unter Männern. Wer es bricht, kriegt hundert Klapse aufs Handgelenk. // Ganz, ganz sicher!
+E0551.13	Boku	Ja, ich weiß.
 E0551.14	Junge	Alles klar!
-E0551.15	Junge	Ich heisse Guts.
-E0551.16	Guts	Das hier ist unser geheimes Geheimversteck. // Hehe, nicht uebel, oder?
-E0551.17	Guts	Streng genommen darf niemand ausser den Mitgliedern herein, aber...
-E0551.18	Guts	Ab sofort erhaeltst du eine Sondererlaubnis!
+E0551.15	Junge	Ich heiße Guts.
+E0551.16	Guts	Das hier ist unser geheimes Geheimversteck. // Hehe, nicht übel, oder?
+E0551.17	Guts	Streng genommen darf niemand außer den Mitgliedern herein, aber...
+E0551.18	Guts	Ab sofort erhältst du eine Sondererlaubnis!
 E0551.19	Boku	Ist das, weil ich das Melonen-Geheimnis kenne?
 E0551.20	Guts	Hehe, genau so ist es.
 E0551.21	Boku	He, he, wie lautet denn das Passwort?
-E0551.22	Guts	Hae? Was?
+E0551.22	Guts	Hä? Was?
 E0551.23	Boku	Gibt es kein Passwort, wenn man ins Versteck will?
 E0551.24	Guts	Ach so, das meinst du? Na ja, das ist...
 E0551.25	Guts	Nanu... // Mist! Ich habe es vergessen!
 
 # --- E0570: A18 -- inside the secret base
-E0570.0	Guts	Hier lassen alle ihre Nashornkaefer und Hirschkaefer kaempfen // und tauschen sie.
+E0570.0	Guts	Hier lassen alle ihre Nashornkäfer und Hirschkäfer kämpfen // und tauschen sie.
 
 # --- E0512: G01 -- living room
-E0512.0	Onkel	Zu der Dorfversammlung zu gehen, ist so muehsam... // Boku-kun, willst du statt Onkel hingehen?
-E0512.1	Tante	Untersteh dich! Wenn du so etwas sagst und deine Faulheit auf Boku-kun abfaerbt, // bin ich diejenige, die Aerger bekommt...
+E0512.0	Onkel	Zu der Dorfversammlung zu gehen, ist so mühsam... // Boku-kun, willst du statt Onkel hingehen?
+E0512.1	Tante	Untersteh dich! Wenn du so etwas sagst und deine Faulheit auf Boku-kun abfärbt, // bin ich diejenige, die Ärger bekommt...
 E0512.2	Onkel	Wie viele Tage ist es wohl her, seit ich das letzte Mal aus diesem Tal herausgekommen bin...
 
 # --- E0504: G02 -- dinner, the uncle out
 E0504.0	(voice only)
-E0504.1	Tante	Moes weiter Trainingsanzug lag im Auto, // da meinte Papa, er zieht ihn an, falls es kuehl wird.
-E0504.2	Moe	Nein, er ist nur so weit, weil Papa sich mit Gewalt hineingezwaengt hat.
+E0504.1	Tante	Moes weiter Trainingsanzug lag im Auto, // da meinte Papa, er zieht ihn an, falls es kühl wird.
+E0504.2	Moe	Nein, er ist nur so weit, weil Papa sich mit Gewalt hineingezwängt hat.
 E0504.3	Shirabe	Passt meiner Papa auch?
 E0504.4	Tante	Also dann...
 E0504.5	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E0504.6	Tante	Mama passt er wahrscheinlich. // Waere dann allerdings eine kurze Hose.
+E0504.6	Tante	Mama passt er wahrscheinlich. // Wäre dann allerdings eine kurze Hose.
 
 # --- E0541: G06 -- TV room
 E0541.0	Shirabe	Nanu, ich habe schon wieder Hunger...
-E0541.1	Boku	He, Dreikaesehoch...
+E0541.1	Boku	He, Dreikäsehoch...
 E0541.2	Shirabe	Ah! Ich habe doch gesagt, das ist verboten!
-E0541.3	Boku	Wenn ihr euch in der Schule der Groesse nach aufstellt, die wievielte bist du dann von vorn?
+E0541.3	Boku	Wenn ihr euch in der Schule der Größe nach aufstellt, die wievielte bist du dann von vorn?
 E0541.4	Shirabe	...Na und? Erster Platz.
-E0541.5	Shirabe	Wenn du mich klein nennst, verzeihe ich dir das nicht. // Shirabe wird naemlich noch ganz gross...
+E0541.5	Shirabe	Wenn du mich klein nennst, verzeihe ich dir das nicht. // Shirabe wird nämlich noch ganz groß...
 E0541.6	Boku	Kennst du Guts-kun?
 E0541.7	Shirabe	Ja, Gacchan kenne ich. // Er ist mit dem Angsthase Brille aus Shirabes Klasse und dem Dicken aus den oberen Klassen befreundet.

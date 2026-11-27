@@ -4,7 +4,7 @@ E3101.0	Onkel	Vielleicht weil ich gestern im Wohnzimmer eingeschlafen bin, aber 
 E3101.1	Moe	Du klingst wie ein alter Mann.
 E3101.2	Onkel	He, wenn du das dauernd sagst, wird es noch wahr.
 E3101.3	Tante	Geht es dir gut?
-E3101.4	Onkel	Na ja, einigermassen.
+E3101.4	Onkel	Na ja, einigermaßen.
 E3101.5	Moe	Pass gut auf dich auf.
 E3101.6	Onkel	Mhm, danke.
 E3101.7	Onkel	Also dann, itadakimaasu!

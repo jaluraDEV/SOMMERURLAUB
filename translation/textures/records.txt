@@ -3,17 +3,17 @@
 
 # --- FS_WAL: the fishing record
 rec@FS_WAL.fish	St.
-rec@FS_WAL.size	Groesse
+rec@FS_WAL.size	Größe
 rec@FS_WAL.average	Schnitt
 rec@FS_WAL.largest	Rekord
-rec@FS_WAL.bait	Koeder (Wurm)
-rec@FS_WAL.bait_float	Koeder (Wurm) + Pose
+rec@FS_WAL.bait	Köder (Wurm)
+rec@FS_WAL.bait_float	Köder (Wurm) + Pose
 rec@FS_WAL.tenkara_small	Tenkara (Klein)
-rec@FS_WAL.tenkara_large	Tenkara (Gross)
+rec@FS_WAL.tenkara_large	Tenkara (Groß)
 
 # --- M_S01100: the bug-trading notebook's record card
 rec@M_S01100.caught	Fang 8/
 rec@M_S01100.won	S
 rec@M_S01100.lost	N
 rec@M_S01100.value	So viel wert wie
-rec@M_S01100.value_unit	Saege-Kaefer
+rec@M_S01100.value_unit	Säge-Käfer

@@ -1,4 +1,4 @@
 # Kite flying's HUD (PLAN GFX-13). Format: translation/textures/README.md.
 kite@hud.direction	Wind
 kite@hud.speed	Fahrt
-kite@hud.altitude	Hoehe
+kite@hud.altitude	Höhe

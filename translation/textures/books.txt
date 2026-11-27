@@ -5,101 +5,101 @@
 mzkan@0.name	Moschusfalter
 mzkan@0.family	Ritterfalter-Familie
 mzkan@0.size	Spannweite 100 bis 120 mm
-mzkan@0.food	Mag Nektar von Oelweide, Distel und Azalee
-mzkan@0.body	Er mag keine Kaelte und hat wenig Futterpflanzen, daher ist er mancherorts selten. Er fliegt tief und langsam ueber Wege und Wiesen. Die Fluegel des Maennchens glaenzen seidig, und gefangen duftet es leicht, daher sein Name Moschusfalter. Die Raupen fressen Osterluzei und neigen auch dazu, sich gegenseitig zu fressen.
+mzkan@0.food	Mag Nektar von Ölweide, Distel und Azalee
+mzkan@0.body	Er mag keine Kälte und hat wenig Futterpflanzen, daher ist er mancherorts selten. Er fliegt tief und langsam über Wege und Wiesen. Die Flügel des Männchens glänzen seidig, und gefangen duftet es leicht, daher sein Name Moschusfalter. Die Raupen fressen Osterluzei und neigen auch dazu, sich gegenseitig zu fressen.
 
 # --- Insect page 1: Mikado-Schwalbenschwanz
 mzkan@1.name	Mikado-Schwalbenschwanz
 mzkan@1.family	Ritterfalter-Familie
 mzkan@1.size	Spannweite 70 mm
 mzkan@1.food	Mag Nektar von Klebsame und Doldenrebe
-mzkan@1.body	In Suedostasien ist er haeufig, doch in Japan, am Nordrand seines Gebiets, gibt es nur wenige, und vielerorts steht er als Naturdenkmal unter Schutz. Besonders die Gegend um den Grossen Schrein von Ise ist beruehmt als Fundort. Die Raupen fressen Blaetter des Ogatama-Baums, der oft bei Schreinen gepflanzt wird.
+mzkan@1.body	In Südostasien ist er häufig, doch in Japan, am Nordrand seines Gebiets, gibt es nur wenige, und vielerorts steht er als Naturdenkmal unter Schutz. Besonders die Gegend um den Großen Schrein von Ise ist berühmt als Fundort. Die Raupen fressen Blätter des Ogatama-Baums, der oft bei Schreinen gepflanzt wird.
 
 # --- Insect page 2: Tagpfauenauge
 mzkan@2.name	Tagpfauenauge
 mzkan@2.family	Edelfalter-Familie
 mzkan@2.size	Spannweite 55 bis 65 mm
 mzkan@2.food	Mag Nektar von Berg-Skabiosen und Disteln, Dung und Fallobst
-mzkan@2.body	Ein Falter mit besonderem Koennen: Beim Abflug reibt er seine Fluegel aneinander und macht ein raschelndes Geraeusch. Er traegt Augenflecken wie ein Pfau auf den Fluegeln, daher sein Name. Er mag Berge und kuehle Orte und zeigt sich oft gut sichtbar auf Wegen und Felsen.
+mzkan@2.body	Ein Falter mit besonderem Können: Beim Abflug reibt er seine Flügel aneinander und macht ein raschelndes Geräusch. Er trägt Augenflecken wie ein Pfau auf den Flügeln, daher sein Name. Er mag Berge und kühle Orte und zeigt sich oft gut sichtbar auf Wegen und Felsen.
 
 # --- Insect page 3: Grosser Schillerfalter
-mzkan@3.name	Grosser Schillerfalter
+mzkan@3.name	Großer Schillerfalter
 mzkan@3.family	Edelfalter-Familie
 mzkan@3.size	Spannweite 100 bis 120 mm
-mzkan@3.food	Mag Baumkronen von Mischwaeldern und Saft der Eiche
-mzkan@3.body	Ein wunderschoener Falter, der fuer Japan steht. Das Maennchen traegt glaenzend blauviolette Fluegel auf dem Ruecken. Er fliegt hoch ueber den Baeumen, sodass er im Flug kaum zu fangen ist. Da er Baumsaft liebt, hat man die besten Chancen, wenn er am Stamm sitzt und trinkt.
+mzkan@3.food	Mag Baumkronen von Mischwäldern und Saft der Eiche
+mzkan@3.body	Ein wunderschöner Falter, der für Japan steht. Das Männchen trägt glänzend blauviolette Flügel auf dem Rücken. Er fliegt hoch über den Bäumen, sodass er im Flug kaum zu fangen ist. Da er Baumsaft liebt, hat man die besten Chancen, wenn er am Stamm sitzt und trinkt.
 
 # --- Insect page 4: Loomis-Blaeuling
-mzkan@4.name	Loomis-Blaeuling
-mzkan@4.family	Blaeulings-Familie
+mzkan@4.name	Loomis-Bläuling
+mzkan@4.family	Bläulings-Familie
 mzkan@4.size	Spannweite 30 mm
 mzkan@4.food	Die Raupen fressen Ichii-Eiche aus der Buchenfamilie
-mzkan@4.body	Falter, die den Winter ueberlebt haben, legen im Fruehling Eier, und im Fruehsommer schluepfen neue Falter. Er sitzt gern auf Blaettern und kommt an heissen Sommertagen zum Wassertrinken an Baeche. Durch Pestizide und Taifune wurde er selten und steht am Berg Kasuga in Nara unter Schutz.
+mzkan@4.body	Falter, die den Winter überlebt haben, legen im Frühling Eier, und im Frühsommer schlüpfen neue Falter. Er sitzt gern auf Blättern und kommt an heißen Sommertagen zum Wassertrinken an Bäche. Durch Pestizide und Taifune wurde er selten und steht am Berg Kasuga in Nara unter Schutz.
 
 # --- Insect page 5: Tengu-Falter
 mzkan@5.name	Tengu-Falter
 mzkan@5.family	Tengu-Falter-Familie
 mzkan@5.size	Spannweite 40 bis 50 mm
-mzkan@5.food	Die Raupen fressen Chinesischen und Ezo-Zuergelbaum
-mzkan@5.body	Sein Name stammt vom kleinen Hoecker am Kopf, wie eine Tengu-Nase. Die Falter ruhen gern am Boden, auf Wegen oder Felsen, und sitzen auch gern an duennen Zweigen und Silbergras. Im Hochsommer haelt er Ruhezeit und ueberwintert als Falter. Im kuehlen Fruehling und Herbst trinkt er Nektar an Blueten.
+mzkan@5.food	Die Raupen fressen Chinesischen und Ezo-Zürgelbaum
+mzkan@5.body	Sein Name stammt vom kleinen Höcker am Kopf, wie eine Tengu-Nase. Die Falter ruhen gern am Boden, auf Wegen oder Felsen, und sitzen auch gern an dünnen Zweigen und Silbergras. Im Hochsommer hält er Ruhezeit und überwintert als Falter. Im kühlen Frühling und Herbst trinkt er Nektar an Blüten.
 
 # --- Insect page 6: Gruener Dickkopffalter
-mzkan@6.name	Gruener Dickkopffalter
+mzkan@6.name	Grüner Dickkopffalter
 mzkan@6.family	Dickkopffalter-Familie
 mzkan@6.size	Spannweite 50 mm
-mzkan@6.food	Mag allerlei Blueten und Orte nahe Feuchtgebieten
-mzkan@6.body	Ein Falter mit sehr markanten Fluegeln: tiefgruen mit orangen Flecken. Hat ein Maennchen einen guten Platz gefunden, etwa eine Waldlichtung, fliegt es immer wieder dieselbe Runde ab. Das koennen wir nutzen, um ihn zu fangen.
+mzkan@6.food	Mag allerlei Blüten und Orte nahe Feuchtgebieten
+mzkan@6.body	Ein Falter mit sehr markanten Flügeln: tiefgrün mit orangen Flecken. Hat ein Männchen einen guten Platz gefunden, etwa eine Waldlichtung, fliegt es immer wieder dieselbe Runde ab. Das können wir nutzen, um ihn zu fangen.
 
 # --- Insect page 7: Urzeitlibelle
 mzkan@7.name	Urzeitlibelle
 mzkan@7.family	Urzeitlibellen-Familie
-mzkan@7.size	Koerper ca. 50 mm, Hinterfluegel ca. 38 mm
-mzkan@7.food	Mag Oberlaeufe von Bergbaechen
-mzkan@7.body	Auf den ersten Blick wirkt sie wie eine Keiljungfer oder kleine Mosaikjungfer, doch ihre Augen stehen weit auseinander und ihre Fluegel aehneln einer Kleinlibelle. Man fand fast 60 fossile Libellenarten mit diesen Merkmalen, aber heute leben nur noch sie und die Himalaja-Urzeitlibelle. Ein echtes lebendes Fossil.
+mzkan@7.size	Körper ca. 50 mm, Hinterflügel ca. 38 mm
+mzkan@7.food	Mag Oberläufe von Bergbächen
+mzkan@7.body	Auf den ersten Blick wirkt sie wie eine Keiljungfer oder kleine Mosaikjungfer, doch ihre Augen stehen weit auseinander und ihre Flügel ähneln einer Kleinlibelle. Man fand fast 60 fossile Libellenarten mit diesen Merkmalen, aber heute leben nur noch sie und die Himalaja-Urzeitlibelle. Ein echtes lebendes Fossil.
 
 # --- Insect page 8: Berg-Keiljungfer
 mzkan@8.name	Berg-Keiljungfer
 mzkan@8.family	Flussjungfern-Familie
-mzkan@8.size	Koerper 50 bis 55 mm, Hinterfluegel 31 bis 33 mm
-mzkan@8.food	Mag Bergkaemme und Orte nahe Berggipfeln
-mzkan@8.body	Ihr Koerper hat gelb-schwarze Streifen wie die Oniyanma-Familie, aber sie faellt durch lange Hinterbeine mit nadelartigen Dornen auf. Sie schluepft im Unterlauf grosser Fluesse und in Ufertuempeln, verlaesst aber gleich das Wasser und zieht auf Bergkaemme. Im Herbst kehrt sie zur Eiablage ins Tiefland zurueck.
+mzkan@8.size	Körper 50 bis 55 mm, Hinterflügel 31 bis 33 mm
+mzkan@8.food	Mag Bergkämme und Orte nahe Berggipfeln
+mzkan@8.body	Ihr Körper hat gelb-schwarze Streifen wie die Oniyanma-Familie, aber sie fällt durch lange Hinterbeine mit nadelartigen Dornen auf. Sie schlüpft im Unterlauf großer Flüsse und in Ufertümpeln, verlässt aber gleich das Wasser und zieht auf Bergkämme. Im Herbst kehrt sie zur Eiablage ins Tiefland zurück.
 
 # --- Kite page 0: Rechteckdrachen
 tzkan@0.name	Rechteckdrachen
-tzkan@0.level	Anfaenger
-tzkan@0.body	Die zweite Querleiste von oben wird besonders stark gespannt, daher heisst er Rechteckdrachen mit Mittelspannung. Er steigt schon bei leichtem Wind muehelos auf. Wenn er unruhig steigt, befestige Papierschwaenze an beiden unteren Ecken.
+tzkan@0.level	Anfänger
+tzkan@0.body	Die zweite Querleiste von oben wird besonders stark gespannt, daher heißt er Rechteckdrachen mit Mittelspannung. Er steigt schon bei leichtem Wind mühelos auf. Wenn er unruhig steigt, befestige Papierschwänze an beiden unteren Ecken.
 
 # --- Kite page 1: Nina-Drachen
 tzkan@1.name	Nina-Drachen
 tzkan@1.level	Mittelstufe
-tzkan@1.body	Ein kleiner Kinderdrachen von der Insel Iki bei Nagasaki. Seine Leisten sind sehr duenn, also lass ihn bei leichtem Wind steigen. Oben am Himmel wehen seine langen rot-weiss gestreiften Schwaenze klar und schoen im Wind.
+tzkan@1.body	Ein kleiner Kinderdrachen von der Insel Iki bei Nagasaki. Seine Leisten sind sehr dünn, also lass ihn bei leichtem Wind steigen. Oben am Himmel wehen seine langen rot-weiß gestreiften Schwänze klar und schön im Wind.
 
 # --- Kite page 2: Zikadendrachen
 tzkan@2.name	Zikadendrachen
 tzkan@2.level	Mittelstufe
-tzkan@2.body	Er hat recht kraeftige Leisten, daher fliegt er am besten an windigen Tagen. Spanne ihn etwas staerker, damit er raeumlich wird. Im Sommer am Himmel sieht er aus wie eine echte Zikade. Nimm als Schwanz eine duenne Schnur von 2 bis 3 m Laenge.
+tzkan@2.body	Er hat recht kräftige Leisten, daher fliegt er am besten an windigen Tagen. Spanne ihn etwas stärker, damit er räumlich wird. Im Sommer am Himmel sieht er aus wie eine echte Zikade. Nimm als Schwanz eine dünne Schnur von 2 bis 3 m Länge.
 
 # --- Kite page 3: Vogeldrachen
 tzkan@3.name	Vogeldrachen
 tzkan@3.level	Fortgeschritten
-tzkan@3.body	Ein raeumlich gebauter Drachen in Form eines Vogels mit grossen Fluegeln. Sein leuchtend oranger Koerper hebt sich vom blauen Himmel ab, und er steigt anmutig auf, als wuerde er durch den weiten Himmel schwimmen.
+tzkan@3.body	Ein räumlich gebauter Drachen in Form eines Vogels mit großen Flügeln. Sein leuchtend oranger Körper hebt sich vom blauen Himmel ab, und er steigt anmutig auf, als würde er durch den weiten Himmel schwimmen.
 
 # --- Kite page 4: Karpfendrachen
 tzkan@4.name	Karpfendrachen
 tzkan@4.level	Fortgeschritten
-tzkan@4.body	Ein raeumlich gebauter Drachen in Form einer Karpfenfahne, die froehlich ueber den Himmel schwimmt. Sein Geruest besteht aus duennen Vierkantstaeben. Da er groesser und schwerer ist, braucht man viel Kraft zum Start, danach fliegt er sehr ruhig.
+tzkan@4.body	Ein räumlich gebauter Drachen in Form einer Karpfenfahne, die fröhlich über den Himmel schwimmt. Sein Gerüst besteht aus dünnen Vierkantstäben. Da er größer und schwerer ist, braucht man viel Kraft zum Start, danach fliegt er sehr ruhig.
 
 # --- Kite page 5: Flugzeugdrachen
 tzkan@5.name	Flugzeugdrachen
 tzkan@5.level	Meister
-tzkan@5.body	Ein kleiner, sehr ruhiger Drachen in raeumlicher Bauweise. Achte beim Landen darauf, dass er nicht hart aufschlaegt. Wenn du die Schnur geschickt einholst, kannst du ihn direkt aus dem Flug mit der Hand auffangen.
+tzkan@5.body	Ein kleiner, sehr ruhiger Drachen in räumlicher Bauweise. Achte beim Landen darauf, dass er nicht hart aufschlägt. Wenn du die Schnur geschickt einholst, kannst du ihn direkt aus dem Flug mit der Hand auffangen.
 
 # --- Kite page 6: Drachenkette
 tzkan@6.name	Drachenkette
 tzkan@6.level	Meister
-tzkan@6.body	Ein Drachen aus leichten, bunten Plastiktueten. Er reicht von etwa 5 bis zu langen Ketten aus rund 100 Drachen und haelt sowohl leichten als auch recht starken Wind aus. Pass auf, dass die Schnur nicht reisst.
+tzkan@6.body	Ein Drachen aus leichten, bunten Plastiktüten. Er reicht von etwa 5 bis zu langen Ketten aus rund 100 Drachen und hält sowohl leichten als auch recht starken Wind aus. Pass auf, dass die Schnur nicht reißt.
 
 # --- Kite page 7: Boku-Drachen
 tzkan@7.name	Boku-Drachen
 tzkan@7.level	Stufe ?
-tzkan@7.body	Ein Drachen in genau der Groesse und Gestalt einer gewissen Person. Unterhalb der Knie hat er keine Staebe, sodass es im Flug aussieht, als wuerde er ueber den Himmel spazieren. Lass deinen Doppelgaenger doch mal durch die Luefte wandern.
+tzkan@7.body	Ein Drachen in genau der Größe und Gestalt einer gewissen Person. Unterhalb der Knie hat er keine Stäbe, sodass es im Flug aussieht, als würde er über den Himmel spazieren. Lass deinen Doppelgänger doch mal durch die Lüfte wandern.

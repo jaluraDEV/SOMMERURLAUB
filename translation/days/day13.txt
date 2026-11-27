@@ -4,42 +4,42 @@ E1302.0	Onkel	Gochisosama deshita.
 E1302.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
 E1302.2	Onkel	Boku-kun, hast du inzwischen genug Krabbeltiere gefangen, um Insektenprofessor zu werden?
 E1302.3	[SEL]	Ja | Nein
-E1302.4	Onkel	Wenn du dann noch seltenere Insekten fangen willst, // im Buecherregal im Wohnzimmer steht das Insekten-Bestimmungsbuch! Lies es gruendlich, // finde heraus, wo die Kaefer leben, und leg dich auf die Lauer.
+E1302.4	Onkel	Wenn du dann noch seltenere Insekten fangen willst, // im Bücherregal im Wohnzimmer steht das Insekten-Bestimmungsbuch! Lies es gründlich, // finde heraus, wo die Käfer leben, und leg dich auf die Lauer.
 E1302.5	Boku	Ja, verstanden. Das Insektenbuch im Wohnzimmer.
 
 # --- E1320: H08 -- the yard
 E1320.0	Tante	Boku-kun, machen dir alle Insekten nichts aus?
-E1320.1	Boku	Ja! // Ausser Spinnen und Kakerlaken ist mir fast alles egal.
+E1320.1	Boku	Ja! // Außer Spinnen und Kakerlaken ist mir fast alles egal.
 E1320.2	Tante	Ach so. Dann bist du genau wie Tante.
-E1320.3	Boku	Ja! Und bei allen anderen Insekten... // mir wird gar nicht schlecht, wenn ich ihnen Beine ausreisse oder sie auseinandernehme.
+E1320.3	Boku	Ja! Und bei allen anderen Insekten... // mir wird gar nicht schlecht, wenn ich ihnen Beine ausreiße oder sie auseinandernehme.
 E1320.4	Tante	...So ein "macht nichts aus" also.
 E1320.5	Tante	Jungs nehmen einfach alles auseinander, ob Insekten oder Puppen.
 
 # --- E1312: G01 -- living room
-E1312.0	Onkel	Boku-kun, wie laeuft es in letzter Zeit mit dem Angeln?
+E1312.0	Onkel	Boku-kun, wie läuft es in letzter Zeit mit dem Angeln?
 E1312.1	[SEL]	Hervorragend | Nicht so toll
-E1312.2	Onkel	Gerade bei Yamame sollte man moeglichst frueh den Anhieb setzen. // Dieser Fisch merkt naemlich sofort, dass der Koeder unecht ist, und spuckt ihn wieder aus. // Deshalb heisst es, man soll am besten schon anziehen, bevor er den Haken im Maul hat.
-E1312.3	Onkel	Aber in den Fluessen hier kommen kaum Angler vorbei, // deshalb sind die Fische keine Menschen gewoehnt und lassen sich wirklich leicht fangen.
+E1312.2	Onkel	Gerade bei Yamame sollte man möglichst früh den Anhieb setzen. // Dieser Fisch merkt nämlich sofort, dass der Köder unecht ist, und spuckt ihn wieder aus. // Deshalb heißt es, man soll am besten schon anziehen, bevor er den Haken im Maul hat.
+E1312.3	Onkel	Aber in den Flüssen hier kommen kaum Angler vorbei, // deshalb sind die Fische keine Menschen gewöhnt und lassen sich wirklich leicht fangen.
 
 # --- E1331: G15 -- the sisters' room
 E1331.0	Moe	Nanu...? Heute ist Freitag der 13. ...
 E1331.1	Moe	Ach, dann ist der Sonderverkauf bei Yahaba-ya ja schon vorbei.
 
 # --- E1340: H04 -- garden corner where Shirabe watches ants
-E1340.0	Boku	Nachdem Uri Geller beruehmt wurde, // gab es da nicht haufenweise Gabel-Loeffel mit Spuren, wo sie mit Gewalt verbogen wurden?
-E1340.1	Shirabe	An unserer Schule haben sogar die Lehrer ihre Gedankenkraft geuebt.
-E1340.2	Shirabe	Trotzdem, warum wird man zu Hause ausgeschimpft, wenn man Reis mit dem Loeffel isst, // waehrend es in der Schule erlaubt ist?
+E1340.0	Boku	Nachdem Uri Geller berühmt wurde, // gab es da nicht haufenweise Gabel-Löffel mit Spuren, wo sie mit Gewalt verbogen wurden?
+E1340.1	Shirabe	An unserer Schule haben sogar die Lehrer ihre Gedankenkraft geübt.
+E1340.2	Shirabe	Trotzdem, warum wird man zu Hause ausgeschimpft, wenn man Reis mit dem Löffel isst, // während es in der Schule erlaubt ist?
 
 # --- E1341: G06 -- TV room
 E1341.0	Shirabe	Nanu... heute ist Freitag der 13.
-E1341.1	Shirabe	Aber wir sind hier in Japan, also zaehlt das nicht.
+E1341.1	Shirabe	Aber wir sind hier in Japan, also zählt das nicht.
 
 # --- E1304: G02 -- after dinner (clouds)
 E1304.0	Onkel	Gochisosama deshita.
 E1304.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E1304.2	Onkel	Heute waren wieder schoene Wolken am Himmel, richtige Sommerformen.
-E1304.3	Shirabe	...Du, ich habe zufaellig etwas aufgeschnappt... // haben Sardinenwolken... die Form von Sardinen?
-E1304.4	Onkel	Hae? ...Nun ja, weisst du...
+E1304.2	Onkel	Heute waren wieder schöne Wolken am Himmel, richtige Sommerformen.
+E1304.3	Shirabe	...Du, ich habe zufällig etwas aufgeschnappt... // haben Sardinenwolken... die Form von Sardinen?
+E1304.4	Onkel	Hä? ...Nun ja, weißt du...
 E1304.5	Shirabe	Gibt es dann auch Donut-Wolken und Softeis-Wolken?
 E1304.6	Boku	Und Anmitsu?
 E1304.7	Shirabe	Waffeln!
@@ -48,6 +48,6 @@ E1304.9	Onkel	Na dann geht ihr zwei doch hinaus zum Kap der Winde und sucht nach
 E1304.10	Boku, Shirabe	Neue Wolken?
 E1304.11	Shirabe	Am Kap der Winde...
 E1304.12	Boku	Das neueste Wolkenmodell!
-E1304.13	Tante	Aber bis zum Kap der Winde ist es weit, also passt gut auf. // Geht moeglichst ohne Umwege direkt dorthin.
+E1304.13	Tante	Aber bis zum Kap der Winde ist es weit, also passt gut auf. // Geht möglichst ohne Umwege direkt dorthin.
 # NOTE E1304.3: Sardinenwolken (iwashi-gumo), schuppige Schaefchenwolken im Spaetsommer; das Gespraech haengt am woertlichen Bild (Glossar § 7).
 # NOTE E1304.10: Die einzige Zeile, die beide zusammen sprechen, unter gemeinsamem Label (Stilbibel § 9).

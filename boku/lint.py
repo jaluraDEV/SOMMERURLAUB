@@ -231,24 +231,13 @@ EM_DASH = "\u2014"
 """What `em-dash` looks for."""
 
 
-FORBIDDEN_GERMAN = re.compile(r"[\u00e4\u00f6\u00fc\u00c4\u00d6\u00dc\u00df]")
-"""Real German umlauts and Eszett: game fonts carry ASCII only (style guide § 9)."""
-
 FORBIDDEN_QUOTES = re.compile(r"[\u201e\u201c\u00bb\u00ab]")
 """Typographic German quotation marks: use straight ASCII quotes (style guide § 9)."""
 
 
 def german_ascii_problems(text: str) -> list[tuple[str, str]]:
-    """`(check, message)` for real umlauts/Eszett or typographic German quotes in `text`."""
+    """`(check, message)` for typographic German quotes in `text`."""
     out: list[tuple[str, str]] = []
-    if umlauts := FORBIDDEN_GERMAN.findall(text):
-        chars = "".join(dict.fromkeys(umlauts))
-        out.append(
-            (
-                "umlaut",
-                f"Umlaut gefunden \u2014 bitte ASCII-Umschrift ae/oe/ue/ss verwenden ({chars!r})",
-            )
-        )
     if quotes := FORBIDDEN_QUOTES.findall(text):
         chars = "".join(dict.fromkeys(quotes))
         out.append(

@@ -16,109 +16,109 @@
 # --- E0605: G13, G14 -- Boku's room, the morning after the fireflies
 E0605.0	Shirabe	Buh!
 E0605.1	Boku	Whoa!
-E0605.2	Shirabe	Es gibt Fruehstueck.
+E0605.2	Shirabe	Es gibt Frühstück.
 E0605.3	Boku	Mhm...... Nanu? Und die Gymnastik?
-E0605.4	Shirabe	Schlafmuetze!
+E0605.4	Shirabe	Schlafmütze!
 
 # --- E0006 / E0007: the breakfast chorus (G02), 7:00 and 8:00 - day-independent; translated in
 #     shared.txt, not here, so that each event is translated once (days/README.md § shared.txt).
 
 # --- E0620: H06 -- garden off the veranda, the washing line
-E0620.0	Tante	Boku-kun, gestern Abend bist du gar nicht ausgebuechst, obwohl Onkel nicht da war, was?
-E0620.1	Tante	Heute Morgen hast du aber ganz schoen lange geschlafen.
+E0620.0	Tante	Boku-kun, gestern Abend bist du gar nicht ausgebüchst, obwohl Onkel nicht da war, was?
+E0620.1	Tante	Heute Morgen hast du aber ganz schön lange geschlafen.
 E0620.2	Boku	Ja.
 E0620.3	Tante	Boku-kun, verheimlichst du Tante nicht etwas?
-E0620.4	Boku	Hae? Ich glaube nicht, dass ich etwas verheimliche...
-E0620.5	Tante	Sooo? // Du warst gestern Nacht am Gluehwuermchenbach, nicht wahr?
+E0620.4	Boku	Hä? Ich glaube nicht, dass ich etwas verheimliche...
+E0620.5	Tante	Sooo? // Du warst gestern Nacht am Glühwürmchenbach, nicht wahr?
 E0620.6	Boku	Tut mir leid. Aber... // aber woher wusstest du das?
 E0620.7	Tante	Hm-hm...... Als ich vorhin dein Laken wechseln wollte, // kam ein kleiner Gast aus deinem Futon gekrochen. // Tante hat sich so erschreckt, dass sie wild herumfuchtelte, aber sie hat ihn gefangen.
-E0620.8	Boku	Ein Gluehwuermchen? Kam da ein Gluehwuermchen heraus?
-E0620.9	Tante	Aber dein Kaeferkaefig schien voll zu sein, // also ist Tante zum Bach gegangen und hat es freigelassen.
+E0620.8	Boku	Ein Glühwürmchen? Kam da ein Glühwürmchen heraus?
+E0620.9	Tante	Aber dein Käferkäfig schien voll zu sein, // also ist Tante zum Bach gegangen und hat es freigelassen.
 E0620.10	Boku	Oooch, nein...
-E0620.11	Tante	Aber das Gluehwuermchen durfte bis zum Morgen bei dir bleiben, // vielleicht hatte es also eine schoene Zeit...
-E0620.12	Tante	Tja, wer weiss? // Schau in deinen Kaeferkaefig und sieh selbst nach.
+E0620.11	Tante	Aber das Glühwürmchen durfte bis zum Morgen bei dir bleiben, // vielleicht hatte es also eine schöne Zeit...
+E0620.12	Tante	Tja, wer weiß? // Schau in deinen Käferkäfig und sieh selbst nach.
 E0620.13	Boku	Whoa, danke, Tante!
-E0620.14	Tante	Aber bei Tag betrachtet ist ein Gluehwuermchen doch bloss ein Bockkaefer, oder?
+E0620.14	Tante	Aber bei Tag betrachtet ist ein Glühwürmchen doch bloß ein Bockkäfer, oder?
 # NOTE E0620.0: "dasso" bedeutet Ausbruch/Fahnenflucht - Tantens Scherz ueber die Nacht ohne Waechter.
 
 # --- E0606: G06 -- TV room (August 6, the Hiroshima memorial on the news)
 E0606.0	(voice only)	Zur heutigen Friedensgedenkfeier haben sich zahlreiche Menschen im Friedenspark von Hiroshima versammelt.
 
 # --- E0640: H09 -- garden corner where Shirabe watches ants
-E0640.0	Shirabe	Weisst du, Shirabe... // hat kleine Ameisen ueber alles lieb.
+E0640.0	Shirabe	Weißt du, Shirabe... // hat kleine Ameisen über alles lieb.
 E0640.1	Boku	Warum?
 E0640.2	Shirabe	Ich will aus der Welt der Ameisen die Regentschaft erlernen.
 E0640.3	Boku	...Re-gen-schaft?
-E0640.4	Shirabe	Und dann breitet sich vor Shirabe eine glaenzende Zukunft aus.
+E0640.4	Shirabe	Und dann breitet sich vor Shirabe eine glänzende Zukunft aus.
 E0640.5	Boku	...
 E0640.6	Shirabe	Ich lass ihn brumm-brumm machen.
 E0640.7	Boku	...Was denn?
 E0640.8	Shirabe	Meinen Benz!
-E0640.9	Shirabe	Shirabe wird ganz bestimmt einmal gross rauskommen.
+E0640.9	Shirabe	Shirabe wird ganz bestimmt einmal groß rauskommen.
 # NOTE E0640.2-.3: teiogaku (Regentschaft); Boku wiederholt die aufgeschnappten Silben (Glossar § 9 #3).
 
 # --- E0614: A14 -- the watermelon field
 E0614.0	Onkel	Heute halte ich hier so Wache, damit keine Melonendiebe kommen.
-E0614.1	Onkel	Ach, gerade an so einem heissen Tag haette ich Lust auf kalte Wassermelone.
+E0614.1	Onkel	Ach, gerade an so einem heißen Tag hätte ich Lust auf kalte Wassermelone.
 
 # --- E0650: A18 -- the secret base, the three boys
 E0650.0	Brille	Er kommt, er kommt...
 E0650.1	Fat	Ich rieche den fauligen Wind der Stadt.
-E0650.2	Guts	Bohnenstange, hast du auch ordentlich gefruehstueckt?
+E0650.2	Guts	Bohnenstange, hast du auch ordentlich gefrühstückt?
 E0650.3	(voice only)
 E0650.4	Guts	Ich stelle ihn euch vor. Das ist Boku-chan.
 E0650.5	Boku	Freut mich...
 E0650.6	Guts	Das hier ist Mammut-Fetti.
 E0650.7	Fat	Sei still!
-E0650.8	Guts	Er heisst Fat. Vertragt euch gut, klar?
+E0650.8	Guts	Er heißt Fat. Vertragt euch gut, klar?
 E0650.9	Boku	Was bedeutet das?
-E0650.10	Fat	Also, da war dieses auslaendische Maedchen, das in Sagi-no-sato auf einem Bauernhof ausgeholfen hat, // und sie sah meine Wenigkeit ganz vertraeumt mit feuchten Augen an und sagte:
+E0650.10	Fat	Also, da war dieses ausländische Mädchen, das in Sagi-no-sato auf einem Bauernhof ausgeholfen hat, // und sie sah meine Wenigkeit ganz verträumt mit feuchten Augen an und sagte:
 E0650.11	Guts, Fat, Brille	Ohh! Fat!
 E0650.12	(voice only)
-E0650.13	Boku	Und was heisst das?
+E0650.13	Boku	Und was heißt das?
 E0650.14	Guts	Und das hier ist Brille. Der Kerl ist schlaaau.
-E0650.15	Brille	Hallo, Boku-kun. Du hast schoene Augen, weisst du.
-E0650.16	Boku	...Hae?
-E0650.17	Guts	Er ist ein bisschen komisch, aber // wenn du ihn aergerst, bekommst du es mit mir zu tun.
+E0650.15	Brille	Hallo, Boku-kun. Du hast schöne Augen, weißt du.
+E0650.16	Boku	...Hä?
+E0650.17	Guts	Er ist ein bisschen komisch, aber // wenn du ihn ärgerst, bekommst du es mit mir zu tun.
 E0650.18	Boku	Ich habe doch gesagt, so etwas mache ich nicht!
 # NOTE E0650.11: Die japanische Lesehilfe zum englischen Wort "Fat" entfaellt gemaess Stilbibel § 16.
 
 # --- E0651: A18 -- the secret base
-E0651.0	Guts	Du hast deinem Onkel doch nichts von unserem Geheimnis erzaehlt, oder?
-E0651.1	Boku	...Natuerlich nicht.
+E0651.0	Guts	Du hast deinem Onkel doch nichts von unserem Geheimnis erzählt, oder?
+E0651.1	Boku	...Natürlich nicht.
 E0651.2	Guts	Wenn du dein Versprechen brichst...
 E0651.3	Guts, Fat, Brille	Die Strafe: hundert Klapse aufs Handgelenk!
 E0651.4	Guts	In welcher Klasse bist du?
 E0651.5	Boku	In der dritten Klasse.
-E0651.6	Guts	Ach so, na dann. Ich bin in der fuenften.
+E0651.6	Guts	Ach so, na dann. Ich bin in der fünften.
 E0651.7	Fat	Meine Wenigkeit ist in der vierten.
-E0651.8	Brille	Alle sind groesser als ich. Ich bin erst in der zweiten Klasse.
+E0651.8	Brille	Alle sind größer als ich. Ich bin erst in der zweiten Klasse.
 E0651.9	Boku	Genau wie Shirabe?
-E0651.10	Brille	Ja, ja, ein furchtbarer Mensch! Furchtbar! // Sie macht es sich naemlich zur taeglichen Gewohnheit, mich zu aergern. // Wirklich ein furchtbarer Mensch! Furchtbar!
+E0651.10	Brille	Ja, ja, ein furchtbarer Mensch! Furchtbar! // Sie macht es sich nämlich zur täglichen Gewohnheit, mich zu ärgern. // Wirklich ein furchtbarer Mensch! Furchtbar!
 
 # --- E0652: A18 -- the secret base
 E0652.0	Fat	Wo wohnst du gerade?
 E0652.1	Boku	Bei meinem Onkel... das Haus gleich hier unten.
-E0652.2	Fat	Hae? Das ist doch bei Soranos!
+E0652.2	Fat	Hä? Das ist doch bei Soranos!
 E0652.3	Boku	Ja, stimmt.
 E0652.4	Fat	Ach so, dort also.
 E0652.5	Boku	Was ist los?
-E0652.6	Brille	Fat steht naemlich auf die Mittelschuelerin aus dem Haus.
-E0652.7	Boku	Hae? Moe-neechan?
+E0652.6	Brille	Fat steht nämlich auf die Mittelschülerin aus dem Haus.
+E0652.7	Boku	Hä? Moe-neechan?
 E0652.8	Fat	Du Mistkerl! // Soll ich dir die Hand in den Mund stecken und dich auf links drehen?!
 E0652.9	Guts	Na, na, ruhig Blut, ruhig Blut.
-E0652.10	Fat	Moe-san ist eben doch wundervoll, oder... // Hast du es gut, dass du mit ihr zusammen in dem Haus wohnen darfst... // He, wollen wir nicht fuer einen einzigen Tag heimlich tauschen?
+E0652.10	Fat	Moe-san ist eben doch wundervoll, oder... // Hast du es gut, dass du mit ihr zusammen in dem Haus wohnen darfst... // He, wollen wir nicht für einen einzigen Tag heimlich tauschen?
 
 # --- E0653: A18 -- the secret base
-E0653.0	Brille	Boku-kun, liest du auch viele Buecher?
-E0653.1	Boku	Ja, ich liebe Buecher.
-E0653.2	Brille	Zum Glueck... Ich hatte es naemlich schwer, weil ich mit den Kindern hier nicht dieselben Themen habe.
+E0653.0	Brille	Boku-kun, liest du auch viele Bücher?
+E0653.1	Boku	Ja, ich liebe Bücher.
+E0653.2	Brille	Zum Glück... Ich hatte es nämlich schwer, weil ich mit den Kindern hier nicht dieselben Themen habe.
 E0653.3	Guts, Fat	Damit stellst du uns ja als Idioten hin!
 
 # --- E0607: B10 -- the hill; I35 -- close-up
-E0607.0	Boku	*gaeeehn*...
-E0607.1	Erzaehler	Der Ausblick von der Spitze des Huegels passte irgendwie weniger zu einem tiefen Atemzug // als zu einem grossen Gaehnen; es war ein wahrhaft gemaechlicher Anblick.
-E0607.2	Boku	*gaeeehn*...
+E0607.0	Boku	*gääähn*...
+E0607.1	Erzaehler	Der Ausblick von der Spitze des Hügels passte irgendwie weniger zu einem tiefen Atemzug // als zu einem großen Gähnen; es war ein wahrhaft gemächlicher Anblick.
+E0607.2	Boku	*gääähn*...
 
 # --- E0608: B07 -- a beetle tree
 E0608.0	Boku	Ist dieser rissige Gata-pon-Baum eine Sawtooth-Eiche?
@@ -128,23 +128,23 @@ E0609.0	Boku	Ist dieser rissige Gata-pon-Baum eine Sawtooth-Eiche?
 # NOTE E0608.0, E0609.0: gata-pon ist Bokus eigenes Klangwort fuer die Baumrinde (Glossar § 3).
 
 # --- E0612: G01 -- living room
-E0612.0	Onkel	Puh, das war anstrengend. // Heute habe ich den ganzen Tag auf dem Melonenfeld Wache gestanden. // Aber zum Glueck belaufen sich die heutigen Verluste auf null.
-E0612.1	Onkel	Das Wachestehen heute hat mich richtig muede gemacht... // Aber ausgerechnet an so einem Tag tauchen die Melonendiebe natuerlich nicht auf...
-E0612.2	Onkel	Na ja... aber nach diesem einen Tag hoeeere ich mit der Feldwache auf. // Weil es so anstrengend ist. Nein, im Ernst...
+E0612.0	Onkel	Puh, das war anstrengend. // Heute habe ich den ganzen Tag auf dem Melonenfeld Wache gestanden. // Aber zum Glück belaufen sich die heutigen Verluste auf null.
+E0612.1	Onkel	Das Wachestehen heute hat mich richtig müde gemacht... // Aber ausgerechnet an so einem Tag tauchen die Melonendiebe natürlich nicht auf...
+E0612.2	Onkel	Na ja... aber nach diesem einen Tag höööre ich mit der Feldwache auf. // Weil es so anstrengend ist. Nein, im Ernst...
 
 # --- E0604: G02 -- after dinner
 E0604.0	Onkel	Gochisosama deshita.
 E0604.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E0604.2	Boku	Onkel, was fressen Nashornkaefer?
-E0604.3	Onkel	Hmm, mal sehen. Erst einmal moegen sie wohl alles, was suess ist.
-E0604.4	Boku	Alles, was suess ist? Moegen sie auch Suessigkeiten?
-E0604.5	Tante	Ahaha, so gern sie Suesses auch moegen, // fuer Windbeutel und Waffeln waeren sie sich doch zu schade, oder? // Zuckerwasser zum Beispiel, oder den suessen Saft, der nach dem Wassermelonen-Essen uebrig bleibt... // die strichen wir auf Sawtooth-Eichen und Lederhuelsenbaeume und sahen morgens oder abends nach.
-E0604.6	Boku	Hmm, Zuckerwasser... // Sag mal, was fuer ein Baum ist eine Sawtooth-Eiche?
-E0604.7	Onkel	Es ist ein grosser, dicker Baum mit einem Muster aus riesigen Rissen in der Rinde, // ich glaube, du erkennst ihn sofort, wenn du ihn siehst.
+E0604.2	Boku	Onkel, was fressen Nashornkäfer?
+E0604.3	Onkel	Hmm, mal sehen. Erst einmal mögen sie wohl alles, was süß ist.
+E0604.4	Boku	Alles, was süß ist? Mögen sie auch Süßigkeiten?
+E0604.5	Tante	Ahaha, so gern sie Süßes auch mögen, // für Windbeutel und Waffeln wären sie sich doch zu schade, oder? // Zuckerwasser zum Beispiel, oder den süßen Saft, der nach dem Wassermelonen-Essen übrig bleibt... // die strichen wir auf Sawtooth-Eichen und Lederhülsenbäume und sahen morgens oder abends nach.
+E0604.6	Boku	Hmm, Zuckerwasser... // Sag mal, was für ein Baum ist eine Sawtooth-Eiche?
+E0604.7	Onkel	Es ist ein großer, dicker Baum mit einem Muster aus riesigen Rissen in der Rinde, // ich glaube, du erkennst ihn sofort, wenn du ihn siehst.
 E0604.8	Boku	Ohh, verstehe.
 
 # --- E0641: G06 -- TV room
-E0641.0	Shirabe	Ich habe den ganzen Tag ueber die kleinen Ameisen beobachtet und dabei etwas gemerkt...
+E0641.0	Shirabe	Ich habe den ganzen Tag über die kleinen Ameisen beobachtet und dabei etwas gemerkt...
 E0641.1	Boku	Was? Was hast du gemerkt?
 E0641.2	Shirabe	Es wird langweilig.
 E0641.3	Shirabe	Ob es wohl irgendwo so lustige Ameisen gibt, // wie die aus Tom und Jerry?

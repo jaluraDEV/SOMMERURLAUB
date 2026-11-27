@@ -2,13 +2,13 @@
 # --- E1821: G03 -- kitchen
 E1821.0	Tante	Hoffentlich kommt eine gute Nachricht...
 E1821.1	Boku	Wovon redest du?
-E1821.2	Tante	Hm-hm... von einer Maedchenliebe.
-E1821.3	Tante	Irgendwie werde ich selbst ganz wehmuetig.
+E1821.2	Tante	Hm-hm... von einer Mädchenliebe.
+E1821.3	Tante	Irgendwie werde ich selbst ganz wehmütig.
 E1821.4	Boku	Moe-neechan sieht irgendwie niedergeschlagen aus.
-E1821.5	Tante	Hm-hm, ach so, so ist es also gekommen... // Aber jedes Maedchen hat mal solche Zeiten.
+E1821.5	Tante	Hm-hm, ach so, so ist es also gekommen... // Aber jedes Mädchen hat mal solche Zeiten.
 E1821.6	Boku	Du auch, Tante?
-E1821.7	Tante	Ja, natuerlich.
-E1821.8	Boku	Frauen sind ganz schoen deluxe, oder?
+E1821.7	Tante	Ja, natürlich.
+E1821.8	Boku	Frauen sind ganz schön deluxe, oder?
 E1821.9	Tante	...Meinst du nicht delikat?
 E1821.10	Boku	...Das.
 E1821.11	Tante	Lass Onee-chan heute lieber in Ruhe, ja?
@@ -26,20 +26,20 @@ E1802.6	Tante	Ein wichtiger, wichtiger Brief...
 # --- E1820: H06 -- garden off the veranda (the same talk as E1821)
 E1820.0	Tante	Hoffentlich kommt eine gute Nachricht...
 E1820.1	Boku	Wovon redest du?
-E1820.2	Tante	Hm-hm... von einer Maedchenliebe.
-E1820.3	Tante	Irgendwie werde ich selbst ganz wehmuetig.
+E1820.2	Tante	Hm-hm... von einer Mädchenliebe.
+E1820.3	Tante	Irgendwie werde ich selbst ganz wehmütig.
 E1820.4	Boku	Moe-neechan sieht irgendwie niedergeschlagen aus.
-E1820.5	Tante	Hm-hm, ach so, so ist es also gekommen... // Aber jedes Maedchen hat mal solche Zeiten.
+E1820.5	Tante	Hm-hm, ach so, so ist es also gekommen... // Aber jedes Mädchen hat mal solche Zeiten.
 E1820.6	Boku	Du auch, Tante?
-E1820.7	Tante	Ja, natuerlich.
-E1820.8	Boku	Frauen sind ganz schoen deluxe, oder?
+E1820.7	Tante	Ja, natürlich.
+E1820.8	Boku	Frauen sind ganz schön deluxe, oder?
 E1820.9	Tante	...Meinst du nicht delikat?
 E1820.10	Boku	...Das.
 E1820.11	Tante	Lass Onee-chan heute lieber in Ruhe, ja?
 
 # --- E1812: G01 -- living room
-E1812.0	Onkel	Was ich heute beim Friseur gehoert habe: // Unten im Tal spricht es sich herum, dass unsere Wassermelonen ziemlich gut schmecken sollen.
-E1812.1	Onkel	Besonders unter den Kindern sollen sie beliebt sein. // Dabei sind die fuer den Eigenbedarf, also duerften sie doch nirgends verkauft werden...
+E1812.0	Onkel	Was ich heute beim Friseur gehört habe: // Unten im Tal spricht es sich herum, dass unsere Wassermelonen ziemlich gut schmecken sollen.
+E1812.1	Onkel	Besonders unter den Kindern sollen sie beliebt sein. // Dabei sind die für den Eigenbedarf, also dürften sie doch nirgends verkauft werden...
 
 # --- E1803: G02 -- dinner
 E1803.0	Moe	...Seufz... ich habe keinen Appetit.
@@ -62,14 +62,14 @@ E1831.0	Moe	Ich habe zu gar nichts mehr Lust... // Ob ich einfach so weiter nich
 E1831.1	Moe	Wie dumm ich bin.
 
 # --- E1840: H09 -- garden corner where Shirabe watches ants
-E1840.0	Shirabe	Heute habe ich irgendwie das Gefuehl, es wird Blut regnen. Ein Blut-Ame.
+E1840.0	Shirabe	Heute habe ich irgendwie das Gefühl, es wird Blut regnen. Ein Blut-Ame.
 E1840.1	Boku	Ein Blut-Ame? Blut-Bonbon?
-E1840.2	Shirabe	Ja, ich habe ein ganz ungutes Gefuehl.
-E1840.3	Shirabe	Irgendjemandem wird ein riesengrosses Unglueck widerfahren!
+E1840.2	Shirabe	Ja, ich habe ein ganz ungutes Gefühl.
+E1840.3	Shirabe	Irgendjemandem wird ein riesengroßes Unglück widerfahren!
 # NOTE E1840.0-.1: ame bedeutet sowohl Regen als auch Bonbon, ein Homophon (Stilbibel § 8 Typ 3): woertlich uebersetzt, mit dem japanischen Wort sichtbar.
 
 # --- E1841: G06 -- TV room
-E1841.0	Shirabe	Du verstehst ein Maedchenherz ja ueberhaupt nicht.
+E1841.0	Shirabe	Du verstehst ein Mädchenherz ja überhaupt nicht.
 E1841.1	Boku	...Ich bin ein Kind.
 E1841.2	Shirabe	Du bist der klassische Typ, der mit Frauen Probleme bekommt.
 

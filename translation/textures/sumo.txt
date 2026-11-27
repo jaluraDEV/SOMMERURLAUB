@@ -31,18 +31,18 @@ sumo@move.19	Mantis-Buster
 sumo@move.20	Unentschieden
 sumo@move.21	Ausdauer-Sieg
 
-sumo@move.gloss-0	Hinausstoss vorn
+sumo@move.gloss-0	Hinausstoß vorn
 sumo@move.gloss-1	Kopf-voran-Sturm
-sumo@move.gloss-2	Offene Stoesse
+sumo@move.gloss-2	Offene Stöße
 sumo@move.gloss-3	Kippwurf am Rand
 sumo@move.gloss-4	Federnder Schub
-sumo@move.gloss-6	Ueberarmwurf
+sumo@move.gloss-6	Überarmwurf
 sumo@move.gloss-8	Hand-Niederzug
-sumo@move.gloss-9	Fussfeger hinten
-sumo@move.gloss-10	Guertelloser Wurf
+sumo@move.gloss-9	Fußfeger hinten
+sumo@move.gloss-10	Gürtelloser Wurf
 sumo@move.gloss-11	Herausheben vorn
 sumo@move.gloss-12	Beinzug
-sumo@move.gloss-14	Rueckwaerts-Fall
-sumo@move.gloss-15	Frontal-Abstoss
-sumo@move.gloss-16	Vorwaerts-Fall
+sumo@move.gloss-14	Rückwärts-Fall
+sumo@move.gloss-15	Frontal-Abstoß
+sumo@move.gloss-16	Vorwärts-Fall
 sumo@move.gloss-17	Offene Ohrfeige

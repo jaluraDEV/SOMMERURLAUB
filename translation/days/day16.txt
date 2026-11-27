@@ -2,60 +2,60 @@
 # --- E1602: G02 -- after breakfast (the swing)
 E1602.0	Onkel	Gochisosama deshita.
 E1602.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E1602.2	Onkel	Vorhin, vor der Gymnastik, habe ich eine Schaukel an den Baum gehaengt.
-E1602.3	Tante	Ach? Wie schoen. Die wurde jetzt schon drei Jahre lang nicht mehr benutzt, aber...
+E1602.2	Onkel	Vorhin, vor der Gymnastik, habe ich eine Schaukel an den Baum gehängt.
+E1602.3	Tante	Ach? Wie schön. Die wurde jetzt schon drei Jahre lang nicht mehr benutzt, aber...
 E1602.4	Shirabe	Eine Schaukel! Eine Schaukel!
 
 # --- E1623: H08 -- the yard with the swing tree
-E1623.0	Tante	Eine Schaukel, hier oben in den Bergen... // das fuehlt sich irgendwie an wie Heidi, das Maedchen aus den Alpen.
+E1623.0	Tante	Eine Schaukel, hier oben in den Bergen... // das fühlt sich irgendwie an wie Heidi, das Mädchen aus den Alpen.
 E1623.1	Tante	Hm-hm, vorhin hat Tante auch schon eine Runde geschaukelt.
 
 # --- E1612: G01 -- living room
 E1612.0	(voice only)
 E1612.1	Onkel	Nanu, um diese Zeit muht unsere Nora... // Was da wohl los ist?
-E1612.2	Boku	Nora, heisst so die Kuh?
+E1612.2	Boku	Nora, heißt so die Kuh?
 E1612.3	Onkel	Genau.
 E1612.4	Boku	Warum Nora?
-E1612.5	Onkel	Sie war eine streunende Kuh, eine "Nora", deshalb heisst sie Nora. // Trotzdem seltsam... ist vielleicht ein Wolf vorbeigekommen?
-E1612.6	Onkel	Nora stand eines Tages ploetzlich vor unserem Tor. // Und am Ende haben wir nie herausgefunden, wem sie gehoert, // also wurde sie einfach die Nora unserer Familie.
+E1612.5	Onkel	Sie war eine streunende Kuh, eine "Nora", deshalb heißt sie Nora. // Trotzdem seltsam... ist vielleicht ein Wolf vorbeigekommen?
+E1612.6	Onkel	Nora stand eines Tages plötzlich vor unserem Tor. // Und am Ende haben wir nie herausgefunden, wem sie gehört, // also wurde sie einfach die Nora unserer Familie.
 # NOTE E1612.5: nora, "Streunerin"; der Onkel erklaert den Namen, daher bleibt das Wort sichtbar (Glossar § 1).
 
 # --- E1610: H26 -- the workshop
 E1610.0	Onkel	Boku-kun, Onkels Spezialschaukel... // bist du schon mal damit gefahren?
 E1610.1	[SEL]	Ja | Nein
 E1610.2	Onkel	Ach so, dann pass aber gut auf beim Schaukeln.
-E1610.3	Onkel	Oh...... noch nicht? // Macht Spass! Los, geh schnell schaukeln.
+E1610.3	Onkel	Oh...... noch nicht? // Macht Spaß! Los, geh schnell schaukeln.
 
 # --- E1630: G15 -- the sisters' room
 E1630.0	Moe	Ob ich wohl auch auf die Schaukel kann?
 E1630.1	Boku	Warum?
-E1630.2	Moe	Weil ich zu schwer bin, natuerlich.
-E1630.3	Boku	Hae? Was? Was hast du gesagt?
+E1630.2	Moe	Weil ich zu schwer bin, natürlich.
+E1630.3	Boku	Hä? Was? Was hast du gesagt?
 E1630.4	Boku	Warum kannst du nicht schaukeln?
 E1630.5	Moe	Das ist ein Geheimnis.
 
 # --- E1632: G17 -- the veranda; H06 -- the garden (the stars)
 E1632.0	Boku	Klappt es heute?
-E1632.1	Moe	Tja, wer weiss? Hm-hm... // Aber ich glaube, der Klang traegt ein bisschen besser als frueher. // Denn weisst du...
+E1632.1	Moe	Tja, wer weiß? Hm-hm... // Aber ich glaube, der Klang trägt ein bisschen besser als früher. // Denn weißt du...
 E1632.2	Boku	Denn?
-E1632.3	Moe	Denn ich habe das Gefuehl, mein Spiel verleiht der Luft um mich herum... // ein ganz kleines bisschen Glanz.
-E1632.4	Boku	Was soll das denn heissen?
+E1632.3	Moe	Denn ich habe das Gefühl, mein Spiel verleiht der Luft um mich herum... // ein ganz kleines bisschen Glanz.
+E1632.4	Boku	Was soll das denn heißen?
 E1632.5	Moe	Was wohl... // So eine Art Edel-Landleben vielleicht?
 E1632.6	Boku	Glaube ich nicht.
 E1632.7	Moe	Au, wie grausam.
-E1632.8	Moe	Sag mal... // ob wohl schon mal jemand... versucht hat, die Sterne zu zaehlen?
-E1632.9	Moe	Wenn man genau hinsieht, ist selbst in der Dunkelheit zwischen den Sternen... // feiner Lichtstaub aus winzigen Koernchen... // Hast du nicht auch das Gefuehl, dort steckt alles voller Sternenstaub?
+E1632.8	Moe	Sag mal... // ob wohl schon mal jemand... versucht hat, die Sterne zu zählen?
+E1632.9	Moe	Wenn man genau hinsieht, ist selbst in der Dunkelheit zwischen den Sternen... // feiner Lichtstaub aus winzigen Körnchen... // Hast du nicht auch das Gefühl, dort steckt alles voller Sternenstaub?
 E1632.10	Moe	Als ich in der Grundschule auf Klassenfahrt in Tokio war...
 E1632.11	Boku	War der Himmel da selbst nachts hell?
-E1632.12	Moe	Genau, genau... // Aber es heisst, wenn Astronauten vom Weltraum aus das Leuchten der Stadt entdecken, // fuehlen sie sich irgendwie erleichtert.
+E1632.12	Moe	Genau, genau... // Aber es heißt, wenn Astronauten vom Weltraum aus das Leuchten der Stadt entdecken, // fühlen sie sich irgendwie erleichtert.
 E1632.13	Boku	Warum ist das wohl so?
 E1632.14	Moe	Warum ist das wohl so?
-E1632.15	Moe	Ich waere gern Astronautin...
+E1632.15	Moe	Ich wäre gern Astronautin...
 # NOTE E1632.14: Moe wirft Bokus Quiz-Floskel an ihn zurueck (Glossar § 3).
 
 # --- E1641: G06 -- TV room
-E1641.0	Shirabe	Reden wir gar nicht mehr ueber die Schulspeisung?
-E1641.1	Shirabe	Werden die Marmeladenpaeckchen bei euch im Schulranzen nicht zerquetscht?
+E1641.0	Shirabe	Reden wir gar nicht mehr über die Schulspeisung?
+E1641.1	Shirabe	Werden die Marmeladenpäckchen bei euch im Schulranzen nicht zerquetscht?
 
 # --- E1642: H08 -- the yard with the swing tree
 E1642.0	Shirabe	Los, schaukel mal. Ich schaue dir kurz zu.

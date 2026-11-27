@@ -1,21 +1,21 @@
 # day11 (translation/days/README.md)
 # --- E1121: G03 -- kitchen
-E1121.0	Tante	Iiek! Was Moe gekauft hat, ist gar kein Mirin, sondern Salatoel! // Oh, nein! // Mein geschmorter Fisch ist ein Fisch Muellerin Art geworden!
+E1121.0	Tante	Iiek! Was Moe gekauft hat, ist gar kein Mirin, sondern Salatöl! // Oh, nein! // Mein geschmorter Fisch ist ein Fisch Müllerin Art geworden!
 
 # --- E1130: G15 -- the sisters' room
-E1130.0	Moe	Ehehe... // Weisst du, gerade ist Onee-chan richtig gluecklich...
+E1130.0	Moe	Ehehe... // Weißt du, gerade ist Onee-chan richtig glücklich...
 E1130.1	Boku	Warum?
 E1130.2	Moe	Einfach so.
-E1130.3	Moe	Weil ich gluecklich bin, darum.
+E1130.3	Moe	Weil ich glücklich bin, darum.
 
 # --- E1172: I33 -- close-up
 E1172.0	Moe	Ach, morgen kommt ja schon wieder...
 
 # --- E1101: G02 -- breakfast
-E1101.0	Onkel	Boku-kun, morgen kommt ein Moench zu Onkel nach Hause, // und waehrend er da ist, gehst du nicht spielen, sondern bleibst schoen brav hier.
-E1101.1	Boku	Hae? Warum kommt denn ein Moench?
-E1101.2	Onkel	Morgen, weisst du... // bei Onkel zu Hause gab es frueher einen Jungen, // und morgen ist sein Todestag.
-E1101.3	Tante	Bei euch zu Hause, Boku-kun, // kommt doch manchmal auch ein Moench an Opas Todestag, oder?
+E1101.0	Onkel	Boku-kun, morgen kommt ein Mönch zu Onkel nach Hause, // und während er da ist, gehst du nicht spielen, sondern bleibst schön brav hier.
+E1101.1	Boku	Hä? Warum kommt denn ein Mönch?
+E1101.2	Onkel	Morgen, weißt du... // bei Onkel zu Hause gab es früher einen Jungen, // und morgen ist sein Todestag.
+E1101.3	Tante	Bei euch zu Hause, Boku-kun, // kommt doch manchmal auch ein Mönch an Opas Todestag, oder?
 E1101.4	Boku	...Ja.
 E1101.5	Onkel	Also dann, itadakimaasu!
 E1101.6	Shirabe, Moe, Boku, Tante	Itadakimaasu!
@@ -29,37 +29,37 @@ E1102.4	Moe	Verstanden!
 
 # --- E1120: H06 -- garden off the veranda, the washing line
 E1120.0	Tante	Ein wichtiger, wichtiger Brief~
-E1120.1	Boku	He, was ist das fuer ein Lied?
+E1120.1	Boku	He, was ist das für ein Lied?
 E1120.2	Tante	Wie? Hm-hm... das Lied vom wichtigen Brief!
 E1120.3	Tante	Ein wichtiger, wichtiger Brief~
 
 # --- E1112: G01 -- living room
-E1112.0	Onkel	Bis zum Anfeuern des Ofens Ende des Monats moechte ich noch etwas mehr Feuerholz hacken. // Ich muss schnell eine neue Axt kaufen und die alte loswerden, die ich in den Schuppen geraeumt habe...
-E1112.1	Onkel	Wo ich gerade davon rede, die Axt, die ich in den Schuppen gelegt hatte, ist verschwunden. // Es ist ja wohl kaum ein Kragenbaer vorbeigekommen und hat sie mitgenommen...
-E1112.2	Onkel	Hm... das Windspiel klingt schoen... eine angenehme Brise...
+E1112.0	Onkel	Bis zum Anfeuern des Ofens Ende des Monats möchte ich noch etwas mehr Feuerholz hacken. // Ich muss schnell eine neue Axt kaufen und die alte loswerden, die ich in den Schuppen geräumt habe...
+E1112.1	Onkel	Wo ich gerade davon rede, die Axt, die ich in den Schuppen gelegt hatte, ist verschwunden. // Es ist ja wohl kaum ein Kragenbär vorbeigekommen und hat sie mitgenommen...
+E1112.2	Onkel	Hm... das Windspiel klingt schön... eine angenehme Brise...
 
 # --- E1131: G15 -- the sisters' room
 E1131.0	Moe	Wunderkerzen sind irgendwie traurig, oder?
 E1131.1	Boku	Warum wohl?
 E1131.2	Moe	Hmmm...
 E1131.3	Moe	Ehe... // Vielleicht, weil man schielt, wenn man sie die ganze Zeit anstarrt.
-E1131.4	Boku	...Hae?
+E1131.4	Boku	...Hä?
 E1131.5	Moe	Ach, morgen kommt ja wieder...
 
 # --- E1140: H09 -- garden corner where Shirabe watches ants
 E1140.0	Boku	Bekommt man von den Weichnudeln bei der Schulspeisung keine Bauchschmerzen? Die sind so fettig.
 E1140.1	Shirabe	Wie? Das hatte ich noch nie.
 E1140.2	Boku	Aber ich mag Weichnudeln. // Ab der dritten Stunde riecht man sie schon.
-E1140.3	Shirabe	An unserer Schule... // wird das Brot nur an Weichnudel-Tagen kleiner und heisst "Diaetbrot".
+E1140.3	Shirabe	An unserer Schule... // wird das Brot nur an Weichnudel-Tagen kleiner und heißt "Diätbrot".
 
 # --- E1141: G06 -- TV room
 E1141.0	Shirabe	Wenn man ein Feuerwerk in den Wassereimer steckt, klingt das genau wie Ultraman.
-E1141.1	Shirabe	Riechen deine Haende nicht nach Feuerwerk?
+E1141.1	Shirabe	Riechen deine Hände nicht nach Feuerwerk?
 
 # --- E1104: G02 -- after dinner
 E1104.0	Onkel	Gochisosama deshita.
 E1104.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E1104.2	Moe	Uebrigens, ich habe heute ein Mitbringsel aus Sagi-no-sato mitgebracht.
+E1104.2	Moe	Übrigens, ich habe heute ein Mitbringsel aus Sagi-no-sato mitgebracht.
 E1104.3	Shirabe	Was denn, was deenn?
 E1104.4	Moe	Also, danach versammeln sich alle auf der Veranda!
 E1104.5	Shirabe	Was denn, was denn?
@@ -71,4 +71,4 @@ E1105.0	Boku	Gib mir mal eins.
 E1105.1	Shirabe	Hier, bitte.
 
 # --- E1171: G17 -- the veranda
-E1171.0	Moe	Baeh, ich habe Rauch in die Augen bekommen...
+E1171.0	Moe	Bäh, ich habe Rauch in die Augen bekommen...

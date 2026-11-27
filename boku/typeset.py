@@ -16,11 +16,13 @@ measured, not the engine's fixed 14 px pitch.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from functools import cache
 from pathlib import Path
 from typing import ClassVar
 
+from boku import REPO_ROOT
 from boku.glyphs import GlyphTable
 from boku.tim import Tim
 
@@ -105,6 +107,45 @@ class Face:
         return out
 
 
+_PLACEHOLDERS_PATH = REPO_ROOT / "tools" / "vwf" / "placeholder-glyphs.txt"
+_GLYPH_HEADER_RE = re.compile(r"glyph U\+([0-9A-Fa-f]{4,6}) advance (\d+)")
+
+
+@cache
+def _extra_glyphs() -> dict[str, Glyph]:
+    """Non-ASCII glyphs from `placeholder-glyphs.txt` (e.g. German umlauts and Eszett)."""
+    if not _PLACEHOLDERS_PATH.is_file():
+        return {}
+    lines = [
+        line.rstrip("\n")
+        for line in _PLACEHOLDERS_PATH.read_text(encoding="utf-8").splitlines()
+        if line.strip() and line != "#" and not line.startswith("# ")
+    ]
+    out: dict[str, Glyph] = {}
+    pos = 0
+    while pos < len(lines):
+        match = _GLYPH_HEADER_RE.fullmatch(lines[pos])
+        if not match or pos + CELL >= len(lines):
+            break
+        code = int(match.group(1), 16)
+        rows_raw = lines[pos + 1 : pos + 1 + CELL]
+        pos += 1 + CELL
+        if code < 0x80:
+            continue
+        inked = [c for r in range(CELL) for c in range(CELL) if rows_raw[r][c] == "#"]
+        if not inked:
+            continue
+        left, right = min(inked), max(inked)
+        out[chr(code)] = Glyph(
+            width=right - left + 1,
+            rows=tuple(
+                tuple(c - left for c in range(left, right + 1) if rows_raw[r][c] == "#")
+                for r in range(CELL)
+            ),
+        )
+    return out
+
+
 class GameFace(Face):
     """The game's own dialogue glyphs, decoded from the sheet in the contributor's import."""
 
@@ -174,6 +215,8 @@ class GameFace(Face):
                 self._cache[ch] = self._hyphen()
             elif ch in self.LOWERED:
                 self._cache[ch] = self._lowered(ch)
+            elif ch not in self.cells and ch in _extra_glyphs():
+                self._cache[ch] = _extra_glyphs()[ch]
             else:
                 self._cache[ch] = self._from_sheet(ch)
         return self._cache[ch]

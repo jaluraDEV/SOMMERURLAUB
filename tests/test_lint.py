@@ -920,43 +920,36 @@ def test_a_notebook_name_is_held_to_the_room_beside_the_badge(tmp_path):
     assert checks(run(store, tmp_path, unknown, label=False)) == ["unknown-id"]
 
 
-@pytest.mark.parametrize(
-    ("text", "expected_check", "hint"),
-    [
-        ("Das ist sch\u00f6n.", "umlaut", "ae/oe/ue/ss"),
-        ("M\u00e4dchen", "umlaut", "ae/oe/ue/ss"),
-        ("\u00dcberall Stra\u00dfe", "umlaut", "ae/oe/ue/ss"),
-        ("\u201eHallo\u201c", "typographic-quote", "ASCII-Anfuehrungszeichen"),
-    ],
-)
-def test_umlauts_and_typographic_quotes_are_errors_in_day_rows(
-    store, tmp_path, text, expected_check, hint
-):
+def test_typographic_quotes_are_errors_and_umlauts_are_allowed_in_day_rows(store, tmp_path):
     rows = [row for row in GOOD if row[0] != UNVOICED]
-    findings = run(store, tmp_path, [*rows, (UNVOICED, "Boku", text)], label=False)
-    finding = only(findings, expected_check)
+    quote_findings = run(
+        store, tmp_path, [*rows, (UNVOICED, "Boku", "\u201eHallo\u201c")], label=False
+    )
+    finding = only(quote_findings, "typographic-quote")
     assert finding.severity == ERROR
-    assert hint in finding.message
+    assert "ASCII-Anfuehrungszeichen" in finding.message
+
+    umlaut_findings = run(
+        store,
+        tmp_path,
+        [*rows, (UNVOICED, "Boku", "M\u00e4dchen, sch\u00f6n, \u00dcberall Stra\u00dfe.")],
+        label=False,
+    )
+    assert not any(f.check == "umlaut" for f in umlaut_findings)
 
 
-def test_umlauts_are_errors_in_movie_cues_and_clips(tmp_path, disc_dir):
+def test_umlauts_are_allowed_in_movie_cues_and_clips(tmp_path, disc_dir):
     movies = tmp_path / "movies.txt"
     movies.write_text("M27\t1\t10\tFr\u00fchling\n", encoding="utf-8")
     movie_findings = lint_module.lint_movies(movies, None, tmp_path / "no-cells.json")
-    assert any(
-        f.check == "umlaut" and f.severity == ERROR and "ae/oe/ue/ss" in f.message
-        for f in movie_findings
-    )
+    assert not any(f.check == "umlaut" for f in movie_findings)
 
     clips = tmp_path / "clips.txt"
     clips.write_text("XCH.34\tErzaehler\tGute Nacht, \u00e4h.\n", encoding="utf-8")
     clip_findings = lint_module.lint_clip_file(
         clips, Options(encoder=StockEncoder.load()), disc_dir
     )
-    assert any(
-        f.check == "umlaut" and f.severity == ERROR and "ae/oe/ue/ss" in f.message
-        for f in clip_findings
-    )
+    assert not any(f.check == "umlaut" for f in clip_findings)
 
 
 def test_lint_offers_relocated_answer_pair_to_array_room(tmp_path):

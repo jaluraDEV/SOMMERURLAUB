@@ -430,7 +430,6 @@ def test_the_format_says_notes_hold_no_japanese_either():
             f"no row for {VOICE_ONLY}",
         ),
         (lambda text: text.replace("Words.", "\u3042", 1), "still holds Japanese"),
-        (lambda text: text.replace("Words.", "sch\u00f6n", 1), "Umlaut gefunden"),
         (lambda text: text.replace("Words.", "\u201eHallo\u201c", 1), "Typografische"),
         (lambda text: text.replace("\tOnkel\t", "\tOnkle\t", 1), "not a speaker label"),
     ],

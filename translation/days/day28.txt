@@ -1,9 +1,9 @@
 # day28 (translation/days/README.md)
 # --- E2820: H06 -- garden off the veranda
 E2820.0	Tante	Oh! Ein Kondensstreifen!
-E2820.1	Boku	Hae? Wo, wo?
-E2820.2	Tante	Wenn Tante noch einmal geboren wird, // moechte sie auch einmal Jumbojet-Pilotin werden.
-E2820.3	Boku	Hae? Aber... // wollen Frauen normalerweise nicht Stewardess werden?
+E2820.1	Boku	Hä? Wo, wo?
+E2820.2	Tante	Wenn Tante noch einmal geboren wird, // möchte sie auch einmal Jumbojet-Pilotin werden.
+E2820.3	Boku	Hä? Aber... // wollen Frauen normalerweise nicht Stewardess werden?
 E2820.4	Tante	Nein... wenn ich etwas werde, dann auf jeden Fall Pilotin.
 
 # --- E2812: G01 -- living room
@@ -14,43 +14,43 @@ E2812.1	Onkel	Der Herbstwind... irgendwie ist er traurig.
 E2803.0	Tante	Was ist los?
 E2803.1	Boku	Ich habe irgendwie... keinen Hunger.
 E2803.2	Onkel	Du auch, Boku-kun?
-E2803.3	Boku	Hae...?
-E2803.4	Onkel	Nur Spass, nur Spass.
+E2803.3	Boku	Hä...?
+E2803.4	Onkel	Nur Spaß, nur Spaß.
 E2803.5	Shirabe	Das eben... habe ich nicht kapiert.
-E2803.6	Tante	Sag bloss... hast du vielleicht Fieber?
+E2803.6	Tante	Sag bloß... hast du vielleicht Fieber?
 
 # --- E2830: G15 -- the sisters' room
-E2830.0	Boku	Onee-chan, ich... // moechte eigentlich noch ein bisschen in diesem Haus bleiben.
-E2830.1	Moe	So ist das also... Dann hast du viele schoene Erinnerungen gesammelt, Boku-kun.
+E2830.0	Boku	Onee-chan, ich... // möchte eigentlich noch ein bisschen in diesem Haus bleiben.
+E2830.1	Moe	So ist das also... Dann hast du viele schöne Erinnerungen gesammelt, Boku-kun.
 E2830.2	Boku	Ja. Die werden bestimmt mein Schatz.
 E2830.3	Moe	Verstehe...
-E2830.4	Boku	Onee-chan, ich habe in der Hoehle etwas Seltsames gefunden.
-E2830.5	Moe	Ohh, etwas Seltsames? Das ist ja toll. // Vielleicht wird es dein Schatz fuers Leben, Boku-kun, // also heb es ganz, ganz gut auf.
-E2830.6	Moe	Ich strenge mich auch an... und finde bestimmt einen Schatz fuers Leben.
+E2830.4	Boku	Onee-chan, ich habe in der Höhle etwas Seltsames gefunden.
+E2830.5	Moe	Ohh, etwas Seltsames? Das ist ja toll. // Vielleicht wird es dein Schatz fürs Leben, Boku-kun, // also heb es ganz, ganz gut auf.
+E2830.6	Moe	Ich strenge mich auch an... und finde bestimmt einen Schatz fürs Leben.
 
 # --- E2840: H08 -- the yard with the swing tree
-E2840.0	Shirabe	Ach, wie langweilig. // Shirabe moechte sich in einen Schmetterling verwandeln und in den Himmel fliegen...
+E2840.0	Shirabe	Ach, wie langweilig. // Shirabe möchte sich in einen Schmetterling verwandeln und in den Himmel fliegen...
 E2840.1	Boku	Tante sagt, sie will Pilotin werden.
 E2840.2	Shirabe	Dann will Shirabe Stewardess werden.
-E2840.3	Shirabe	Alle in unserer Familie scheinen hohe Orte zu moegen. Warum wohl?
+E2840.3	Shirabe	Alle in unserer Familie scheinen hohe Orte zu mögen. Warum wohl?
 E2840.4	Boku	......
 
 # --- E2850: A18 -- the secret base ("when do you go home?")
-E2850.0	Brille	Sag mal, die Sommerferien sind bald vorbei... // wann faehrst du nach Hause, Boku-kun?
-E2850.1	Boku	Wahrscheinlich am einunddreissigsten, glaube ich.
+E2850.0	Brille	Sag mal, die Sommerferien sind bald vorbei... // wann fährst du nach Hause, Boku-kun?
+E2850.1	Boku	Wahrscheinlich am einunddreißigsten, glaube ich.
 E2850.2	Fat	Hehe, fahr schnell heim und nuckel an Mamas Titten.
-E2850.3	Guts	Verstehe, stimmt ja... // irgendwann musst du ja zurueck, hm.
+E2850.3	Guts	Verstehe, stimmt ja... // irgendwann musst du ja zurück, hm.
 E2850.4	Boku	Ja......
 
 # --- E2851: A18 -- the secret base
-E2851.0	Guts	Stimmt ja, klar... wenn die Ferien vorbei sind, faehrt man heim...
+E2851.0	Guts	Stimmt ja, klar... wenn die Ferien vorbei sind, fährt man heim...
 E2851.1	Boku	Ja, na klar.
 E2851.2	Guts	Ich... ach, ist schon gut.
 E2851.3	Boku	Ach komm, was ist denn?
 E2851.4	Guts	Ich sagte doch, ist schon gut.
 
 # --- E2852: A18 -- the secret base
-E2852.0	Fat	Du, Boku-chan, bevor du in die Stadt zurueckfaehrst, laesst du mich Moe-san treffen, ja?
+E2852.0	Fat	Du, Boku-chan, bevor du in die Stadt zurückfährst, lässt du mich Moe-san treffen, ja?
 E2852.1	Boku	Mach ich nicht.
 
 # --- E2853: A18 -- the secret base
@@ -58,23 +58,23 @@ E2853.0	Brille	Ist das Baby bei euch schon geboren, Boku-kun?
 E2853.1	Brille	Dann ist morgen ein guter Tag. In meinem Wahrsagebuch steht, dass die Sterne morgen am besten stehen.
 
 # --- E2805: G14 -- Boku's room; I30 -- close-up (the fever night)
-E2805.0	Tante	Du hast wohl doch Fieber, was? Sag mal, Boku-kun, fuehlst du dich gerade schlecht?
+E2805.0	Tante	Du hast wohl doch Fieber, was? Sag mal, Boku-kun, fühlst du dich gerade schlecht?
 E2805.1	Boku	Ja... ein bisschen... so hohe-hohe.
 E2805.2	Tante	Zwei Hohes, hm. Entschuldige kurz...
-E2805.3	Tante	Dein Fieber ist ganz schoen gestiegen. Tut mir leid, dass ich es nicht frueher gemerkt habe... // Jedenfalls hast du heute schon Medizin genommen, also gehen wir gleich schlafen.
+E2805.3	Tante	Dein Fieber ist ganz schön gestiegen. Tut mir leid, dass ich es nicht früher gemerkt habe... // Jedenfalls hast du heute schon Medizin genommen, also gehen wir gleich schlafen.
 E2805.4	Boku	Sag mal, Tante.
 E2805.5	Tante	Hm? Was ist denn?
-E2805.6	Boku	Der Junge, der frueher bei euch gewohnt hat, Tante... ich glaube, der war bestimmt sehr gluecklich.
+E2805.6	Boku	Der Junge, der früher bei euch gewohnt hat, Tante... ich glaube, der war bestimmt sehr glücklich.
 E2805.7	Tante	Hm-hm... warum denkst du das?
 E2805.8	Boku	Kann ich... an die Stelle von dem Jungen treten?
-E2805.9	Tante	...Hae? Hm-hm... // Onii-chan ist Onii-chan, und Boku-kun ist Boku-kun. // Aber Tante hat dich auch ueber alles lieb, Boku-kun.
+E2805.9	Tante	...Hä? Hm-hm... // Onii-chan ist Onii-chan, und Boku-kun ist Boku-kun. // Aber Tante hat dich auch über alles lieb, Boku-kun.
 E2805.10	Boku	Ich habe dich auch lieb, Tante.
 E2805.11	Tante	Hm-hm... danke. Also dann, gute Nacht.
-E2805.12	Erzaehler	In jenem Moment ueberkam mich aus irgendeinem Grund eine uebermaechtige Sehnsucht... // wie eine Katze, die sich in einen Fruehlingssonnenfleck verliebt hat, mich ganz klein zusammenzurollen... // und von meiner Tante sanft in den Arm genommen zu werden...
+E2805.12	Erzaehler	In jenem Moment überkam mich aus irgendeinem Grund eine übermächtige Sehnsucht... // wie eine Katze, die sich in einen Frühlingssonnenfleck verliebt hat, mich ganz klein zusammenzurollen... // und von meiner Tante sanft in den Arm genommen zu werden...
 E2805.13	Boku	Tante.
 E2805.14	Tante	Hm? Was ist denn?
 E2805.15	Boku	...Gute Nacht.
 E2805.16	Tante	Ja...... gute Nacht.
-E2805.17	Tante	Uebrigens gab es heute Abend Kohlrouladen.
+E2805.17	Tante	Übrigens gab es heute Abend Kohlrouladen.
 # NOTE E2805.1: hohe-hohe, Bokus eigener Laut fuer das Fiebergefuehl, bleibt als Klangwort (Stilbibel § 7).
 # NOTE E2805.17: Der Bruch nach dem zaertlichen Moment stammt aus dem Original.

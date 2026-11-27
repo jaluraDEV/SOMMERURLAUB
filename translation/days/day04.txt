@@ -12,9 +12,9 @@
 
 # --- E0401: G02 -- breakfast
 E0401.0	Shirabe	He... Shirabe zeigt dir ein paar tolle Orte.
-E0401.1	Boku	Hae?
-E0401.2	Shirabe	Ich zeige dir tolle Orte, so viele, einen ganzen Berg voll. // Darum musst du ganz ausserordentlich dankbar sein.
-E0401.3	Shirabe	Shirabe ist schliesslich schon laenger hier als du. // Kyahaha!
+E0401.1	Boku	Hä?
+E0401.2	Shirabe	Ich zeige dir tolle Orte, so viele, einen ganzen Berg voll. // Darum musst du ganz außerordentlich dankbar sein.
+E0401.3	Shirabe	Shirabe ist schließlich schon länger hier als du. // Kyahaha!
 E0401.4	(voice only)
 E0401.5	Onkel	Also dann, Itadakimaasu!
 E0401.6	Shirabe, Moe, Boku, Tante	Itadakimaasu!
@@ -26,12 +26,12 @@ E0402.2	Boku	He...?
 E0402.3	Shirabe	Also, wollen wir dann losgehen?
 E0402.4	Boku	Iiek...
 E0402.5	Shirabe	Du willst nicht? Wo Shirabe doch extra mit dir gehen will? // Du willst nicht? Du willst nicht? Das finde ich aber doooof!
-E0402.6	Moe	Dreikaesehoch, sei nicht so dickkoepfig.
+E0402.6	Moe	Dreikäsehoch, sei nicht so dickköpfig.
 E0402.7	Shirabe	Ahh! Du hast diesen Namen gesagt!
 E0402.8	Boku	W-was ist das?
 E0402.9	Tante	Das ist Shirabes Spitzname in der Schule.
-E0402.10	Tante	Onee-chan! Das gehoert sich nicht.
-E0402.11	Moe	Aber Shirabe hoert ja nie auf mich...
+E0402.10	Tante	Onee-chan! Das gehört sich nicht.
+E0402.11	Moe	Aber Shirabe hört ja nie auf mich...
 E0402.12	Shirabe	Also dann! Ich warte auf der Veranda! // Bye-yoyooon!
 E0402.13	Tante	Hm-hm...
 
@@ -39,31 +39,31 @@ E0402.13	Tante	Hm-hm...
 E0471.0	Shirabe	Ken-bo!
 E0471.1	(voice only)
 E0471.2	Shirabe	Du bist ja doch gekommen... Ich bin eben eine schuldige Frau.
-E0471.3	Shirabe	Na dann, folge Shirabe mal ganz flink. // Ich gehe schon mal vor bis zur Bruecke.
-E0471.4	Erzaehler	Fuer mich war es die erste Begegnung meines Lebens // mit einem furchtbar anstrengenden Wesen...
+E0471.3	Shirabe	Na dann, folge Shirabe mal ganz flink. // Ich gehe schon mal vor bis zur Brücke.
+E0471.4	Erzaehler	Für mich war es die erste Begegnung meines Lebens // mit einem furchtbar anstrengenden Wesen...
 E0471.5	(voice only)
 
 # --- E0442: A06 -- the bridge over the Yukino River
 E0442.0	Shirabe	Die hier war ganz klapprig, und unser Papa hat sie bumm-bumm repariert.
 E0442.1	Boku	Ohh, fast wie ein Zimmermann.
-E0442.2	Shirabe	Dieser kleine Fluss heisst Yukino-Fluss.
-E0442.3	Boku	Hmm, verstehe. Sag mal, heisst "Yuki" Schnee?
-E0442.4	Shirabe	Ja, der Schnee, der vom Himmel faellt.
+E0442.2	Shirabe	Dieser kleine Fluss heißt Yukino-Fluss.
+E0442.3	Boku	Hmm, verstehe. Sag mal, heißt "Yuki" Schnee?
+E0442.4	Shirabe	Ja, der Schnee, der vom Himmel fällt.
 E0442.5	Boku	Ohh, hier schneit es also.
 E0442.6	Shirabe	Schneit es bei dir denn gar nicht?
 E0442.7	Boku	Doch, aber nur selten.
-E0442.8	Shirabe	Hm-hm, du Armer. // ...Aber in Wahrheit ist es ein Fluss, an dem viele Gluehwuermchen plopp-plopp-plopp schluepfen, // und deshalb hat er den Namen Yukino-Fluss bekommen, heisst es.
-E0442.9	Boku	Hae...? Warum denn das?
+E0442.8	Shirabe	Hm-hm, du Armer. // ...Aber in Wahrheit ist es ein Fluss, an dem viele Glühwürmchen plopp-plopp-plopp schlüpfen, // und deshalb hat er den Namen Yukino-Fluss bekommen, heißt es.
+E0442.9	Boku	Hä...? Warum denn das?
 E0442.10	Shirabe	Wie?
-E0442.11	Boku	Warum bekommt er den Namen Schnee, wenn dort Gluehwuermchen schluepfen?
+E0442.11	Boku	Warum bekommt er den Namen Schnee, wenn dort Glühwürmchen schlüpfen?
 E0442.12	Shirabe	...N-na ja, das...
-E0442.13	Boku	Ohh, du weisst es nicht.
+E0442.13	Boku	Ohh, du weißt es nicht.
 E0442.14	Shirabe	Das stimmt gar nicht! // Nur dir darf ich es auf gar keinen Fall verraten, egal was passiert... // Das hat Papa mir ganz fest, fest, fest verboten!
 E0442.15	Shirabe	Es ist ein absolutes Geheimnis!
 # NOTE E0442.3-.11: Yukino bleibt stehen, damit die Erklaerung mit "yuki" = Schnee funktioniert (Glossar § 2).
 
 # --- E0443: A11 -- the fortune-telling Jizo
-E0443.0	Shirabe	Dieser Jizo-sama hier, weisst du...
+E0443.0	Shirabe	Dieser Jizo-sama hier, weißt du...
 E0443.1	(voice only)
 E0443.2	Shirabe	Nanu? // Mit dir zusammen kommt das Schlimmste heraus. // Das ist ein Jizo-sama, der die Zukunft vorhersagt. // Willst du auch mal? Ich erlaube es dir ausnahmsweise.
 E0443.3	Boku	Ich... // ich kann doch keinen Jizo-sama hauen.
@@ -71,74 +71,74 @@ E0443.4	Shirabe	Willst du dann lieber von mir verhauen werden?
 E0443.5	Boku	Aber nein...
 E0443.6	Boku	Entschuldigung, Jizo-sama.
 E0443.7	(voice only)
-E0443.8	Shirabe	Kyahaha, wie erbaermlich. // Na gut, ich gehe schon vor.
+E0443.8	Shirabe	Kyahaha, wie erbärmlich. // Na gut, ich gehe schon vor.
 
 # --- E0444: A15 -- the nectar flowers
 E0444.0	Shirabe	Du bist so laaangsam. // Eine Dame warten zu lassen... bei dir ist wirklich Hopfen und Malz verloren.
 E0444.1	Boku	Tut mir leid...
-E0444.2	Shirabe	Na ja, Shirabe ist ein sehr freundliches Maedchen, deshalb verzeiht sie dir ausnahmsweise.
-E0444.3	Shirabe	Diese Blume hier, weisst du...
+E0444.2	Shirabe	Na ja, Shirabe ist ein sehr freundliches Mädchen, deshalb verzeiht sie dir ausnahmsweise.
+E0444.3	Shirabe	Diese Blume hier, weißt du...
 E0444.4	(voice only)
-E0444.5	Shirabe	Der Nektar darin ist ueberaus suess und koestlich.
+E0444.5	Shirabe	Der Nektar darin ist überaus süß und köstlich.
 E0444.6	(voice only)
-E0444.7	Boku	Oh, stimmt, das schmeckt gut. // Sag mal, wie heisst diese Blume?
-E0444.8	Shirabe	Ich glaube... // sie heisst Lila Zutzler.
+E0444.7	Boku	Oh, stimmt, das schmeckt gut. // Sag mal, wie heißt diese Blume?
+E0444.8	Shirabe	Ich glaube... // sie heißt Lila Zutzler.
 E0444.9	Boku	Hmm, verstehe.
-E0444.10	Shirabe	Genau, nihihi. Also, weiter zum naechsten.
+E0444.10	Shirabe	Genau, nihihi. Also, weiter zum nächsten.
 # NOTE E0444.8: Shirabes erfundener Blumenname (Glossar § 3).
 
 # --- E0445: A03 -- sunflowers by the pond
 E0445.0	Boku	Huch? Da ist Tante.
 E0445.1	Tante	Hm-hm...... // Ich dachte, ich mache ein Foto davon, // wie gut ihr beiden euch versteht, und habe hier gewartet.
-E0445.2	Shirabe	Unsere Mama war frueher Fotografin in der Stadt... Toll, oder?
+E0445.2	Shirabe	Unsere Mama war früher Fotografin in der Stadt... Toll, oder?
 E0445.3	Boku	Fotografin?
 E0445.4	Tante	Ich war aber nur Assistentin. Bevor ich eine richtige wurde, habe ich geheiratet und bin hergekommen... // Na los, ihr beiden, stellt euch in eine Reihe.
 E0445.5	Tante	So, was mag Papa am liebsten?
-E0445.6	Shirabe	Kaese!
+E0445.6	Shirabe	Käse!
 E0445.7	(voice only)
-E0445.8	Tante	Wenn das Foto fertig ist, zeige ich es euch. // Wenn du nach Hause faehrst, zeig es auch Yuzuki-san. // Sie freut sich bestimmt!
+E0445.8	Tante	Wenn das Foto fertig ist, zeige ich es euch. // Wenn du nach Hause fährst, zeig es auch Yuzuki-san. // Sie freut sich bestimmt!
 E0445.9	Shirabe	Yuzuki? Weeeer ist das?
 E0445.10	Boku	Meine Mama.
 E0445.11	Tante	Du musst deiner Mama sagen, dass du ein braver Junge warst.
 E0445.12	Boku	Ja.
 E0445.13	Tante	Also dann, vertragt euch gut, ihr beiden.
-E0445.14	Shirabe	Shirabe geht dann wohl auch bald heim. // Weiter vorn ist die Bruecke eingestuerzt, // und dort drueben haengt ein riesiges Wespennest... // ...du kannst ja auf das Melonenfeld aufpassen oder so.
-E0445.15	Shirabe	Ein kleines bisschen Spass hat es gemacht. Tschuess...
-E0445.16	Shirabe	Aber nenn du mich ja nicht auch Dreikaesehoch. Sonst setzt es waaas!
+E0445.14	Shirabe	Shirabe geht dann wohl auch bald heim. // Weiter vorn ist die Brücke eingestürzt, // und dort drüben hängt ein riesiges Wespennest... // ...du kannst ja auf das Melonenfeld aufpassen oder so.
+E0445.15	Shirabe	Ein kleines bisschen Spaß hat es gemacht. Tschüss...
+E0445.16	Shirabe	Aber nenn du mich ja nicht auch Dreikäsehoch. Sonst setzt es waaas!
 # NOTE E0445.5-.6: Tante fragt nach Papas Lieblingsessen, und das Kind ruft "Kaese!" (Glossar § 8).
 
 # --- E0423: G03 -- kitchen
 E0423.0	Tante	Hoffentlich ist das Foto gut geworden.
 
 # --- E0433: G02 -- dining room
-E0433.0	Moe	Auch wenn Shirabe so ist, hat sie doch ihre suessen Seiten. // Kuemmer dich um sie, Boku-kun, ja?
+E0433.0	Moe	Auch wenn Shirabe so ist, hat sie doch ihre süßen Seiten. // Kümmer dich um sie, Boku-kun, ja?
 E0433.1	Moe	Uff... mein Bauch spannt. Ich habe zu viel Mais gegessen...
 
 # --- E0410: H26 -- the workshop
 E0410.0	Onkel	Du hattest ein Date mit Shirabe? Als Junge hat man es nicht leicht.
-E0410.1	Onkel	Onkel wuerde auch gern mal mit jemandem ausgehen...
+E0410.1	Onkel	Onkel würde auch gern mal mit jemandem ausgehen...
 
 # --- E0412: G01 -- living room
-E0412.0	Onkel	Boku-kun, wenn du hier in den Teichen und Fluessen angelst, // pass auf, dass du nicht ins Wasser faellst. // Hier kommen kaum Angler vorbei, darum gibt es unheimlich viele Fische. // Wenn das Wasser klar ist und man die Fische gut sieht, // beobachte ihre Bewegungen und setze den Anhieb im richtigen Moment. // Wo man nicht so gut sieht, ist es vielleicht besser, eine leichte Pose als Markierung zu nehmen. // Aber die Fische duerfen dich nicht bemerken, Boku-kun.
-E0412.1	Onkel	Hoer zu: // Entweder beobachtest du direkt die Bewegungen der Fische fuer den Anhieb, // oder du nimmst eine leichte Pose als Markierung, wenn man schlecht sieht.
+E0412.0	Onkel	Boku-kun, wenn du hier in den Teichen und Flüssen angelst, // pass auf, dass du nicht ins Wasser fällst. // Hier kommen kaum Angler vorbei, darum gibt es unheimlich viele Fische. // Wenn das Wasser klar ist und man die Fische gut sieht, // beobachte ihre Bewegungen und setze den Anhieb im richtigen Moment. // Wo man nicht so gut sieht, ist es vielleicht besser, eine leichte Pose als Markierung zu nehmen. // Aber die Fische dürfen dich nicht bemerken, Boku-kun.
+E0412.1	Onkel	Hör zu: // Entweder beobachtest du direkt die Bewegungen der Fische für den Anhieb, // oder du nimmst eine leichte Pose als Markierung, wenn man schlecht sieht.
 
 # --- E0405: A14 -- the watermelon field; D16 -- the summit
-E0405.0	Erzaehler	Der Melonendieb war ein hiesiger Junge, der ganz danach aussah, als haette er ordentlich Kraft in den Armen. // Und da begann meine alte Angewohnheit.
+E0405.0	Erzaehler	Der Melonendieb war ein hiesiger Junge, der ganz danach aussah, als hätte er ordentlich Kraft in den Armen. // Und da begann meine alte Angewohnheit.
 E0405.1	Boku	Hicks!
 E0405.2	Junge	Ist da jemand?
 E0405.3	Boku	Hicks!
 E0405.4	Erzaehler	Alles aus! In dem Moment, als ich das dachte...
 E0405.5	(voice only)
 E0405.6	Junge	Tzz! Vielleicht ist ein Wildhund aus den Bergen heruntergekommen...
-E0405.7	Erzaehler	Dieses Heulen hallte von irgendwo weit her, tief aus dem Innern der Berge, // einsam und traurig, voellig unpassend zum lauten Sommer auf den Huegeln...
+E0405.7	Erzaehler	Dieses Heulen hallte von irgendwo weit her, tief aus dem Innern der Berge, // einsam und traurig, völlig unpassend zum lauten Sommer auf den Hügeln...
 
 # --- E0404: G02 -- after dinner
 E0404.0	Onkel	Gochisosama deshita.
 E0404.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E0404.2	Onkel	Puh, heute Abend ist es wieder heiss.
+E0404.2	Onkel	Puh, heute Abend ist es wieder heiß.
 E0404.3	Tante	Wollen wir dann vielleicht Schabeeis machen?
 E0404.4	Tante	Welchen Sirup magst du auf deinem Schabeeis?
-E0404.5	Boku	Aehm, mal sehen...
+E0404.5	Boku	Ähm, mal sehen...
 E0404.6	[SEL]	Melone | Erdbeere | Zitrone | Mizore
 E0404.7	[SEL]	Melone | Erdbeere | Zitrone | Mizore | Regenbogen-Spezial
 E0404.8	Tante	Alles klar, ich fange gleich an.
@@ -146,14 +146,14 @@ E0404.8	Tante	Alles klar, ich fange gleich an.
 # --- E0406: G01 -- living room; I06 -- the ice shaver
 E0406.0	Boku	Whoa, wie toll!
 E0406.1	Shirabe	Iss es ordentlich und mit ganz viel Dankbarkeit.
-E0406.2	Tante	Aber Shirabe... // Boku-kun, Eis haben wir genug, also iss ruhig viel. // Wenn man so tief in den Bergen ohne Arzt lebt, // kann man bei Erkaeltung oder Bienenstich nicht gleich ins Krankenhaus, // darum haben wir immer Eis vorraetig.
-E0406.3	Moe	Und so sind wir mit der Zeit ziemlich abgehaertet geworden.
+E0406.2	Tante	Aber Shirabe... // Boku-kun, Eis haben wir genug, also iss ruhig viel. // Wenn man so tief in den Bergen ohne Arzt lebt, // kann man bei Erkältung oder Bienenstich nicht gleich ins Krankenhaus, // darum haben wir immer Eis vorrätig.
+E0406.3	Moe	Und so sind wir mit der Zeit ziemlich abgehärtet geworden.
 E0406.4	Shirabe, Moe, Boku, Tante	Hahaha.
-E0406.5	Onkel	Uebrigens, Boku-kun, du darfst dem Wespennest keinen Streich spielen. // Als Onkel ein kleiner Junge war, hat er mal mit der Angelrute ein Wespennest heruntergestossen, // und ein ganzer Schwarm Wespen hat ihn gejagt. Das war eine uebelste Geschichte.
+E0406.5	Onkel	Übrigens, Boku-kun, du darfst dem Wespennest keinen Streich spielen. // Als Onkel ein kleiner Junge war, hat er mal mit der Angelrute ein Wespennest heruntergestoßen, // und ein ganzer Schwarm Wespen hat ihn gejagt. Das war eine übelste Geschichte.
 E0406.6	Boku	Ja, verstanden, Onkel. // So etwas mache ich bestimmt nicht.
 E0406.7	Boku	Tante, Gochisosama!
 E0406.8	Tante	Es war nichts Besonderes.
-E0406.9	Tante	Ach, Boku-kun, noch eine Portion Schabeeis fuer dich.
+E0406.9	Tante	Ach, Boku-kun, noch eine Portion Schabeeis für dich.
 E0406.10	Tante	Iss aber nicht zu viel, sonst bekommst du Bauchschmerzen.
 E0406.11	Shirabe	Iss es ordentlich und mit so viel Dankbarkeit, dass du vor Dank stirbst.
 E0406.12	Tante	Aber Shirabe...
@@ -162,13 +162,13 @@ E0406.14	Boku	Tante, Gochisosama deshita!
 
 # --- E0434: G06 -- TV room
 E0434.0	Moe	Ehehe... // Schabeeis ist super, es hat so wenig Kalorien.
-E0434.1	Moe	Das haette ich gern als Grundnahrungsmittel.
+E0434.1	Moe	Das hätte ich gern als Grundnahrungsmittel.
 
 
 # --- E0441: G06 -- TV room
-E0441.0	Shirabe	Du! Shirabe hat extra gewartet, um dir alles moegliche zu zeigen, // und dann gehst du mittendrin einfach weg. Du bist wirklich undankbar!
-E0441.1	Shirabe	Also nein, was denkst du dir bloss...
-E0441.2	Shirabe	Heute hat es doch riesig viel Spass gemacht, oder? // Naechstes Mal nehme ich dich noch weiter mit...
+E0441.0	Shirabe	Du! Shirabe hat extra gewartet, um dir alles mögliche zu zeigen, // und dann gehst du mittendrin einfach weg. Du bist wirklich undankbar!
+E0441.1	Shirabe	Also nein, was denkst du dir bloß...
+E0441.2	Shirabe	Heute hat es doch riesig viel Spaß gemacht, oder? // Nächstes Mal nehme ich dich noch weiter mit...
 
 # --- E0446: G06 -- TV room
-E0446.0	Shirabe	Heute hat es doch riesig viel Spass gemacht, oder? // Naechstes Mal nehme ich dich noch weiter mit...
+E0446.0	Shirabe	Heute hat es doch riesig viel Spaß gemacht, oder? // Nächstes Mal nehme ich dich noch weiter mit...

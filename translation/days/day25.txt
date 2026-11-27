@@ -1,9 +1,9 @@
 # day25 (translation/days/README.md)
 # --- E2560: D07 -- Saori's camp
 E2560.0	Boku	Saori, wie wirst du von deinen Freunden genannt?
-E2560.1	Saori	Sie sagen, ich stolziere herum, als gehoerte mir die Welt.
+E2560.1	Saori	Sie sagen, ich stolziere herum, als gehörte mir die Welt.
 E2560.2	Boku	...Nicht das. Wie nennen sie dich?
-E2560.3	Saori	Dann "der herrenlose Samurai, der von der Straeflingsinsel ausgebrochen ist".
+E2560.3	Saori	Dann "der herrenlose Samurai, der von der Sträflingsinsel ausgebrochen ist".
 E2560.4	Boku	Du, mal mir doch etwas.
 E2560.5	Saori	Keine Lust...
 E2560.6	Boku	Warum?
@@ -12,7 +12,7 @@ E2560.7	Saori	Ich habe... meinen Pinsel vergessen.
 # --- E2502: G02 -- after breakfast
 E2502.0	Onkel	Gochisosama deshita.
 E2502.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E2502.2	Tante	Wo wir gerade daran denken: In letzter Zeit folgt ein sonniger Tag auf den naechsten...
+E2502.2	Tante	Wo wir gerade daran denken: In letzter Zeit folgt ein sonniger Tag auf den nächsten...
 E2502.3	Onkel	Ja... wie viele Tage es wohl schon her ist, seit es zuletzt geregnet hat?
 
 # --- E2507: G02 -- dining room; I13 -- close-up (no rain all month)
@@ -20,40 +20,40 @@ E2507.0	Onkel	Nanu? Boku-kun, hat es geregnet, seit du hier bist?
 E2507.1	Boku	...Ich glaube nicht.
 E2507.2	Onkel	So ist das also... // Diesen Sommer war ein strahlender Tag nach dem anderen, mit Gewitterwolken, die sich einem in die Augen brennen...
 E2507.3	Tante	Ja, das stimmt.
-E2507.4	Onkel	Wenn ich noch ein bisschen aelter bin und ein alter Mann geworden bin, // dann ist das so ein Sommer, an den man sich ploetzlich erinnert, wenn irgendeine Kleinigkeit ihn wachruft... // ein unaussprechlich eindrucksvoller Sommer...
+E2507.4	Onkel	Wenn ich noch ein bisschen älter bin und ein alter Mann geworden bin, // dann ist das so ein Sommer, an den man sich plötzlich erinnert, wenn irgendeine Kleinigkeit ihn wachruft... // ein unaussprechlich eindrucksvoller Sommer...
 E2507.5	Moe	Aber jetzt, wo er zu Ende geht, war er im Nu vorbei, nicht?
 E2507.6	Tante	...Ja, das stimmt.
 E2507.7	Onkel	Nun denn, dann mache ich mich mal daran, den Ofen vorzubereiten...
 
 # --- E2520: H17 -- the woodshed
-E2520.0	Tante	Onkel sagt, er legt sich heute ins Zeug und heizt den Ofen an. // Wenn man wohl nicht puenktlich zuschauen geht, // verpasst man vielleicht die spannenden Stellen, // also streng dich an und geh auch oft zuschauen, Boku-kun...
+E2520.0	Tante	Onkel sagt, er legt sich heute ins Zeug und heizt den Ofen an. // Wenn man wohl nicht pünktlich zuschauen geht, // verpasst man vielleicht die spannenden Stellen, // also streng dich an und geh auch oft zuschauen, Boku-kun...
 E2520.1	Tante	Trotzdem hat es diesen Sommer wirklich wenig geregnet.
 E2520.2	Tante	Hoffentlich hat Omas Haus in Shikoku keine Probleme mit Wasserknappheit.
 
 # --- E2510: H26 -- the workshop
-E2510.0	Onkel	Ich bin mit den Vorbereitungen fuer den Ofen fertig. // Gegen Abend zuende ich ihn an, also komm zuschauen, Boku-kun.
+E2510.0	Onkel	Ich bin mit den Vorbereitungen für den Ofen fertig. // Gegen Abend zünde ich ihn an, also komm zuschauen, Boku-kun.
 E2510.1	Boku	Ja, ich freue mich schon!
 
 # --- E2514: H15 -- the climbing kiln (the firing begins)
-E2514.0	Onkel	Boku-kun, du bist puenktlich gekommen, wie versprochen. // Also dann, ich mache Feuer in der Feuerkammer des Ofens.
-E2514.1	Onkel	Dieser Ofen... // ist, wie du siehst, so gebaut, als wuerde er den Hang hinaufklettern, deshalb heisst er Hangofen. // Bei dieser Form steigt die Hitze, wenn man unten Feuer macht, von selbst den Hang hinauf, // so kann man die Temperatur im Inneren wirkungsvoll auf ueber tausend Grad bringen. // Deshalb ist das eine heeeisse Arbeit, auf die ich im Hochsommer nicht allzu viel Lust habe.
+E2514.0	Onkel	Boku-kun, du bist pünktlich gekommen, wie versprochen. // Also dann, ich mache Feuer in der Feuerkammer des Ofens.
+E2514.1	Onkel	Dieser Ofen... // ist, wie du siehst, so gebaut, als würde er den Hang hinaufklettern, deshalb heißt er Hangofen. // Bei dieser Form steigt die Hitze, wenn man unten Feuer macht, von selbst den Hang hinauf, // so kann man die Temperatur im Inneren wirkungsvoll auf über tausend Grad bringen. // Deshalb ist das eine heeeiße Arbeit, auf die ich im Hochsommer nicht allzu viel Lust habe.
 E2514.2	Boku	Und was machst du danach?
-E2514.3	Onkel	Erst einmal lege ich eine Weile lang alle dreissig bis vierzig Minuten viel Brennholz nach. // Und ab der Morgendaemmerung mache ich das allmaehlich schneller, und...
+E2514.3	Onkel	Erst einmal lege ich eine Weile lang alle dreißig bis vierzig Minuten viel Brennholz nach. // Und ab der Morgendämmerung mache ich das allmählich schneller, und...
 E2514.4	Boku	Dann bleibst du die ganze Nacht wach.
-E2514.5	Onkel	Ahaha, klar doch. // Und danach, morgen am fruehen Nachmittag, wenn es drinnen die angestrebten 1.200 Grad erreicht, // halte ich das etwa zwei Stunden lang tapfer durch...
+E2514.5	Onkel	Ahaha, klar doch. // Und danach, morgen am frühen Nachmittag, wenn es drinnen die angestrebten 1.200 Grad erreicht, // halte ich das etwa zwei Stunden lang tapfer durch...
 E2514.6	Boku	Mhm, mhm.
-E2514.7	Onkel	und gegen Abend verschliesse ich diese Feuerkammer und loesche das Feuer.
+E2514.7	Onkel	und gegen Abend verschließe ich diese Feuerkammer und lösche das Feuer.
 E2514.8	Boku	Und dann ist es fertig?
-E2514.9	Onkel	Ja! // Aber ich muss warten, bis er von selbst abkuehlt, bevor ich den Ofen oeffne, // also musst du bis uebermorgen Abend warten, um zu sehen, was gebrannt wurde.
+E2514.9	Onkel	Ja! // Aber ich muss warten, bis er von selbst abkühlt, bevor ich den Ofen öffne, // also musst du bis übermorgen Abend warten, um zu sehen, was gebrannt wurde.
 E2514.10	Boku	Puh... das dauert aber lange.
 E2514.11	Onkel	Ich habe schon richtig Hunger bekommen.
 
 # --- E2515: H15 -- the climbing kiln, at night (the tanka)
-E2515.0	Onkel	Im Grillenlied / erzittert / meines Ofens / noch zarte Flamme; / moege mein Kind von ihr umarmt sein.
-E2515.1	Onkel	Morgen, wenn die Sonne aufgeht, // brauche ich noch viel mehr Brennholz als jetzt, // also muss ich heute Nacht fleissig spalten...
+E2515.0	Onkel	Im Grillenlied / erzittert / meines Ofens / noch zarte Flamme; / möge mein Kind von ihr umarmt sein.
+E2515.1	Onkel	Morgen, wenn die Sonne aufgeht, // brauche ich noch viel mehr Brennholz als jetzt, // also muss ich heute Nacht fleißig spalten...
 E2515.2	Boku	Du, was bedeutet denn das Gedicht von eben?
-E2515.3	Onkel	Wenn es Nacht wird, spuert man eben doch schon den Herbst... // so ungefaehr wohl.
-E2515.4	Onkel	Im Grillenlied / erzittert / meines Ofens / noch zarte Flamme; / moege mein Kind von ihr umarmt sein.
+E2515.3	Onkel	Wenn es Nacht wird, spürt man eben doch schon den Herbst... // so ungefähr wohl.
+E2515.4	Onkel	Im Grillenlied / erzittert / meines Ofens / noch zarte Flamme; / möge mein Kind von ihr umarmt sein.
 E2515.5	Boku	.........
 # NOTE E2515.0: Onkels Tanka (5-7-5-7-7 in klassischer Grammatik) in fuenf kurzen Versen, woertlich
 #   (Stilbibel § 10). "Mein Kind" kann als die Gefaesse im Ofen gelesen werden, womit er es
@@ -61,57 +61,57 @@ E2515.5	Boku	.........
 
 # --- E2530: G16 -- Moe's bed
 E2530.0	Moe	Du, es ist zwar komisch, aber... // diese Geschichte, dass der Konrektor hier irgendwo in den Bergen einen Schatz versteckt hat... // Onee-chan geht das irgendwie nicht mehr aus dem Kopf...
-E2530.1	Moe	Wo mag er den bloss versteckt haben? // Hier in den Bergen gibt es ja nirgends eine Stelle, die nach "hier liegt ein Schatz versteckt" aussieht...
+E2530.1	Moe	Wo mag er den bloß versteckt haben? // Hier in den Bergen gibt es ja nirgends eine Stelle, die nach "hier liegt ein Schatz versteckt" aussieht...
 E2530.2	Moe	Ich habe bis in die Morgenstunden gelernt...
-E2530.3	Moe	Deshalb moechte ich noch ein bisschen liegen bleiben.
+E2530.3	Moe	Deshalb möchte ich noch ein bisschen liegen bleiben.
 E2530.4	Moe	Oh, was ist das denn?
 E2530.5	Boku	Das... Ubli-bubli-bon.
-E2530.6	Moe	Was ist das? // Nanu, da sind ein englisches Woerterbuch und... ein zerfledderter Brief drin.
-E2530.7	Boku	Also ist es doch ein Buch von Ausserirdischen.
+E2530.6	Moe	Was ist das? // Nanu, da sind ein englisches Wörterbuch und... ein zerfledderter Brief drin.
+E2530.7	Boku	Also ist es doch ein Buch von Außerirdischen.
 E2530.8	Moe	Dummkopf, das ist Englisch. Eng-lisch!
 E2530.9	Boku	Onee-chan, verstehst du Englisch?
-E2530.10	Moe	Natuerlich nicht. Das unterrichtet schliesslich der Lehrer, den ich am meisten hasse.
-E2530.11	Moe	Ich versuche mal, ein Stueck von dem Brief zu lesen.
+E2530.10	Moe	Natürlich nicht. Das unterrichtet schließlich der Lehrer, den ich am meisten hasse.
+E2530.11	Moe	Ich versuche mal, ein Stück von dem Brief zu lesen.
 E2530.12	Boku	Ja, lies vor, lies vor!
 E2530.13	(voice only)
 E2530.14	Moe	...Der Brief war leider auch auf Englisch.
-E2530.15	Boku	(stoehn)...
-E2530.16	Moe	Was mache ich nur? Selbst wenn ich ihn uebersetzen wollte, mein Woerterbuch liegt in der Schule... // Ob hier irgendwo ein englisches Woerterbuch herumliegt?
+E2530.15	Boku	(stöhn)...
+E2530.16	Moe	Was mache ich nur? Selbst wenn ich ihn übersetzen wollte, mein Wörterbuch liegt in der Schule... // Ob hier irgendwo ein englisches Wörterbuch herumliegt?
 E2530.17	Boku	...Onee-chan, machst du das mit Absicht?
-E2530.18	Moe	Hae? Was? Waaas? Was meinst du?
-E2530.19	Moe	Bis zum Abendessen habe ich den Brief uebersetzt.
+E2530.18	Moe	Hä? Was? Waaas? Was meinst du?
+E2530.19	Moe	Bis zum Abendessen habe ich den Brief übersetzt.
 E2530.20	Boku	Kannst du das?
-E2530.21	Moe	Sei stiiill! // Wenn ich mir vorstelle, dass da jemandes Geheimnis drinsteckt, klopft mein Herz vor Aufregung... // und irgendwie fuehlt sich mein eigenes Elend gleich leichter an.
+E2530.21	Moe	Sei stiiill! // Wenn ich mir vorstelle, dass da jemandes Geheimnis drinsteckt, klopft mein Herz vor Aufregung... // und irgendwie fühlt sich mein eigenes Elend gleich leichter an.
 
 # --- E2532: G17 -- the veranda (moratorium)
 E2532.0	Moe	Irgendwie war es ein trauriger Sommer...
 E2532.1	Boku	...?
-E2532.2	Moe	(seufz)... // Vielleicht fuehlt es sich traurig an, wenn es vorbei ist, weil es so schoen war.
-E2532.3	Boku	Gibt es denn kein naechstes Jahr?
-E2532.4	Moe	Naechstes Jahr ist naechstes Jahr. Dieser Sommer ist nur dieses Jahr... // Ach, so ist das! Deshaaalb wollte ich fuer immer Mittelschuelerin bleiben... // genau so bleiben wie in diesem Sommer... // Ach... Erwachsene nennen das ein "Moratorium"...
-E2532.5	Boku	Fuer mich ist das alles Chinpun-Kanpun...
+E2532.2	Moe	(seufz)... // Vielleicht fühlt es sich traurig an, wenn es vorbei ist, weil es so schön war.
+E2532.3	Boku	Gibt es denn kein nächstes Jahr?
+E2532.4	Moe	Nächstes Jahr ist nächstes Jahr. Dieser Sommer ist nur dieses Jahr... // Ach, so ist das! Deshaaalb wollte ich für immer Mittelschülerin bleiben... // genau so bleiben wie in diesem Sommer... // Ach... Erwachsene nennen das ein "Moratorium"...
+E2532.5	Boku	Für mich ist das alles Chinpun-Kanpun...
 E2532.6	Moe	Ahaha... das klingt wie ein Pandaname.
 E2532.7	Moe	Boah... ein Moratorium also...
 E2532.8	Boku	Klingt wie ein Planetarium.
-E2532.9	Boku	Du, ich habe tief in der Hoehle etwas Seltsames aufgehoben.
-E2532.10	Moe	Hae? Was mag das sein? // Dann bring es morgen Mittag in Onee-chans Zimmer.
+E2532.9	Boku	Du, ich habe tief in der Höhle etwas Seltsames aufgehoben.
+E2532.10	Moe	Hä? Was mag das sein? // Dann bring es morgen Mittag in Onee-chans Zimmer.
 E2532.11	Moe	Irgendwie, nachdem ich diesen alten Brief gelesen habe... // sind meine Sorgen vielleicht winzig klein? // ...denke ich mir, und mein Kopf ist ganz durcheinander und dreht sich im Kreis...
-E2532.12	Boku	Aber wem gehoert er denn?
-E2532.13	Moe	Ich weiss nicht, wem, aber, hmm, wie soll ich sagen... // das muss jemand mit einem sehr warmen Herzen zurueckgelassen haben...
+E2532.12	Boku	Aber wem gehört er denn?
+E2532.13	Moe	Ich weiß nicht, wem, aber, hmm, wie soll ich sagen... // das muss jemand mit einem sehr warmen Herzen zurückgelassen haben...
 E2532.14	Moe	Ab morgen...
 E2532.15	Boku	Was?
-E2532.16	Moe	Ab morgen gebe ich mir Muehe... das habe ich mir ein bisschen vorgenommen.
+E2532.16	Moe	Ab morgen gebe ich mir Mühe... das habe ich mir ein bisschen vorgenommen.
 # NOTE E2532.4-.8: "Moratorium" war in den 1970ern das Wort fuer aufgeschobenes Erwachsenwerden;
 #   Moratorium und Planetarium sind beides Lehnwoerter (Stilbibel § 8 Typ 2). Chinpun-Kanpun (Kauderwelsch)
 #   klingt wie die Namen der Pandas Kang Kang und Lan Lan im Ueno-Zoo ab 1972 (Typ 3).
 
 # --- E2540: H10 -- garden corner where Shirabe watches ants
 E2540.0	Shirabe	Papa scheint heute ausnahmsweise mal zu arbeiten.
-E2540.1	Shirabe	Im Winter backt man nebenbei Suesskartoffeln im Hangofen.
+E2540.1	Shirabe	Im Winter backt man nebenbei Süßkartoffeln im Hangofen.
 E2540.2	Shirabe	Du, der Mann aus dem Brief, den Onee-chan gelesen hat, was ist danach aus ihm geworden?
-E2540.3	Boku	Das weiss niemand, sagt sie.
+E2540.3	Boku	Das weiß niemand, sagt sie.
 E2540.4	Shirabe	Er klingt irgendwie schneidig, oder?
-E2540.5	Boku	Meinst du? Aber inzwischen waere er schon ein alter Opa.
+E2540.5	Boku	Meinst du? Aber inzwischen wäre er schon ein alter Opa.
 E2540.6	Shirabe	Wo Liebe ist, spielt der Altersunterschied keine Rolle.
 
 # --- E2541: G06 -- TV room

@@ -17,6 +17,6 @@ tex@M_S01000.0	Sumo // Tausch- // Heft
 
 # --- M_I23000: the hunting association's warning board
 tex@M_I23000.danger	GEFAHR!
-tex@M_I23000.houses	Haeuser nah,
+tex@M_I23000.houses	Häuser nah,
 tex@M_I23000.shoot	Schussgefahr!
-tex@M_I23000.association	Praefektur // Jagdbund
+tex@M_I23000.association	Präfektur // Jagdbund
