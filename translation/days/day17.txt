@@ -8,7 +8,7 @@ E1701.3	Tante	Dieses Jahr scheint sie bis zum Drachengott-Teich hineinzugehen.
 E1701.4	Boku	Eine Frage.
 E1701.5	Tante	Ja?
 E1701.6	Boku	Wer ist das?
-E1701.7	Onkel	Wolfs... mädchen. // Sie ist eine hübsche Studentin, die sich jeden Sommer hier in den Bergen vergraben hat, // und deshalb kommt sie zu uns, um sich das Bad auszuleihen.
+E1701.7	Onkel	Wolfs... mädchen. // Sie ist eine hübsche Studentin, die sich jeden Sommer hier in den Bergen vergräbt, // und deshalb kommt sie zu uns, um sich das Bad auszuleihen.
 E1701.8	Tante	Sie schleppt Unmengen Bücher mit und lebt im Zelt. // Wenn man beim Jizo-sama links geht und durch den Wald läuft, gibt es da doch einen großen Teich, oder?
 E1701.9	Onkel	Dieses Jahr scheint sie ihr Zelt dort aufgeschlagen zu haben, // also geh doch auch mal hinsehen, Boku-kun.
 E1701.10	Onkel	Also dann, itadakimaasu!

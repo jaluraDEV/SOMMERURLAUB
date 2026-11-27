@@ -13,7 +13,7 @@ tex@M_I14000.signature	Deine Saori
 tex@M_I18.0	Zutritt // verboten!
 
 # --- M_S01000: the cover of the bug-trading notebook
-tex@M_S01000.0	Sumo // Tausch- // Heft
+tex@M_S01000.0	Sumo // Tausch- // heft
 
 # --- M_I23000: the hunting association's warning board
 tex@M_I23000.danger	GEFAHR!

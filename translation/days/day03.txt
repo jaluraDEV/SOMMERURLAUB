@@ -15,7 +15,7 @@
 
 # --- E0301: G02 -- breakfast
 E0301.0	Onkel	Boku-kun, warst du schon am Teich? // Dort gibt es viele große Fische.
-E0301.1	Boku	Whoa! Gaanz viele? Toll, toll!
+E0301.1	Boku	Boah! Gaanz viele? Toll, toll!
 E0301.2	Onkel	Wenn du eine Angelrute benutzen willst, sie liegt im...
 E0301.3	Onkel	...Schuppen rechts vor der Küchentür, nimm sie dir ruhig mit.
 E0301.4	Boku	Ja, verstanden. Danke, Onkel.
@@ -85,7 +85,7 @@ E0312.1	Onkel	Danke für deine fleißige Hilfe heute auf dem Feld. // Onkels Fel
 
 # --- E0303: G02 -- dinner
 E0303.0	Onkel	Boku-kun! // Ganz hinten in Onkels Garten, drüben beim Tierstall, // führt ein Weg den Yukino-Fluss hinauf zum Glühwürmchenbach... // An diesem Bach schlüpfen jede Menge Glühwürmchen...
-E0303.1	Boku	Whoa, Glühwürmchen! Die habe ich noch nie gesehen. Toll, toll... // Die sind bestimmt super schön, oder? Ich will sie sehen, ich will sie sehen!
+E0303.1	Boku	Boah, Glühwürmchen! Die habe ich noch nie gesehen. Toll, toll... // Die sind bestimmt super schön, oder? Ich will sie sehen, ich will sie sehen!
 E0303.2	Shirabe	Nanu? Du bist ja überraschend romantisch.
 E0303.3	Onkel	Aber der Weg ist nachts gefährlich, also darfst du nach Sonnenuntergang auf keinen Fall dorthin gehen. // Das ist nun mal die Regel bei Onkel zu Hause.
 E0303.4	Boku	Oooch! Wie schade.

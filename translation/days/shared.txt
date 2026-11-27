@@ -373,7 +373,7 @@ E8062.0	(unlabelled)	Ein alter Brunnen, innen stockdunkel... Unheimlich und ein 
 E8064.0	(unlabelled)	Ein großer Stapel Bücher, in den der Geruch von Lagerfeuerrauch eingezogen ist.
 
 # --- E8065: D07 -- Saoris Lager
-E8065.0	(unlabelled)	Am Boden des Topfes noch ein kleiner Rest Kaffee gefunden.
+E8065.0	(unlabelled)	Am Boden des Topfes noch einen kleinen Rest Kaffee gefunden.
 
 # --- E8066: H15 -- der Hangofen
 E8066.0	(unlabelled)	Hangofen-san ist knallrot und wütend.
@@ -407,7 +407,7 @@ E4028.12	Tante	Das Abendessen heute war... // Omurice, Käse en Papillote, gebra
 E4028.13	Tante	Das Abendessen heute war... // Bratreis, chinesische Suppe, Schwein süß-sauer, Shumai und so weiter, ganz nach Shirabes Geschmack.
 E4028.14	Tante	Das Abendessen heute war... // Kohlrouladen, gegrillte Aubergine und noch ein offenes Omelett dazu, genau nach Moes Geschmack.
 E4028.15	Tante	Das Abendessen heute war... // Curry-Reis, marinierte Bastardmakrele, Salat, Edamame und so weiter. Ich habe mir richtig Mühe gegeben.
-E4028.16	Tante	Das Abendessen heute war... // Spaghetti, gekühlte Aubergine, gegrillter Tofu, Suppe und Salat. Mit Gewalt auf italienisch getrimmt.
+E4028.16	Tante	Das Abendessen heute war... // Spaghetti, gekühlte Aubergine, gegrillter Tofu, Suppe und Salat. Mit Gewalt auf Italienisch getrimmt.
 E4028.17	Tante	Das Abendessen heute war... // Ich habe extra das feinste Nigiri, das Turm-Set von Osho Sushi in Sagi-no-sato, liefern lassen.
 # NOTE E4028.17: Shogi-Witz (Osho = Koenig, Hisha = Turm -> Turm-Set).
 
@@ -483,7 +483,7 @@ E4001.0	Erzaehler	Das war das erste Mal, dass ich das Zimmer der Schwestern betr
 
 # --- E0906: A01 -- der Teich unter der Autobahn
 E0906.0	Boku	Huch, was ist das denn?
-E0906.1	Boku	Whoa! Was zur Hölle ist das?
+E0906.1	Boku	Boah! Was zur Hölle ist das?
 
 # --- E0923: B07 -- ein Kaeferbaum (das zweite Foto der Tante)
 E0923.0	Boku	Huch? Das ist ja Tante.
@@ -551,7 +551,7 @@ E1052.4	Fat	He, du willst meiner Wenigkeit doch nichts verheimlichen, oder?
 E1052.5	Boku	Ich verheimliche gaaar nichts.
 
 # --- E1053: A18 -- das Geheimversteck
-E1053.0	Brille	Das eigentliche Rätsel ist die afrikanische Schildkröte bei Doktor Dolittle. // Wie viele Zehntausende Jahre ist die alt?
+E1053.0	Brille	Das eigentliche Rätsel ist die afrikanische Schildkröte bei Doktor Dolittle. // Wie viele zehntausend Jahre ist die alt?
 
 # --- E1150: A18 -- das Geheimversteck
 E1150.0	Brille	Warum liest hier eigentlich niemand Bücher?
@@ -643,7 +643,7 @@ E1605.2	(voice only)
 
 # --- E1606: C08 -- das Sonnenblumenfeld (das dritte Foto der Tante)
 E1606.0	Tante	Schon wieder über den Weg gelaufen, Boku-kun! // Na gut, dann mache ich hier ein Foto von dir!
-E1606.1	Tante	Sooo, jetzt gehts los. Was ist Onkels allerliebstes Essen?
+E1606.1	Tante	Sooo, jetzt geht's los. Was ist Onkels allerliebstes Essen?
 E1606.2	(voice only)
 E1606.3	Tante	Tante macht hier noch einen kleinen Spaziergang, bevor sie heimgeht.
 
@@ -726,7 +726,7 @@ E1861.8	Frau	Dieses Gerät hier hat nämlich einen Sensor...
 E1861.9	Boku	Ich habe doch noch gar nichts gefragt!
 E1861.10	Frau	Wolltest du aber gleich, oder?
 E1861.11	Boku	Dann eben nicht.
-E1861.12	Frau	Gleich klatschts.
+E1861.12	Frau	Gleich klatscht's.
 E1861.13	Boku	Hören Sie auf.
 E1861.14	Frau	Dieser Sensor erkennt alles, was hier vorbeikommt, // dann blitzt es und der Auslöser klickt.
 E1861.15	(voice only)
@@ -800,7 +800,7 @@ E1908.0	(unlabelled)	Böller gezündet.
 E1908.1	(voice only)
 
 # --- E1951: A18 -- das Geheimversteck
-E1951.0	Guts	Letzten Monat in der Schule... // hat der Lehrer nur die Mädchen zusammengerufen und irgendwas gemacht. // Solange haben die Jungs Völkerball gespielt.
+E1951.0	Guts	Letzten Monat in der Schule... // hat der Lehrer nur die Mädchen zusammengerufen und irgendwas gemacht. // So lange haben die Jungs Völkerball gespielt.
 
 # --- E1952: A18 -- das Geheimversteck
 E1952.0	Fat	Bei dem Eis mit dem Gewinn-Stempel im Deckel... // da habe ich mal dreimal hintereinander gewonnen.
@@ -848,7 +848,7 @@ E6001.11	Saori	Als ich klein war, habe ich in der Stadt am Fuß dieses Berges ge
 E6001.12	Saori	Als ich noch kleiner war als du jetzt, Boku-kun... // bin ich mit meiner Familie hier zum Wandern hergekommen... // An jenem Tag habe ich mich unbemerkt verlaufen... // Es wurde Abend, und mir wurde mulmig... // Ich saß auf einem großen Stein am Flussufer und weinte... // Und da ertonte jene Stimme...
 E6001.13	Boku	Was für eine Stimme?
 E6001.14	(voice only)
-E6001.15	Saori	Ich bekam Angst und rannte im Abendrot halsüberkopf den Bergpfad hinunter... // und ehe ich mich versah, fanden mich Männer vom Jugendverein, die mich am Berg gesucht hatten.
+E6001.15	Saori	Ich bekam Angst und rannte im Abendrot Hals über Kopf den Bergpfad hinunter... // und ehe ich mich versah, fanden mich Männer vom Jugendverein, die mich am Berg gesucht hatten.
 E6001.16	Boku	Dann hat dich diese Stimme also gerettet?
 E6001.17	Saori	Ja, irgendwie sehe ich das inzwischen so.
 E6001.18	Boku	Was hat denn da geheult?
@@ -900,7 +900,7 @@ E6101.11	Saori	Als ich klein war, habe ich in der Stadt am Fuß dieses Berges ge
 E6101.12	Saori	Als ich noch kleiner war als du jetzt, Boku-kun... // bin ich mit meiner Familie hier zum Wandern hergekommen... // An jenem Tag habe ich mich unbemerkt verlaufen... // Es wurde Abend, und mir wurde mulmig... // Ich saß auf einem großen Stein am Flussufer und weinte... // Und da ertonte jene Stimme...
 E6101.13	Boku	Was für eine Stimme?
 E6101.14	(voice only)
-E6101.15	Saori	Ich bekam Angst und rannte im Abendrot halsüberkopf den Bergpfad hinunter... // und ehe ich mich versah, fanden mich Männer vom Jugendverein, die mich am Berg gesucht hatten.
+E6101.15	Saori	Ich bekam Angst und rannte im Abendrot Hals über Kopf den Bergpfad hinunter... // und ehe ich mich versah, fanden mich Männer vom Jugendverein, die mich am Berg gesucht hatten.
 E6101.16	Boku	Dann hat dich diese Stimme also gerettet?
 E6101.17	Saori	Ja, irgendwie sehe ich das inzwischen so.
 E6101.18	Boku	Was hat denn da geheult?
@@ -1112,7 +1112,7 @@ E4064.12	Tante	Das Abendessen heute war... // Omurice, Käse en Papillote, gebra
 E4064.13	Tante	Das Abendessen heute war... // Bratreis, chinesische Suppe, Schwein süß-sauer, Shumai und so weiter, ganz nach Shirabes Geschmack.
 E4064.14	Tante	Das Abendessen heute war... // Kohlrouladen, gegrillte Aubergine und noch ein offenes Omelett dazu, genau nach Moes Geschmack.
 E4064.15	Tante	Das Abendessen heute war... // Curry-Reis, marinierte Bastardmakrele, Salat, Edamame und so weiter. Ich habe mir richtig Mühe gegeben.
-E4064.16	Tante	Das Abendessen heute war... // Spaghetti, gekühlte Aubergine, gegrillter Tofu, Suppe und Salat. Mit Gewalt auf italienisch getrimmt.
+E4064.16	Tante	Das Abendessen heute war... // Spaghetti, gekühlte Aubergine, gegrillter Tofu, Suppe und Salat. Mit Gewalt auf Italienisch getrimmt.
 E4064.17	Tante	Das Abendessen heute war... // Ich habe extra das feinste Nigiri, das Turm-Set von Osho Sushi in Sagi-no-sato, liefern lassen.
 
 # --- E3171: H02 -- vor dem Haus (Vater kommt an)

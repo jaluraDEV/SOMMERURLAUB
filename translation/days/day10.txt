@@ -17,7 +17,7 @@ E1012.3	Onkel	Puh... jetzt habe ich noch mehr Durst.
 E1013.0	Onkel	Kaoru, hol mir ein Bier.
 E1013.1	Onkel	Kaoru, na los doch.
 E1013.2	Tante	Wenn ich es dir hole, wie viel gibst du mir dafür?
-E1013.3	Onkel	Jetzt reichts. Aus reinem Trotz gehe ich es mir nicht selbst holen.
+E1013.3	Onkel	Jetzt reicht's. Aus reinem Trotz gehe ich es mir nicht selbst holen.
 E1013.4	Tante	Das stört niemanden.
 E1013.5	Onkel	"Das stört niemanden"... ich bin doch derjenige, den es stört!
 

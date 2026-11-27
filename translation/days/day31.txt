@@ -1,6 +1,6 @@
 # day31 (translation/days/README.md)
 # --- E3101: G02 -- the last breakfast
-E3101.0	Onkel	Vielleicht weil ich gestern im Wohnzimmer eingeschlafen bin, aber mir tun irgendwie die Glieder weh...
+E3101.0	Onkel	Vielleicht, weil ich gestern im Wohnzimmer eingeschlafen bin... mir tun irgendwie die Glieder weh...
 E3101.1	Moe	Du klingst wie ein alter Mann.
 E3101.2	Onkel	He, wenn du das dauernd sagst, wird es noch wahr.
 E3101.3	Tante	Geht es dir gut?

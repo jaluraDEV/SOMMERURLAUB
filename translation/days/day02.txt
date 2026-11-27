@@ -54,7 +54,7 @@ E0210.3	Boku	Hä? Zündest du ihn vielleicht an, während ich hier bin?
 E0210.4	Onkel	Hmm, im Sommer wird es beim Brennen heiß, deshalb möchte ich es in Wahrheit nicht machen, // aber bis Ende August sammelt sich wohl einiges zum Brennen an, // also werde ich ihn dann anheizen müssen.
 E0210.5	Boku	Darauf freue ich mich irgendwie.
 E0210.6	Onkel	Onkel freut sich auch darauf, bis auf die Hitze.
-E0210.7	Onkel	Nanu, du bist ja noch hier. // Bei Onkel zu Hause gibt es neben der Veranda ein Hintertor, // von dort kommst du über die Brücke hinaus in die Berge. // Kinder sollen draußen in der Natur spielen. // Nachts sind die Berge gefährlich, deshalb ist dort nur tagsuber geöffnet.
+E0210.7	Onkel	Nanu, du bist ja noch hier. // Bei Onkel zu Hause gibt es neben der Veranda ein Hintertor, // von dort kommst du über die Brücke hinaus in die Berge. // Kinder sollen draußen in der Natur spielen. // Nachts sind die Berge gefährlich, deshalb ist dort nur tagsüber geöffnet.
 
 # --- E0254: A17 -- approach to the secret base
 E0254.0	Erzaehler	Es war wohl der Ort, an dem sich die Bengel der Gegend sonst herumtrieben... // das sogenannte Geheimversteck.
@@ -67,7 +67,7 @@ E0206.0	Boku	Nanu... Hier komme ich ja gar nicht weiiiter.
 E0206.1	Boku	Wenn ich diesen Baum fälle, kann ich vielleicht eine Brücke bauen?
 
 # --- E0205: A13 -- the beehive
-E0205.0	Boku	Whoa!
+E0205.0	Boku	Boah!
 E0205.1	Erzaehler	Das große Wespennest schwankte hin und her... // Es sah so aus, als würde es nach ein paar weiteren Stupsern mit der Angelrute zu Boden fallen...
 E0205.2	Boku	Geschafft!
 
@@ -106,7 +106,7 @@ E0213.7	Onkel	Red doch bitte nicht gleich so furchtbar daher.
 # NOTE E0213.3: Ajiuri, eine kleine suesse Melone; die naechsten beiden Zeilen erklaeren es (Glossar § 5).
 
 # --- E0241: G06 -- TV room
-E0241.0	Shirabe	Ohje, ich habe Hunger... // dabei habe ich doch gerade erst gegessen...
+E0241.0	Shirabe	Oh je, ich habe Hunger... // dabei habe ich doch gerade erst gegessen...
 E0241.1	Boku	Was isst du denn gern?
 E0241.2	Shirabe	Wie bitte! Wo eine Dame doch gerade einen eleganten Moment nach dem Essen genießt!
 E0241.3	Shirabe	Ich habe gesagt, lass Shirabe in Ruhe!

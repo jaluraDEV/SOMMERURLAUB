@@ -139,7 +139,7 @@ E0107.2	Erzaehler	Und in der Schachtel befand sich, genau wie mein Onkel es vers
 E0113.0	Onkel	Geh schnell hoch in dein Zimmer // und schau dir das Geschenk auf dem Schreibtisch an.
 E0113.1	Onkel	Gefällt dir das Insektenfang-Set? // Ich glaube, das war alles, was dazugehörte... // Die Schachtel scheint verschwunden zu sein... // Übrigens, das Plastikmodell da hat Kaoru früher mal gebaut.
 E0113.2	Boku	Tante, du baust Modelle, obwohl du ein Mädchen bist?
-E0113.3	Tante	Nanu, ist das denn komisch? // Tante bastelt alles mögliche gern.
+E0113.3	Tante	Nanu, ist das denn komisch? // Tante bastelt alles Mögliche gern.
 E0113.4	Boku	Sag mal, wo ist das fertige Modell?
 E0113.5	Onkel	Das steht am Fenster von Onkels Werkstatt. // Komm es dir morgen ruhig anschauen, Boku-kun.
 E0113.6	Onkel	Kaoru, bringst du mir ein Bier...?

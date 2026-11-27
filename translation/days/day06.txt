@@ -15,7 +15,7 @@
 
 # --- E0605: G13, G14 -- Boku's room, the morning after the fireflies
 E0605.0	Shirabe	Buh!
-E0605.1	Boku	Whoa!
+E0605.1	Boku	Boah!
 E0605.2	Shirabe	Es gibt Frühstück.
 E0605.3	Boku	Mhm...... Nanu? Und die Gymnastik?
 E0605.4	Shirabe	Schlafmütze!
@@ -37,7 +37,7 @@ E0620.9	Tante	Aber dein Käferkäfig schien voll zu sein, // also ist Tante zum 
 E0620.10	Boku	Oooch, nein...
 E0620.11	Tante	Aber das Glühwürmchen durfte bis zum Morgen bei dir bleiben, // vielleicht hatte es also eine schöne Zeit...
 E0620.12	Tante	Tja, wer weiß? // Schau in deinen Käferkäfig und sieh selbst nach.
-E0620.13	Boku	Whoa, danke, Tante!
+E0620.13	Boku	Boah, danke, Tante!
 E0620.14	Tante	Aber bei Tag betrachtet ist ein Glühwürmchen doch bloß ein Bockkäfer, oder?
 # NOTE E0620.0: "dasso" bedeutet Ausbruch/Fahnenflucht - Tantens Scherz ueber die Nacht ohne Waechter.
 

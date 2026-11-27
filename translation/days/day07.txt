@@ -87,7 +87,7 @@ E0710.38	(unlabelled)	Boku-Drachen erhalten.
 
 # --- E0733: B03 -- forest path with the yellow flowers
 E0733.0	Boku	Huch, Onee-chan... was machst du hier?
-E0733.1	Moe	Oh, das hier? Na ja... // Ich wollte mich bei dem Menschen bedanken, der mir Klarinette beibringt... // darum habe ich Blumen für Pressblumen gepflückt.
+E0733.1	Moe	Oh, das hier? Na ja... // Ich wollte mich bei dem Menschen bedanken, der mir Klarinette beibringt... // darum habe ich Blumen zum Pressen gepflückt.
 E0733.2	Boku	Hmm, Onee-chan, du wirkst wie eine erwachsene Frau.
 E0733.3	Moe	Hä? Hm-hm-hm... danke, Boku-kun. // Aber weißt du, dieses Pressblumen-Machen ist etwas ganz Besonderes.
 E0733.4	Boku	Echt?! Warum?
@@ -105,7 +105,7 @@ E0780.3	Boku	Ja, verstanden, Onee-chan.
 # --- E0786: B03 -- forest path with the yellow flowers
 E0786.0	Moe	Eine gelbe Trollblume.
 E0786.1	Moe	Jaaa, danke.
-E0786.2	Moe	Mhm, Boku-kun... ich glaube, das reicht von der Menge her. // Danke fürs Helfen. // Und weil wir über alles mögliche reden konnten, hat es heute richtig Spaß gemacht.
+E0786.2	Moe	Mhm, Boku-kun... ich glaube, das reicht von der Menge her. // Danke fürs Helfen. // Und weil wir über alles Mögliche reden konnten, hat es heute richtig Spaß gemacht.
 E0786.3	Boku	Ja, mir hat es auch Spaß gemacht. // ...Onee-chan?
 E0786.4	Moe	Hm? Was ist denn?
 E0786.5	Boku	Werde... eine niedliche alte Oma, ja?

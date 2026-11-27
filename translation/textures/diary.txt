@@ -4,7 +4,7 @@
 
 nikki@NIKKI_001	Mama bekommt ein Baby, deshalb ist großes Durcheinander! Ich bin bei Onkel zu Gast. Ob es hier viele tolle Sachen gibt?
 nikki@NIKKI_002	Käfer sind schnell. Ich bin langsam. Ich habe nur 2 Beine. Die haben ganz viele. Ich verliere.
-nikki@NIKKI_003	Ich war zum ersten Mal angeln. Ein Fisch, der sogar falsche Köder schnappt, ist noch gieriger als ich.
+nikki@NIKKI_003	Ich war zum ersten Mal angeln. Ein Fisch, der sogar nach falschen Ködern schnappt, ist noch gieriger als ich.
 nikki@NIKKI_004	Ich bin mit Dreikäsehoch durch Hügel und Felder gelaufen. Die Sonne schien hell. Der Wind tat richtig gut.
 nikki@NIKKI_005	Tante hat ein Foto gemacht. Ich habe das V-Zeichen gezeigt. Obwohl Tante hübsch ist, hat sie auch eine Kamera.
 nikki@NIKKI_006	Onkel war weg, da bin ich nachts Glühwürmchen fangen gegangen. Obwohl ihr Po leuchtet, verbrennen sie sich nicht.
@@ -28,7 +28,7 @@ nikki@NIKKI_027	Knirsch, knirsch, Schabeeis. Wenn man viel Erdbeer- und Melonens
 nikki@NIKKI_028	Der Melonendieb kann wirklich schnell weglaufen. Nächstes Mal lasse ich ihn bestimmt nicht entkommen. Glaube ich.
 nikki@NIKKI_029	Am Ende habe ich mich mit einem Dieb angefreundet... So ist das Leben eben.
 nikki@NIKKI_030	Nashornkäfer lieben süße Sachen. Huch, die sind genau wie wir. Vergessen das Zähneputzen und kriegen Schimpfe.
-nikki@NIKKI_031	Käfer-Sumo geht um Leben und Tod. Wer fester drückt, gewinnt. Hakkeyoi, nokotta! Klack, klack, klack!
+nikki@NIKKI_031	Beim Käfer-Sumo geht es um Leben und Tod. Wer fester drückt, gewinnt. Hakkeyoi, nokotta! Klack, klack, klack!
 nikki@NIKKI_033	Eine Nashornkäfer-Falle! Jede Menge Zuckerwasser! Ob jetzt wohl ganz viele Käfer kommen?
 nikki@NIKKI_034	Puff! Schönes Feuerwerk weit weg. Knister... Viele Raketen blühten am stillen Nachthimmel.
 nikki@NIKKI_035	Alle, alle zusammen, lebt wohl. Alle, alle zusammen, macht es gut. Alle, alle zusammen, ich hab euch lieb.

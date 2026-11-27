@@ -54,7 +54,7 @@ M28	1285	1445	gebunden zu einem Strauß mit rotem Band.	panel
 M28	1525	1629	Auch die Sterne, die über diesen | weiten Nachthimmel blühen,	panel
 M28	1630	1752	schenke ich dir, jeden einzelnen,	panel
 M28	1753	1925	in Glas gefasst, | das wie ein Regenbogen glänzt.	panel
-M28	2299	2388	Alles auf dieser ganzen weiten Welt,	panel
+M28	2299	2388	Alles auf dieser ganzen weiten Welt	panel
 M28	2389	2513	schenke ich dir, jedes einzelne,	panel
 M28	2514	2680	darum schreib mir einen Brief.	panel
 M28	2703	2800	Schreib mir einen Brief.	panel

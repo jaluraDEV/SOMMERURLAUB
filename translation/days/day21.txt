@@ -6,7 +6,7 @@ E2160.1	Saori	Besser, als wenn der Kopf schlecht wird!
 # --- E2101: G02 -- breakfast
 E2101.0	Shirabe	Sag mal...
 E2101.1	Tante	Hm? Was ist denn?
-E2101.2	Shirabe	Du hast gestern dauernd daran gedacht, dass die Badedame im Bad ist, stimmts... // ...Ferkel!
+E2101.2	Shirabe	Du hast gestern dauernd daran gedacht, dass die Badedame im Bad ist, stimmt's... // ...Ferkel!
 E2101.3	Boku	Hä? Nein, habe ich nicht.
 E2101.4	Tante	Shirabe-chan, wie kommst du denn darauf?
 E2101.5	Shirabe	Weibliche Intuition!

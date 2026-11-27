@@ -1,6 +1,6 @@
 # day15 (translation/days/README.md)
 # --- E1505: G06 -- TV room (August 15, the broadcast)
-E1505.0	(voice only)	Nun, 30 Jahre nach jenem Tag, // ist vielleicht die Zeit gekommen, über die wahre Bedeutung des Friedens nachzudenken, den wir genießen.
+E1505.0	(voice only)	Nun, 30 Jahre nach jenem Tag // ist vielleicht die Zeit gekommen, über die wahre Bedeutung des Friedens nachzudenken, den wir genießen.
 
 # --- E1501: G02 -- breakfast
 E1501.0	Tante	Boku-kun, heute gehen alle von Tantes Haus // zum Grabbesuch für den Onii-chan dieser Familie, // könntest du da allein auf das Haus aufpassen?

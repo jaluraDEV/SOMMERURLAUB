@@ -237,7 +237,7 @@ exe@80046390.0	(unlabelled)	Yamame
 
 # --- exe@80046398: item descriptions
 exe@80046398.0	(unlabelled)	Beim Grabbesuch hütete ich das Haus; da kauften sie mir die.
-exe@80046398.1	(unlabelled)	Gefährlich, also dürfen Kinder es nicht anfassen.
+exe@80046398.1	(unlabelled)	Gefährlich, also dürfen Kinder sie nicht anfassen.
 exe@80046398.2	(unlabelled)	Damit sind die Ameisen erledigt! Ist das etwas gemein?
 exe@80046398.3	(unlabelled)	Lockt viele Käfer an. Mein eigenes Zuckerwasser.
 exe@80046398.4	(unlabelled)	Am Strand gefunden. Seltsame Form. Wem fehlt das?
@@ -313,7 +313,7 @@ hhon@5328.37	(unlabelled)	Salz-Blaupfeil. Erst strohfarben, dann von weißem Pud
 hhon@5328.38	(unlabelled)	Sommer-Heidelibelle. Ausgewachsen wird sie von Kopf bis Schwanz knallrot. Rot wie Abendrot.
 hhon@5328.39	(unlabelled)	Brauen-Heidelibelle. Sie ist eine Libelle, aber schau genau: Sie hat Augenbrauen! Ich war baff.
 hhon@5328.40	(unlabelled)	Falterlibelle (Cho-tonbo). Eine Libelle, also warum "Cho", Falter? Komischer Name, und cho-mini!
-hhon@5328.41	(unlabelled)	Wanderheu-schrecke. Springt dutzende Male so hoch wie sie groß ist. In Schwärmen frisst sie Felder kahl.
+hhon@5328.41	(unlabelled)	Wanderheu-schrecke. Springt Dutzende Male so hoch, wie sie groß ist. In Schwärmen frisst sie Felder kahl.
 hhon@5328.42	(unlabelled)	Kutsuwamushi. Auf Lichtungen im Wald machen nur die Männchen gacha-gacha.
 hhon@5328.43	(unlabelled)	Kusakiri. Sie mag feuchte Wiesen. Nachts singt sie ein langes jiiii ohne Pause.
 hhon@5328.44	(unlabelled)	Umaoi. Ihr Ruf zuii-cho klingt wie ein Pferde-treiber, darum heißt sie Umaoi, "Pferde-treiber".
@@ -329,7 +329,7 @@ hhon@5328.53	(unlabelled)	Higurashi. Mag dunkle Dickichte. Abends singt sie kana
 hhon@5328.54	(unlabelled)	Min-min-zemi. Min-min-min-min, singt und singt, aber ihr Leben dauert nur zwei Wochen. Wie traurig.
 hhon@5328.55	(unlabelled)	Tsukutsuku-boshi. Kommt Ende August oft heraus, die Zikade, die den Herbst ankündigt.
 hhon@5328.56	(unlabelled)	Miyama-Hirschkäfer ♀. Auch die Weibchen legen fleißig Eier für nächstes Jahr. Toll!
-hhon@5328.57	(unlabelled)	Riesen-Hirschkäfer ♀. Keine Zangen, aber bei der Größe steht sie den Männchen nichts nach!
+hhon@5328.57	(unlabelled)	Riesen-Hirschkäfer ♀. Keine Zangen, aber bei der Größe steht sie den Männchen in nichts nach!
 hhon@5328.58	(unlabelled)	Säge-Hirschkäfer ♀. So klein sie ist, sie schuftete drei Jahre im Holz, vom Ei zum Käfer.
 hhon@5328.59	(unlabelled)	Nashornkäfer ♀. Klein und ohne Horn, darum schwach. Auf den ersten Blick ein schlichter Käfer.
 hhon@5328.60	(unlabelled)	Frei

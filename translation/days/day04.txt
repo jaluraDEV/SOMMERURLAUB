@@ -144,12 +144,12 @@ E0404.7	[SEL]	Melone | Erdbeere | Zitrone | Mizore | Regenbogen-Spezial
 E0404.8	Tante	Alles klar, ich fange gleich an.
 
 # --- E0406: G01 -- living room; I06 -- the ice shaver
-E0406.0	Boku	Whoa, wie toll!
+E0406.0	Boku	Boah, wie toll!
 E0406.1	Shirabe	Iss es ordentlich und mit ganz viel Dankbarkeit.
 E0406.2	Tante	Aber Shirabe... // Boku-kun, Eis haben wir genug, also iss ruhig viel. // Wenn man so tief in den Bergen ohne Arzt lebt, // kann man bei Erkältung oder Bienenstich nicht gleich ins Krankenhaus, // darum haben wir immer Eis vorrätig.
 E0406.3	Moe	Und so sind wir mit der Zeit ziemlich abgehärtet geworden.
 E0406.4	Shirabe, Moe, Boku, Tante	Hahaha.
-E0406.5	Onkel	Übrigens, Boku-kun, du darfst dem Wespennest keinen Streich spielen. // Als Onkel ein kleiner Junge war, hat er mal mit der Angelrute ein Wespennest heruntergestoßen, // und ein ganzer Schwarm Wespen hat ihn gejagt. Das war eine übelste Geschichte.
+E0406.5	Onkel	Übrigens, Boku-kun, du darfst dem Wespennest keinen Streich spielen. // Als Onkel ein kleiner Junge war, hat er mal mit der Angelrute ein Wespennest heruntergestoßen, // und ein ganzer Schwarm Wespen hat ihn gejagt. Das war eine ganz üble Geschichte.
 E0406.6	Boku	Ja, verstanden, Onkel. // So etwas mache ich bestimmt nicht.
 E0406.7	Boku	Tante, Gochisosama!
 E0406.8	Tante	Es war nichts Besonderes.
@@ -166,7 +166,7 @@ E0434.1	Moe	Das hätte ich gern als Grundnahrungsmittel.
 
 
 # --- E0441: G06 -- TV room
-E0441.0	Shirabe	Du! Shirabe hat extra gewartet, um dir alles mögliche zu zeigen, // und dann gehst du mittendrin einfach weg. Du bist wirklich undankbar!
+E0441.0	Shirabe	Du! Shirabe hat extra gewartet, um dir alles Mögliche zu zeigen, // und dann gehst du mittendrin einfach weg. Du bist wirklich undankbar!
 E0441.1	Shirabe	Also nein, was denkst du dir bloß...
 E0441.2	Shirabe	Heute hat es doch riesig viel Spaß gemacht, oder? // Nächstes Mal nehme ich dich noch weiter mit...
 

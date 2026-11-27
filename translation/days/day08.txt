@@ -1,7 +1,7 @@
 # day08 (translation/days/README.md)
 # --- E0811: H26 -- the workshop
 E0811.0	Onkel	Ich habe die alte Axt im Schuppen verstaut, // aber sie ist gefährlich, Boku-kun, also fass sie nicht an.
-E0811.1	Onkel	Ohje, mein Muskelkater.
+E0811.1	Onkel	Oh je, mein Muskelkater.
 
 # --- E0821: G03 -- kitchen
 E0821.0	Tante	Warst du heute schon in Onee-chans Zimmer? // Onee-chan hat gesagt, ab heute ist Boku-kun freigegeben.
@@ -16,7 +16,7 @@ E0820.1	Tante	Übrigens, ab heute... hm-hm... schau mal oben im Mädchenzimmer v
 
 # --- E0812: G01 -- living room
 E0812.0	Onkel	Übrigens, bald muss doch das Feuerwerksfest sein... // Nanu? Welcher Tag war das noch gleich?
-E0812.1	Onkel	Vom deinem Zimmer aus hat man den besten Blick auf das Feuerwerksfest am Fuß des Berges, Boku-kun.
+E0812.1	Onkel	Von deinem Zimmer aus hat man den besten Blick auf das Feuerwerksfest am Fuß des Berges, Boku-kun.
 
 # --- E0831: G15 -- the sisters' room
 E0831.0	Moe	Ich liebe die Aussicht vom Südfenster dieses Zimmers. // Der Sonnenuntergang sieht aus, als würden zwischen den Wolken lila Blumen // von einer Südseeinsel aufblühen. Das ist so schön.

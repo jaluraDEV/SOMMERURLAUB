@@ -76,7 +76,7 @@ E2205.5	Moe	Cho wie Schmetterling. Eine Fliege!
 E2231.0	Moe	Sag mal, ob ich wohl auch einen Schatz fürs Leben finden kann?
 E2231.1	Boku	......?
 E2231.2	(unlabelled)	Sag mal, Onee-chan, was ist in deinem bisherigen Leben das Wichtigste?
-E2231.3	Moe	Was wäre das wohl? // Also, meine Eltern und Geschwister, meine besten Freunde und alle anderen Menschen, die mir nahestehen... // die sind mir natürlich alle sehr wichtig, aber abgesehen von ihnen... // fallen mir für mich höchstens die schönen Erinnerungen aus meiner Kindheit ein... // etwas anderes Wertvolles fällt mir nicht ein...
+E2231.3	Moe	Was wäre das wohl? // Also, meine Eltern und Geschwister, meine besten Freunde und alle anderen Menschen, die mir nahestehen... // die sind mir natürlich alle sehr wichtig, aber abgesehen von ihnen... // fallen mir höchstens die schönen Erinnerungen aus meiner Kindheit ein... // etwas anderes Wertvolles fällt mir nicht ein...
 E2231.4	Boku	Hmm, Erinnerungen sind also dein wertvoller Schatz.
 E2231.5	Moe	Ja, und dann vielleicht noch jene Spieluhr.
 E2231.6	Moe	Diese Spieluhr macht so einen niedlichen Klang, weißt du.

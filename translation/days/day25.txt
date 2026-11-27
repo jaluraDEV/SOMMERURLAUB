@@ -12,7 +12,7 @@ E2560.7	Saori	Ich habe... meinen Pinsel vergessen.
 # --- E2502: G02 -- after breakfast
 E2502.0	Onkel	Gochisosama deshita.
 E2502.1	Shirabe, Moe, Boku, Tante	Gochisosama deshita.
-E2502.2	Tante	Wo wir gerade daran denken: In letzter Zeit folgt ein sonniger Tag auf den nächsten...
+E2502.2	Tante	Jetzt, wo ich daran denke: In letzter Zeit folgt ein sonniger Tag auf den nächsten...
 E2502.3	Onkel	Ja... wie viele Tage es wohl schon her ist, seit es zuletzt geregnet hat?
 
 # --- E2507: G02 -- dining room; I13 -- close-up (no rain all month)
@@ -26,7 +26,7 @@ E2507.6	Tante	...Ja, das stimmt.
 E2507.7	Onkel	Nun denn, dann mache ich mich mal daran, den Ofen vorzubereiten...
 
 # --- E2520: H17 -- the woodshed
-E2520.0	Tante	Onkel sagt, er legt sich heute ins Zeug und heizt den Ofen an. // Wenn man wohl nicht pünktlich zuschauen geht, // verpasst man vielleicht die spannenden Stellen, // also streng dich an und geh auch oft zuschauen, Boku-kun...
+E2520.0	Tante	Onkel sagt, er legt sich heute ins Zeug und heizt den Ofen an. // Wenn man nicht pünktlich zuschauen geht, // verpasst man vielleicht die spannenden Stellen, // also streng dich an und geh auch oft zuschauen, Boku-kun...
 E2520.1	Tante	Trotzdem hat es diesen Sommer wirklich wenig geregnet.
 E2520.2	Tante	Hoffentlich hat Omas Haus in Shikoku keine Probleme mit Wasserknappheit.
 

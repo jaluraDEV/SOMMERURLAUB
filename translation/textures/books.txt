@@ -6,7 +6,7 @@ mzkan@0.name	Moschusfalter
 mzkan@0.family	Ritterfalter-Familie
 mzkan@0.size	Spannweite 100 bis 120 mm
 mzkan@0.food	Mag Nektar von Ölweide, Distel und Azalee
-mzkan@0.body	Er mag keine Kälte und hat wenig Futterpflanzen, daher ist er mancherorts selten. Er fliegt tief und langsam über Wege und Wiesen. Die Flügel des Männchens glänzen seidig, und gefangen duftet es leicht, daher sein Name Moschusfalter. Die Raupen fressen Osterluzei und neigen auch dazu, sich gegenseitig zu fressen.
+mzkan@0.body	Er mag keine Kälte und hat wenig Futterpflanzen, daher ist er mancherorts selten. Er fliegt tief und langsam über Wege und Wiesen. Die Flügel des Männchens glänzen seidig, und gefangen duftet er leicht, daher sein Name Moschusfalter. Die Raupen fressen Osterluzei und neigen auch dazu, sich gegenseitig zu fressen.
 
 # --- Insect page 1: Mikado-Schwalbenschwanz
 mzkan@1.name	Mikado-Schwalbenschwanz

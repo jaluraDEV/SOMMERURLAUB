@@ -9,7 +9,7 @@ E2460.5	Boku	Wie?
 
 # --- E2420: H07 -- outside the dining room
 E2420.0	Tante	Langsam gehen mir die Ideen fürs Abendessen aus...
-E2420.1	Tante	Ich habs! Das habe ich schon eine Weile nicht mehr gemacht.
+E2420.1	Tante	Ich hab's! Das habe ich schon eine Weile nicht mehr gemacht.
 
 # --- E2412: G01 -- living room
 E2412.0	Onkel	Morgen heize ich den Ofen an.

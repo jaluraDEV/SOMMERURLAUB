@@ -107,4 +107,4 @@ E0541.3	Boku	Wenn ihr euch in der Schule der Größe nach aufstellt, die wieviel
 E0541.4	Shirabe	...Na und? Erster Platz.
 E0541.5	Shirabe	Wenn du mich klein nennst, verzeihe ich dir das nicht. // Shirabe wird nämlich noch ganz groß...
 E0541.6	Boku	Kennst du Guts-kun?
-E0541.7	Shirabe	Ja, Gacchan kenne ich. // Er ist mit dem Angsthase Brille aus Shirabes Klasse und dem Dicken aus den oberen Klassen befreundet.
+E0541.7	Shirabe	Ja, Gacchan kenne ich. // Er ist mit dem Angsthasen Brille aus Shirabes Klasse und dem Dicken aus den oberen Klassen befreundet.
